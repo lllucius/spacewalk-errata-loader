@@ -46,6 +46,7 @@ import os
 import sys
 
 from classes.moduleloader import ModuleLoader
+from version import *
 
 #Config constants.
 CONFIG_FILE="loader.cfg"
@@ -178,10 +179,12 @@ def dateArg(str):
 
     return ym
 
-def process_args(processor_names):
+def process_args(loader):
+    processor_names = loader.get_module_names()
+
     default_date = datetime(datetime.today().year, datetime.today().month, 1).strftime("%Y-%m")
 
-    parser = ArgumentParser()
+    parser = ArgumentParser(version=VERSION)
     parser.register('action', None, StoreAction)
     parser.register('action', 'store', StoreAction)
     parser.register('action', 'store_const', StoreConstAction)
@@ -234,6 +237,12 @@ def process_args(processor_names):
     group.add_argument("--show-config", dest="show_config", action="store_true",
                       help="Just print configuration information")
 
+    for name in processor_names:
+        module = loader.get_module(name)
+        if hasattr(module, 'add_command_arguments'):
+            group = parser.add_argument_group("%s arguments" % name)
+            module.add_command_arguments(group)
+
     args = parser.parse_args()
 
     config = SafeConfigParser()
@@ -253,7 +262,7 @@ def main():
     loader = ModuleLoader()
     loader.load_modules('Processor', 'processors')
 
-    config = process_args(loader.get_module_names())
+    config = process_args(loader)
 
     if config.show_config:
         print "Current configuration:"
@@ -265,3 +274,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+

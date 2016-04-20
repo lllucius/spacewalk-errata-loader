@@ -1,4 +1,5 @@
 
+from datetime import datetime
 import email
 import gzip
 import os
@@ -10,7 +11,6 @@ from exceptions import *
 
 class FileArchive(object):
 
-    #Split on lines formatted thusly: From kbsingh at centos.org  Thu Jan  8 16:25:09 2009
     __SEPARATOR="From .*[A-Za-z]{3,3} [A-Za-z]{3,3} [ 0-9]{2,2} \d{2,2}:\d{2,2}:\d{2,2} \d{4,4}\n"
     __splitter_re = re.compile(__SEPARATOR)
 
@@ -19,6 +19,10 @@ class FileArchive(object):
 
     def __process_message(self, src):
         msg = email.message_from_string(src)
+
+        date = msg['date']
+        del msg['Date']
+        msg['Date'] = datetime.fromtimestamp(email.utils.mktime_tz(email.utils.parsedate_tz(date)))
 
         print '-----------------------------------------------------------'
         print 'processing %s' % msg['Subject']

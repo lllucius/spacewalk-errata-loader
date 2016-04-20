@@ -13,9 +13,6 @@ class ProcessorBase(Module, Session, Packages, Errata, ListArchive, FileArchive,
         self.__preprocs = None
         self.config = None
 
-    def add_command_arguments(self, parser):
-        pass
-
     def get_preprocs(self):
         if self.__preprocs is not None:
             return self.__preprocs.get()

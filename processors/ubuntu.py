@@ -95,7 +95,7 @@ class UbuntuMessageParser(object):
         match = self.__subject_re.match(subject)
     
         if match is None:
-            raise ParseError("Message with subject '%s' doesnt appear to be an errata " % subject)
+            raise ParseError("Message with subject '%s' doesn't appear to be an errata " % subject)
 
         erratum._id = match.group('id')
         erratum.synopsis = match.group('other')
@@ -115,5 +115,4 @@ class Processor(ProcessorBase, UbuntuMessageParser):
 
     def get_list_url(self, config):
         return self.__LISTURL
-
 
