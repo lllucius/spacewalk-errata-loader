@@ -1,0 +1,383 @@
+From arrfab at centos.org  Mon Apr  4 15:33:17 2016
+From: arrfab at centos.org (Fabian Arrotin)
+Date: Mon, 4 Apr 2016 17:33:17 +0200
+Subject: [CentOS-announce] Infra - CentOS forums migration
+Message-ID: <5702893D.5090904@centos.org>
+
+Just to inform you that we'll move some services to a new node, and so
+there will be a small impact for the following services :
+- https://www.centos.org (no real downtime, as it will just be
+redirected automatically)
+- https://www.centos.org/forums (see below)
+
+During that migration we'll also consolidate IPv6 and IPv4 connectivity
+and also we'll be able to implement higher protocol than TLS 1.0
+(because we are/were still using a CentOS 5  based node in the previous
+setup)
+
+Migration is scheduled for """"Wednesday April 6th, 7:00 am UTC time"""".
+You can convert to local time with $(date -d '2016-04-06 7:00 UTC')
+
+The expected "downtime" is estimated to ~30 minutes , time needed to
+update/propagate updated dns A/AAAA record[s] + last mysql dump/restore
+on the
+new node.
+
+Thanks for your comprehending and patience.
+
+on behalf of the Infra team,
+-- 
+Fabian Arrotin
+The CentOS Project | http://www.centos.org
+gpg key: 56BEC54E | twitter: @arrfab
+
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 198 bytes
+Desc: OpenPGP digital signature
+URL: <http://lists.centos.org/pipermail/centos-announce/attachments/20160404/a5e06d36/attachment.sig>
+
+From johnny at centos.org  Tue Apr  5 12:27:24 2016
+From: johnny at centos.org (Johnny Hughes)
+Date: Tue, 5 Apr 2016 12:27:24 +0000
+Subject: [CentOS-announce] CESA-2016:0591 Moderate CentOS 6 nspr Security
+	Update
+Message-ID: <20160405122724.GA26079@n04.lon1.karan.org>
+
+
+CentOS Errata and Security Advisory 2016:0591 Moderate
+
+Upstream details at : https://rhn.redhat.com/errata/RHSA-2016-0591.html
+
+The following updated files have been uploaded and are currently 
+syncing to the mirrors: ( sha256sum Filename ) 
+
+i386:
+3b223ca6b209603975d7067ca45911b0f61f445196fb4b87e8e30b881ba9c2e5  nspr-4.11.0-0.1.el6_7.i686.rpm
+e9f94771ef76b6bb895aaf2b196e90c1e9c3aafeb11177afc03a21d90be4ad34  nspr-devel-4.11.0-0.1.el6_7.i686.rpm
+
+x86_64:
+3b223ca6b209603975d7067ca45911b0f61f445196fb4b87e8e30b881ba9c2e5  nspr-4.11.0-0.1.el6_7.i686.rpm
+3d109fb2c496edf99f41fd9db08769239caef7758ea6abf118ffe72b1de57c94  nspr-4.11.0-0.1.el6_7.x86_64.rpm
+e9f94771ef76b6bb895aaf2b196e90c1e9c3aafeb11177afc03a21d90be4ad34  nspr-devel-4.11.0-0.1.el6_7.i686.rpm
+14a47d3277db192096307cb88c8072df5b15257db7b352bf731fa54227a46c42  nspr-devel-4.11.0-0.1.el6_7.x86_64.rpm
+
+Source:
+34bfff2b29fc9e980193a8cdc85aa65bae37e6c8e622de0882d0237365aa0c47  nspr-4.11.0-0.1.el6_7.src.rpm
+
+
+
+-- 
+Johnny Hughes
+CentOS Project { http://www.centos.org/ }
+irc: hughesjr, #centos at irc.freenode.net
+Twitter: @JohnnyCentOS
+
+
+From johnny at centos.org  Tue Apr  5 12:33:02 2016
+From: johnny at centos.org (Johnny Hughes)
+Date: Tue, 5 Apr 2016 12:33:02 +0000
+Subject: [CentOS-announce] CESA-2016:0591 Moderate CentOS 6 nss-util
+	Security Update
+Message-ID: <20160405123302.GA26406@n04.lon1.karan.org>
+
+
+CentOS Errata and Security Advisory 2016:0591 Moderate
+
+Upstream details at : https://rhn.redhat.com/errata/RHSA-2016-0591.html
+
+The following updated files have been uploaded and are currently 
+syncing to the mirrors: ( sha256sum Filename ) 
+
+i386:
+be545dfd2d5da2c62a77f9cc2b40987befdb5c5f669782af9c377f0b85484ff0  nss-util-3.21.0-0.3.el6_7.i686.rpm
+56806dccf241355a1b9cba4e1595f54abbe5a5b1f92b9a4d4f5b7d8091bc7325  nss-util-devel-3.21.0-0.3.el6_7.i686.rpm
+
+x86_64:
+be545dfd2d5da2c62a77f9cc2b40987befdb5c5f669782af9c377f0b85484ff0  nss-util-3.21.0-0.3.el6_7.i686.rpm
+a7241304459acb2e2dca19fa7a61f516f2a38aa3e4440d1a2f001de413c54e1f  nss-util-3.21.0-0.3.el6_7.x86_64.rpm
+56806dccf241355a1b9cba4e1595f54abbe5a5b1f92b9a4d4f5b7d8091bc7325  nss-util-devel-3.21.0-0.3.el6_7.i686.rpm
+7cb08f5c7d2c44566206fc7fb5c9dcb380b9ec3e036eecf3bc99ec764e95043e  nss-util-devel-3.21.0-0.3.el6_7.x86_64.rpm
+
+Source:
+3c391ab73bc502dc1a1aa74a1aeda1ddf08aee80c85ed02396808117d1a89ce5  nss-util-3.21.0-0.3.el6_7.src.rpm
+
+
+
+-- 
+Johnny Hughes
+CentOS Project { http://www.centos.org/ }
+irc: hughesjr, #centos at irc.freenode.net
+Twitter: @JohnnyCentOS
+
+
+From johnny at centos.org  Tue Apr  5 14:21:27 2016
+From: johnny at centos.org (Johnny Hughes)
+Date: Tue, 5 Apr 2016 14:21:27 +0000
+Subject: [CentOS-announce] CESA-2016:0591 Moderate CentOS 6 nss Security
+	Update
+Message-ID: <20160405142127.GA28504@n04.lon1.karan.org>
+
+
+CentOS Errata and Security Advisory 2016:0591 Moderate
+
+Upstream details at : https://rhn.redhat.com/errata/RHSA-2016-0591.html
+
+The following updated files have been uploaded and are currently 
+syncing to the mirrors: ( sha256sum Filename ) 
+
+i386:
+5c8974b2d8730e2967751f835f4646bdf46fa968c29769748219ad426c5140d3  nss-3.21.0-0.3.el6_7.i686.rpm
+f3782c46dfadef016d7afe8d81015c92ca5062e738d225377bfb38904e70708d  nss-devel-3.21.0-0.3.el6_7.i686.rpm
+32b9c62453b3dd45c60985751e36ed30aba93ea2f024b4b08443b7b9438eb5a8  nss-pkcs11-devel-3.21.0-0.3.el6_7.i686.rpm
+7ee7fb2e4107b38d7c03677abb588fdd59b28459fa01a67f1a0bfb159295c688  nss-sysinit-3.21.0-0.3.el6_7.i686.rpm
+a24d41eaadacaebcab9e7bf5490dc75028d7360e8484d9f4615b480067299539  nss-tools-3.21.0-0.3.el6_7.i686.rpm
+
+x86_64:
+5c8974b2d8730e2967751f835f4646bdf46fa968c29769748219ad426c5140d3  nss-3.21.0-0.3.el6_7.i686.rpm
+7242d7e199b316736c10a1e97629001a3f2ab4ba540f0e313730ae8a11358544  nss-3.21.0-0.3.el6_7.x86_64.rpm
+f3782c46dfadef016d7afe8d81015c92ca5062e738d225377bfb38904e70708d  nss-devel-3.21.0-0.3.el6_7.i686.rpm
+24a8bfae413d2a0ea8063fe0045615096d0cff4e8ddb483b625f32a20c403fb4  nss-devel-3.21.0-0.3.el6_7.x86_64.rpm
+32b9c62453b3dd45c60985751e36ed30aba93ea2f024b4b08443b7b9438eb5a8  nss-pkcs11-devel-3.21.0-0.3.el6_7.i686.rpm
+dc1976aceb5f1e49dcb95308bc6ae80e9100d759141308f5fb786ac6d49e65b3  nss-pkcs11-devel-3.21.0-0.3.el6_7.x86_64.rpm
+99a95ba3bfebf8d62f4033b0578ff4c0a604becc5e5255700d98ccf305e68cc9  nss-sysinit-3.21.0-0.3.el6_7.x86_64.rpm
+f1af7ca96a93c1ebeeab8051f137e92116d869ba0aa55c28bf7a6d0bcf7b49e7  nss-tools-3.21.0-0.3.el6_7.x86_64.rpm
+
+Source:
+ae57322f9c969f39ae79298247a6a8a795719d1e926d88077a92536b8332409c  nss-3.21.0-0.3.el6_7.src.rpm
+
+
+
+-- 
+Johnny Hughes
+CentOS Project { http://www.centos.org/ }
+irc: hughesjr, #centos at irc.freenode.net
+Twitter: @JohnnyCentOS
+
+
+From johnny at centos.org  Tue Apr  5 19:15:11 2016
+From: johnny at centos.org (Johnny Hughes)
+Date: Tue, 5 Apr 2016 19:15:11 +0000
+Subject: [CentOS-announce] CEEA-2016:0593 CentOS 7 libguestfs Enhancement
+	Update
+Message-ID: <20160405191511.GA54774@n04.lon1.karan.org>
+
+
+CentOS Errata and Enhancement Advisory 2016:0593 
+
+Upstream details at : https://rhn.redhat.com/errata/RHEA-2016-0593.html
+
+The following updated files have been uploaded and are currently 
+syncing to the mirrors: ( sha256sum Filename ) 
+
+x86_64:
+e41f1f0c1e04016bf837b5c5e32523d3cfb6fefa148c273f98a0d3906fd40fba  libguestfs-1.28.1-1.55.el7.centos.2.x86_64.rpm
+1de3c2f505fb7947ce4bf7a02aed54bb841af60c3b2520be629facd9b428aa87  libguestfs-bash-completion-1.28.1-1.55.el7.centos.2.noarch.rpm
+25d7239057eb0e67658bd88e9cd1131adf7cc30dd7248830eb9ff6ad900ec9b0  libguestfs-devel-1.28.1-1.55.el7.centos.2.x86_64.rpm
+f1f49fd37bfe8e79472c85144cfa490f2b603529c590d1bce743cec54c9b4835  libguestfs-gfs2-1.28.1-1.55.el7.centos.2.x86_64.rpm
+99736d954ddbe3cfd11e6a539d818b92a8d2c525fd22246bdba1d7d4cf48c084  libguestfs-gobject-1.28.1-1.55.el7.centos.2.x86_64.rpm
+061eea52827be1f861a79d558bcf50e470de0b9480e2b26a91f0d34726c4fb70  libguestfs-gobject-devel-1.28.1-1.55.el7.centos.2.x86_64.rpm
+124437fac47dfa1fcdf36dfc6f6329c360732dda2ba02c37c46bbabb8516e475  libguestfs-gobject-doc-1.28.1-1.55.el7.centos.2.noarch.rpm
+4595763999e8fbc60b902282e6487175ec1dc0a1967075598ff78b3e54073a41  libguestfs-java-1.28.1-1.55.el7.centos.2.x86_64.rpm
+395de464f35786d4a52e2d340992dc51af77441b862246156f58bd5ea45c942a  libguestfs-java-devel-1.28.1-1.55.el7.centos.2.x86_64.rpm
+fe7d1c1f1018935bf163849aecdb53411556464b5bac0dcbb259c112701add1f  libguestfs-javadoc-1.28.1-1.55.el7.centos.2.noarch.rpm
+55dd3a16b965949628f1ee2a57f7ac3a059650066a7edc6eca681ffae2fbd3e6  libguestfs-man-pages-ja-1.28.1-1.55.el7.centos.2.noarch.rpm
+16fc4d292e720a143f7558d9c831295698b15cb54a02c0ab0323d0756086d2e5  libguestfs-man-pages-uk-1.28.1-1.55.el7.centos.2.noarch.rpm
+1f51f5079763f480e241bb3025b4b188b86c6b6f5c786ed5aee607308b00f01a  libguestfs-rescue-1.28.1-1.55.el7.centos.2.x86_64.rpm
+26e2e13368845dc9c5a87b0026b3d4553e92e4a41769a0f7699c39a000d13ea6  libguestfs-rsync-1.28.1-1.55.el7.centos.2.x86_64.rpm
+0efaaec4a7d7ddc9d38c1b79c11a1c501db0696a16f158afd72d173ed08544c9  libguestfs-tools-1.28.1-1.55.el7.centos.2.noarch.rpm
+16b577c6b8a7058a54afef6dae8080bf922721a2d82c74a105f3172621fe1f0a  libguestfs-tools-c-1.28.1-1.55.el7.centos.2.x86_64.rpm
+45a6688b5ed0f78fd2509e1ed738fe93df957fa0645719089ff2096699d20c65  libguestfs-xfs-1.28.1-1.55.el7.centos.2.x86_64.rpm
+b45d3ddccc275dc1ffc11b527c70b97cc6f1a6ded8c8fb3d36c1b77bedb99656  lua-guestfs-1.28.1-1.55.el7.centos.2.x86_64.rpm
+522dab43977b5ffa55b3580d1b872b6c39d64f3a0647bcc3f610e94b6a4cf359  ocaml-libguestfs-1.28.1-1.55.el7.centos.2.x86_64.rpm
+c18daa1c6e22fa68e43fa4af67432775c4b85117fe8a602e73aa04a24129350c  ocaml-libguestfs-devel-1.28.1-1.55.el7.centos.2.x86_64.rpm
+4a2cf803a443ac25202b14edfd8793f082f108f085f4516cc92ae08979e7593f  perl-Sys-Guestfs-1.28.1-1.55.el7.centos.2.x86_64.rpm
+75b4ef7132a57003bcafca7da181be5a52893cfc57bdef249c2e7dcf217d7cb0  python-libguestfs-1.28.1-1.55.el7.centos.2.x86_64.rpm
+986a65c4ff8627f2b5824ea053c34164a238c8f1b8d8de563be79360d22434da  ruby-libguestfs-1.28.1-1.55.el7.centos.2.x86_64.rpm
+24df4ea90173c3cfc1093235cf61d86fa76c19be7c11df650ad91d322f1c1d61  virt-v2v-1.28.1-1.55.el7.centos.2.x86_64.rpm
+
+Source:
+da1fc6d0671953604c8bf0c9f39a28ffad402fbd10d858f2119fcaa63335e454  libguestfs-1.28.1-1.55.el7.centos.2.src.rpm
+
+
+
+-- 
+Johnny Hughes
+CentOS Project { http://www.centos.org/ }
+irc: hughesjr, #centos at irc.freenode.net
+Twitter: @JohnnyCentOS
+
+
+From johnny at centos.org  Tue Apr  5 20:02:28 2016
+From: johnny at centos.org (Johnny Hughes)
+Date: Tue, 5 Apr 2016 20:02:28 +0000
+Subject: [CentOS-announce] CESA-2016:0594 Important CentOS 7 graphite2
+	Security Update
+Message-ID: <20160405200228.GA55846@n04.lon1.karan.org>
+
+
+CentOS Errata and Security Advisory 2016:0594 Important
+
+Upstream details at : https://rhn.redhat.com/errata/RHSA-2016-0594.html
+
+The following updated files have been uploaded and are currently 
+syncing to the mirrors: ( sha256sum Filename ) 
+
+x86_64:
+5833acac7b610ae47aaff9fff6976044184dcef52f724a1f94142e69e2215116  graphite2-1.3.6-1.el7_2.i686.rpm
+f14d09c338249719f5f75305ee0dc6c32829ad3e45c7bc62b9fa530d37bcd35f  graphite2-1.3.6-1.el7_2.x86_64.rpm
+2ba25e1c7cf6d499d2826dce52b463b1b41b653087a2b02b0a22f0a2ad8e8968  graphite2-devel-1.3.6-1.el7_2.i686.rpm
+1ee921c206f47b305e00b9ead905655decd0c93334962dd6ed74112dc4be6db9  graphite2-devel-1.3.6-1.el7_2.x86_64.rpm
+
+Source:
+24e94805fcb7de71ccd8fd1ecaf44cf56602da1a030a14c4d7862c3bcd87bbea  graphite2-1.3.6-1.el7_2.src.rpm
+
+
+
+-- 
+Johnny Hughes
+CentOS Project { http://www.centos.org/ }
+irc: hughesjr, #centos at irc.freenode.net
+Twitter: @JohnnyCentOS
+
+
+From kbsingh at centos.org  Thu Apr  7 01:18:59 2016
+From: kbsingh at centos.org (Karanbir Singh)
+Date: Thu, 7 Apr 2016 02:18:59 +0100
+Subject: [CentOS-announce] Release for CentOS Linux 7 Rolling media March
+	2016
+Message-ID: <5705B583.2030704@centos.org>
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+I am pleased to announce general availability of the March 2016
+snapshot for CentOS Linux. This release includes CentOS Linux 7 iso
+based install media, Generic Cloud images, Atomic Host, Docker
+containers, Vagrant images, vendor hosted cloud images.
+
+This release set is tag'd 1603 and includes all updates released upto
+the 31st of March 2016.
+
+CentOS Linux rolling builds are point in time snapshot media rebuild
+from original release time, to include all updates pushed to
+mirror.centos.org's repositories. This includes all security, bugfix,
+enhancement and general updates for CentOS Linux. Machines installed
+from this media will have all these updates pre-included and will look
+no different when compared with machines installed with older media
+that have been yum updated to the same point in time. All rpm/yum
+repos remain on mirror.centos.org with no changes in either layout or
+content.
+
+- --------
+CentOS Linux 7 / x86_64 install media is available at
+http://buildlogs.centos.org/rolling/7/isos/x86_64/
+
+File: CentOS-7-x86_64-Minimal-1603-02.iso
+Sha: 58ee68c3ffae5c4ca629be9b992f97d108165e09726d3e8f80798ac9c7a1821e
+
+File: CentOS-7-x86_64-Everything-1603-02.iso
+Sha: f618b51bbbfbbc5a1d2fe64cb699735057f79df41125bad5be6eef11b4f7c575
+
+File: CentOS-7-x86_64-DVD-1603-02.iso
+Sha: f78dcd1040afcdbb716c0581a182365ff34b7b37e9c20aa40b521b3c42677744
+
+
+- --------
+CentOS Linux 7 / x86_64 Cloud Images are available at :
+http://cloud.centos.org/centos/7/images/
+
+
+Sha: c88230cde563ca29b065d53819586262f79a64769736e014bf6dabaa61a20968
+File: CentOS-7-x86_64-GenericCloud-1603.qcow2
+
+Sha:6d17808cf208bee3243f51b84e9bfb10b06f0cd04e2930505d9ea4fba2583bc5
+File: CentOS-7-x86_64-GenericCloud-1603.qcow2c
+
+Sha: f91e602120a728f144da605baf0d5f4ad59293921bee99cc4aa3a1ab65e6d445
+File: CentOS-7-x86_64-GenericCloud-1603.qcow2.xz
+
+Sha:5c5cacfc1f0700cc7d48d667933cd730f7443e866caeda94d8e205a8bc8ce511
+File: CentOS-7-x86_64-GenericCloud-1603.raw.tar.gz
+
+- --------
+CentOS Atomic Host is being release announced shortly.
+
+
+- --------
+CentOS Linux 7 / x86_64 Vagrant images are updated at
+https://atlas.hashicorp.com/centos/7 and the backing files can be
+downloaded for libvirt and virtualbox providers at :
+
+Libvirt:
+http://cloud.centos.org/centos/7/vagrant/x86_64/images/CentOS-7-x86_64-V
+agrant-1603_01.LibVirt.box
+Sha: 4e01796e1afdd8c4bfbe98cffe5966caee227629429657a06c56d93d6e5fadaf
+
+Virtualbox:
+http://cloud.centos.org/centos/7/vagrant/x86_64/images/CentOS-7-x86_64-V
+agrant-1603_01.VirtualBox.box
+Sha: 549542fb475a02b7477000dded6dc7d12e7e325e461f029d25831eb9bb208a4b
+
+- --------
+CentOS Linux 5 / 6 and 7 docker images are updated at
+https://hub.docker.com/_/centos/
+
+- --------
+We welcome all feedback around these rolling builds and media updates
+at the centos-devel mailing list ( http://lists.centos.org/ ).
+
+enjoy!
+
+- -- 
+Karanbir Singh, Project Lead, The CentOS Project
++44-207-0999389 | http://www.centos.org/ | twitter.com/CentOS
+GnuPG Key : http://www.karan.org/publickey.asc
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v2.0.22 (GNU/Linux)
+
+iQEcBAEBAgAGBQJXBbWDAAoJEI3Oi2Mx7xbtkhQIAKWdQsR+3toahhrc/859kfXW
+Y3tyvRVU3t/i7i4bs+4jtwT4zih8rEP4DBNYQE/lkv7gusjWANiuvr9FtTrNCj5c
+7mGhTOFQtNG7AqGEHfQLKcdkCM4LMUbINhOhAqzymX9Vvj/jznyqenBNBlbwj9Cc
+yQR0aEeGPKFLhzUQqBBBW7B8UT1GzEr6l3+d+V7zEXdUJkSVaCiM2rMBEdEK41P/
+1sYCcuodBPaTGFVEFPSPZf5sq/fMWQasKfx164xu0Sdi0QQUer7CzwRMlDev649x
+yXbzF4Fkhs89JomXM6js19IArjA+HSAOWFu+jiHyp14OFGjReEkEfOcm+swIJ9g=
+=Ob+s
+-----END PGP SIGNATURE-----
+
+From johnny at centos.org  Thu Apr  7 19:12:23 2016
+From: johnny at centos.org (Johnny Hughes)
+Date: Thu, 7 Apr 2016 19:12:23 +0000
+Subject: [CentOS-announce] CEEA-2016:0609 CentOS 6 bnx2x Enhancement Update
+Message-ID: <20160407191223.GA38757@n04.lon1.karan.org>
+
+
+CentOS Errata and Enhancement Advisory 2016:0609 
+
+Upstream details at : https://rhn.redhat.com/errata/RHEA-2016-0609.html
+
+The following updated files have been uploaded and are currently 
+syncing to the mirrors: ( sha256sum Filename ) 
+
+i386:
+d22dd5551bcca4a3f1b6052d3928ea9d908b639c98e34bffc0e0cfdc49e56b8c  kmod-bnx2x-1.712.30_0-1.el6_7.i686.rpm
+28646d8d9491b46866dea2fae5c83c068ec7967f11d759d6e6a151b70717c7a0  kmod-bnx2x-firmware-1.712.30_0-1.el6_7.i686.rpm
+
+x86_64:
+1942c8822d5ed9ff17d979f33cef720350b58c16c52ff179eb6594d319577093  kmod-bnx2x-1.712.30_0-1.el6_7.x86_64.rpm
+49ed3fcd80cbcc6c57e94f9b112d7c55b8720038468dbe3218bb5add250dade9  kmod-bnx2x-firmware-1.712.30_0-1.el6_7.x86_64.rpm
+
+Source:
+d55e0edaa07cf6bf5e12385400fc913d248efd4355b5f018d3e6e47e56f75323  bnx2x-1.712.30_0-1.el6_7.src.rpm
+
+
+
+-- 
+Johnny Hughes
+CentOS Project { http://www.centos.org/ }
+irc: hughesjr, #centos at irc.freenode.net
+Twitter: @JohnnyCentOS
+
+

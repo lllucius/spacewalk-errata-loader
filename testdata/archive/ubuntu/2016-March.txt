@@ -1,0 +1,3264 @@
+From marc.deslauriers at canonical.com  Tue Mar  1 15:12:07 2016
+From: marc.deslauriers at canonical.com (Marc Deslauriers)
+Date: Tue, 1 Mar 2016 10:12:07 -0500
+Subject: [USN-2914-1] OpenSSL vulnerabilities
+Message-ID: <56D5B147.1020906@canonical.com>
+
+==========================================================================
+Ubuntu Security Notice USN-2914-1
+March 01, 2016
+
+openssl vulnerabilities
+==========================================================================
+
+A security issue affects these releases of Ubuntu and its derivatives:
+
+- Ubuntu 15.10
+- Ubuntu 14.04 LTS
+- Ubuntu 12.04 LTS
+
+Summary:
+
+Several security issues were fixed in OpenSSL.
+
+Software Description:
+- openssl: Secure Socket Layer (SSL) cryptographic library and tools
+
+Details:
+
+Yuval Yarom, Daniel Genkin, and Nadia Heninger discovered that OpenSSL was
+vulnerable to a side-channel attack on modular exponentiation. On certain
+CPUs, a local attacker could possibly use this issue to recover RSA keys.
+This flaw is known as CacheBleed. (CVE-2016-0702)
+
+Adam Langley discovered that OpenSSL incorrectly handled memory when
+parsing DSA private keys. A remote attacker could use this issue to cause
+OpenSSL to crash, resulting in a denial of service, or possibly execute
+arbitrary code. (CVE-2016-0705)
+
+Guido Vranken discovered that OpenSSL incorrectly handled hex digit
+calculation in the BN_hex2bn function. A remote attacker could use this
+issue to cause OpenSSL to crash, resulting in a denial of service, or
+possibly execute arbitrary code. (CVE-2016-0797)
+
+Emilia K?sper discovered that OpenSSL incorrectly handled memory when
+performing SRP user database lookups. A remote attacker could possibly use
+this issue to cause OpenSSL to consume memory, resulting in a denial of
+service. (CVE-2016-0798)
+
+Guido Vranken discovered that OpenSSL incorrectly handled memory when
+printing very long strings. A remote attacker could use this issue to cause
+OpenSSL to crash, resulting in a denial of service, or possibly execute
+arbitrary code. (CVE-2016-0799)
+
+Update instructions:
+
+The problem can be corrected by updating your system to the following
+package versions:
+
+Ubuntu 15.10:
+  libssl1.0.0                     1.0.2d-0ubuntu1.4
+
+Ubuntu 14.04 LTS:
+  libssl1.0.0                     1.0.1f-1ubuntu2.18
+
+Ubuntu 12.04 LTS:
+  libssl1.0.0                     1.0.1-4ubuntu5.35
+
+After a standard system update you need to reboot your computer to make
+all the necessary changes.
+
+References:
+  http://www.ubuntu.com/usn/usn-2914-1
+  CVE-2016-0702, CVE-2016-0705, CVE-2016-0797, CVE-2016-0798,
+  CVE-2016-0799
+
+Package Information:
+  https://launchpad.net/ubuntu/+source/openssl/1.0.2d-0ubuntu1.4
+  https://launchpad.net/ubuntu/+source/openssl/1.0.1f-1ubuntu2.18
+  https://launchpad.net/ubuntu/+source/openssl/1.0.1-4ubuntu5.35
+
+
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 819 bytes
+Desc: OpenPGP digital signature
+URL: <https://lists.ubuntu.com/archives/ubuntu-security-announce/attachments/20160301/be6c528b/attachment.pgp>
+
+From marc.deslauriers at canonical.com  Tue Mar  1 18:56:05 2016
+From: marc.deslauriers at canonical.com (Marc Deslauriers)
+Date: Tue, 1 Mar 2016 13:56:05 -0500
+Subject: [USN-2915-1] Django vulnerabilities
+Message-ID: <56D5E5C5.5080805@canonical.com>
+
+==========================================================================
+Ubuntu Security Notice USN-2915-1
+March 01, 2016
+
+python-django vulnerabilities
+==========================================================================
+
+A security issue affects these releases of Ubuntu and its derivatives:
+
+- Ubuntu 15.10
+- Ubuntu 14.04 LTS
+- Ubuntu 12.04 LTS
+
+Summary:
+
+Several security issues were fixed in Django.
+
+Software Description:
+- python-django: High-level Python web development framework
+
+Details:
+
+Mark Striemer discovered that Django incorrectly handled user-supplied
+redirect URLs containing basic authentication credentials. A remote
+attacker could possibly use this issue to perform a cross-site scripting
+attack or a malicious redirect. (CVE-2016-2512)
+
+Sjoerd Job Postmus discovered that Django incorrectly handled timing when
+doing password hashing operations. A remote attacker could possibly use
+this issue to perform user enumeration. (CVE-2016-2513)
+
+Update instructions:
+
+The problem can be corrected by updating your system to the following
+package versions:
+
+Ubuntu 15.10:
+  python-django                   1.7.9-1ubuntu5.2
+  python3-django                  1.7.9-1ubuntu5.2
+
+Ubuntu 14.04 LTS:
+  python-django                   1.6.1-2ubuntu0.12
+
+Ubuntu 12.04 LTS:
+  python-django                   1.3.1-4ubuntu1.20
+
+In general, a standard system update will make all the necessary changes.
+
+References:
+  http://www.ubuntu.com/usn/usn-2915-1
+  CVE-2016-2512, CVE-2016-2513
+
+Package Information:
+  https://launchpad.net/ubuntu/+source/python-django/1.7.9-1ubuntu5.2
+  https://launchpad.net/ubuntu/+source/python-django/1.6.1-2ubuntu0.12
+  https://launchpad.net/ubuntu/+source/python-django/1.3.1-4ubuntu1.20
+
+
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 819 bytes
+Desc: OpenPGP digital signature
+URL: <https://lists.ubuntu.com/archives/ubuntu-security-announce/attachments/20160301/678d1b8c/attachment.pgp>
+
+From marc.deslauriers at canonical.com  Wed Mar  2 14:10:45 2016
+From: marc.deslauriers at canonical.com (Marc Deslauriers)
+Date: Wed, 2 Mar 2016 09:10:45 -0500
+Subject: [USN-2916-1] Perl vulnerabilities
+Message-ID: <56D6F465.3020603@canonical.com>
+
+==========================================================================
+Ubuntu Security Notice USN-2916-1
+March 02, 2016
+
+perl vulnerabilities
+==========================================================================
+
+A security issue affects these releases of Ubuntu and its derivatives:
+
+- Ubuntu 15.10
+- Ubuntu 14.04 LTS
+- Ubuntu 12.04 LTS
+
+Summary:
+
+Several security issues were fixed in Perl.
+
+Software Description:
+- perl: Practical Extraction and Report Language
+
+Details:
+
+It was discovered that Perl incorrectly handled certain regular expressions
+with an invalid backreference. An attacker could use this issue to cause
+Perl to crash, resulting in a denial of service, or possibly execute
+arbitrary code. (CVE-2013-7422)
+
+Markus Vervier discovered that Perl incorrectly handled nesting in the
+Data::Dumper module. An attacker could use this issue to cause Perl to
+consume memory and crash, resulting in a denial of service. (CVE-2014-4330)
+
+Stephane Chazelas discovered that Perl incorrectly handled duplicate
+environment variables. An attacker could possibly use this issue to bypass
+the taint protection mechanism. (CVE-2016-2381)
+
+Update instructions:
+
+The problem can be corrected by updating your system to the following
+package versions:
+
+Ubuntu 15.10:
+  perl                            5.20.2-6ubuntu0.2
+
+Ubuntu 14.04 LTS:
+  perl                            5.18.2-2ubuntu1.1
+
+Ubuntu 12.04 LTS:
+  perl                            5.14.2-6ubuntu2.5
+
+In general, a standard system update will make all the necessary changes.
+
+References:
+  http://www.ubuntu.com/usn/usn-2916-1
+  CVE-2013-7422, CVE-2014-4330, CVE-2016-2381
+
+Package Information:
+  https://launchpad.net/ubuntu/+source/perl/5.20.2-6ubuntu0.2
+  https://launchpad.net/ubuntu/+source/perl/5.18.2-2ubuntu1.1
+  https://launchpad.net/ubuntu/+source/perl/5.14.2-6ubuntu2.5
+
+
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 819 bytes
+Desc: OpenPGP digital signature
+URL: <https://lists.ubuntu.com/archives/ubuntu-security-announce/attachments/20160302/701fe8df/attachment.pgp>
+
+From marc.deslauriers at canonical.com  Thu Mar  3 14:56:18 2016
+From: marc.deslauriers at canonical.com (Marc Deslauriers)
+Date: Thu, 3 Mar 2016 09:56:18 -0500
+Subject: [USN-2918-1] pixman vulnerability
+Message-ID: <56D85092.9000900@canonical.com>
+
+==========================================================================
+Ubuntu Security Notice USN-2918-1
+March 03, 2016
+
+pixman vulnerability
+==========================================================================
+
+A security issue affects these releases of Ubuntu and its derivatives:
+
+- Ubuntu 14.04 LTS
+- Ubuntu 12.04 LTS
+
+Summary:
+
+pixman could be made to crash or run programs as your login if it processed
+specially crafted data.
+
+Software Description:
+- pixman: pixel-manipulation library for X and cairo
+
+Details:
+
+Vincent LE GARREC discovered an integer underflow in pixman. If a user were
+tricked into opening a specially crafted file, a remote attacker could
+cause pixman to crash, resulting in a denial of service, or possibly
+execute arbitrary code.
+
+Update instructions:
+
+The problem can be corrected by updating your system to the following
+package versions:
+
+Ubuntu 14.04 LTS:
+  libpixman-1-0                   0.30.2-2ubuntu1.1
+
+Ubuntu 12.04 LTS:
+  libpixman-1-0                   0.30.2-1ubuntu0.0.0.0.3
+
+After a standard system update you need to restart your session to make
+all the necessary changes.
+
+References:
+  http://www.ubuntu.com/usn/usn-2918-1
+  CVE-2014-9766
+
+Package Information:
+  https://launchpad.net/ubuntu/+source/pixman/0.30.2-2ubuntu1.1
+  https://launchpad.net/ubuntu/+source/pixman/0.30.2-1ubuntu0.0.0.0.3
+
+
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 819 bytes
+Desc: OpenPGP digital signature
+URL: <https://lists.ubuntu.com/archives/ubuntu-security-announce/attachments/20160303/b0983445/attachment.pgp>
+
+From tyhicks at canonical.com  Thu Mar  3 15:17:57 2016
+From: tyhicks at canonical.com (Tyler Hicks)
+Date: Thu, 3 Mar 2016 09:17:57 -0600
+Subject: [USN-2919-1] JasPer vulnerabilities
+Message-ID: <20160303151756.GA25965@boyd>
+
+==========================================================================
+Ubuntu Security Notice USN-2919-1
+March 03, 2016
+
+jasper vulnerabilities
+==========================================================================
+
+A security issue affects these releases of Ubuntu and its derivatives:
+
+- Ubuntu 15.10
+- Ubuntu 14.04 LTS
+- Ubuntu 12.04 LTS
+
+Summary:
+
+Several security issues were fixed in JasPer.
+
+Software Description:
+- jasper: Library for manipulating JPEG-2000 files
+
+Details:
+
+Jacob Baines discovered that JasPer incorrectly handled ICC color profiles
+in JPEG-2000 image files. If a user were tricked into opening a specially
+crafted JPEG-2000 image file, a remote attacker could cause JasPer to
+crash or possibly execute arbitrary code with user privileges.
+(CVE-2016-1577)
+
+Tyler Hicks discovered that JasPer incorrectly handled memory when
+processing JPEG-2000 image files. If a user were tricked into opening a
+specially crafted JPEG-2000 image file, a remote attacker could cause
+JasPer to consume memory, resulting in a denial of service.
+(CVE-2016-2116)
+
+Update instructions:
+
+The problem can be corrected by updating your system to the following
+package versions:
+
+Ubuntu 15.10:
+  libjasper1                      1.900.1-debian1-2.4ubuntu0.15.10.1
+
+Ubuntu 14.04 LTS:
+  libjasper1                      1.900.1-14ubuntu3.3
+
+Ubuntu 12.04 LTS:
+  libjasper1                      1.900.1-13ubuntu0.3
+
+In general, a standard system update will make all the necessary changes.
+
+References:
+  http://www.ubuntu.com/usn/usn-2919-1
+  CVE-2016-1577, CVE-2016-2116
+
+Package Information:
+  https://launchpad.net/ubuntu/+source/jasper/1.900.1-debian1-2.4ubuntu0.15.10.1
+  https://launchpad.net/ubuntu/+source/jasper/1.900.1-14ubuntu3.3
+  https://launchpad.net/ubuntu/+source/jasper/1.900.1-13ubuntu0.3
+
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 819 bytes
+Desc: not available
+URL: <https://lists.ubuntu.com/archives/ubuntu-security-announce/attachments/20160303/735a5806/attachment.pgp>
+
+From marc.deslauriers at canonical.com  Mon Mar  7 13:31:11 2016
+From: marc.deslauriers at canonical.com (Marc Deslauriers)
+Date: Mon, 7 Mar 2016 08:31:11 -0500
+Subject: [USN-2921-1] Squid vulnerabilities
+Message-ID: <56DD829F.9050903@canonical.com>
+
+==========================================================================
+Ubuntu Security Notice USN-2921-1
+March 07, 2016
+
+squid3 vulnerabilities
+==========================================================================
+
+A security issue affects these releases of Ubuntu and its derivatives:
+
+- Ubuntu 15.10
+- Ubuntu 14.04 LTS
+- Ubuntu 12.04 LTS
+
+Summary:
+
+Several security issues were fixed in Squid.
+
+Software Description:
+- squid3: Web proxy cache server
+
+Details:
+
+Sebastian Krahmer discovered that Squid incorrectly handled certain SNMP
+requests. If SNMP is enabled, a remote attacker could use this issue to
+cause Squid to crash, resulting in a denial of service, or possibly execute
+arbitrary code. (CVE-2014-6270)
+
+Alex Rousskov discovered that Squid incorrectly handled certain malformed
+responses. A remote attacker could possibly use this issue to cause Squid
+to crash, resulting in a denial of service. (CVE-2016-2571)
+
+Update instructions:
+
+The problem can be corrected by updating your system to the following
+package versions:
+
+Ubuntu 15.10:
+  squid3                          3.3.8-1ubuntu16.2
+
+Ubuntu 14.04 LTS:
+  squid3                          3.3.8-1ubuntu6.6
+
+Ubuntu 12.04 LTS:
+  squid3                          3.1.19-1ubuntu3.12.04.6
+
+In general, a standard system update will make all the necessary changes.
+
+References:
+  http://www.ubuntu.com/usn/usn-2921-1
+  CVE-2014-6270, CVE-2016-2571
+
+Package Information:
+  https://launchpad.net/ubuntu/+source/squid3/3.3.8-1ubuntu16.2
+  https://launchpad.net/ubuntu/+source/squid3/3.3.8-1ubuntu6.6
+  https://launchpad.net/ubuntu/+source/squid3/3.1.19-1ubuntu3.12.04.6
+
+
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 819 bytes
+Desc: OpenPGP digital signature
+URL: <https://lists.ubuntu.com/archives/ubuntu-security-announce/attachments/20160307/be32a177/attachment.pgp>
+
+From marc.deslauriers at canonical.com  Mon Mar  7 13:30:52 2016
+From: marc.deslauriers at canonical.com (Marc Deslauriers)
+Date: Mon, 7 Mar 2016 08:30:52 -0500
+Subject: [USN-2915-2] Django regression
+Message-ID: <56DD828C.90104@canonical.com>
+
+==========================================================================
+Ubuntu Security Notice USN-2915-2
+March 07, 2016
+
+python-django regression
+==========================================================================
+
+A security issue affects these releases of Ubuntu and its derivatives:
+
+- Ubuntu 15.10
+- Ubuntu 14.04 LTS
+
+Summary:
+
+USN-2915-1 introduced a regression in Django.
+
+Software Description:
+- python-django: High-level Python web development framework
+
+Details:
+
+USN-2915-1 fixed vulnerabilities in Django. The upstream fix for
+CVE-2016-2512 introduced a regression for certain applications. This update
+fixes the problem.
+
+Original advisory details:
+
+ Mark Striemer discovered that Django incorrectly handled user-supplied
+ redirect URLs containing basic authentication credentials. A remote
+ attacker could possibly use this issue to perform a cross-site scripting
+ attack or a malicious redirect. (CVE-2016-2512)
+  Sjoerd Job Postmus discovered that Django incorrectly handled timing when
+ doing password hashing operations. A remote attacker could possibly use
+ this issue to perform user enumeration. (CVE-2016-2513)
+
+Update instructions:
+
+The problem can be corrected by updating your system to the following
+package versions:
+
+Ubuntu 15.10:
+  python-django                   1.7.9-1ubuntu5.3
+  python3-django                  1.7.9-1ubuntu5.3
+
+Ubuntu 14.04 LTS:
+  python-django                   1.6.1-2ubuntu0.13
+
+In general, a standard system update will make all the necessary changes.
+
+References:
+  http://www.ubuntu.com/usn/usn-2915-2
+  http://www.ubuntu.com/usn/usn-2915-1
+  https://launchpad.net/bugs/1553251
+
+Package Information:
+  https://launchpad.net/ubuntu/+source/python-django/1.7.9-1ubuntu5.3
+  https://launchpad.net/ubuntu/+source/python-django/1.6.1-2ubuntu0.13
+
+
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 819 bytes
+Desc: OpenPGP digital signature
+URL: <https://lists.ubuntu.com/archives/ubuntu-security-announce/attachments/20160307/425961c8/attachment.pgp>
+
+From marc.deslauriers at canonical.com  Mon Mar  7 19:46:25 2016
+From: marc.deslauriers at canonical.com (Marc Deslauriers)
+Date: Mon, 7 Mar 2016 14:46:25 -0500
+Subject: [USN-2915-3] Django regression
+Message-ID: <56DDDA91.2020608@canonical.com>
+
+==========================================================================
+Ubuntu Security Notice USN-2915-3
+March 07, 2016
+
+python-django regression
+==========================================================================
+
+A security issue affects these releases of Ubuntu and its derivatives:
+
+- Ubuntu 15.10
+- Ubuntu 14.04 LTS
+
+Summary:
+
+USN-2915-1 introduced a regression in Django.
+
+Software Description:
+- python-django: High-level Python web development framework
+
+Details:
+
+USN-2915-1 fixed vulnerabilities in Django. The upstream fix for
+CVE-2016-2512 introduced a regression for certain applications. This update
+fixes the problem by applying the complete upstream regression fix.
+
+Original advisory details:
+
+ Mark Striemer discovered that Django incorrectly handled user-supplied
+ redirect URLs containing basic authentication credentials. A remote
+ attacker could possibly use this issue to perform a cross-site scripting
+ attack or a malicious redirect. (CVE-2016-2512)
+  Sjoerd Job Postmus discovered that Django incorrectly handled timing when
+ doing password hashing operations. A remote attacker could possibly use
+ this issue to perform user enumeration. (CVE-2016-2513)
+
+Update instructions:
+
+The problem can be corrected by updating your system to the following
+package versions:
+
+Ubuntu 15.10:
+  python-django                   1.7.9-1ubuntu5.4
+  python3-django                  1.7.9-1ubuntu5.4
+
+Ubuntu 14.04 LTS:
+  python-django                   1.6.1-2ubuntu0.14
+
+In general, a standard system update will make all the necessary changes.
+
+References:
+  http://www.ubuntu.com/usn/usn-2915-3
+  http://www.ubuntu.com/usn/usn-2915-1
+  https://launchpad.net/bugs/1553251
+
+Package Information:
+  https://launchpad.net/ubuntu/+source/python-django/1.7.9-1ubuntu5.4
+  https://launchpad.net/ubuntu/+source/python-django/1.6.1-2ubuntu0.14
+
+
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 819 bytes
+Desc: OpenPGP digital signature
+URL: <https://lists.ubuntu.com/archives/ubuntu-security-announce/attachments/20160307/f5ccd9e7/attachment.pgp>
+
+From chris.coulson at canonical.com  Tue Mar  8 12:30:18 2016
+From: chris.coulson at canonical.com (Chris Coulson)
+Date: Tue, 8 Mar 2016 12:30:18 +0000
+Subject: [USN-2904-1] Thunderbird vulnerabilities
+Message-ID: <aae871fa-44fd-a676-81df-763d8e7c5417@canonical.com>
+
+==========================================================================
+Ubuntu Security Notice USN-2904-1
+March 08, 2016
+
+thunderbird vulnerabilities
+==========================================================================
+
+A security issue affects these releases of Ubuntu and its derivatives:
+
+- Ubuntu 15.10
+- Ubuntu 14.04 LTS
+- Ubuntu 12.04 LTS
+
+Summary:
+
+Several security issues were fixed in Thunderbird.
+
+Software Description:
+- thunderbird: Mozilla Open Source mail and newsgroup client
+
+Details:
+
+Karthikeyan Bhargavan and Gaetan Leurent discovered that NSS incorrectly
+allowed MD5 to be used for TLS 1.2 connections. If a remote attacker were
+able to perform a man-in-the-middle attack, this flaw could be exploited to
+view sensitive information. (CVE-2015-7575)
+
+Yves Younan discovered that graphite2 incorrectly handled certain malformed
+fonts. If a user were tricked into opening a specially crafted website in a
+browsing context, an attacker could potentially exploit this to cause a
+denial of service via application crash, or execute arbitary code with the
+privileges of the user invoking Thunderbird. (CVE-2016-1523)
+
+Bob Clary, Christian Holler, Nils Ohlmeier, Gary Kwong, Jesse Ruderman,
+Carsten Book, and Randell Jesup discovered multiple memory safety issues
+in Thunderbird. If a user were tricked in to opening a specially crafted
+website in a browsing context, an attacker could potentially exploit these
+to cause a denial of service via application crash, or execute arbitrary
+code with the privileges of the user invoking Thunderbird. (CVE-2016-1930)
+
+Aki Helin discovered a buffer overflow when rendering WebGL content in
+some circumstances. If a user were tricked in to opening a specially
+crafted website in a browsing context, an attacker could potentially
+exploit this to cause a denial of service via application crash, or
+execute arbitrary code with the privileges of the user invoking
+Thunderbird. (CVE-2016-1935)
+
+Update instructions:
+
+The problem can be corrected by updating your system to the following
+package versions:
+
+Ubuntu 15.10:
+  thunderbird                     1:38.6.0+build1-0ubuntu0.15.10.1
+
+Ubuntu 14.04 LTS:
+  thunderbird                     1:38.6.0+build1-0ubuntu0.14.04.1
+
+Ubuntu 12.04 LTS:
+  thunderbird                     1:38.6.0+build1-0ubuntu0.12.04.1
+
+After a standard system update you need to restart Thunderbird to make
+all the necessary changes.
+
+References:
+  http://www.ubuntu.com/usn/usn-2904-1
+  CVE-2015-7575, CVE-2016-1523, CVE-2016-1930, CVE-2016-1935
+
+Package Information:
+  https://launchpad.net/ubuntu/+source/thunderbird/1:38.6.0+build1-0ubuntu0.15.10.1
+  https://launchpad.net/ubuntu/+source/thunderbird/1:38.6.0+build1-0ubuntu0.14.04.1
+  https://launchpad.net/ubuntu/+source/thunderbird/1:38.6.0+build1-0ubuntu0.12.04.1
+
+
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 473 bytes
+Desc: OpenPGP digital signature
+URL: <https://lists.ubuntu.com/archives/ubuntu-security-announce/attachments/20160308/637e257b/attachment.pgp>
+
+From marc.deslauriers at canonical.com  Tue Mar  8 14:21:04 2016
+From: marc.deslauriers at canonical.com (Marc Deslauriers)
+Date: Tue, 8 Mar 2016 09:21:04 -0500
+Subject: [USN-2922-1] Samba vulnerabilities
+Message-ID: <56DEDFD0.1010203@canonical.com>
+
+==========================================================================
+Ubuntu Security Notice USN-2922-1
+March 08, 2016
+
+samba vulnerabilities
+==========================================================================
+
+A security issue affects these releases of Ubuntu and its derivatives:
+
+- Ubuntu 15.10
+- Ubuntu 14.04 LTS
+- Ubuntu 12.04 LTS
+
+Summary:
+
+Several security issues were fixed in Samba.
+
+Software Description:
+- samba: SMB/CIFS file, print, and login server for Unix
+
+Details:
+
+Jeremy Allison discovered that Samba incorrectly handled ACLs on symlink
+paths. A remote attacker could use this issue to overwrite the ownership of
+ACLs using symlinks. (CVE-2015-7560)
+
+Garming Sam and Douglas Bagnall discovered that the Samba internal DNS
+server incorrectly handled certain DNS TXT records. A remote attacker could
+use this issue to cause Samba to crash, resulting in a denial of service,
+or possibly obtain uninitialized memory contents. This issue only applied
+to Ubuntu 14.04 LTS and Ubuntu 15.10. (CVE-2016-0771)
+
+It was discovered that the Samba Web Administration Tool (SWAT) was
+vulnerable to clickjacking and cross-site request forgery attacks. This
+issue only affected Ubuntu 12.04 LTS. (CVE-2013-0213, CVE-2013-0214)
+
+Update instructions:
+
+The problem can be corrected by updating your system to the following
+package versions:
+
+Ubuntu 15.10:
+  samba                           2:4.1.17+dfsg-4ubuntu3.3
+
+Ubuntu 14.04 LTS:
+  samba                           2:4.1.6+dfsg-1ubuntu2.14.04.13
+
+Ubuntu 12.04 LTS:
+  samba                           2:3.6.3-2ubuntu2.17
+  swat                            2:3.6.3-2ubuntu2.17
+
+In general, a standard system update will make all the necessary changes.
+
+References:
+  http://www.ubuntu.com/usn/usn-2922-1
+  CVE-2013-0213, CVE-2013-0214, CVE-2015-7560, CVE-2016-0771
+
+Package Information:
+  https://launchpad.net/ubuntu/+source/samba/2:4.1.17+dfsg-4ubuntu3.3
+  https://launchpad.net/ubuntu/+source/samba/2:4.1.6+dfsg-1ubuntu2.14.04.13
+  https://launchpad.net/ubuntu/+source/samba/2:3.6.3-2ubuntu2.17
+
+
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 819 bytes
+Desc: OpenPGP digital signature
+URL: <https://lists.ubuntu.com/archives/ubuntu-security-announce/attachments/20160308/e3b422f7/attachment.pgp>
+
+From marc.deslauriers at canonical.com  Tue Mar  8 14:21:23 2016
+From: marc.deslauriers at canonical.com (Marc Deslauriers)
+Date: Tue, 8 Mar 2016 09:21:23 -0500
+Subject: [USN-2923-1] BeanShell vulnerability
+Message-ID: <56DEDFE3.7040401@canonical.com>
+
+==========================================================================
+Ubuntu Security Notice USN-2923-1
+March 08, 2016
+
+bsh vulnerability
+==========================================================================
+
+A security issue affects these releases of Ubuntu and its derivatives:
+
+- Ubuntu 15.10
+- Ubuntu 14.04 LTS
+- Ubuntu 12.04 LTS
+
+Summary:
+
+BeanShell could be made to run programs if it processed specially crafted
+input.
+
+Software Description:
+- bsh: Java scripting environment
+
+Details:
+
+Alvaro Mu?oz and Christian Schneider discovered that BeanShell incorrectly
+handled deserialization. A remote attacker could possibly use this issue
+to execute arbitrary code.
+
+Update instructions:
+
+The problem can be corrected by updating your system to the following
+package versions:
+
+Ubuntu 15.10:
+  bsh                             2.0b4-15ubuntu0.15.10.1
+  libbsh-java                     2.0b4-15ubuntu0.15.10.1
+
+Ubuntu 14.04 LTS:
+  bsh                             2.0b4-15ubuntu0.14.04.1
+  libbsh-java                     2.0b4-15ubuntu0.14.04.1
+
+Ubuntu 12.04 LTS:
+  bsh                             2.0b4-12ubuntu0.1
+  bsh-gcj                         2.0b4-12ubuntu0.1
+
+In general, a standard system update will make all the necessary changes.
+
+References:
+  http://www.ubuntu.com/usn/usn-2923-1
+  CVE-2016-2510
+
+Package Information:
+  https://launchpad.net/ubuntu/+source/bsh/2.0b4-15ubuntu0.15.10.1
+  https://launchpad.net/ubuntu/+source/bsh/2.0b4-15ubuntu0.14.04.1
+  https://launchpad.net/ubuntu/+source/bsh/2.0b4-12ubuntu0.1
+
+
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 819 bytes
+Desc: OpenPGP digital signature
+URL: <https://lists.ubuntu.com/archives/ubuntu-security-announce/attachments/20160308/b6b2a2af/attachment.pgp>
+
+From chris.coulson at canonical.com  Wed Mar  9 15:39:41 2016
+From: chris.coulson at canonical.com (Chris Coulson)
+Date: Wed, 9 Mar 2016 15:39:41 +0000
+Subject: [USN-2917-1] Firefox vulnerabilities
+Message-ID: <119fa36a-4b00-4af4-eb3d-b515b80e2668@canonical.com>
+
+==========================================================================
+Ubuntu Security Notice USN-2917-1
+March 09, 2016
+
+firefox vulnerabilities
+==========================================================================
+
+A security issue affects these releases of Ubuntu and its derivatives:
+
+- Ubuntu 15.10
+- Ubuntu 14.04 LTS
+- Ubuntu 12.04 LTS
+
+Summary:
+
+Firefox could be made to crash or run programs as your login if it
+opened a malicious website.
+
+Software Description:
+- firefox: Mozilla Open Source web browser
+
+Details:
+
+Francis Gabriel discovered a buffer overflow during ASN.1 decoding in NSS.
+If a user were tricked in to opening a specially crafted website, an
+attacker could potentially exploit this to cause a denial of service via
+application crash, or execute arbitrary code with the privileges of the
+user invoking Firefox. (CVE-2016-1950)
+
+Bob Clary, Christoph Diehl, Christian Holler, Andrew McCreight, Daniel
+Holbert, Jesse Ruderman, Randell Jesup, Carsten Book, Gian-Carlo Pascutto,
+Tyson Smith, Andrea Marchesini, and Jukka Jyl?nki discovered multiple
+memory safety issues in Firefox. If a user were tricked in to opening a
+specially crafted website, an attacker could potentially exploit these to
+cause a denial of service via application crash, or execute arbitrary code
+with the privileges of the user invoking Firefox. (CVE-2016-1952,
+CVE-2016-1953)
+
+Nicolas Golubovic discovered that CSP violation reports can be used to
+overwrite local files. If a user were tricked in to opening a specially
+crafted website with addon signing disabled and unpacked addons installed,
+an attacker could potentially exploit this to gain additional privileges.
+(CVE-2016-1954)
+
+Muneaki Nishimura discovered that CSP violation reports contained full
+paths for cross-origin iframe navigations. An attacker could potentially
+exploit this to steal confidential data. (CVE-2016-1955)
+
+Ucha Gobejishvili discovered that performing certain WebGL operations
+resulted in memory resource exhaustion with some Intel GPUs, requiring
+a reboot. If a user were tricked in to opening a specially crafted
+website, an attacker could potentially exploit this to cause a denial
+of service. (CVE-2016-1956)
+
+Jose Martinez and Romina Santillan discovered a memory leak in
+libstagefright during MPEG4 video file processing in some circumstances.
+If a user were tricked in to opening a specially crafted website, an
+attacker could potentially exploit this to cause a denial of service via
+memory exhaustion. (CVE-2016-1957)
+
+Abdulrahman Alqabandi discovered that the addressbar could be blank or
+filled with page defined content in some circumstances. If a user were
+tricked in to opening a specially crafted website, an attacker could
+potentially exploit this to conduct URL spoofing attacks. (CVE-2016-1958)
+
+Looben Yang discovered an out-of-bounds read in Service Worker Manager. If
+a user were tricked in to opening a specially crafted website, an attacker
+could potentially exploit this to cause a denial of service via
+application crash, or execute arbitrary code with the privileges of the
+user invoking Firefox. (CVE-2016-1959)
+
+A use-after-free was discovered in the HTML5 string parser. If a user were
+tricked in to opening a specially crafted website, an attacker could
+potentially exploit this to cause a denial of service via application
+crash, or execute arbitrary code with the privileges of the user invoking
+Firefox. (CVE-2016-1960)
+
+A use-after-free was discovered in the SetBody function of HTMLDocument.
+If a user were tricked in to opening a specially crafted website, an
+attacker could potentially exploit this to cause a denial of service via
+application crash, or execute arbitrary code with the privileges of the
+user invoking Firefox. (CVE-2016-1961)
+
+Dominique Haza?l-Massieux discovered a use-after-free when using multiple
+WebRTC data channels. If a user were tricked in to opening a specially
+crafted website, an attacker could potentially exploit this to cause a
+denial of service via application crash, or execute arbitrary code with
+the privileges of the user invoking Firefox. (CVE-2016-1962)
+
+It was discovered that Firefox crashes when local files are modified
+whilst being read by the FileReader API. If a user were tricked in to
+opening a specially crafted website, an attacker could potentially exploit
+this to execute arbitrary code with the privileges of the user invoking
+Firefox. (CVE-2016-1963)
+
+Nicolas Gr?goire discovered a use-after-free during XML transformations.
+If a user were tricked in to opening a specially crafted website, an
+attacker could potentially exploit this to cause a denial of service via
+application crash, or execute arbitrary code with the privileges of the
+user invoking Firefox. (CVE-2016-1964)
+
+Tsubasa Iinuma discovered a mechanism to cause the addressbar to display
+an incorrect URL, using history navigations and the Location protocol
+property. If a user were tricked in to opening a specially crafted
+website, an attacker could potentially exploit this to conduct URL
+spoofing attacks. (CVE-2016-1965)
+
+A memory corruption issues was discovered in the NPAPI subsystem. If
+a user were tricked in to opening a specially crafted website with a
+malicious plugin installed, an attacker could potentially exploit this
+to cause a denial of service via application crash, or execute arbitrary
+code with the privileges of the user invoking Firefox. (CVE-2016-1966)
+
+Jordi Chancel discovered a same-origin-policy bypass when using
+performance.getEntries and history navigation with session restore. If
+a user were tricked in to opening a specially crafted website, an attacker
+could potentially exploit this to steal confidential data. (CVE-2016-1967)
+
+Luke Li discovered a buffer overflow during Brotli decompression in some
+circumstances. If a user were tricked in to opening a specially crafted
+website, an attacker could potentially exploit this to cause a denial of
+service via application crash, or execute arbitrary code with the
+privileges of the user invoking Firefox. (CVE-2016-1968)
+
+Ronald Crane discovered a use-after-free in GetStaticInstance in WebRTC.
+If a user were tricked in to opening a specially crafted website, an
+attacker could potentially exploit this to cause a denial of service via
+application crash, or execute arbitrary code with the privileges of the
+user invoking Firefox. (CVE-2016-1973)
+
+Ronald Crane discovered an out-of-bounds read following a failed
+allocation in the HTML parser in some circumstances. If a user were
+tricked in to opening a specially crafted website, an attacker could
+potentially exploit this to cause a denial of service via application
+crash, or execute arbitrary code with the privileges of the user invoking
+Firefox. (CVE-2016-1974)
+
+Holger Fuhrmannek, Tyson Smith and Holger Fuhrmannek reported multiple
+memory safety issues in the Graphite 2 library. If a user were tricked in
+to opening a specially crafted website, an attacker could potentially
+exploit these to cause a denial of service via application crash, or
+execute arbitrary code with the privileges of the user invoking Firefox.
+(CVE-2016-1977, CVE-2016-2790, CVE-2016-2791, CVE-2016-2792,
+CVE-2016-2793, CVE-2016-2794, CVE-2016-2795, CVE-2016-2796, CVE-2016-2797,
+CVE-2016-2798, CVE-2016-2799, CVE-2016-2800, CVE-2016-2801, CVE-2016-2802)
+
+Update instructions:
+
+The problem can be corrected by updating your system to the following
+package versions:
+
+Ubuntu 15.10:
+  firefox                         45.0+build2-0ubuntu0.15.10.1
+
+Ubuntu 14.04 LTS:
+  firefox                         45.0+build2-0ubuntu0.14.04.1
+
+Ubuntu 12.04 LTS:
+  firefox                         45.0+build2-0ubuntu0.12.04.1
+
+After a standard system update you need to restart Firefox to make
+all the necessary changes.
+
+References:
+  http://www.ubuntu.com/usn/usn-2917-1
+  CVE-2016-1950, CVE-2016-1952, CVE-2016-1953, CVE-2016-1954,
+  CVE-2016-1955, CVE-2016-1956, CVE-2016-1957, CVE-2016-1958,
+  CVE-2016-1959, CVE-2016-1960, CVE-2016-1961, CVE-2016-1962,
+  CVE-2016-1963, CVE-2016-1964, CVE-2016-1965, CVE-2016-1966,
+  CVE-2016-1967, CVE-2016-1968, CVE-2016-1973, CVE-2016-1974,
+  CVE-2016-1977, CVE-2016-2790, CVE-2016-2791, CVE-2016-2792,
+  CVE-2016-2793, CVE-2016-2794, CVE-2016-2795, CVE-2016-2796,
+  CVE-2016-2797, CVE-2016-2798, CVE-2016-2799, CVE-2016-2800,
+  CVE-2016-2801, CVE-2016-2802
+
+Package Information:
+  https://launchpad.net/ubuntu/+source/firefox/45.0+build2-0ubuntu0.15.10.1
+  https://launchpad.net/ubuntu/+source/firefox/45.0+build2-0ubuntu0.14.04.1
+  https://launchpad.net/ubuntu/+source/firefox/45.0+build2-0ubuntu0.12.04.1
+
+
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 473 bytes
+Desc: OpenPGP digital signature
+URL: <https://lists.ubuntu.com/archives/ubuntu-security-announce/attachments/20160309/23c73430/attachment.pgp>
+
+From marc.deslauriers at canonical.com  Wed Mar  9 16:52:00 2016
+From: marc.deslauriers at canonical.com (Marc Deslauriers)
+Date: Wed, 9 Mar 2016 11:52:00 -0500
+Subject: [USN-2924-1] NSS vulnerability
+Message-ID: <56E054B0.6060406@canonical.com>
+
+==========================================================================
+Ubuntu Security Notice USN-2924-1
+March 09, 2016
+
+nss vulnerability
+==========================================================================
+
+A security issue affects these releases of Ubuntu and its derivatives:
+
+- Ubuntu 15.10
+- Ubuntu 14.04 LTS
+- Ubuntu 12.04 LTS
+
+Summary:
+
+NSS could be made to crash or run programs if it received specially crafted
+input.
+
+Software Description:
+- nss: Network Security Service library
+
+Details:
+
+Francis Gabriel discovered that NSS incorrectly handled decoding certain
+ASN.1 data. An remote attacker could use this issue to cause NSS to crash,
+resulting in a denial of service, or possibly execute arbitrary code.
+
+Update instructions:
+
+The problem can be corrected by updating your system to the following
+package versions:
+
+Ubuntu 15.10:
+  libnss3                         2:3.21-0ubuntu0.15.10.2
+
+Ubuntu 14.04 LTS:
+  libnss3                         2:3.21-0ubuntu0.14.04.2
+
+Ubuntu 12.04 LTS:
+  libnss3                         2:3.21-0ubuntu0.12.04.3
+
+After a standard system update you need to restart any applications that
+use NSS, such as Evolution and Chromium, to make all the necessary changes.
+
+References:
+  http://www.ubuntu.com/usn/usn-2924-1
+  CVE-2016-1950
+
+Package Information:
+  https://launchpad.net/ubuntu/+source/nss/2:3.21-0ubuntu0.15.10.2
+  https://launchpad.net/ubuntu/+source/nss/2:3.21-0ubuntu0.14.04.2
+  https://launchpad.net/ubuntu/+source/nss/2:3.21-0ubuntu0.12.04.3
+
+
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 819 bytes
+Desc: OpenPGP digital signature
+URL: <https://lists.ubuntu.com/archives/ubuntu-security-announce/attachments/20160309/e9764a8e/attachment.pgp>
+
+From marc.deslauriers at canonical.com  Wed Mar  9 20:37:50 2016
+From: marc.deslauriers at canonical.com (Marc Deslauriers)
+Date: Wed, 9 Mar 2016 15:37:50 -0500
+Subject: [USN-2925-1] Bind vulnerabilities
+Message-ID: <56E0899E.2070801@canonical.com>
+
+==========================================================================
+Ubuntu Security Notice USN-2925-1
+March 09, 2016
+
+bind9 vulnerabilities
+==========================================================================
+
+A security issue affects these releases of Ubuntu and its derivatives:
+
+- Ubuntu 15.10
+- Ubuntu 14.04 LTS
+- Ubuntu 12.04 LTS
+
+Summary:
+
+Bind could be made to crash if it received specially crafted network
+traffic.
+
+Software Description:
+- bind9: Internet Domain Name Server
+
+Details:
+
+It was discovered that Bind incorrectly handled input received by the rndc
+control channel. A remote attacker could possibly use this issue to cause
+Bind to crash, resulting in a denial of service. (CVE-2016-1285)
+
+It was discovered that Bind incorrectly parsed resource record signatures
+for DNAME resource records. A remote attacker could possibly use this issue
+to cause Bind to crash, resulting in a denial of service. (CVE-2016-1286)
+
+Update instructions:
+
+The problem can be corrected by updating your system to the following
+package versions:
+
+Ubuntu 15.10:
+  bind9                           1:9.9.5.dfsg-11ubuntu1.3
+
+Ubuntu 14.04 LTS:
+  bind9                           1:9.9.5.dfsg-3ubuntu0.8
+
+Ubuntu 12.04 LTS:
+  bind9                           1:9.8.1.dfsg.P1-4ubuntu0.16
+
+In general, a standard system update will make all the necessary changes.
+
+References:
+  http://www.ubuntu.com/usn/usn-2925-1
+  CVE-2016-1285, CVE-2016-1286
+
+Package Information:
+  https://launchpad.net/ubuntu/+source/bind9/1:9.9.5.dfsg-11ubuntu1.3
+  https://launchpad.net/ubuntu/+source/bind9/1:9.9.5.dfsg-3ubuntu0.8
+  https://launchpad.net/ubuntu/+source/bind9/1:9.8.1.dfsg.P1-4ubuntu0.16
+
+
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 819 bytes
+Desc: OpenPGP digital signature
+URL: <https://lists.ubuntu.com/archives/ubuntu-security-announce/attachments/20160309/5b48eb51/attachment.pgp>
+
+From marc.deslauriers at canonical.com  Thu Mar 10 15:58:09 2016
+From: marc.deslauriers at canonical.com (Marc Deslauriers)
+Date: Thu, 10 Mar 2016 10:58:09 -0500
+Subject: [USN-2926-1] OTR vulnerability
+Message-ID: <56E19991.2040207@canonical.com>
+
+==========================================================================
+Ubuntu Security Notice USN-2926-1
+March 10, 2016
+
+libotr vulnerability
+==========================================================================
+
+A security issue affects these releases of Ubuntu and its derivatives:
+
+- Ubuntu 12.04 LTS
+
+Summary:
+
+OTR could be made to crash or run programs if it received specially crafted
+network traffic.
+
+Software Description:
+- libotr: Off-the-Record Messaging library
+
+Details:
+
+Markus Vervier discovered that OTR incorrectly handled large incoming
+messages. A remote attacker could use this issue to cause OTR to crash,
+resulting in a denial of service, or possibly execute arbitrary code.
+
+Update instructions:
+
+The problem can be corrected by updating your system to the following
+package versions:
+
+Ubuntu 12.04 LTS:
+  libotr2                         3.2.0-4ubuntu0.3
+
+After a standard system update you need to restart OTR applications to
+make all the necessary changes
+
+References:
+  http://www.ubuntu.com/usn/usn-2926-1
+  CVE-2016-2851
+
+Package Information:
+  https://launchpad.net/ubuntu/+source/libotr/3.2.0-4ubuntu0.3
+
+
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 819 bytes
+Desc: OpenPGP digital signature
+URL: <https://lists.ubuntu.com/archives/ubuntu-security-announce/attachments/20160310/e5372c9d/attachment.pgp>
+
+From chris.coulson at canonical.com  Thu Mar 10 17:27:26 2016
+From: chris.coulson at canonical.com (Chris Coulson)
+Date: Thu, 10 Mar 2016 17:27:26 +0000
+Subject: [USN-2920-1] Oxide vulnerabilities
+Message-ID: <f6d6e54a-f260-9529-401f-b77151fc3402@canonical.com>
+
+==========================================================================
+Ubuntu Security Notice USN-2920-1
+March 10, 2016
+
+oxide-qt vulnerabilities
+==========================================================================
+
+A security issue affects these releases of Ubuntu and its derivatives:
+
+- Ubuntu 15.10
+- Ubuntu 14.04 LTS
+
+Summary:
+
+Several security issues were fixed in Oxide.
+
+Software Description:
+- oxide-qt: Web browser engine for Qt (QML plugin)
+
+Details:
+
+It was discovered that the ContainerNode::parserRemoveChild function in
+Blink mishandled widget updates in some circumstances. If a user were
+tricked in to opening a specially crafted website, an attacker could
+potentially exploit this to bypass same-origin restrictions.
+(CVE-2016-1630)
+
+It was discovered that the PPB_Flash_MessageLoop_Impl::InternalRun 
+function in Chromium mishandled nested message loops. If a user were
+tricked in to opening a specially crafted website, an attacker could
+potentially exploit this to bypass same-origin restrictions.
+(CVE-2016-1631)
+
+Multiple use-after-frees were discovered in Blink. If a user were tricked
+in to opening a specially crafted website, an attacker could potentially
+exploit these to cause a denial of service via renderer crash or execute
+arbitrary code with the privileges of the sandboxed render process.
+(CVE-2016-1633, CVE-2016-1634, CVE-2016-1644)
+
+It was discovered that the PendingScript::notifyFinished function in
+Blink relied on memory-cache information about integrity-check occurrences
+instead of integrity-check successes. If a user were tricked in to opening
+a specially crafted website, an attacker could potentially exploit this to
+bypass Subresource Integrity (SRI) protections. (CVE-2016-1636)
+
+It was discovered that the SkATan2_255 function in Skia mishandled
+arctangent calculations. If a user were tricked in to opening a specially
+crafted website, an attacker could potentially exploit this to obtain
+sensitive information. (CVE-2016-1637)
+
+A use-after-free was discovered in Chromium. If a user were tricked in to
+opening a specially crafted website, an attacker could potentially exploit
+this to cause a denial of service via application crash, or execute
+arbitrary code with the privileges of the user invoking the program.
+(CVE-2016-1641)
+
+Multiple security issues were discovered in Chromium. If a user were
+tricked in to opening a specially crafted website, an attacker could
+potentially exploit these to read uninitialized memory, cause a denial
+of service via application crash or execute arbitrary code with the
+privileges of the user invoking the program. (CVE-2016-1642)
+
+A type-confusion bug was discovered in Blink. If a user were tricked in
+to opening a specially crafted website, an attacker could potentially
+exploit this to cause a denial of service via renderer crash or execute
+arbitrary code with the privileges of the sandboxed render process.
+(CVE-2016-1643)
+
+Multiple security issues were discovered in V8. If a user were tricked
+in to opening a specially crafted website, an attacker could potentially
+exploit these to read uninitialized memory, cause a denial of service via
+renderer crash or execute arbitrary code with the privileges of the
+sandboxed render process. (CVE-2016-2843)
+
+An invalid cast was discovered in Blink. If a user were tricked in to
+opening a specially crafted website, an attacker could potentially exploit
+this to cause a denial of service via renderer crash or execute arbitrary
+code with the privileges of the sandboxed render process. (CVE-2016-2844)
+
+It was discovered that the Content Security Policy (CSP) implementation in
+Blink did not ignore a URL's path component in the case of a ServiceWorker
+fetch. If a user were tricked in to opening a specially crafted website,
+an attacker could potentially exploit this to obtain sensitive
+information. (CVE-2016-2845)
+
+Update instructions:
+
+The problem can be corrected by updating your system to the following
+package versions:
+
+Ubuntu 15.10:
+  liboxideqtcore0                 1.13.6-0ubuntu0.15.10.1
+
+Ubuntu 14.04 LTS:
+  liboxideqtcore0                 1.13.6-0ubuntu0.14.04.1
+
+In general, a standard system update will make all the necessary changes.
+
+References:
+  http://www.ubuntu.com/usn/usn-2920-1
+  CVE-2016-1630, CVE-2016-1631, CVE-2016-1633, CVE-2016-1634,
+  CVE-2016-1636, CVE-2016-1637, CVE-2016-1641, CVE-2016-1642,
+  CVE-2016-1643, CVE-2016-1644, CVE-2016-2843, CVE-2016-2844,
+  CVE-2016-2845
+
+Package Information:
+  https://launchpad.net/ubuntu/+source/oxide-qt/1.13.6-0ubuntu0.15.10.1
+  https://launchpad.net/ubuntu/+source/oxide-qt/1.13.6-0ubuntu0.14.04.1
+
+
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 473 bytes
+Desc: OpenPGP digital signature
+URL: <https://lists.ubuntu.com/archives/ubuntu-security-announce/attachments/20160310/0b7012db/attachment.pgp>
+
+From marc.deslauriers at canonical.com  Mon Mar 14 13:58:29 2016
+From: marc.deslauriers at canonical.com (Marc Deslauriers)
+Date: Mon, 14 Mar 2016 09:58:29 -0400
+Subject: [USN-2927-1] graphite2 vulnerabilities
+Message-ID: <56E6C385.3090002@canonical.com>
+
+==========================================================================
+Ubuntu Security Notice USN-2927-1
+March 14, 2016
+
+graphite2 vulnerabilities
+==========================================================================
+
+A security issue affects these releases of Ubuntu and its derivatives:
+
+- Ubuntu 15.10
+- Ubuntu 14.04 LTS
+
+Summary:
+
+graphite2 could be made to crash or run programs as your login if it opened
+a specially crafted font.
+
+Software Description:
+- graphite2: Font rendering engine for Complex Scripts
+
+Details:
+
+It was discovered that graphite2 incorrectly handled certain malformed
+fonts. If a user or automated system were tricked into opening a specially-
+crafted font file, a remote attacker could use this issue to cause
+graphite2 to crash, resulting in a denial of service, or possibly execute
+arbitrary code.
+
+Update instructions:
+
+The problem can be corrected by updating your system to the following
+package versions:
+
+Ubuntu 15.10:
+  libgraphite2-3                  1.3.6-1ubuntu0.15.10.1
+
+Ubuntu 14.04 LTS:
+  libgraphite2-3                  1.3.6-1ubuntu0.14.04.1
+
+This update uses a new upstream release, which includes additional bug
+fixes. After a standard system update you need to restart applications
+using graphite2, such as LibreOffice, to make all the necessary changes.
+
+References:
+  http://www.ubuntu.com/usn/usn-2927-1
+  CVE-2016-1977, CVE-2016-2790, CVE-2016-2791, CVE-2016-2792,
+  CVE-2016-2793, CVE-2016-2794, CVE-2016-2795, CVE-2016-2796,
+  CVE-2016-2797, CVE-2016-2798, CVE-2016-2799, CVE-2016-2800,
+  CVE-2016-2801, CVE-2016-2802
+
+Package Information:
+  https://launchpad.net/ubuntu/+source/graphite2/1.3.6-1ubuntu0.15.10.1
+  https://launchpad.net/ubuntu/+source/graphite2/1.3.6-1ubuntu0.14.04.1
+
+
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 819 bytes
+Desc: OpenPGP digital signature
+URL: <https://lists.ubuntu.com/archives/ubuntu-security-announce/attachments/20160314/4b8b9949/attachment.pgp>
+
+From steve.beattie at canonical.com  Mon Mar 14 17:29:45 2016
+From: steve.beattie at canonical.com (Steve Beattie)
+Date: Mon, 14 Mar 2016 10:29:45 -0700
+Subject: [USN-2928-1] Linux kernel vulnerability
+Message-ID: <20160314172945.GA14930@nxnw.org>
+
+==========================================================================
+Ubuntu Security Notice USN-2928-1
+March 14, 2016
+
+linux vulnerability
+==========================================================================
+
+A security issue affects these releases of Ubuntu and its derivatives:
+
+- Ubuntu 12.04 LTS
+
+Summary:
+
+The system could be made to crash or run programs as an administrator by
+someone with physical access.
+
+Software Description:
+- linux: Linux kernel
+
+Details:
+
+Andrey Konovalov discovered that the ALSA USB MIDI driver incorrectly
+performed a double-free. A local attacker with physical access could use
+this to cause a denial of service (system crash) or possibly execute
+arbitrary code with administrative privileges.
+
+Update instructions:
+
+The problem can be corrected by updating your system to the following
+package versions:
+
+Ubuntu 12.04 LTS:
+  linux-image-3.2.0-101-generic   3.2.0-101.141
+  linux-image-3.2.0-101-generic-pae  3.2.0-101.141
+  linux-image-3.2.0-101-highbank  3.2.0-101.141
+  linux-image-3.2.0-101-omap      3.2.0-101.141
+  linux-image-3.2.0-101-powerpc-smp  3.2.0-101.141
+  linux-image-3.2.0-101-powerpc64-smp  3.2.0-101.141
+  linux-image-3.2.0-101-virtual   3.2.0-101.141
+
+After a standard system update you need to reboot your computer to make
+all the necessary changes.
+
+ATTENTION: Due to an unavoidable ABI change the kernel updates have
+been given a new version number, which requires you to recompile and
+reinstall all third party kernel modules you might have installed.
+Unless you manually uninstalled the standard kernel metapackages
+(e.g. linux-generic, linux-generic-lts-RELEASE, linux-virtual,
+linux-powerpc), a standard system upgrade will automatically perform
+this as well.
+
+References:
+  http://www.ubuntu.com/usn/usn-2928-1
+  CVE-2016-2384
+
+Package Information:
+  https://launchpad.net/ubuntu/+source/linux/3.2.0-101.141
+
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 819 bytes
+Desc: not available
+URL: <https://lists.ubuntu.com/archives/ubuntu-security-announce/attachments/20160314/3274be97/attachment.pgp>
+
+From steve.beattie at canonical.com  Mon Mar 14 17:30:02 2016
+From: steve.beattie at canonical.com (Steve Beattie)
+Date: Mon, 14 Mar 2016 10:30:02 -0700
+Subject: [USN-2928-2] Linux kernel (OMAP4) vulnerability
+Message-ID: <20160314173002.GB14930@nxnw.org>
+
+==========================================================================
+Ubuntu Security Notice USN-2928-2
+March 14, 2016
+
+linux-ti-omap4 vulnerability
+==========================================================================
+
+A security issue affects these releases of Ubuntu and its derivatives:
+
+- Ubuntu 12.04 LTS
+
+Summary:
+
+The system could be made to crash or run programs as an administrator
+by someone with physical access.
+
+Software Description:
+- linux-ti-omap4: Linux kernel for OMAP4
+
+Details:
+
+Andrey Konovalov discovered that the ALSA USB MIDI driver incorrectly
+performed a double-free. A local attacker with physical access could use
+this to cause a denial of service (system crash) or possibly execute
+arbitrary code with administrative privileges.
+
+Update instructions:
+
+The problem can be corrected by updating your system to the following
+package versions:
+
+Ubuntu 12.04 LTS:
+  linux-image-3.2.0-1479-omap4    3.2.0-1479.105
+
+After a standard system update you need to reboot your computer to make
+all the necessary changes.
+
+ATTENTION: Due to an unavoidable ABI change the kernel updates have
+been given a new version number, which requires you to recompile and
+reinstall all third party kernel modules you might have installed.
+Unless you manually uninstalled the standard kernel metapackages
+(e.g. linux-generic, linux-generic-lts-RELEASE, linux-virtual,
+linux-powerpc), a standard system upgrade will automatically perform
+this as well.
+
+References:
+  http://www.ubuntu.com/usn/usn-2928-2
+  http://www.ubuntu.com/usn/usn-2928-1
+  CVE-2016-2384
+
+Package Information:
+  https://launchpad.net/ubuntu/+source/linux-ti-omap4/3.2.0-1479.105
+
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 819 bytes
+Desc: not available
+URL: <https://lists.ubuntu.com/archives/ubuntu-security-announce/attachments/20160314/aade5073/attachment.pgp>
+
+From steve.beattie at canonical.com  Mon Mar 14 17:30:44 2016
+From: steve.beattie at canonical.com (Steve Beattie)
+Date: Mon, 14 Mar 2016 10:30:44 -0700
+Subject: [USN-2929-1] Linux kernel vulnerabilities
+Message-ID: <20160314173044.GC14930@nxnw.org>
+
+==========================================================================
+Ubuntu Security Notice USN-2929-1
+March 14, 2016
+
+linux vulnerabilities
+==========================================================================
+
+A security issue affects these releases of Ubuntu and its derivatives:
+
+- Ubuntu 14.04 LTS
+
+Summary:
+
+Several security issues were fixed in the kernel.
+
+Software Description:
+- linux: Linux kernel
+
+Details:
+
+Ben Hawkes discovered that the Linux netfilter implementation did not
+correctly perform validation when handling IPT_SO_SET_REPLACE events. A
+local unprivileged attacker could use this to cause a denial of service
+(system crash) or possibly execute arbitrary code with administrative
+privileges. (CVE-2016-3134)
+
+It was discovered that the Linux kernel did not properly enforce rlimits
+for file descriptors sent over UNIX domain sockets. A local attacker could
+use this to cause a denial of service. (CVE-2013-4312)
+
+Ralf Spenneberg discovered that the USB driver for Clie devices in the
+Linux kernel did not properly sanity check the endpoints reported by the
+device. An attacker with physical access could cause a denial of service
+(system crash). (CVE-2015-7566)
+
+Ralf Spenneberg discovered that the usbvision driver in the Linux kernel
+did not properly sanity check the interfaces and endpoints reported by the
+device. An attacker with physical access could cause a denial of service
+(system crash). (CVE-2015-7833)
+
+It was discovered that a race condition existed in the ioctl handler for
+the TTY driver in the Linux kernel. A local attacker could use this to
+cause a denial of service (system crash) or expose sensitive information.
+(CVE-2016-0723)
+
+Andrey Konovalov discovered that the ALSA USB MIDI driver incorrectly
+performed a double-free. A local attacker with physical access could use
+this to cause a denial of service (system crash) or possibly execute
+arbitrary code with administrative privileges. (CVE-2016-2384)
+
+Dmitry Vyukov discovered that the Advanced Linux Sound Architecture (ALSA)
+framework did not verify that a FIFO was attached to a client before
+attempting to clear it. A local attacker could use this to cause a denial
+of service (system crash). (CVE-2016-2543)
+
+Dmitry Vyukov discovered that a race condition existed in the Advanced
+Linux Sound Architecture (ALSA) framework between timer setup and closing
+of the client, resulting in a use-after-free. A local attacker could use
+this to cause a denial of service. (CVE-2016-2544)
+
+Dmitry Vyukov discovered a race condition in the timer handling
+implementation of the Advanced Linux Sound Architecture (ALSA) framework,
+resulting in a use-after-free. A local attacker could use this to cause a
+denial of service (system crash). (CVE-2016-2545)
+
+Dmitry Vyukov discovered race conditions in the Advanced Linux Sound
+Architecture (ALSA) framework's timer ioctls leading to a use-after-free. A
+local attacker could use this to cause a denial of service (system crash)
+or possibly execute arbitrary code. (CVE-2016-2546)
+
+Dmitry Vyukov discovered that the Advanced Linux Sound Architecture (ALSA)
+framework's handling of high resolution timers did not properly manage its
+data structures. A local attacker could use this to cause a denial of
+service (system hang or crash) or possibly execute arbitrary code.
+(CVE-2016-2547, CVE-2016-2548)
+
+Dmitry Vyukov discovered that the Advanced Linux Sound Architecture (ALSA)
+framework's handling of high resolution timers could lead to a deadlock
+condition. A local attacker could use this to cause a denial of service
+(system hang). (CVE-2016-2549)
+
+Ralf Spenneberg discovered that the USB driver for Treo devices in the
+Linux kernel did not properly sanity check the endpoints reported by the
+device. An attacker with physical access could cause a denial of service
+(system crash). (CVE-2016-2782)
+
+Update instructions:
+
+The problem can be corrected by updating your system to the following
+package versions:
+
+Ubuntu 14.04 LTS:
+  linux-image-3.13.0-83-generic   3.13.0-83.127
+  linux-image-3.13.0-83-generic-lpae  3.13.0-83.127
+  linux-image-3.13.0-83-lowlatency  3.13.0-83.127
+  linux-image-3.13.0-83-powerpc-e500  3.13.0-83.127
+  linux-image-3.13.0-83-powerpc-e500mc  3.13.0-83.127
+  linux-image-3.13.0-83-powerpc-smp  3.13.0-83.127
+  linux-image-3.13.0-83-powerpc64-emb  3.13.0-83.127
+  linux-image-3.13.0-83-powerpc64-smp  3.13.0-83.127
+
+After a standard system update you need to reboot your computer to make
+all the necessary changes.
+
+ATTENTION: Due to an unavoidable ABI change the kernel updates have
+been given a new version number, which requires you to recompile and
+reinstall all third party kernel modules you might have installed.
+Unless you manually uninstalled the standard kernel metapackages
+(e.g. linux-generic, linux-generic-lts-RELEASE, linux-virtual,
+linux-powerpc), a standard system upgrade will automatically perform
+this as well.
+
+References:
+  http://www.ubuntu.com/usn/usn-2929-1
+  CVE-2013-4312, CVE-2015-7566, CVE-2015-7833, CVE-2016-0723,
+  CVE-2016-2384, CVE-2016-2543, CVE-2016-2544, CVE-2016-2545,
+  CVE-2016-2546, CVE-2016-2547, CVE-2016-2548, CVE-2016-2549,
+  CVE-2016-2782, CVE-2016-3134
+
+Package Information:
+  https://launchpad.net/ubuntu/+source/linux/3.13.0-83.127
+
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 819 bytes
+Desc: not available
+URL: <https://lists.ubuntu.com/archives/ubuntu-security-announce/attachments/20160314/89d9d164/attachment.pgp>
+
+From steve.beattie at canonical.com  Mon Mar 14 17:31:11 2016
+From: steve.beattie at canonical.com (Steve Beattie)
+Date: Mon, 14 Mar 2016 10:31:11 -0700
+Subject: [USN-2929-2] Linux kernel (Trusty HWE) vulnerabilities
+Message-ID: <20160314173111.GD14930@nxnw.org>
+
+==========================================================================
+Ubuntu Security Notice USN-2929-2
+March 14, 2016
+
+linux-lts-trusty vulnerabilities
+==========================================================================
+
+A security issue affects these releases of Ubuntu and its derivatives:
+
+- Ubuntu 12.04 LTS
+
+Summary:
+
+Several security issues were fixed in the kernel.
+
+Software Description:
+- linux-lts-trusty: Linux hardware enablement kernel from Trusty for Precise
+
+Details:
+
+Ben Hawkes discovered that the Linux netfilter implementation did not
+correctly perform validation when handling IPT_SO_SET_REPLACE events. A
+local unprivileged attacker could use this to cause a denial of service
+(system crash) or possibly execute arbitrary code with administrative
+privileges. (CVE-2016-3134)
+
+It was discovered that the Linux kernel did not properly enforce rlimits
+for file descriptors sent over UNIX domain sockets. A local attacker could
+use this to cause a denial of service. (CVE-2013-4312)
+
+Ralf Spenneberg discovered that the USB driver for Clie devices in the
+Linux kernel did not properly sanity check the endpoints reported by the
+device. An attacker with physical access could cause a denial of service
+(system crash). (CVE-2015-7566)
+
+Ralf Spenneberg discovered that the usbvision driver in the Linux kernel
+did not properly sanity check the interfaces and endpoints reported by the
+device. An attacker with physical access could cause a denial of service
+(system crash). (CVE-2015-7833)
+
+It was discovered that a race condition existed in the ioctl handler for
+the TTY driver in the Linux kernel. A local attacker could use this to
+cause a denial of service (system crash) or expose sensitive information.
+(CVE-2016-0723)
+
+Andrey Konovalov discovered that the ALSA USB MIDI driver incorrectly
+performed a double-free. A local attacker with physical access could use
+this to cause a denial of service (system crash) or possibly execute
+arbitrary code with administrative privileges. (CVE-2016-2384)
+
+Dmitry Vyukov discovered that the Advanced Linux Sound Architecture (ALSA)
+framework did not verify that a FIFO was attached to a client before
+attempting to clear it. A local attacker could use this to cause a denial
+of service (system crash). (CVE-2016-2543)
+
+Dmitry Vyukov discovered that a race condition existed in the Advanced
+Linux Sound Architecture (ALSA) framework between timer setup and closing
+of the client, resulting in a use-after-free. A local attacker could use
+this to cause a denial of service. (CVE-2016-2544)
+
+Dmitry Vyukov discovered a race condition in the timer handling
+implementation of the Advanced Linux Sound Architecture (ALSA) framework,
+resulting in a use-after-free. A local attacker could use this to cause a
+denial of service (system crash). (CVE-2016-2545)
+
+Dmitry Vyukov discovered race conditions in the Advanced Linux Sound
+Architecture (ALSA) framework's timer ioctls leading to a use-after-free. A
+local attacker could use this to cause a denial of service (system crash)
+or possibly execute arbitrary code. (CVE-2016-2546)
+
+Dmitry Vyukov discovered that the Advanced Linux Sound Architecture (ALSA)
+framework's handling of high resolution timers did not properly manage its
+data structures. A local attacker could use this to cause a denial of
+service (system hang or crash) or possibly execute arbitrary code.
+(CVE-2016-2547, CVE-2016-2548)
+
+Dmitry Vyukov discovered that the Advanced Linux Sound Architecture (ALSA)
+framework's handling of high resolution timers could lead to a deadlock
+condition. A local attacker could use this to cause a denial of service
+(system hang). (CVE-2016-2549)
+
+Ralf Spenneberg discovered that the USB driver for Treo devices in the
+Linux kernel did not properly sanity check the endpoints reported by the
+device. An attacker with physical access could cause a denial of service
+(system crash). (CVE-2016-2782)
+
+Update instructions:
+
+The problem can be corrected by updating your system to the following
+package versions:
+
+Ubuntu 12.04 LTS:
+  linux-image-3.13.0-83-generic   3.13.0-83.127~precise1
+  linux-image-3.13.0-83-generic-lpae  3.13.0-83.127~precise1
+
+After a standard system update you need to reboot your computer to make
+all the necessary changes.
+
+ATTENTION: Due to an unavoidable ABI change the kernel updates have
+been given a new version number, which requires you to recompile and
+reinstall all third party kernel modules you might have installed.
+Unless you manually uninstalled the standard kernel metapackages
+(e.g. linux-generic, linux-generic-lts-RELEASE, linux-virtual,
+linux-powerpc), a standard system upgrade will automatically perform
+this as well.
+
+References:
+  http://www.ubuntu.com/usn/usn-2929-2
+  http://www.ubuntu.com/usn/usn-2929-1
+  CVE-2013-4312, CVE-2015-7566, CVE-2015-7833, CVE-2016-0723,
+  CVE-2016-2384, CVE-2016-2543, CVE-2016-2544, CVE-2016-2545,
+  CVE-2016-2546, CVE-2016-2547, CVE-2016-2548, CVE-2016-2549,
+  CVE-2016-2782, CVE-2016-3134
+
+Package Information:
+  https://launchpad.net/ubuntu/+source/linux-lts-trusty/3.13.0-83.127~precise1
+
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 819 bytes
+Desc: not available
+URL: <https://lists.ubuntu.com/archives/ubuntu-security-announce/attachments/20160314/0f4493b9/attachment-0001.pgp>
+
+From steve.beattie at canonical.com  Mon Mar 14 17:38:41 2016
+From: steve.beattie at canonical.com (Steve Beattie)
+Date: Mon, 14 Mar 2016 10:38:41 -0700
+Subject: [USN-2930-1] Linux kernel vulnerabilities
+Message-ID: <20160314173841.GE14930@nxnw.org>
+
+==========================================================================
+Ubuntu Security Notice USN-2930-1
+March 14, 2016
+
+linux vulnerabilities
+==========================================================================
+
+A security issue affects these releases of Ubuntu and its derivatives:
+
+- Ubuntu 15.10
+
+Summary:
+
+Several security issues were fixed in the kernel.
+
+Software Description:
+- linux: Linux kernel
+
+Details:
+
+Ben Hawkes discovered that the Linux netfilter implementation did not
+correctly perform validation when handling IPT_SO_SET_REPLACE events. A
+local unprivileged attacker could use this to cause a denial of service
+(system crash) or possibly execute arbitrary code with administrative
+privileges. (CVE-2016-3134)
+
+Ben Hawkes discovered an integer overflow in the Linux netfilter
+implementation. On systems running 32 bit kernels, a local unprivileged
+attacker could use this to cause a denial of service (system crash) or
+possibly execute arbitrary code with administrative privileges.
+(CVE-2016-3135)
+
+Ralf Spenneberg discovered that the USB driver for Clie devices in the
+Linux kernel did not properly sanity check the endpoints reported by the
+device. An attacker with physical access could cause a denial of service
+(system crash). (CVE-2015-7566)
+
+It was discovered that a race condition existed when handling heartbeat-
+timeout events in the SCTP implementation of the Linux kernel. A remote
+attacker could use this to cause a denial of service. (CVE-2015-8767)
+
+It was discovered that a race condition existed in the ioctl handler for
+the TTY driver in the Linux kernel. A local attacker could use this to
+cause a denial of service (system crash) or expose sensitive information.
+(CVE-2016-0723)
+
+Andrey Konovalov discovered that the ALSA USB MIDI driver incorrectly
+performed a double-free. A local attacker with physical access could use
+this to cause a denial of service (system crash) or possibly execute
+arbitrary code with administrative privileges. (CVE-2016-2384)
+
+Ralf Spenneberg discovered that the USB driver for Treo devices in the
+Linux kernel did not properly sanity check the endpoints reported by the
+device. An attacker with physical access could cause a denial of service
+(system crash). (CVE-2016-2782)
+
+Update instructions:
+
+The problem can be corrected by updating your system to the following
+package versions:
+
+Ubuntu 15.10:
+  linux-image-4.2.0-34-generic    4.2.0-34.39
+  linux-image-4.2.0-34-generic-lpae  4.2.0-34.39
+  linux-image-4.2.0-34-lowlatency  4.2.0-34.39
+  linux-image-4.2.0-34-powerpc-e500mc  4.2.0-34.39
+  linux-image-4.2.0-34-powerpc-smp  4.2.0-34.39
+  linux-image-4.2.0-34-powerpc64-emb  4.2.0-34.39
+  linux-image-4.2.0-34-powerpc64-smp  4.2.0-34.39
+
+After a standard system update you need to reboot your computer to make
+all the necessary changes.
+
+ATTENTION: Due to an unavoidable ABI change the kernel updates have
+been given a new version number, which requires you to recompile and
+reinstall all third party kernel modules you might have installed.
+Unless you manually uninstalled the standard kernel metapackages
+(e.g. linux-generic, linux-generic-lts-RELEASE, linux-virtual,
+linux-powerpc), a standard system upgrade will automatically perform
+this as well.
+
+References:
+  http://www.ubuntu.com/usn/usn-2930-1
+  CVE-2015-7566, CVE-2015-8767, CVE-2016-0723, CVE-2016-2384,
+  CVE-2016-2782, CVE-2016-3134, CVE-2016-3135
+
+Package Information:
+  https://launchpad.net/ubuntu/+source/linux/4.2.0-34.39
+
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 819 bytes
+Desc: not available
+URL: <https://lists.ubuntu.com/archives/ubuntu-security-announce/attachments/20160314/595882df/attachment.pgp>
+
+From steve.beattie at canonical.com  Mon Mar 14 17:38:52 2016
+From: steve.beattie at canonical.com (Steve Beattie)
+Date: Mon, 14 Mar 2016 10:38:52 -0700
+Subject: [USN-2930-2] Linux kernel (Wily HWE) vulnerabilities
+Message-ID: <20160314173852.GF14930@nxnw.org>
+
+==========================================================================
+Ubuntu Security Notice USN-2930-2
+March 14, 2016
+
+linux-lts-wily vulnerabilities
+==========================================================================
+
+A security issue affects these releases of Ubuntu and its derivatives:
+
+- Ubuntu 14.04 LTS
+
+Summary:
+
+Several security issues were fixed in the kernel.
+
+Software Description:
+- linux-lts-wily: Linux hardware enablement kernel from Wily for Trusty
+
+Details:
+
+Ben Hawkes discovered that the Linux netfilter implementation did not
+correctly perform validation when handling IPT_SO_SET_REPLACE events. A
+local unprivileged attacker could use this to cause a denial of service
+(system crash) or possibly execute arbitrary code with administrative
+privileges. (CVE-2016-3134)
+
+Ben Hawkes discovered an integer overflow in the Linux netfilter
+implementation. On systems running 32 bit kernels, a local unprivileged
+attacker could use this to cause a denial of service (system crash) or
+possibly execute arbitrary code with administrative privileges.
+(CVE-2016-3135)
+
+Ralf Spenneberg discovered that the USB driver for Clie devices in the
+Linux kernel did not properly sanity check the endpoints reported by the
+device. An attacker with physical access could cause a denial of service
+(system crash). (CVE-2015-7566)
+
+It was discovered that a race condition existed when handling heartbeat-
+timeout events in the SCTP implementation of the Linux kernel. A remote
+attacker could use this to cause a denial of service. (CVE-2015-8767)
+
+It was discovered that a race condition existed in the ioctl handler for
+the TTY driver in the Linux kernel. A local attacker could use this to
+cause a denial of service (system crash) or expose sensitive information.
+(CVE-2016-0723)
+
+Andrey Konovalov discovered that the ALSA USB MIDI driver incorrectly
+performed a double-free. A local attacker with physical access could use
+this to cause a denial of service (system crash) or possibly execute
+arbitrary code with administrative privileges. (CVE-2016-2384)
+
+Ralf Spenneberg discovered that the USB driver for Treo devices in the
+Linux kernel did not properly sanity check the endpoints reported by the
+device. An attacker with physical access could cause a denial of service
+(system crash). (CVE-2016-2782)
+
+Update instructions:
+
+The problem can be corrected by updating your system to the following
+package versions:
+
+Ubuntu 14.04 LTS:
+  linux-image-4.2.0-34-generic    4.2.0-34.39~14.04.1
+  linux-image-4.2.0-34-generic-lpae  4.2.0-34.39~14.04.1
+  linux-image-4.2.0-34-lowlatency  4.2.0-34.39~14.04.1
+  linux-image-4.2.0-34-powerpc-e500mc  4.2.0-34.39~14.04.1
+  linux-image-4.2.0-34-powerpc-smp  4.2.0-34.39~14.04.1
+  linux-image-4.2.0-34-powerpc64-emb  4.2.0-34.39~14.04.1
+  linux-image-4.2.0-34-powerpc64-smp  4.2.0-34.39~14.04.1
+
+After a standard system update you need to reboot your computer to make
+all the necessary changes.
+
+ATTENTION: Due to an unavoidable ABI change the kernel updates have
+been given a new version number, which requires you to recompile and
+reinstall all third party kernel modules you might have installed.
+Unless you manually uninstalled the standard kernel metapackages
+(e.g. linux-generic, linux-generic-lts-RELEASE, linux-virtual,
+linux-powerpc), a standard system upgrade will automatically perform
+this as well.
+
+References:
+  http://www.ubuntu.com/usn/usn-2930-2
+  http://www.ubuntu.com/usn/usn-2930-1
+  CVE-2015-7566, CVE-2015-8767, CVE-2016-0723, CVE-2016-2384,
+  CVE-2016-2782, CVE-2016-3134, CVE-2016-3135
+
+Package Information:
+  https://launchpad.net/ubuntu/+source/linux-lts-wily/4.2.0-34.39~14.04.1
+
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 819 bytes
+Desc: not available
+URL: <https://lists.ubuntu.com/archives/ubuntu-security-announce/attachments/20160314/a6b3e2e3/attachment.pgp>
+
+From steve.beattie at canonical.com  Mon Mar 14 17:39:05 2016
+From: steve.beattie at canonical.com (Steve Beattie)
+Date: Mon, 14 Mar 2016 10:39:05 -0700
+Subject: [USN-2931-1] Linux kernel (Utopic HWE) vulnerabilities
+Message-ID: <20160314173905.GG14930@nxnw.org>
+
+==========================================================================
+Ubuntu Security Notice USN-2931-1
+March 14, 2016
+
+linux-lts-utopic vulnerabilities
+==========================================================================
+
+A security issue affects these releases of Ubuntu and its derivatives:
+
+- Ubuntu 14.04 LTS
+
+Summary:
+
+Several security issues were fixed in the kernel.
+
+Software Description:
+- linux-lts-utopic: Linux hardware enablement kernel from Utopic for Trusty
+
+Details:
+
+Ben Hawkes discovered that the Linux netfilter implementation did not
+correctly perform validation when handling IPT_SO_SET_REPLACE events. A
+local unprivileged attacker could use this to cause a denial of service
+(system crash) or possibly execute arbitrary code with administrative
+privileges. (CVE-2016-3134)
+
+It was discovered that the Linux kernel did not properly enforce rlimits
+for file descriptors sent over UNIX domain sockets. A local attacker could
+use this to cause a denial of service. (CVE-2013-4312)
+
+It was discovered that a race condition existed when handling heartbeat-
+timeout events in the SCTP implementation of the Linux kernel. A remote
+attacker could use this to cause a denial of service. (CVE-2015-8767)
+
+Andy Lutomirski discovered a race condition in the Linux kernel's
+translation lookaside buffer (TLB) handling of flush events. A local
+attacker could use this to cause a denial of service or possibly leak
+sensitive information. (CVE-2016-2069)
+
+Andrey Konovalov discovered that the ALSA USB MIDI driver incorrectly
+performed a double-free. A local attacker with physical access could use
+this to cause a denial of service (system crash) or possibly execute
+arbitrary code with administrative privileges. (CVE-2016-2384)
+
+Dmitry Vyukov discovered that the Advanced Linux Sound Architecture (ALSA)
+framework did not verify that a FIFO was attached to a client before
+attempting to clear it. A local attacker could use this to cause a denial
+of service (system crash). (CVE-2016-2543)
+
+Dmitry Vyukov discovered that a race condition existed in the Advanced
+Linux Sound Architecture (ALSA) framework between timer setup and closing
+of the client, resulting in a use-after-free. A local attacker could use
+this to cause a denial of service. (CVE-2016-2544)
+
+Dmitry Vyukov discovered a race condition in the timer handling
+implementation of the Advanced Linux Sound Architecture (ALSA) framework,
+resulting in a use-after-free. A local attacker could use this to cause a
+denial of service (system crash). (CVE-2016-2545)
+
+Dmitry Vyukov discovered race conditions in the Advanced Linux Sound
+Architecture (ALSA) framework's timer ioctls leading to a use-after-free. A
+local attacker could use this to cause a denial of service (system crash)
+or possibly execute arbitrary code. (CVE-2016-2546)
+
+Dmitry Vyukov discovered that the Advanced Linux Sound Architecture (ALSA)
+framework's handling of high resolution timers did not properly manage its
+data structures. A local attacker could use this to cause a denial of
+service (system hang or crash) or possibly execute arbitrary code.
+(CVE-2016-2547, CVE-2016-2548)
+
+Dmitry Vyukov discovered that the Advanced Linux Sound Architecture (ALSA)
+framework's handling of high resolution timers could lead to a deadlock
+condition. A local attacker could use this to cause a denial of service
+(system hang). (CVE-2016-2549)
+
+Update instructions:
+
+The problem can be corrected by updating your system to the following
+package versions:
+
+Ubuntu 14.04 LTS:
+  linux-image-3.16.0-67-generic   3.16.0-67.87~14.04.1
+  linux-image-3.16.0-67-generic-lpae  3.16.0-67.87~14.04.1
+  linux-image-3.16.0-67-lowlatency  3.16.0-67.87~14.04.1
+  linux-image-3.16.0-67-powerpc-e500mc  3.16.0-67.87~14.04.1
+  linux-image-3.16.0-67-powerpc-smp  3.16.0-67.87~14.04.1
+  linux-image-3.16.0-67-powerpc64-emb  3.16.0-67.87~14.04.1
+  linux-image-3.16.0-67-powerpc64-smp  3.16.0-67.87~14.04.1
+
+After a standard system update you need to reboot your computer to make
+all the necessary changes.
+
+ATTENTION: Due to an unavoidable ABI change the kernel updates have
+been given a new version number, which requires you to recompile and
+reinstall all third party kernel modules you might have installed.
+Unless you manually uninstalled the standard kernel metapackages
+(e.g. linux-generic, linux-generic-lts-RELEASE, linux-virtual,
+linux-powerpc), a standard system upgrade will automatically perform
+this as well.
+
+References:
+  http://www.ubuntu.com/usn/usn-2931-1
+  CVE-2013-4312, CVE-2015-8767, CVE-2016-2069, CVE-2016-2384,
+  CVE-2016-2543, CVE-2016-2544, CVE-2016-2545, CVE-2016-2546,
+  CVE-2016-2547, CVE-2016-2548, CVE-2016-2549, CVE-2016-3134
+
+Package Information:
+  https://launchpad.net/ubuntu/+source/linux-lts-utopic/3.16.0-67.87~14.04.1
+
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 819 bytes
+Desc: not available
+URL: <https://lists.ubuntu.com/archives/ubuntu-security-announce/attachments/20160314/f3b119b0/attachment.pgp>
+
+From steve.beattie at canonical.com  Mon Mar 14 17:39:17 2016
+From: steve.beattie at canonical.com (Steve Beattie)
+Date: Mon, 14 Mar 2016 10:39:17 -0700
+Subject: [USN-2932-1] Linux kernel (Vivid HWE) vulnerabilities
+Message-ID: <20160314173917.GH14930@nxnw.org>
+
+==========================================================================
+Ubuntu Security Notice USN-2932-1
+March 14, 2016
+
+linux-lts-vivid vulnerabilities
+==========================================================================
+
+A security issue affects these releases of Ubuntu and its derivatives:
+
+- Ubuntu 14.04 LTS
+
+Summary:
+
+Several security issues were fixed in the kernel.
+
+Software Description:
+- linux-lts-vivid: Linux hardware enablement kernel from Vivid for Trusty
+
+Details:
+
+Ben Hawkes discovered that the Linux netfilter implementation did not
+correctly perform validation when handling IPT_SO_SET_REPLACE events. A
+local unprivileged attacker could use this to cause a denial of service
+(system crash) or possibly execute arbitrary code with administrative
+privileges. (CVE-2016-3134)
+
+It was discovered that the Linux kernel did not properly enforce rlimits
+for file descriptors sent over UNIX domain sockets. A local attacker could
+use this to cause a denial of service. (CVE-2013-4312)
+
+Ralf Spenneberg discovered that the USB driver for Clie devices in the
+Linux kernel did not properly sanity check the endpoints reported by the
+device. An attacker with physical access could cause a denial of service
+(system crash). (CVE-2015-7566)
+
+Ralf Spenneberg discovered that the usbvision driver in the Linux kernel
+did not properly sanity check the interfaces and endpoints reported by the
+device. An attacker with physical access could cause a denial of service
+(system crash). (CVE-2015-7833)
+
+It was discovered that a race condition existed when handling heartbeat-
+timeout events in the SCTP implementation of the Linux kernel. A remote
+attacker could use this to cause a denial of service. (CVE-2015-8767)
+
+It was discovered that a race condition existed in the ioctl handler for
+the TTY driver in the Linux kernel. A local attacker could use this to
+cause a denial of service (system crash) or expose sensitive information.
+(CVE-2016-0723)
+
+Andy Lutomirski discovered a race condition in the Linux kernel's
+translation lookaside buffer (TLB) handling of flush events. A local
+attacker could use this to cause a denial of service or possibly leak
+sensitive information. (CVE-2016-2069)
+
+Andrey Konovalov discovered that the ALSA USB MIDI driver incorrectly
+performed a double-free. A local attacker with physical access could use
+this to cause a denial of service (system crash) or possibly execute
+arbitrary code with administrative privileges. (CVE-2016-2384)
+
+Dmitry Vyukov discovered that the Advanced Linux Sound Architecture (ALSA)
+framework did not verify that a FIFO was attached to a client before
+attempting to clear it. A local attacker could use this to cause a denial
+of service (system crash). (CVE-2016-2543)
+
+Dmitry Vyukov discovered that a race condition existed in the Advanced
+Linux Sound Architecture (ALSA) framework between timer setup and closing
+of the client, resulting in a use-after-free. A local attacker could use
+this to cause a denial of service. (CVE-2016-2544)
+
+Dmitry Vyukov discovered a race condition in the timer handling
+implementation of the Advanced Linux Sound Architecture (ALSA) framework,
+resulting in a use-after-free. A local attacker could use this to cause a
+denial of service (system crash). (CVE-2016-2545)
+
+Dmitry Vyukov discovered race conditions in the Advanced Linux Sound
+Architecture (ALSA) framework's timer ioctls leading to a use-after-free. A
+local attacker could use this to cause a denial of service (system crash)
+or possibly execute arbitrary code. (CVE-2016-2546)
+
+Dmitry Vyukov discovered that the Advanced Linux Sound Architecture (ALSA)
+framework's handling of high resolution timers did not properly manage its
+data structures. A local attacker could use this to cause a denial of
+service (system hang or crash) or possibly execute arbitrary code.
+(CVE-2016-2547, CVE-2016-2548)
+
+Dmitry Vyukov discovered that the Advanced Linux Sound Architecture (ALSA)
+framework's handling of high resolution timers could lead to a deadlock
+condition. A local attacker could use this to cause a denial of service
+(system hang). (CVE-2016-2549)
+
+Ralf Spenneberg discovered that the USB driver for Treo devices in the
+Linux kernel did not properly sanity check the endpoints reported by the
+device. An attacker with physical access could cause a denial of service
+(system crash). (CVE-2016-2782)
+
+Update instructions:
+
+The problem can be corrected by updating your system to the following
+package versions:
+
+Ubuntu 14.04 LTS:
+  linux-image-3.19.0-56-generic   3.19.0-56.62~14.04.1
+  linux-image-3.19.0-56-generic-lpae  3.19.0-56.62~14.04.1
+  linux-image-3.19.0-56-lowlatency  3.19.0-56.62~14.04.1
+  linux-image-3.19.0-56-powerpc-e500mc  3.19.0-56.62~14.04.1
+  linux-image-3.19.0-56-powerpc-smp  3.19.0-56.62~14.04.1
+  linux-image-3.19.0-56-powerpc64-emb  3.19.0-56.62~14.04.1
+  linux-image-3.19.0-56-powerpc64-smp  3.19.0-56.62~14.04.1
+
+After a standard system update you need to reboot your computer to make
+all the necessary changes.
+
+ATTENTION: Due to an unavoidable ABI change the kernel updates have
+been given a new version number, which requires you to recompile and
+reinstall all third party kernel modules you might have installed.
+Unless you manually uninstalled the standard kernel metapackages
+(e.g. linux-generic, linux-generic-lts-RELEASE, linux-virtual,
+linux-powerpc), a standard system upgrade will automatically perform
+this as well.
+
+References:
+  http://www.ubuntu.com/usn/usn-2932-1
+  CVE-2013-4312, CVE-2015-7566, CVE-2015-7833, CVE-2015-8767,
+  CVE-2016-0723, CVE-2016-2069, CVE-2016-2384, CVE-2016-2543,
+  CVE-2016-2544, CVE-2016-2545, CVE-2016-2546, CVE-2016-2547,
+  CVE-2016-2548, CVE-2016-2549, CVE-2016-2782, CVE-2016-3134
+
+Package Information:
+  https://launchpad.net/ubuntu/+source/linux-lts-vivid/3.19.0-56.62~14.04.1
+
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 819 bytes
+Desc: not available
+URL: <https://lists.ubuntu.com/archives/ubuntu-security-announce/attachments/20160314/3ae4b94e/attachment.pgp>
+
+From secadv-server at tgos.de  Mon Mar 14 17:38:25 2016
+From: secadv-server at tgos.de (PlusServer GmbH (ubuntu-users@lists.ubuntu.com))
+Date: Mon, 14 Mar 2016 18:38:25 +0100
+Subject: [RT.PS #1359215] [USN-2929-1] Linux kernel vulnerabilities
+In-Reply-To: <20160314173044.GC14930@nxnw.org>
+References: <RT-Ticket-1359215@ps-intern.de> <20160314173044.GC14930@nxnw.org>
+Message-ID: <rt-4.2.12-16591-1457977105-467.1359215-81-0@ps-intern.de>
+
+-- 
+ubuntu-security-announce mailing list
+ubuntu-security-announce at lists.ubuntu.com
+Modify settings or unsubscribe at: https://lists.ubuntu.com/mailman/listinfo/ubuntu-security-announce
+
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <https://lists.ubuntu.com/archives/ubuntu-security-announce/attachments/20160314/fee6fc9c/attachment-0001.html>
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 819 bytes
+Desc: not available
+URL: <https://lists.ubuntu.com/archives/ubuntu-security-announce/attachments/20160314/fee6fc9c/attachment-0001.pgp>
+-------------- next part --------------
+-- 
+ubuntu-security-announce mailing list
+ubuntu-security-announce at lists.ubuntu.com
+Modify settings or unsubscribe at: https://lists.ubuntu.com/mailman/listinfo/ubuntu-security-announce
+
+From secadv-server at tgos.de  Mon Mar 14 17:38:34 2016
+From: secadv-server at tgos.de (PlusServer GmbH (ubuntu-users@lists.ubuntu.com))
+Date: Mon, 14 Mar 2016 18:38:34 +0100
+Subject: [RT.PS #1359219] [USN-2929-2] Linux kernel (Trusty HWE)
+ vulnerabilities
+In-Reply-To: <20160314173111.GD14930@nxnw.org>
+References: <RT-Ticket-1359219@ps-intern.de> <20160314173111.GD14930@nxnw.org>
+Message-ID: <rt-4.2.12-16697-1457977114-506.1359219-81-0@ps-intern.de>
+
+-- 
+ubuntu-security-announce mailing list
+ubuntu-security-announce at lists.ubuntu.com
+Modify settings or unsubscribe at: https://lists.ubuntu.com/mailman/listinfo/ubuntu-security-announce
+
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <https://lists.ubuntu.com/archives/ubuntu-security-announce/attachments/20160314/6f3c0ab2/attachment.html>
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 819 bytes
+Desc: not available
+URL: <https://lists.ubuntu.com/archives/ubuntu-security-announce/attachments/20160314/6f3c0ab2/attachment.pgp>
+-------------- next part --------------
+-- 
+ubuntu-security-announce mailing list
+ubuntu-security-announce at lists.ubuntu.com
+Modify settings or unsubscribe at: https://lists.ubuntu.com/mailman/listinfo/ubuntu-security-announce
+
+From secadv-server at tgos.de  Mon Mar 14 17:38:34 2016
+From: secadv-server at tgos.de (PlusServer GmbH (ubuntu-users@lists.ubuntu.com))
+Date: Mon, 14 Mar 2016 18:38:34 +0100
+Subject: [RT.PS #1359221] [USN-2928-2] Linux kernel (OMAP4) vulnerability
+In-Reply-To: <20160314173002.GB14930@nxnw.org>
+References: <RT-Ticket-1359221@ps-intern.de> <20160314173002.GB14930@nxnw.org>
+Message-ID: <rt-4.2.12-16596-1457977114-1318.1359221-81-0@ps-intern.de>
+
+-- 
+ubuntu-security-announce mailing list
+ubuntu-security-announce at lists.ubuntu.com
+Modify settings or unsubscribe at: https://lists.ubuntu.com/mailman/listinfo/ubuntu-security-announce
+
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <https://lists.ubuntu.com/archives/ubuntu-security-announce/attachments/20160314/dfeb2973/attachment.html>
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 819 bytes
+Desc: not available
+URL: <https://lists.ubuntu.com/archives/ubuntu-security-announce/attachments/20160314/dfeb2973/attachment.pgp>
+-------------- next part --------------
+-- 
+ubuntu-security-announce mailing list
+ubuntu-security-announce at lists.ubuntu.com
+Modify settings or unsubscribe at: https://lists.ubuntu.com/mailman/listinfo/ubuntu-security-announce
+
+From secadv-server at tgos.de  Mon Mar 14 17:38:34 2016
+From: secadv-server at tgos.de (PlusServer GmbH (ubuntu-users@lists.ubuntu.com))
+Date: Mon, 14 Mar 2016 18:38:34 +0100
+Subject: [RT.PS #1359217] [USN-2928-1] Linux kernel vulnerability
+In-Reply-To: <20160314172945.GA14930@nxnw.org>
+References: <RT-Ticket-1359217@ps-intern.de> <20160314172945.GA14930@nxnw.org>
+Message-ID: <rt-4.2.12-16595-1457977114-67.1359217-81-0@ps-intern.de>
+
+-- 
+ubuntu-security-announce mailing list
+ubuntu-security-announce at lists.ubuntu.com
+Modify settings or unsubscribe at: https://lists.ubuntu.com/mailman/listinfo/ubuntu-security-announce
+
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <https://lists.ubuntu.com/archives/ubuntu-security-announce/attachments/20160314/02db9d4d/attachment.html>
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 819 bytes
+Desc: not available
+URL: <https://lists.ubuntu.com/archives/ubuntu-security-announce/attachments/20160314/02db9d4d/attachment.pgp>
+-------------- next part --------------
+-- 
+ubuntu-security-announce mailing list
+ubuntu-security-announce at lists.ubuntu.com
+Modify settings or unsubscribe at: https://lists.ubuntu.com/mailman/listinfo/ubuntu-security-announce
+
+From marc.deslauriers at canonical.com  Tue Mar 15 12:51:00 2016
+From: marc.deslauriers at canonical.com (Marc Deslauriers)
+Date: Tue, 15 Mar 2016 08:51:00 -0400
+Subject: [USN-2933-1] Exim vulnerabilities
+Message-ID: <56E80534.10807@canonical.com>
+
+==========================================================================
+Ubuntu Security Notice USN-2933-1
+March 15, 2016
+
+exim4 vulnerabilities
+==========================================================================
+
+A security issue affects these releases of Ubuntu and its derivatives:
+
+- Ubuntu 15.10
+- Ubuntu 14.04 LTS
+- Ubuntu 12.04 LTS
+
+Summary:
+
+Several security issues were fixed in Exim.
+
+Software Description:
+- exim4: Exim is a mail transport agent
+
+Details:
+
+It was discovered that Exim incorrectly filtered environment variables when
+used with the perl_startup configuration option. If the perl_startup option
+was enabled, a local attacker could use this issue to escalate their
+privileges to the root user. This issue has been fixed by having Exim clean
+the complete execution environment by default on startup, including any
+subprocesses such as transports that call other programs. This change in
+behaviour may break existing installations and can be adjusted by using two
+new configuration options, keep_environment and add_environment.
+(CVE-2016-1531)
+
+Patrick William discovered that Exim incorrectly expanded mathematical
+comparisons twice. A local attacker could possibly use this issue to
+perform arbitrary file operations as the Exim user. This issue only
+affected Ubuntu 12.04 LTS and Ubuntu 14.04 LTS. (CVE-2014-2972)
+
+Update instructions:
+
+The problem can be corrected by updating your system to the following
+package versions:
+
+Ubuntu 15.10:
+  exim4-daemon-heavy              4.86-3ubuntu1.1
+  exim4-daemon-light              4.86-3ubuntu1.1
+
+Ubuntu 14.04 LTS:
+  exim4-daemon-custom             4.82-3ubuntu2.1
+  exim4-daemon-heavy              4.82-3ubuntu2.1
+  exim4-daemon-light              4.82-3ubuntu2.1
+
+Ubuntu 12.04 LTS:
+  exim4-daemon-custom             4.76-3ubuntu3.3
+  exim4-daemon-heavy              4.76-3ubuntu3.3
+  exim4-daemon-light              4.76-3ubuntu3.3
+
+This update introduces environment filtering, which may break certain
+existing installations. After performing a standard system update, the new
+keep_environment and add_environment configurations options can be used
+to adjust the new behaviour.
+
+References:
+  http://www.ubuntu.com/usn/usn-2933-1
+  CVE-2014-2972, CVE-2016-1531
+
+Package Information:
+  https://launchpad.net/ubuntu/+source/exim4/4.86-3ubuntu1.1
+  https://launchpad.net/ubuntu/+source/exim4/4.82-3ubuntu2.1
+  https://launchpad.net/ubuntu/+source/exim4/4.76-3ubuntu3.3
+
+
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 819 bytes
+Desc: OpenPGP digital signature
+URL: <https://lists.ubuntu.com/archives/ubuntu-security-announce/attachments/20160315/5fec6c37/attachment.pgp>
+
+From steve.beattie at canonical.com  Wed Mar 16 13:41:34 2016
+From: steve.beattie at canonical.com (Steve Beattie)
+Date: Wed, 16 Mar 2016 06:41:34 -0700
+Subject: [USN-2930-3] Linux kernel (Raspberry Pi 2) vulnerabilities
+Message-ID: <20160316134134.GK14930@nxnw.org>
+
+==========================================================================
+Ubuntu Security Notice USN-2930-3
+March 16, 2016
+
+linux-raspi2 vulnerabilities
+==========================================================================
+
+A security issue affects these releases of Ubuntu and its derivatives:
+
+- Ubuntu 15.10
+
+Summary:
+
+Several security issues were fixed in the kernel.
+
+Software Description:
+- linux-raspi2: Linux kernel for Raspberry Pi 2
+
+Details:
+
+Ben Hawkes discovered that the Linux netfilter implementation did not
+correctly perform validation when handling IPT_SO_SET_REPLACE events. A
+local unprivileged attacker could use this to cause a denial of service
+(system crash) or possibly execute arbitrary code with administrative
+privileges. (CVE-2016-3134)
+
+Ben Hawkes discovered an integer overflow in the Linux netfilter
+implementation. On systems running 32 bit kernels, a local unprivileged
+attacker could use this to cause a denial of service (system crash) or
+possibly execute arbitrary code with administrative privileges.
+(CVE-2016-3135)
+
+Ralf Spenneberg discovered that the USB driver for Clie devices in the
+Linux kernel did not properly sanity check the endpoints reported by the
+device. An attacker with physical access could cause a denial of service
+(system crash). (CVE-2015-7566)
+
+It was discovered that a race condition existed when handling heartbeat-
+timeout events in the SCTP implementation of the Linux kernel. A remote
+attacker could use this to cause a denial of service. (CVE-2015-8767)
+
+It was discovered that a race condition existed in the ioctl handler for
+the TTY driver in the Linux kernel. A local attacker could use this to
+cause a denial of service (system crash) or expose sensitive information.
+(CVE-2016-0723)
+
+Andrey Konovalov discovered that the ALSA USB MIDI driver incorrectly
+performed a double-free. A local attacker with physical access could use
+this to cause a denial of service (system crash) or possibly execute
+arbitrary code with administrative privileges. (CVE-2016-2384)
+
+Ralf Spenneberg discovered that the USB driver for Treo devices in the
+Linux kernel did not properly sanity check the endpoints reported by the
+device. An attacker with physical access could cause a denial of service
+(system crash). (CVE-2016-2782)
+
+Update instructions:
+
+The problem can be corrected by updating your system to the following
+package versions:
+
+Ubuntu 15.10:
+  linux-image-4.2.0-1027-raspi2   4.2.0-1027.35
+
+After a standard system update you need to reboot your computer to make
+all the necessary changes.
+
+ATTENTION: Due to an unavoidable ABI change the kernel updates have
+been given a new version number, which requires you to recompile and
+reinstall all third party kernel modules you might have installed.
+Unless you manually uninstalled the standard kernel metapackages
+(e.g. linux-generic, linux-generic-lts-RELEASE, linux-virtual,
+linux-powerpc), a standard system upgrade will automatically perform
+this as well.
+
+References:
+  http://www.ubuntu.com/usn/usn-2930-3
+  http://www.ubuntu.com/usn/usn-2930-1
+  CVE-2015-7566, CVE-2015-8767, CVE-2016-0723, CVE-2016-2384,
+  CVE-2016-2782, CVE-2016-3134, CVE-2016-3135
+
+Package Information:
+  https://launchpad.net/ubuntu/+source/linux-raspi2/4.2.0-1027.35
+
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 819 bytes
+Desc: not available
+URL: <https://lists.ubuntu.com/archives/ubuntu-security-announce/attachments/20160316/19650d50/attachment.pgp>
+
+From marc.deslauriers at canonical.com  Wed Mar 16 14:22:24 2016
+From: marc.deslauriers at canonical.com (Marc Deslauriers)
+Date: Wed, 16 Mar 2016 10:22:24 -0400
+Subject: [USN-2935-1] PAM vulnerabilities
+Message-ID: <56E96C20.2020200@canonical.com>
+
+==========================================================================
+Ubuntu Security Notice USN-2935-1
+March 16, 2016
+
+pam vulnerabilities
+==========================================================================
+
+A security issue affects these releases of Ubuntu and its derivatives:
+
+- Ubuntu 15.10
+- Ubuntu 14.04 LTS
+- Ubuntu 12.04 LTS
+
+Summary:
+
+Several security issues were fixed in PAM.
+
+Software Description:
+- pam: Pluggable Authentication Modules
+
+Details:
+
+It was discovered that the PAM pam_userdb module incorrectly used a
+case-insensitive method when comparing hashed passwords. A local attacker
+could possibly use this issue to make brute force attacks easier. This
+issue only affected Ubuntu 12.04 LTS and Ubuntu 14.04 LTS. (CVE-2013-7041)
+
+Sebastian Krahmer discovered that the PAM pam_timestamp module incorrectly
+performed filtering. A local attacker could use this issue to create
+arbitrary files, or possibly bypass authentication. This issue only
+affected Ubuntu 12.04 LTS and Ubuntu 14.04 LTS. (CVE-2014-2583)
+
+Sebastien Macke discovered that the PAM pam_unix module incorrectly handled
+large passwords. A local attacker could possibly use this issue in certain
+environments to enumerate usernames or cause a denial of service.
+(CVE-2015-3238)
+
+Update instructions:
+
+The problem can be corrected by updating your system to the following
+package versions:
+
+Ubuntu 15.10:
+  libpam-modules                  1.1.8-3.1ubuntu3.1
+
+Ubuntu 14.04 LTS:
+  libpam-modules                  1.1.8-1ubuntu2.1
+
+Ubuntu 12.04 LTS:
+  libpam-modules                  1.1.3-7ubuntu2.1
+
+In general, a standard system update will make all the necessary changes.
+
+References:
+  http://www.ubuntu.com/usn/usn-2935-1
+  CVE-2013-7041, CVE-2014-2583, CVE-2015-3238
+
+Package Information:
+  https://launchpad.net/ubuntu/+source/pam/1.1.8-3.1ubuntu3.1
+  https://launchpad.net/ubuntu/+source/pam/1.1.8-1ubuntu2.1
+  https://launchpad.net/ubuntu/+source/pam/1.1.3-7ubuntu2.1
+
+
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 819 bytes
+Desc: OpenPGP digital signature
+URL: <https://lists.ubuntu.com/archives/ubuntu-security-announce/attachments/20160316/3621804d/attachment.pgp>
+
+From marc.deslauriers at canonical.com  Wed Mar 16 19:29:12 2016
+From: marc.deslauriers at canonical.com (Marc Deslauriers)
+Date: Wed, 16 Mar 2016 15:29:12 -0400
+Subject: [USN-2935-2] PAM regression
+Message-ID: <56E9B408.8070409@canonical.com>
+
+==========================================================================
+Ubuntu Security Notice USN-2935-2
+March 16, 2016
+
+pam regression
+==========================================================================
+
+A security issue affects these releases of Ubuntu and its derivatives:
+
+- Ubuntu 15.10
+- Ubuntu 14.04 LTS
+- Ubuntu 12.04 LTS
+
+Summary:
+
+USN-2935-1 introduced a regression in PAM.
+
+Software Description:
+- pam: Pluggable Authentication Modules
+
+Details:
+
+USN-2935-1 fixed vulnerabilities in PAM. The updates contained a packaging
+change that prevented upgrades in certain multiarch environments. This
+update fixes the problem.
+
+We apologize for the inconvenience.
+
+Original advisory details:
+
+ It was discovered that the PAM pam_userdb module incorrectly used a
+ case-insensitive method when comparing hashed passwords. A local attacker
+ could possibly use this issue to make brute force attacks easier. This
+ issue only affected Ubuntu 12.04 LTS and Ubuntu 14.04 LTS. (CVE-2013-7041)
+  Sebastian Krahmer discovered that the PAM pam_timestamp module incorrectly
+ performed filtering. A local attacker could use this issue to create
+ arbitrary files, or possibly bypass authentication. This issue only
+ affected Ubuntu 12.04 LTS and Ubuntu 14.04 LTS. (CVE-2014-2583)
+  Sebastien Macke discovered that the PAM pam_unix module incorrectly handled
+ large passwords. A local attacker could possibly use this issue in certain
+ environments to enumerate usernames or cause a denial of service.
+ (CVE-2015-3238)
+
+Update instructions:
+
+The problem can be corrected by updating your system to the following
+package versions:
+
+Ubuntu 15.10:
+  libpam-modules                  1.1.8-3.1ubuntu3.2
+
+Ubuntu 14.04 LTS:
+  libpam-modules                  1.1.8-1ubuntu2.2
+
+Ubuntu 12.04 LTS:
+  libpam-modules                  1.1.3-7ubuntu2.2
+
+In general, a standard system update will make all the necessary changes.
+
+References:
+  http://www.ubuntu.com/usn/usn-2935-2
+  http://www.ubuntu.com/usn/usn-2935-1
+  https://launchpad.net/bugs/1558114
+
+Package Information:
+  https://launchpad.net/ubuntu/+source/pam/1.1.8-3.1ubuntu3.2
+  https://launchpad.net/ubuntu/+source/pam/1.1.8-1ubuntu2.2
+  https://launchpad.net/ubuntu/+source/pam/1.1.3-7ubuntu2.2
+
+
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 819 bytes
+Desc: OpenPGP digital signature
+URL: <https://lists.ubuntu.com/archives/ubuntu-security-announce/attachments/20160316/68cb23cf/attachment.pgp>
+
+From tyhicks at canonical.com  Thu Mar 17 20:52:06 2016
+From: tyhicks at canonical.com (Tyler Hicks)
+Date: Thu, 17 Mar 2016 15:52:06 -0500
+Subject: [USN-2935-3] PAM regression
+Message-ID: <20160317205205.GA2992@boyd>
+
+==========================================================================
+Ubuntu Security Notice USN-2935-3
+March 17, 2016
+
+pam regression
+==========================================================================
+
+A security issue affects these releases of Ubuntu and its derivatives:
+
+- Ubuntu 12.04 LTS
+
+Summary:
+
+USN-2935-1 introduced a regression in PAM.
+
+Software Description:
+- pam: Pluggable Authentication Modules
+
+Details:
+
+USN-2935-1 fixed vulnerabilities in PAM. The updates contained a packaging
+change that prevented upgrades in certain multiarch environments. USN-2935-2
+intended to fix the problem but was incomplete for Ubuntu 12.04 LTS. This
+update fixes the problem in Ubuntu 12.04 LTS.
+
+We apologize for the inconvenience.
+
+Original advisory details:
+
+ It was discovered that the PAM pam_userdb module incorrectly used a
+ case-insensitive method when comparing hashed passwords. A local attacker
+ could possibly use this issue to make brute force attacks easier. This
+ issue only affected Ubuntu 12.04 LTS and Ubuntu 14.04 LTS. (CVE-2013-7041)
+ 
+ Sebastian Krahmer discovered that the PAM pam_timestamp module incorrectly
+ performed filtering. A local attacker could use this issue to create
+ arbitrary files, or possibly bypass authentication. This issue only
+ affected Ubuntu 12.04 LTS and Ubuntu 14.04 LTS. (CVE-2014-2583)
+ 
+ Sebastien Macke discovered that the PAM pam_unix module incorrectly handled
+ large passwords. A local attacker could possibly use this issue in certain
+ environments to enumerate usernames or cause a denial of service.
+ (CVE-2015-3238)
+
+Update instructions:
+
+The problem can be corrected by updating your system to the following
+package versions:
+
+Ubuntu 12.04 LTS:
+  libpam-modules                  1.1.3-7ubuntu2.3
+
+In general, a standard system update will make all the necessary changes.
+
+References:
+  http://www.ubuntu.com/usn/usn-2935-3
+  http://www.ubuntu.com/usn/usn-2935-1
+  http://www.ubuntu.com/usn/usn-2935-2, https://launchpad.net/bugs/1558597
+
+Package Information:
+  https://launchpad.net/ubuntu/+source/pam/1.1.3-7ubuntu2.3
+
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 819 bytes
+Desc: not available
+URL: <https://lists.ubuntu.com/archives/ubuntu-security-announce/attachments/20160317/83aed72d/attachment.pgp>
+
+From marc.deslauriers at canonical.com  Mon Mar 21 18:09:39 2016
+From: marc.deslauriers at canonical.com (Marc Deslauriers)
+Date: Mon, 21 Mar 2016 14:09:39 -0400
+Subject: [USN-2937-1] WebKitGTK+ vulnerabilities
+Message-ID: <56F038E3.3040404@canonical.com>
+
+==========================================================================
+Ubuntu Security Notice USN-2937-1
+March 21, 2016
+
+webkitgtk vulnerabilities
+==========================================================================
+
+A security issue affects these releases of Ubuntu and its derivatives:
+
+- Ubuntu 15.10
+- Ubuntu 14.04 LTS
+
+Summary:
+
+Several security issues were fixed in WebKitGTK+.
+
+Software Description:
+- webkitgtk: Web content engine library for GTK+
+
+Details:
+
+A large number of security issues were discovered in the WebKitGTK+ Web and
+JavaScript engines. If a user were tricked into viewing a malicious
+website, a remote attacker could exploit a variety of issues related to web
+browser security, including cross-site scripting attacks, denial of service
+attacks, and arbitrary code execution.
+
+Update instructions:
+
+The problem can be corrected by updating your system to the following
+package versions:
+
+Ubuntu 15.10:
+  libjavascriptcoregtk-1.0-0      2.4.10-0ubuntu0.15.10.1
+  libjavascriptcoregtk-3.0-0      2.4.10-0ubuntu0.15.10.1
+  libwebkitgtk-1.0-0              2.4.10-0ubuntu0.15.10.1
+  libwebkitgtk-3.0-0              2.4.10-0ubuntu0.15.10.1
+
+Ubuntu 14.04 LTS:
+  libjavascriptcoregtk-1.0-0      2.4.10-0ubuntu0.14.04.1
+  libjavascriptcoregtk-3.0-0      2.4.10-0ubuntu0.14.04.1
+  libwebkitgtk-1.0-0              2.4.10-0ubuntu0.14.04.1
+  libwebkitgtk-3.0-0              2.4.10-0ubuntu0.14.04.1
+
+This update uses a new upstream release, which includes additional bug
+fixes. After a standard system update you need to restart any applications
+that use WebKitGTK+, such as Epiphany and Evolution, to make all the
+necessary changes.
+
+References:
+  http://www.ubuntu.com/usn/usn-2937-1
+  CVE-2014-1748, CVE-2015-1071, CVE-2015-1076, CVE-2015-1081,
+  CVE-2015-1083, CVE-2015-1120, CVE-2015-1122, CVE-2015-1127,
+  CVE-2015-1153, CVE-2015-1155, CVE-2015-3658, CVE-2015-3659,
+  CVE-2015-3727, CVE-2015-3731, CVE-2015-3741, CVE-2015-3743,
+  CVE-2015-3745, CVE-2015-3747, CVE-2015-3748, CVE-2015-3749,
+  CVE-2015-3752, CVE-2015-5788, CVE-2015-5794, CVE-2015-5801,
+  CVE-2015-5809, CVE-2015-5822, CVE-2015-5928
+
+Package Information:
+  https://launchpad.net/ubuntu/+source/webkitgtk/2.4.10-0ubuntu0.15.10.1
+  https://launchpad.net/ubuntu/+source/webkitgtk/2.4.10-0ubuntu0.14.04.1
+
+
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 819 bytes
+Desc: OpenPGP digital signature
+URL: <https://lists.ubuntu.com/archives/ubuntu-security-announce/attachments/20160321/a023b15e/attachment.pgp>
+
+From tyhicks at canonical.com  Mon Mar 21 19:48:12 2016
+From: tyhicks at canonical.com (Tyler Hicks)
+Date: Mon, 21 Mar 2016 14:48:12 -0500
+Subject: [USN-2938-1] Git vulnerabilities
+Message-ID: <20160321194811.GA4874@boyd>
+
+==========================================================================
+Ubuntu Security Notice USN-2938-1
+March 21, 2016
+
+git vulnerabilities
+==========================================================================
+
+A security issue affects these releases of Ubuntu and its derivatives:
+
+- Ubuntu 15.10
+- Ubuntu 14.04 LTS
+- Ubuntu 12.04 LTS
+
+Summary:
+
+Git could be made to crash or run programs as your login if it received
+changes from a specially crafted remote repository.
+
+Software Description:
+- git: fast, scalable, distributed revision control system
+
+Details:
+
+La?l Cellier discovered that Git incorrectly handled path strings in
+crafted Git repositories. A remote attacker could use this issue to cause
+a denial of service or possibly execute arbitrary code with the
+privileges of the user invoking Git. (CVE-2016-2315, CVE-2016-2324)
+
+Update instructions:
+
+The problem can be corrected by updating your system to the following
+package versions:
+
+Ubuntu 15.10:
+  git                             1:2.5.0-1ubuntu0.2
+
+Ubuntu 14.04 LTS:
+  git                             1:1.9.1-1ubuntu0.3
+
+Ubuntu 12.04 LTS:
+  git                             1:1.7.9.5-1ubuntu0.3
+
+In general, a standard system update will make all the necessary changes.
+
+References:
+  http://www.ubuntu.com/usn/usn-2938-1
+  CVE-2016-2315, CVE-2016-2324
+
+Package Information:
+  https://launchpad.net/ubuntu/+source/git/1:2.5.0-1ubuntu0.2
+  https://launchpad.net/ubuntu/+source/git/1:1.9.1-1ubuntu0.3
+  https://launchpad.net/ubuntu/+source/git/1:1.7.9.5-1ubuntu0.3
+
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 819 bytes
+Desc: not available
+URL: <https://lists.ubuntu.com/archives/ubuntu-security-announce/attachments/20160321/fc91cbc2/attachment.pgp>
+
+From marc.deslauriers at canonical.com  Wed Mar 23 19:46:05 2016
+From: marc.deslauriers at canonical.com (Marc Deslauriers)
+Date: Wed, 23 Mar 2016 15:46:05 -0400
+Subject: [USN-2939-1] LibTIFF vulnerabilities
+Message-ID: <56F2F27D.8000006@canonical.com>
+
+==========================================================================
+Ubuntu Security Notice USN-2939-1
+March 23, 2016
+
+tiff vulnerabilities
+==========================================================================
+
+A security issue affects these releases of Ubuntu and its derivatives:
+
+- Ubuntu 15.10
+- Ubuntu 14.04 LTS
+- Ubuntu 12.04 LTS
+
+Summary:
+
+LibTIFF could be made to crash or run programs as your login if it opened a
+specially crafted file.
+
+Software Description:
+- tiff: Tag Image File Format (TIFF) library
+
+Details:
+
+It was discovered that LibTIFF incorrectly handled certain malformed
+images. If a user or automated system were tricked into opening a specially
+crafted image, a remote attacker could crash the application, leading to a
+denial of service, or possibly execute arbitrary code with user privileges.
+
+Update instructions:
+
+The problem can be corrected by updating your system to the following
+package versions:
+
+Ubuntu 15.10:
+  libtiff5                        4.0.3-12.3ubuntu2.1
+
+Ubuntu 14.04 LTS:
+  libtiff5                        4.0.3-7ubuntu0.4
+
+Ubuntu 12.04 LTS:
+  libtiff4                        3.9.5-2ubuntu1.9
+
+In general, a standard system update will make all the necessary changes.
+
+References:
+  http://www.ubuntu.com/usn/usn-2939-1
+  CVE-2015-8665, CVE-2015-8683, CVE-2015-8781, CVE-2015-8782,
+  CVE-2015-8783, CVE-2015-8784
+
+Package Information:
+  https://launchpad.net/ubuntu/+source/tiff/4.0.3-12.3ubuntu2.1
+  https://launchpad.net/ubuntu/+source/tiff/4.0.3-7ubuntu0.4
+  https://launchpad.net/ubuntu/+source/tiff/3.9.5-2ubuntu1.9
+
+
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 819 bytes
+Desc: OpenPGP digital signature
+URL: <https://lists.ubuntu.com/archives/ubuntu-security-announce/attachments/20160323/757a35f9/attachment.pgp>
+
+From marc.deslauriers at canonical.com  Thu Mar 24 13:13:06 2016
+From: marc.deslauriers at canonical.com (Marc Deslauriers)
+Date: Thu, 24 Mar 2016 09:13:06 -0400
+Subject: [USN-2941-1] Quagga vulnerabilities
+Message-ID: <56F3E7E2.8050804@canonical.com>
+
+==========================================================================
+Ubuntu Security Notice USN-2941-1
+March 24, 2016
+
+quagga vulnerabilities
+==========================================================================
+
+A security issue affects these releases of Ubuntu and its derivatives:
+
+- Ubuntu 15.10
+- Ubuntu 14.04 LTS
+- Ubuntu 12.04 LTS
+
+Summary:
+
+Quagga could be made to crash or run programs if it received specially
+crafted network traffic.
+
+Software Description:
+- quagga: BGP/OSPF/RIP routing daemon
+
+Details:
+
+Kostya Kortchinsky discovered that Quagga incorrectly handled certain route
+data when configured with BGP peers enabled for VPNv4. A remote attacker
+could use this issue to cause Quagga to crash, resulting in a denial of
+service, or possibly execute arbitrary code. (CVE-2016-2342)
+
+It was discovered that Quagga incorrectly handled messages with a large
+LSA when used in certain configurations. A remote attacker could use this
+issue to cause Quagga to crash, resulting in a denial of service. This
+issue only affected Ubuntu 12.04 LTS. (CVE-2013-2236)
+
+Update instructions:
+
+The problem can be corrected by updating your system to the following
+package versions:
+
+Ubuntu 15.10:
+  quagga                          0.99.24.1-2ubuntu0.1
+
+Ubuntu 14.04 LTS:
+  quagga                          0.99.22.4-3ubuntu1.1
+
+Ubuntu 12.04 LTS:
+  quagga                          0.99.20.1-0ubuntu0.12.04.4
+
+After a standard system update you need to restart Quagga to make all the
+necessary changes.
+
+References:
+  http://www.ubuntu.com/usn/usn-2941-1
+  CVE-2013-2236, CVE-2016-2342
+
+Package Information:
+  https://launchpad.net/ubuntu/+source/quagga/0.99.24.1-2ubuntu0.1
+  https://launchpad.net/ubuntu/+source/quagga/0.99.22.4-3ubuntu1.1
+  https://launchpad.net/ubuntu/+source/quagga/0.99.20.1-0ubuntu0.12.04.4
+
+
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 819 bytes
+Desc: OpenPGP digital signature
+URL: <https://lists.ubuntu.com/archives/ubuntu-security-announce/attachments/20160324/34269f1f/attachment.pgp>
+
+From jamie at canonical.com  Fri Mar 25 01:10:35 2016
+From: jamie at canonical.com (Jamie Strandboge)
+Date: Thu, 24 Mar 2016 20:10:35 -0500
+Subject: [USN-2942-1] OpenJDK 7 vulnerability
+References: <20160324225250.A3DF926C2605@lillypilly.canonical.com>
+Message-ID: <1458868235.13824.1.camel@canonical.com>
+
+==========================================================================
+Ubuntu Security Notice USN-2942-1
+March 24, 2016
+
+openjdk-7 vulnerability
+==========================================================================
+
+A security issue affects these releases of Ubuntu and its derivatives:
+
+- Ubuntu 15.10
+- Ubuntu 14.04 LTS
+
+Summary:
+
+OpenJDK could be made to crash or run programs as your login if it received
+specially crafted input.
+
+Software Description:
+- openjdk-7: Open Source Java implementation
+
+Details:
+
+A vulnerability was discovered in the JRE related to information
+disclosure, data integrity, and availability. An attacker could exploit
+these to cause a denial of service, expose sensitive data over the network,
+or possibly execute arbitrary code.
+
+Update instructions:
+
+The problem can be corrected by updating your system to the following
+package versions:
+
+Ubuntu 15.10:
+? icedtea-7-jre-jamvm?????????????7u95-2.6.4-0ubuntu0.15.10.2
+? openjdk-7-jre???????????????????7u95-2.6.4-0ubuntu0.15.10.2
+? openjdk-7-jre-headless??????????7u95-2.6.4-0ubuntu0.15.10.2
+? openjdk-7-jre-lib???????????????7u95-2.6.4-0ubuntu0.15.10.2
+? openjdk-7-jre-zero??????????????7u95-2.6.4-0ubuntu0.15.10.2
+
+Ubuntu 14.04 LTS:
+? icedtea-7-jre-jamvm?????????????7u95-2.6.4-0ubuntu0.14.04.2
+? openjdk-7-jdk???????????????????7u95-2.6.4-0ubuntu0.14.04.2
+? openjdk-7-jre???????????????????7u95-2.6.4-0ubuntu0.14.04.2
+? openjdk-7-jre-headless??????????7u95-2.6.4-0ubuntu0.14.04.2
+? openjdk-7-jre-lib???????????????7u95-2.6.4-0ubuntu0.14.04.2
+? openjdk-7-jre-zero??????????????7u95-2.6.4-0ubuntu0.14.04.2
+
+This update uses a new upstream release, which includes additional bug
+fixes. After a standard system update you need to restart any Java
+applications or applets to make all the necessary changes.
+
+References:
+? http://www.ubuntu.com/usn/usn-2942-1
+? CVE-2016-0636
+
+Package Information:
+? https://launchpad.net/ubuntu/+source/openjdk-7/7u95-2.6.4-0ubuntu0.15.10.2
+? https://launchpad.net/ubuntu/+source/openjdk-7/7u95-2.6.4-0ubuntu0.14.04.2
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 819 bytes
+Desc: This is a digitally signed message part
+URL: <https://lists.ubuntu.com/archives/ubuntu-security-announce/attachments/20160324/e1a48010/attachment.pgp>
+
+From marc.deslauriers at canonical.com  Tue Mar 29 17:45:53 2016
+From: marc.deslauriers at canonical.com (Marc Deslauriers)
+Date: Tue, 29 Mar 2016 13:45:53 -0400
+Subject: [USN-2943-1] PCRE vulnerabilities
+Message-ID: <56FABF51.3040505@canonical.com>
+
+==========================================================================
+Ubuntu Security Notice USN-2943-1
+March 29, 2016
+
+pcre3 vulnerabilities
+==========================================================================
+
+A security issue affects these releases of Ubuntu and its derivatives:
+
+- Ubuntu 15.10
+- Ubuntu 14.04 LTS
+- Ubuntu 12.04 LTS
+
+Summary:
+
+PCRE could be made to crash or run programs if it processed a
+specially-crafted regular expression.
+
+Software Description:
+- pcre3: Perl 5 Compatible Regular Expression Library
+
+Details:
+
+It was discovered that PCRE incorrectly handled certain regular
+expressions. A remote attacker could use this issue to cause applications
+using PCRE to crash, resulting in a denial of service, or possibly execute
+arbitrary code.
+
+Update instructions:
+
+The problem can be corrected by updating your system to the following
+package versions:
+
+Ubuntu 15.10:
+  libpcre3                        2:8.35-7.1ubuntu1.3
+
+Ubuntu 14.04 LTS:
+  libpcre3                        1:8.31-2ubuntu2.2
+
+Ubuntu 12.04 LTS:
+  libpcre3                        8.12-4ubuntu0.2
+
+After a standard system update you need to restart applications using PCRE,
+such as the Apache HTTP server and Nginx, to make all the necessary
+changes.
+
+References:
+  http://www.ubuntu.com/usn/usn-2943-1
+  CVE-2014-9769, CVE-2015-2325, CVE-2015-2326, CVE-2015-2327,
+  CVE-2015-2328, CVE-2015-3210, CVE-2015-5073, CVE-2015-8380,
+  CVE-2015-8381, CVE-2015-8382, CVE-2015-8383, CVE-2015-8384,
+  CVE-2015-8385, CVE-2015-8386, CVE-2015-8387, CVE-2015-8388,
+  CVE-2015-8389, CVE-2015-8390, CVE-2015-8391, CVE-2015-8392,
+  CVE-2015-8393, CVE-2015-8394, CVE-2015-8395, CVE-2016-1283,
+  CVE-2016-3191
+
+Package Information:
+  https://launchpad.net/ubuntu/+source/pcre3/2:8.35-7.1ubuntu1.3
+  https://launchpad.net/ubuntu/+source/pcre3/1:8.31-2ubuntu2.2
+  https://launchpad.net/ubuntu/+source/pcre3/8.12-4ubuntu0.2
+
+
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 819 bytes
+Desc: OpenPGP digital signature
+URL: <https://lists.ubuntu.com/archives/ubuntu-security-announce/attachments/20160329/c69ef96f/attachment.pgp>
+

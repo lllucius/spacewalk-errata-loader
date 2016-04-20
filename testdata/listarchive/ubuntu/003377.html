@@ -1,0 +1,144 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [USN-2947-3] Linux kernel (Raspberry Pi 2) vulnerabilities
+   </TITLE>
+   <LINK REL="Index" HREF="index.html" >
+   <LINK REL="made" HREF="mailto:ubuntu-security-announce%40lists.ubuntu.com?Subject=Re%3A%20%5BUSN-2947-3%5D%20Linux%20kernel%20%28Raspberry%20Pi%202%29%20vulnerabilities&In-Reply-To=%3C20160406080040.GE19944%40nxnw.org%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="003376.html">
+   <LINK REL="Next"  HREF="003378.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[USN-2947-3] Linux kernel (Raspberry Pi 2) vulnerabilities</H1>
+    <B>Steve Beattie</B> 
+    <A HREF="mailto:ubuntu-security-announce%40lists.ubuntu.com?Subject=Re%3A%20%5BUSN-2947-3%5D%20Linux%20kernel%20%28Raspberry%20Pi%202%29%20vulnerabilities&In-Reply-To=%3C20160406080040.GE19944%40nxnw.org%3E"
+       TITLE="[USN-2947-3] Linux kernel (Raspberry Pi 2) vulnerabilities">steve.beattie at canonical.com
+       </A><BR>
+    <I>Wed Apr  6 08:00:40 UTC 2016</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="003376.html">[USN-2947-2] Linux kernel (Wily HWE) vulnerabilities
+</A></li>
+        <LI>Next message: <A HREF="003378.html">[USN-2948-1] Linux kernel (Utopic HWE) vulnerabilities
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#3377">[ date ]</a>
+              <a href="thread.html#3377">[ thread ]</a>
+              <a href="subject.html#3377">[ subject ]</a>
+              <a href="author.html#3377">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>==========================================================================
+Ubuntu Security Notice USN-2947-3
+April 06, 2016
+
+linux-raspi2 vulnerabilities
+==========================================================================
+
+A security issue affects these releases of Ubuntu and its derivatives:
+
+- Ubuntu 15.10
+
+Summary:
+
+Several security issues were fixed in the kernel.
+
+Software Description:
+- linux-raspi2: Linux kernel for Raspberry Pi 2
+
+Details:
+
+Ralf Spenneberg discovered that the usbvision driver in the Linux kernel
+did not properly sanity check the interfaces and endpoints reported by the
+device. An attacker with physical access could cause a denial of service
+(system crash). (CVE-2015-7833)
+
+Venkatesh Pottem discovered a use-after-free vulnerability in the Linux
+kernel's CXGB3 driver. A local attacker could use this to cause a denial of
+service (system crash) or possibly execute arbitrary code. (CVE-2015-8812)
+
+Xiaofei Rex Guo discovered a timing side channel vulnerability in the Linux
+Extended Verification Module (EVM). An attacker could use this to affect
+system integrity. (CVE-2016-2085)
+
+It was discovered that the extended Berkeley Packet Filter (eBPF)
+implementation in the Linux kernel did not correctly compute branch offsets
+for backward jumps after ctx expansion. A local attacker could use this to
+cause a denial of service (system crash) or possibly execute arbitrary
+code. (CVE-2016-2383)
+
+David Herrmann discovered that the Linux kernel incorrectly accounted file
+descriptors to the original opener for in-flight file descriptors sent over
+a unix domain socket. A local attacker could use this to cause a denial of
+service (resource exhaustion). (CVE-2016-2550)
+
+It was discovered that the Linux kernel did not enforce limits on the
+amount of data allocated to buffer pipes. A local attacker could use this
+to cause a denial of service (resource exhaustion). (CVE-2016-2847)
+
+Update instructions:
+
+The problem can be corrected by updating your system to the following
+package versions:
+
+Ubuntu 15.10:
+  linux-image-4.2.0-1028-raspi2   4.2.0-1028.36
+
+After a standard system update you need to reboot your computer to make
+all the necessary changes.
+
+ATTENTION: Due to an unavoidable ABI change the kernel updates have
+been given a new version number, which requires you to recompile and
+reinstall all third party kernel modules you might have installed.
+Unless you manually uninstalled the standard kernel metapackages
+(e.g. linux-generic, linux-generic-lts-RELEASE, linux-virtual,
+linux-powerpc), a standard system upgrade will automatically perform
+this as well.
+
+References:
+  <A HREF="http://www.ubuntu.com/usn/usn-2947-3">http://www.ubuntu.com/usn/usn-2947-3</A>
+  <A HREF="http://www.ubuntu.com/usn/usn-2947-1">http://www.ubuntu.com/usn/usn-2947-1</A>
+  CVE-2015-7833, CVE-2015-8812, CVE-2016-2085, CVE-2016-2383,
+  CVE-2016-2550, CVE-2016-2847
+
+Package Information:
+  <A HREF="https://launchpad.net/ubuntu/+source/linux-raspi2/4.2.0-1028.36">https://launchpad.net/ubuntu/+source/linux-raspi2/4.2.0-1028.36</A>
+
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 819 bytes
+Desc: not available
+URL: &lt;<A HREF="https://lists.ubuntu.com/archives/ubuntu-security-announce/attachments/20160406/acc54ba8/attachment.pgp">https://lists.ubuntu.com/archives/ubuntu-security-announce/attachments/20160406/acc54ba8/attachment.pgp</A>&gt;
+</PRE>
+
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="003376.html">[USN-2947-2] Linux kernel (Wily HWE) vulnerabilities
+</A></li>
+	<LI>Next message: <A HREF="003378.html">[USN-2948-1] Linux kernel (Utopic HWE) vulnerabilities
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#3377">[ date ]</a>
+              <a href="thread.html#3377">[ thread ]</a>
+              <a href="subject.html#3377">[ subject ]</a>
+              <a href="author.html#3377">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.ubuntu.com/mailman/listinfo/ubuntu-security-announce">More information about the ubuntu-security-announce
+mailing list</a><br>
+</body></html>

@@ -1,0 +1,138 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [USN-2946-1] Linux kernel vulnerabilities
+   </TITLE>
+   <LINK REL="Index" HREF="index.html" >
+   <LINK REL="made" HREF="mailto:ubuntu-security-announce%40lists.ubuntu.com?Subject=Re%3A%20%5BUSN-2946-1%5D%20Linux%20kernel%20vulnerabilities&In-Reply-To=%3C20160406080007.GA19944%40nxnw.org%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="003371.html">
+   <LINK REL="Next"  HREF="003374.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[USN-2946-1] Linux kernel vulnerabilities</H1>
+    <B>Steve Beattie</B> 
+    <A HREF="mailto:ubuntu-security-announce%40lists.ubuntu.com?Subject=Re%3A%20%5BUSN-2946-1%5D%20Linux%20kernel%20vulnerabilities&In-Reply-To=%3C20160406080007.GA19944%40nxnw.org%3E"
+       TITLE="[USN-2946-1] Linux kernel vulnerabilities">steve.beattie at canonical.com
+       </A><BR>
+    <I>Wed Apr  6 08:00:07 UTC 2016</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="003371.html">[USN-2945-1] XChat-GNOME vulnerability
+</A></li>
+        <LI>Next message: <A HREF="003374.html">[USN-2946-2] Linux kernel (Trusty HWE) vulnerabilities
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#3373">[ date ]</a>
+              <a href="thread.html#3373">[ thread ]</a>
+              <a href="subject.html#3373">[ subject ]</a>
+              <a href="author.html#3373">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>==========================================================================
+Ubuntu Security Notice USN-2946-1
+April 06, 2016
+
+linux vulnerabilities
+==========================================================================
+
+A security issue affects these releases of Ubuntu and its derivatives:
+
+- Ubuntu 14.04 LTS
+
+Summary:
+
+Several security issues were fixed in the kernel.
+
+Software Description:
+- linux: Linux kernel
+
+Details:
+
+Venkatesh Pottem discovered a use-after-free vulnerability in the Linux
+kernel's CXGB3 driver. A local attacker could use this to cause a denial of
+service (system crash) or possibly execute arbitrary code. (CVE-2015-8812)
+
+Xiaofei Rex Guo discovered a timing side channel vulnerability in the Linux
+Extended Verification Module (EVM). An attacker could use this to affect
+system integrity. (CVE-2016-2085)
+
+David Herrmann discovered that the Linux kernel incorrectly accounted file
+descriptors to the original opener for in-flight file descriptors sent over
+a unix domain socket. A local attacker could use this to cause a denial of
+service (resource exhaustion). (CVE-2016-2550)
+
+It was discovered that the Linux kernel did not enforce limits on the
+amount of data allocated to buffer pipes. A local attacker could use this
+to cause a denial of service (resource exhaustion). (CVE-2016-2847)
+
+Update instructions:
+
+The problem can be corrected by updating your system to the following
+package versions:
+
+Ubuntu 14.04 LTS:
+  linux-image-3.13.0-85-generic   3.13.0-85.129
+  linux-image-3.13.0-85-generic-lpae  3.13.0-85.129
+  linux-image-3.13.0-85-lowlatency  3.13.0-85.129
+  linux-image-3.13.0-85-powerpc-e500  3.13.0-85.129
+  linux-image-3.13.0-85-powerpc-e500mc  3.13.0-85.129
+  linux-image-3.13.0-85-powerpc-smp  3.13.0-85.129
+  linux-image-3.13.0-85-powerpc64-emb  3.13.0-85.129
+  linux-image-3.13.0-85-powerpc64-smp  3.13.0-85.129
+
+After a standard system update you need to reboot your computer to make
+all the necessary changes.
+
+ATTENTION: Due to an unavoidable ABI change the kernel updates have
+been given a new version number, which requires you to recompile and
+reinstall all third party kernel modules you might have installed.
+Unless you manually uninstalled the standard kernel metapackages
+(e.g. linux-generic, linux-generic-lts-RELEASE, linux-virtual,
+linux-powerpc), a standard system upgrade will automatically perform
+this as well.
+
+References:
+  <A HREF="http://www.ubuntu.com/usn/usn-2946-1">http://www.ubuntu.com/usn/usn-2946-1</A>
+  CVE-2015-8812, CVE-2016-2085, CVE-2016-2550, CVE-2016-2847
+
+Package Information:
+  <A HREF="https://launchpad.net/ubuntu/+source/linux/3.13.0-85.129">https://launchpad.net/ubuntu/+source/linux/3.13.0-85.129</A>
+
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 819 bytes
+Desc: not available
+URL: &lt;<A HREF="https://lists.ubuntu.com/archives/ubuntu-security-announce/attachments/20160406/85a6a7c4/attachment.pgp">https://lists.ubuntu.com/archives/ubuntu-security-announce/attachments/20160406/85a6a7c4/attachment.pgp</A>&gt;
+</PRE>
+
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="003371.html">[USN-2945-1] XChat-GNOME vulnerability
+</A></li>
+	<LI>Next message: <A HREF="003374.html">[USN-2946-2] Linux kernel (Trusty HWE) vulnerabilities
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#3373">[ date ]</a>
+              <a href="thread.html#3373">[ thread ]</a>
+              <a href="subject.html#3373">[ subject ]</a>
+              <a href="author.html#3373">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.ubuntu.com/mailman/listinfo/ubuntu-security-announce">More information about the ubuntu-security-announce
+mailing list</a><br>
+</body></html>
