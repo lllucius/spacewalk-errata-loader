@@ -1,6 +1,7 @@
 
 import email
 import gzip
+import os
 import re
 import sys
 import traceback
@@ -46,6 +47,18 @@ class FileArchive(object):
 
         print '-----------------------------------------------------------'
         print "Extracting errata from %s " % filename
+
+        if not os.path.exists(filename):
+            print "Input file %s does not exist" % filename
+            return
+
+        if not os.path.isfile(filename):
+            print "Input file %s is not a normal file" % filename
+            return
+
+        if not os.access(filename, os.R_OK):
+            print "Input file %s is not readable" % filename
+            return
 
         try:
             if filename.endswith('.gz'):

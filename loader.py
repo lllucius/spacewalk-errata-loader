@@ -45,9 +45,7 @@ from ConfigParser import SafeConfigParser
 import os
 import sys
 
-from classes.processor import Processor
-from processors.centos import CentosProcessor
-from processors.ubuntu import UbuntuProcessor
+from classes.moduleloader import ModuleLoader
 
 #Config constants.
 CONFIG_FILE="loader.cfg"
@@ -180,7 +178,7 @@ def dateArg(str):
 
     return ym
 
-def process_args():
+def process_args(processor_names):
     default_date = datetime(datetime.today().year, datetime.today().month, 1).strftime("%Y-%m")
 
     parser = ArgumentParser()
@@ -190,7 +188,7 @@ def process_args():
     parser.register('action', 'store_true', StoreTrueAction)
     parser.register('action', 'store_false', StoreFalseAction)
 
-    parser.add_argument("dist", choices=["centos", "ubuntu"],
+    parser.add_argument("dist", choices=processor_names,
                         help="The target distribution")
     parser.add_argument("sources", nargs="*",
                         help="List of files or URLs to pull errata from")
@@ -251,26 +249,11 @@ def process_args():
 
     return args
 
-def check_input_file(args):
-    if args is None:
-        print "I need an input filename. See %s --help" % sys.argv[0]
-        sys.exit(2)
-
-    for inputFile in args:
-        if not os.path.exists(inputFile):
-            print "Input file %s does not exist" % inputFile
-            sys.exit(2)
-        elif not os.path.isfile(inputFile):
-            print "Input file %s is not a normal file" % inputFile
-            sys.exit(2)
-        elif not os.access(inputFile,os.R_OK):
-            print "Input file %s is not readable" % inputFile
-            sys.exit(2)
-
-    return args
-
 def main():
-    config = process_args()
+    loader = ModuleLoader()
+    loader.load_modules('Processor', 'processors')
+
+    config = process_args(loader.get_module_names())
 
     if config.show_config:
         print "Current configuration:"
@@ -278,18 +261,7 @@ def main():
             print "%-32s = %s" % (var, getattr(config, var))
         sys.exit(0)
 
-    #session = Session.establish_session(script_config.options,sys.argv[0])
-    #session.get_all_packages_for_channel(script_config.get_update_channel('x86_64'))
-
-    if config.dist == "centos":
-        processor = CentosProcessor()
-    elif config.dist == "ubuntu":
-        processor = UbuntuProcessor()
-    else:
-        print "bad dist %s" % config.dist
-        sys.exit(1)
-
-    processor.process(config)
+    loader.get_module(config.dist).process(config)
 
 if __name__ == "__main__":
     main()

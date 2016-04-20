@@ -84,16 +84,9 @@ class CentosMessageParser(object):
 
         return erratum
 
-class CentosProcessor(Processor, CentosMessageParser):
+class Processor(ProcessorBase, CentosMessageParser):
 
     __LISTURL = "https://lists.centos.org/pipermail/centos-announce"
-
-    @staticmethod
-    def add_command_arguments(parser):
-        pass
-
-    def __init__(self):
-        super(CentosProcessor, self).__init__()
 
     def get_list_url(self, config):
         return self.__LISTURL

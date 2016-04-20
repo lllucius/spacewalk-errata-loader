@@ -109,16 +109,9 @@ class UbuntuMessageParser(object):
   
         return erratum
        
-class UbuntuProcessor(Processor, UbuntuMessageParser):
+class Processor(ProcessorBase, UbuntuMessageParser):
 
     __LISTURL = "https://lists.ubuntu.com/archives/ubuntu-security-announce"
-
-    @staticmethod
-    def add_command_arguments(parser):
-        pass
-
-    def __init__(self):
-        super(UbuntuProcessor, self).__init__()
 
     def get_list_url(self, config):
         return self.__LISTURL
