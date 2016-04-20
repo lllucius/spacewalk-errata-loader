@@ -1,5 +1,6 @@
 
 import email
+import gzip
 import re
 import sys
 import traceback
@@ -42,6 +43,9 @@ class FileArchive(object):
 
     def process_file_messages(self, config, filename):
         errata = []
+
+        print '-----------------------------------------------------------'
+        print "Extracting errata from %s " % filename
 
         try:
             if filename.endswith('.gz'):

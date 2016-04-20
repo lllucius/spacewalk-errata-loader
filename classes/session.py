@@ -1,10 +1,11 @@
 
-import xmlrpclib
 import re
+import xmlrpclib
 
 from packages import *
 
 class Session(object):
+
     __escape_re = re.compile(r'([\+\-\&\|\!\(\)\{\}\[\]\^\"\~\*\?\:\\])')
 
     def __init__(self):

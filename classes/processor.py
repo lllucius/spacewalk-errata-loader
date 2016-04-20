@@ -1,10 +1,10 @@
 
-from session import Session
-from packages import Packages
 from errata import Errata
-from listarchive import ListArchive
 from filearchive import FileArchive
+from listarchive import ListArchive
+from packages import Packages
 from preprocessor import Preprocessors
+from session import Session
 
 class Processor(Session, Packages, Errata, ListArchive, FileArchive, Preprocessors):
     def __init__(self):

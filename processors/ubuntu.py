@@ -1,6 +1,6 @@
 
-import re
 from datetime import datetime
+import re
 
 from classes.erratum import *
 from classes.exceptions import *

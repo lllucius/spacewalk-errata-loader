@@ -39,23 +39,11 @@
 # Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
 #
 
-from datetime import datetime
 from argparse import *
+from datetime import datetime
 from ConfigParser import SafeConfigParser
-import email
-import getpass
-import libxml2
-import lxml.html
 import os
-import re
-import rpm
 import sys
-import traceback
-import urllib2
-import xmlrpclib
-import gzip
-import imp
-from contextlib import closing
 
 from classes.processor import Processor
 from processors.centos import CentosProcessor
@@ -217,6 +205,8 @@ def process_args():
 
 
     group = parser.add_argument_group("general arguments")
+    group.add_argument("--use-list-digest", dest="use_list_digest", action="store_true",
+                      help="Use the list digest instead of individual messages")
     group.add_argument("-l", "--load", dest="load_cache", action="store_true",
                       help="Load the package cache at startup")
     group.add_argument("-n", "--no-load", dest="load_cache", action="store_false",
@@ -239,8 +229,6 @@ def process_args():
                       help="Show packages that are missing")
     group.add_argument("--suppress-missing-group", dest="suppress_missing_group", action="store_true",
                       help="Do not show missing packages if all are missing for group")
-    group.add_argument("--use-list-digest", dest="use_list_digest", action="store_true",
-                      help="Use the list digest instead of individual messages")
 
     group = parser.add_argument_group("config arguments")
     group.add_argument("--conf", dest="config", type=str, default=CONFIG_FILE,
@@ -286,8 +274,8 @@ def main():
 
     if config.show_config:
         print "Current configuration:"
-        for var in vars(config):
-            print "%-20s = %s" % (var, getattr(config, var))
+        for var in sorted(vars(config)):
+            print "%-32s = %s" % (var, getattr(config, var))
         sys.exit(0)
 
     #session = Session.establish_session(script_config.options,sys.argv[0])

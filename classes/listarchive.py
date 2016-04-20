@@ -1,9 +1,12 @@
 
 from contextlib import closing
 from datetime import datetime
+from gzip import GzipFile
 import email
+import io
 import re
 import sys
+import tempfile
 import traceback
 import urllib2
 
@@ -26,7 +29,7 @@ class ListArchive(object):
     def __process_message(self, url):
 
         print '-----------------------------------------------------------'
-        print "Downloading erratum info from %s " % url
+        print "Downloading errata from %s " % url
         try:
             with closing(urllib2.urlopen(url)) as f:
                 src = f.read()
@@ -74,6 +77,10 @@ class ListArchive(object):
         else:
             urlbase = self.get_list_url(config)
 
+        if urlbase is None:
+            print "No URL for mailing list"
+            return
+
         try:
             fromym = datetime.strptime(config.from_date, "%Y-%m")
             toym = datetime.strptime(config.to_date, "%Y-%m")
@@ -93,17 +100,39 @@ class ListArchive(object):
         while fromym <= toym:
             src = None
 
-            try:
-                url = urlbase + '/' + fromym.strftime("%Y-%B/")
-                with closing(urllib2.urlopen(url)) as f:
-                    src = f.read()
-            except Exception, e:
-                print "Failed to open URL %s: %s...bypassing" % (url, e)
-                pass
+            if config.use_list_digest:
+                try:
+                    url = urlbase + '/' + fromym.strftime("%Y-%B.txt.gz")
 
-            if src is not None:
-                for href in re.findall('\d+.html', src):
-                    self.__process_message(url + href)
+                    print '-----------------------------------------------------------'
+                    print "Downloading errata from %s " % url
+
+                    src = tempfile.NamedTemporaryFile()
+                    with closing(urllib2.urlopen(url)) as f:
+                        src.write(GzipFile(fileobj=io.BytesIO(f.read())).read())
+                except Exception, e:
+                    print "Failed to open URL %s: %s...bypassing" % (url, e)
+                    pass
+
+                if src is not None:
+                    self.process_file_messages(self.config, src.name)
+                    src.close()
+            else:
+                try:
+                    url = urlbase + '/' + fromym.strftime("%Y-%B/")
+
+                    print '-----------------------------------------------------------'
+                    print "Downloading errata from %s " % url
+
+                    with closing(urllib2.urlopen(url)) as f:
+                        src = f.read()
+                except Exception, e:
+                    print "Failed to open URL %s: %s...bypassing" % (url, e)
+                    pass
+
+                if src is not None:
+                    for href in re.findall('\d+.html', src):
+                        self.__process_message(url + href)
 
             fromym = fromym.replace(year = fromym.year + ((fromym.month == 12) * 1),
                                     month = (fromym.month % 12) + 1)
