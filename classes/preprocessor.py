@@ -1,9 +1,8 @@
 
 import email
-import imp
-import os
 import re
 
+from log import *
 from moduleloader import *
 
 # Preprocessor return values
@@ -17,27 +16,28 @@ class Preprocessors(ModuleLoader):
         super(Preprocessors, self).__init__()
 
     def load_preprocessors(self, type):
-        self.load_modules('Preprocessor', 'preprocessors', type)
+        self.load_modules("Preprocessor", "preprocessors", type)
 
     def preprocess_message(self, msg):
-        subject = msg['Subject']
+        subject = msg["Subject"]
 
         if subject is None:
             return None
 
-        subject = re.sub('\s+', ' ', subject)
-        del msg['Subject']
-        msg['Subject'] = subject
+        subject = re.sub("\s+", " ", subject)
+        del msg["Subject"]
+        msg["Subject"] = subject
+
+        INFO("-----------------------------------------------------------")
+        INFO("processing: %s", subject)
 
         for pp in self.get_modules():
             rc = pp.run(subject, msg)
             if rc ==  DROP:
-                print "Preprocessor '%s' dropped message:" % pp.module_name
-                print subject
+                WARN("Preprocessor '%s' dropped message: %s", pp.module_name, subject)
                 return None
             if rc ==  PROCESSED:
-                print "Preprocessor '%s' processed message:" % pp.module_name
-                print subject
+                INFO("Preprocessor '%s' processed message: %s", pp.module_name, subject)
                 break
 
         return self.process_message(msg)

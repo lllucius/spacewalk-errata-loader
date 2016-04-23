@@ -2,11 +2,10 @@
 import re
 import xmlrpclib
 
+from log import *
 from packages import *
 
 class Session(object):
-
-    __escape_re = re.compile(r'([\+\-\&\|\!\(\)\{\}\[\]\^\"\~\*\?\:\\])')
 
     def __init__(self):
         super(Session, self).__init__()
@@ -21,7 +20,7 @@ class Session(object):
         self.servername = server
         self.user = user
         self.password = password
-        self.url = 'https://' + self.servername + '/rpc/api'
+        self.url = "https://" + self.servername + "/rpc/api"
         self.server = xmlrpclib.Server(self.url)
         self.auth_login(self.user, self.password)
 
@@ -35,7 +34,7 @@ class Session(object):
             return
         except xmlrpclib.Fault, f:
             if f.faultCode != -20:
-                print "Failed to login", f
+                EXCEPTION("Failed to login")
                 raise
 
         self.auth_login(login, password)
@@ -46,9 +45,9 @@ class Session(object):
             self.key = None
         except xmlrpclib.Fault, f:
             if f.faultCode != -20:
-                print "Failed to logout", f
+                EXCEPTION("Failed to logout")
                 raise
- 
+
     def channel_software_list_all_packages(self, channel):
         try:
             return self.server.channel.software.listAllPackages(self.key,
@@ -74,7 +73,7 @@ class Session(object):
     def packages_get_details(self, package):
         try:
             return self.server.packages.getDetails(self.key,
-                                                   package['id'])
+                                                   package["id"])
         except xmlrpclib.Fault, f:
             if f.faultCode == -20:
                 raise
@@ -93,7 +92,7 @@ class Session(object):
                                              erratum.channelLabel)
         except xmlrpclib.Fault, f:
             if f.faultCode == 2601:
-                print 'Erratum already exists:', erratum.advisory_name
+                ERROR("Erratum already exists: %s", erratum.advisory_name)
                 return False
             if f.faultCode != -20:
                 raise

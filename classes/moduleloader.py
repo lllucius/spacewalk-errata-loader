@@ -2,6 +2,8 @@
 import imp
 import os
 
+from log import *
+
 class ModuleLoader(object):
 
     def __init__(self):

@@ -2,7 +2,7 @@
 import re
 
 from classes.erratum import *
-from classes.exceptions import *
+from classes.log import *
 from classes.processor import *
 
 class CentosMessageParser(object):
@@ -32,53 +32,61 @@ class CentosMessageParser(object):
 
         match = self.__id_re.search(body)
         if match is None:
-            raise ParseError("Message doesn't appear to be an advisory")
-        erratum.errata_type = {'Security': Erratum.SECURITY,
-                               'Bugfix': Erratum.BUGFIX,
-                               'BugFix': Erratum.BUGFIX,
-                               'Enhancement': Erratum.ENHANCEMENT
-                                }[match.group('type')]
-        erratum.advisory_name = 'CE%sA-%s:%s' % (match.group('type')[0],
-                                                 match.group('year'),
-                                                 match.group('id'))
-        erratum.synopsis = '%s %s Update' % (erratum._package_name,
-                                             match.group('type'))
+            ERROR("Message doesn't appear to be an advisory")
+            return False
+
+        erratum.errata_type = {
+                               "Security": Erratum.SECURITY,
+                               "Bugfix": Erratum.BUGFIX,
+                               "BugFix": Erratum.BUGFIX,
+                               "Enhancement": Erratum.ENHANCEMENT
+                              }[match.group("type")]
+        erratum.advisory_name = "CE%sA-%s:%s" % (match.group("type")[0],
+                                                 match.group("year"),
+                                                 match.group("id"))
+        erratum.synopsis = "%s %s Update" % (erratum._package_name,
+                                             match.group("type"))
         if erratum.errata_type ==  Erratum.SECURITY:
-            erratum.synopsis = '%s: %s' % (match.group('severity'),
+            erratum.synopsis = "%s: %s" % (match.group("severity"),
                                            erratum.synopsis)
 
         match = self.__upstream_re.search(body)
         if match is None:
-            raise ParseError("Message doesn't appear to be an advisory")
-        erratum.topic = match.group('url')
+            ERROR("Message doesn't appear to be an advisory")
+            return False
+
+        erratum.topic = match.group("url")
         match = self.__url_re.search(erratum.topic)
         if match is not None:
-            erratum.topic = match.group('url')
+            erratum.topic = match.group("url")
 
         match = self.__pkgs_re.search(body)
         if match is None:
-            raise ParseError("Message doesn't appear to be an advisory")
-        for match in self.__arch_re.finditer(match.group('pkgs')):
-            arch = match.group('arch')
-            for match in self.__pkg_re.finditer(match.group('pkgs')):
-                erratum.add_package(arch, match.group('pkg'))
+            ERROR("Message doesn't appear to be an advisory")
+
+        for match in self.__arch_re.finditer(match.group("pkgs")):
+            arch = match.group("arch")
+            for match in self.__pkg_re.finditer(match.group("pkgs")):
+                erratum.add_package(arch, match.group("pkg"))
 
         erratum.issue_date = msg.get("Date")
         erratum.product = "CentoOS"
-        erratum.description = 'Automatically imported CentOS erratum'
-        erratum.solution = 'Install the associated packages'
+        erratum.description = "Automatically imported CentOS erratum"
+        erratum.solution = "Install the associated packages"
         erratum.notes = "Errata announced by CentOS on " + erratum.issue_date.strftime("%Y-%m-%d")
+        return True
 
     #Construct the basic details about the errata from the message subject
     def __process_subject(self, msg, erratum):
 
-        subject_match = self.__subject_re.match(msg['Subject'])
+        subject_match = self.__subject_re.match(msg["Subject"])
 
         if subject_match is None:
-            raise ParseError("Message doesn't appear to be an advisory")
+            ERROR("Message doesn't appear to be an advisory")
+            return False
 
-        erratum._product_version = subject_match.group('version')
-        erratum._package_name = subject_match.group('package')
+        erratum._product_version = subject_match.group("version")
+        erratum._package_name = subject_match.group("package")
 
         return True
 
@@ -86,14 +94,16 @@ class CentosMessageParser(object):
 
         erratum = Erratum()
 
-        self.__process_subject(msg, erratum)
+        if not self.__process_subject(msg, erratum):
+            return None
 
-        if hasattr(self.config, 'versions'):
-            if erratum._product_version not in self.config.versions.split(','):
-                print 'Version not applicable for %s' % msg['Subject']
+        if hasattr(self.config, "versions"):
+            if erratum._product_version not in self.config.versions.split(","):
+                INFO("Version '%s' not applicable", erratum._product_version)
                 return None
 
-        self.__process_body(msg, erratum)
+        if not self.__process_body(msg, erratum):
+            return None
 
         return erratum
 

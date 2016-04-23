@@ -8,6 +8,6 @@ class Preprocessor(PreprocessorBase):
         if chr(63) not in payload:
             return CONTINUE
 
-        msg.set_payload(payload.replace(chr(63), ' '))
+        msg.set_payload(payload.replace(chr(63), " "))
 
         return CONTINUE

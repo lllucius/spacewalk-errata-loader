@@ -1,6 +1,8 @@
 
 import re
 
+from log import *
+
 class Packages(object):
 
     __escape_re = re.compile(r'([\+\-\&\|\!\(\)\{\}\[\]\^\"\~\*\?\:\\])')
@@ -11,7 +13,7 @@ class Packages(object):
         self.channels = {}
 
     def __cache_packages_for_channel(self, channel):
-        print "Loading package cache for %s" % channel
+        INFO("Loading package cache for %s", channel)
         packages = self.channel_software_list_all_packages(channel)
 
         self.idIndex = {}
@@ -21,18 +23,20 @@ class Packages(object):
             self.__cache_package_for_channel(channel, p)
 
     def __cache_package_for_channel(self, channel, package):
-        #print package
-        nvra = "%s-%s-%s.%s" % (package['name'],
-                                package['version'],
-                                package['release'],
-                                package['arch_label'])
-        #print 'NVRA:', nvra
-        self.channels[channel][nvra] = package['id']
-        nvr = "%s-%s-%s" % (package['name'],
-                            package['version'],
-                            package['release'])
-        #print 'NVR:', nvr
-        self.channels[channel][nvr] = package['id']
+        DEBUG("PACKAGE: %s", package)
+
+        nvra = "%s-%s-%s.%s" % (package["name"],
+                                package["version"],
+                                package["release"],
+                                package["arch_label"])
+        DEBUG("NVRA: %s", nvra)
+        self.channels[channel][nvra] = package["id"]
+
+        nvr = "%s-%s-%s" % (package["name"],
+                            package["version"],
+                            package["release"])
+        DEBUG("NVR: %s", nvr)
+        self.channels[channel][nvr] = package["id"]
 
     def get_channels(self):
         return self.channels.keys()
@@ -62,18 +66,18 @@ class Packages(object):
         #
         # But, it would work with others.  So, just search
         # both ways instead.
-        escaped = self.__escape_re.sub(r'\\\1', name)
-        query = 'filename:%s or filename:%s*' % (escaped, escaped)
+        escaped = self.__escape_re.sub(r"\\\1", name)
+        query = "filename:%s or filename:%s*" % (escaped, escaped)
         packages = self.packages_search_advanced(query)
         for pkg in packages:
-            nvra = "%s-%s-%s.%s" % (pkg['name'],
-                                    pkg['version'],
-                                    pkg['release'],
-                                    pkg['arch'])
+            nvra = "%s-%s-%s.%s" % (pkg["name"],
+                                    pkg["version"],
+                                    pkg["release"],
+                                    pkg["arch"])
             if nvra.startswith(name + "."):
                 details = self.packages_get_details(pkg)
                 if details is not None:
-                    for chan in details['providing_channels']:
+                    for chan in details["providing_channels"]:
                         if channel == chan:
                             self.__cache_package_for_channel(channel, details)
                             return self.channels[channel][name]

@@ -46,6 +46,7 @@ import os
 import sys
 
 from classes.moduleloader import ModuleLoader
+from classes.log import *
 from version import *
 
 #Config constants.
@@ -84,15 +85,15 @@ class StoreAction(Action):
     @property
     def default(self):
         dflt = self._default
-        config = self.container.get_default('_config')
-        section = self.container.get_default('_section')
+        config = self.container.get_default("_config")
+        section = self.container.get_default("_section")
 
         if config is None or self.dest is None:
             return dflt
 
         if section is None or not config.has_section(section):
-            if config.has_section('DEFAULT'):
-                section = 'DEFAULT'
+            if config.has_section("DEFAULT"):
+                section = "DEFAULT"
             else:
                 section = config.sections()[0]
 
@@ -185,11 +186,11 @@ def process_args(loader):
     default_date = datetime(datetime.today().year, datetime.today().month, 1).strftime("%Y-%m")
 
     parser = ArgumentParser(version=VERSION)
-    parser.register('action', None, StoreAction)
-    parser.register('action', 'store', StoreAction)
-    parser.register('action', 'store_const', StoreConstAction)
-    parser.register('action', 'store_true', StoreTrueAction)
-    parser.register('action', 'store_false', StoreFalseAction)
+    parser.register("action", None, StoreAction)
+    parser.register("action", "store", StoreAction)
+    parser.register("action", "store_const", StoreConstAction)
+    parser.register("action", "store_true", StoreTrueAction)
+    parser.register("action", "store_false", StoreFalseAction)
 
     parser.add_argument("dist", choices=processor_names,
                         help="The target distribution")
@@ -204,8 +205,11 @@ def process_args(loader):
     group.add_argument("-p", "--password", dest="password", type=str,
                       help="Spacewalk password (cleartext)")
 
-
     group = parser.add_argument_group("general arguments")
+    group.add_argument("--http-proxy", dest="http_proxy", type=str,
+                      help="Proxy server URL for HTTP requests")
+    group.add_argument("--https-proxy", dest="https_proxy", type=str,
+                      help="Proxy server URL for HTTPS requests")
     group.add_argument("--use-list-digest", dest="use_list_digest", action="store_true",
                       help="Use the list digest instead of individual messages")
     group.add_argument("-l", "--load", dest="load_cache", action="store_true",
@@ -214,16 +218,20 @@ def process_args(loader):
                       help="Do not load the package cache at startup")
     group.add_argument("--dry-run", dest="dry_run", action="store_true",
                       help="Process the errata, but do not publish")
+    group.add_argument("--verbose", dest="verbose", action="store_true",
+                      help="Enable verbose logging")
+    group.add_argument("--debug", dest="debug", action="store_true",
+                      help="Enable debug logging")
 
     group = parser.add_argument_group("errata arguments")
     group.add_argument("-c", "--channels", dest="channels", type=str,
                       help="List of channels where to publish errata, separated by comma")
     group.add_argument("-f", "--from", dest="from_date", type=dateArg, default=default_date,
-                      help="Starting date (YYYY-MM) from which to pull errata.  Format 'listarchive' only")
+                      help="Starting date (YYYY-MM) from which to pull errata")
     group.add_argument("-t", "--to", dest="to_date", type=dateArg, default=default_date,
-                      help="Ending date (YYYY-MM) from which to pull errata.  Format 'listarchive' only")
+                      help="Ending date (YYYY-MM) from which to pull errata")
     group.add_argument("--max-errata", dest="max_errata", type=int, default=10000,
-                      help="Maximum number of errata to process at once.")
+                      help="Maximum number of errata to process at once")
     group.add_argument("--publish-with-missing", dest="publish_with_missing", action="store_true",
                       help="Publish erratum even if packages are missing")
     group.add_argument("--report-missing", dest="report_missing", action="store_true",
@@ -239,7 +247,7 @@ def process_args(loader):
 
     for name in processor_names:
         module = loader.get_module(name)
-        if hasattr(module, 'add_command_arguments'):
+        if hasattr(module, "add_command_arguments"):
             group = parser.add_argument_group("%s arguments" % name)
             module.add_command_arguments(group)
 
@@ -249,26 +257,35 @@ def process_args(loader):
     with open(args.config) as f:
         config.readfp(f)
 
-    parser.set_defaults(**{'_config': config, '_section': args.dist})
+    parser.set_defaults(**{"_config": config, "_section": args.dist})
 
     args = parser.parse_args()
 
-    delattr(args, '_config')
-    delattr(args, '_section')
+    delattr(args, "_config")
+    delattr(args, "_section")
 
     return args
 
 def main():
     loader = ModuleLoader()
-    loader.load_modules('Processor', 'processors')
+    loader.load_modules("Processor", "processors")
 
     config = process_args(loader)
 
+    get_logger().set_config(config.config,
+                            verbose=config.verbose,
+                            debug=config.debug)
+
     if config.show_config:
-        print "Current configuration:"
+        CRITICAL("Current configuration:")
         for var in sorted(vars(config)):
-            print "%-32s = %s" % (var, getattr(config, var))
+            CRITICAL("%-32s = %s", var, getattr(config, var))
         sys.exit(0)
+
+    if config.http_proxy is not None:
+        os.environ['http_proxy'] = config.http_proxy
+    if config.https_proxy is not None:
+        os.environ['https_proxy'] = config.https_proxy
 
     loader.get_module(config.dist).process(config)
 

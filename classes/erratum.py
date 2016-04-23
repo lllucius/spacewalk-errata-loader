@@ -1,11 +1,13 @@
 
 from datetime import datetime
 
+from log import *
+
 class Erratum(object):
 
-    SECURITY = 'Security Advisory'
-    ENHANCEMENT = 'Product Enhancement Advisory'
-    BUGFIX = 'Bug Fix Advisory'
+    SECURITY = "Security Advisory"
+    ENHANCEMENT = "Product Enhancement Advisory"
+    BUGFIX = "Bug Fix Advisory"
 
     def __init__(self):
         self.synopsis = None
@@ -13,7 +15,7 @@ class Erratum(object):
         self.advisory_release = 1
         self.advisory_type = Erratum.SECURITY
         self.product = None
-        self.errataFrom = "" #None
+        self.errataFrom = ""
         self.topic = None
         self.description = None
         self.references = ""
@@ -32,7 +34,6 @@ class Erratum(object):
         self.issue_date = datetime.now()
         self.update_date = datetime.now()
 
-        #This is used internally by the script
         self._product_version = 0
         self._package_name = ""
         self._package_groups = {}
@@ -98,45 +99,45 @@ class Erratum(object):
 
     def get_info_dict(self):
         return {
-                'synopsis': self.synopsis,
-                'advisory_name': self.advisory_name,
-                'advisory_release': self.advisory_release,
-                'advisory_type': self.advisory_type,
-                'product': self.product,
-                'errataFrom': self.errataFrom,
-                'topic': self.topic,
-                'description': self.description,
-                'references': self.references,
-                'notes': self.notes,
-                'solution': self.solution
+                "synopsis": self.synopsis,
+                "advisory_name": self.advisory_name,
+                "advisory_release": self.advisory_release,
+                "advisory_type": self.advisory_type,
+                "product": self.product,
+                "errataFrom": self.errataFrom,
+                "topic": self.topic,
+                "description": self.description,
+                "references": self.references,
+                "notes": self.notes,
+                "solution": self.solution
                }
 
     def is_valid(self):
         info = self.get_info_dict()
 
         required = [
-                    'synopsis',
-                    'advisory_name',
-                    'advisory_release',
-                    'advisory_type',
-                    'product',
-                    'topic',
-                    'description',
-                    'solution'
+                    "synopsis",
+                    "advisory_name",
+                    "advisory_release",
+                    "advisory_type",
+                    "product",
+                    "topic",
+                    "description",
+                    "solution"
                    ]
 
         for attr in required:
             if info[attr] is None:
-                print "Erratum is missing the '%s':" % attr
+                ERROR("Erratum is missing the '%s'", attr)
                 return False
 
         if self._package_groups is None:
-            print "No packages added to erratum"
+            ERROR("No packages added to erratum")
             return False
 
         for group in self._package_groups:
             if self._package_groups[group] is None:
-                print "No packages added to group '%s'" % group
+                ERROR("No packages added to group '%s'", group)
                 return False
 
         return True
@@ -157,57 +158,57 @@ class Erratum(object):
 
     def set_missing(self, group, name):
         if group not in self._package_groups:
-            print "Invalid group name %s" % group
+            CRITICAL("Invalid group name %s", group)
             return
         if name not in self._package_groups[group]:
-            print "Name %s not in group %s" % (name, group)
+            CRITICAL("Name %s not in group %s", name, group)
             return
         ndx = self._package_groups[group].index(name)
         self._package_groups[group][ndx] = \
             "MISSING: " + self._package_groups[group][ndx]
 
     def show(self):
-        print "%-20s = %s" % ("Synopsis:", self.synopsis)
-        print "%-20s = %s" % ("Name:", self.advisory_name)
-        print "%-20s = %s" % ("Release:", self.advisory_release)
-        print "%-20s = %s" % ("Type:", self.advisory_type)
-        print "%-20s = %s" % ("Product:", self.product)
-        print "%-20s = %s" % ("From:", self.errataFrom)
-        print "%-20s = %s" % ("Topic:", self.topic)
-        print "%-20s = %s" % ("Description:", self.description)
-        print "%-20s = %s" % ("References:", self.references)
-        print "%-20s = %s" % ("Notes:", self.notes)
-        print "%-20s = %s" % ("Solution:", self.solution)
-        print "%-20s = %s" % ("Issued:", self.issue_date)
-        print "%-20s = %s" % ("Updated:", self.update_date)
- 
+        INFO("%-20s = %s", "Synopsis:", self.synopsis)
+        INFO("%-20s = %s", "Name:", self.advisory_name)
+        INFO("%-20s = %s", "Release:", self.advisory_release)
+        INFO("%-20s = %s", "Type:", self.advisory_type)
+        INFO("%-20s = %s", "Product:", self.product)
+        INFO("%-20s = %s", "From:", self.errataFrom)
+        INFO("%-20s = %s", "Topic:", self.topic)
+        INFO("%-20s = %s", "Description:", self.description)
+        INFO("%-20s = %s", "References:", self.references)
+        INFO("%-20s = %s", "Notes:", self.notes)
+        INFO("%-20s = %s", "Solution:", self.solution)
+        INFO("%-20s = %s", "Issued:", self.issue_date)
+        INFO("%-20s = %s", "Updated:", self.update_date)
+
         n = "Keywords:"
         for keyword in self.keywords:
-            print "%-20s = %s" % (n, keyword)
+            INFO("%-20s = %s", n, keyword)
             n = ""
 
         n = "Package IDs:"
         for pkg in self.packages:
-            print "%-20s = %s" % (n, pkg)
+            INFO("%-20s = %s", n, pkg)
             n = ""
 
         n = "Channels:"
         for channel in self.channelLabel:
-            print "%-20s = %s" % (n, channel)
+            INFO("%-20s = %s", n, channel)
             n = ""
 
         n = "CVEs:"
         for cve in self.cves:
-            print "%-20s = %s" % (n, cve)
+            INFO("%-20s = %s", n, cve)
             n = ""
 
-        print 
-        print "%-20s = %s" % ("Version:", self._product_version)
-        print "%-20s = %s" % ("Package:", self._package_name)
+        INFO("")
+        INFO("%-20s = %s", "Version:", self._product_version)
+        INFO("%-20s = %s", "Package:", self._package_name)
 
-        print "Package groups:"
+        INFO("Package groups:")
         for group in self._package_groups:
             for pkg in self._package_groups[group]:
-                print "%-20s = %s" % (group, pkg)
+                INFO("%-20s = %s", group, pkg)
                 group = ""
 
