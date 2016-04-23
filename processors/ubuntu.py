@@ -37,6 +37,7 @@ class UbuntuMessageParser(object):
     __pkg_re = re.compile(__PKG, re.MULTILINE)
 
     def __process_body(self, msg, erratum):
+        subject = msg["Subject"]
         body = msg.get_payload()
 
         if body.find("reboot your computer") != -1:
@@ -44,7 +45,7 @@ class UbuntuMessageParser(object):
 
         match = self.__id_re.search(body)
         if match is None:
-            ERROR("Message doesn't appear to be an advisory")
+            ERROR("Message doesn't appear to be an advisory: %s", subject)
             return False
 
         erratum.advisory_name = match.group("id")
@@ -52,14 +53,14 @@ class UbuntuMessageParser(object):
 
         match = self.__topic_re.search(body)
         if match is None:
-            ERROR("Message doesn't appear to be an advisory")
+            ERROR("Message doesn't appear to be an advisory: %s", subject)
             return False
 
         erratum.topic = match.group("topic")
 
         match = self.__summary_re.search(body)
         if match is None:
-            ERROR("Message doesn't appear to be an advisory")
+            ERROR("Message doesn't appear to be an advisory: %s", subject)
             return False
 
         erratum.synopsis = re.sub("\s+", " ", match.group("summary"))
@@ -68,35 +69,35 @@ class UbuntuMessageParser(object):
 
         match = self.__details_re.search(body)
         if match is None:
-            ERROR("Message doesn't appear to be an advisory")
+            ERROR("Message doesn't appear to be an advisory: %s", subject)
             return False
 
         erratum.description = match.group("details")
 
         match = self.__update_re.search(body)
         if match is None:
-            ERROR("Message doesn't appear to be an advisory")
+            ERROR("Message doesn't appear to be an advisory: %s", subject)
             return False
 
         erratum.solution = match.group("update")
 
         match = self.__refs_re.search(body)
         if match is None:
-            ERROR("Message doesn't appear to be an advisory")
+            ERROR("Message doesn't appear to be an advisory: %s", subject)
             return False
 
         erratum.references = match.group("references")
 
         match = self.__cves_re.findall(erratum.references)
         if match is None:
-            ERROR("Message doesn't appear to be an advisory")
+            ERROR("Message doesn't appear to be an advisory: %s", subject)
             return False
 
         erratum.cves = match
 
         match = self.__pkgs_re.search(erratum.solution)
         if match is None:
-            ERROR("Message doesn't appear to be an advisory")
+            ERROR("Message doesn't appear to be an advisory: %s", subject)
             return False
 
         for match in self.__arch_re.finditer(match.group("pkgs")):
@@ -112,7 +113,7 @@ class UbuntuMessageParser(object):
         match = self.__subject_re.match(subject)
 
         if match is None:
-            ERROR("Message doesn't appear to be an advisory")
+            ERROR("Message doesn't appear to be an advisory: %s", subject)
             return False
 
         erratum._id = match.group("id")

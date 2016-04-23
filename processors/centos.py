@@ -28,11 +28,12 @@ class CentosMessageParser(object):
         return
 
     def __process_body(self, msg, erratum):
+        subject = msg["Subject"]
         body = msg.get_payload()
 
         match = self.__id_re.search(body)
         if match is None:
-            ERROR("Message doesn't appear to be an advisory")
+            ERROR("Message doesn't appear to be an advisory: %s", subject)
             return False
 
         erratum.errata_type = {
@@ -52,7 +53,7 @@ class CentosMessageParser(object):
 
         match = self.__upstream_re.search(body)
         if match is None:
-            ERROR("Message doesn't appear to be an advisory")
+            ERROR("Message doesn't appear to be an advisory: %s", subject)
             return False
 
         erratum.topic = match.group("url")
@@ -62,7 +63,7 @@ class CentosMessageParser(object):
 
         match = self.__pkgs_re.search(body)
         if match is None:
-            ERROR("Message doesn't appear to be an advisory")
+            ERROR("Message doesn't appear to be an advisory: %s", subject)
 
         for match in self.__arch_re.finditer(match.group("pkgs")):
             arch = match.group("arch")
@@ -78,11 +79,12 @@ class CentosMessageParser(object):
 
     #Construct the basic details about the errata from the message subject
     def __process_subject(self, msg, erratum):
+        subject = msg["Subject"]
 
-        subject_match = self.__subject_re.match(msg["Subject"])
+        subject_match = self.__subject_re.match(subject)
 
         if subject_match is None:
-            ERROR("Message doesn't appear to be an advisory")
+            ERROR("Message doesn't appear to be an advisory: %s", subject)
             return False
 
         erratum._product_version = subject_match.group("version")
