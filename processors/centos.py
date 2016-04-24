@@ -1,9 +1,54 @@
 
+from contextlib import closing
+import bz2
 import re
+import urllib2
+try:
+    import xml.etree.cElementTree as ET
+except ImportError:
+    import xml.etree.ElementTree as ET
 
 from classes.erratum import *
 from classes.log import *
 from classes.processor import *
+
+class Oval(object):
+
+    _id_re = re.compile('.*-(\d+):(\d+)')
+
+    def __init__(self):
+        super(Oval, self).__init__()
+        self.__true = None
+
+    def load(self, url):
+        INFO("Loading OVAL file")
+        with closing(urllib2.urlopen(url)) as f:
+            raw = f.read()
+            if url.endswith(".bz2"):
+                raw = bz2.decompress(raw)
+            match = re.search("<definitions>.*</definitions>", raw, re.DOTALL)
+            self.__tree = ET.fromstring(match.group(0))
+
+    def supplement(self, erratum):
+        if not erratum.advisory_name.startswith("CESA") or self.__tree is None:
+            return
+
+        id = self._id_re.sub('\g<1>\g<2>', erratum.advisory_name)
+        md = self.__tree.find("./definition/[@id='oval:com.redhat.rhsa:def:{0}']/metadata".format(id))
+        if md is None:
+            return
+
+        erratum.description = md.find("description").text
+
+        for ref in md.findall("reference"):
+            erratum.references += "{0}\n".format(ref.get("ref_url"))
+
+        av = md.find("advisory")
+        erratum.issue_date = datetime.strptime(av.find("issued").get("date"), "%Y-%m-%d")
+        erratum.update_date = datetime.strptime(av.find("updated").get("date"), "%Y-%m-%d")
+        erratum.notes += "\nOVAL Information {0}".format(av.find("rights").text)
+        for cve in av.findall("cve"):
+            erratum.cves.append(cve.text)
 
 class CentosMessageParser(object):
 
@@ -71,10 +116,12 @@ class CentosMessageParser(object):
         erratum.product = "CentoOS"
         erratum.description = "Automatically imported CentOS erratum"
         erratum.solution = "Install the associated packages"
-        erratum.notes = "Errata announced by CentOS on {0}".format(erratum.issue_date.strftime("%Y-%m-%d"))
+        erratum.notes = "Errata announced by CentOS on {0}\n".format(erratum.issue_date.strftime("%Y-%m-%d"))
+
+        self.oval.supplement(erratum)
+
         return True
 
-    #Construct the basic details about the errata from the message subject
     def __process_subject(self, msg, erratum):
         subject_match = self.__subject_re.match(msg["Subject"])
 
@@ -114,4 +161,13 @@ class Processor(ProcessorBase, CentosMessageParser):
     def add_command_arguments(self, parser):
         parser.add_argument("--centos-versions", dest="versions", type=str,
                            help=_("Limit processing to comma separated version numbers"))
+        parser.add_argument("--oval", dest="oval", type=str,
+                           help=_("Path to optional OVAL file"))
+
+    def process(self, config):
+        self.oval = Oval()
+        if config.oval is not None and config.oval != "":
+            self.oval.load(config.oval)
+
+        super(Processor, self).process(config)
 

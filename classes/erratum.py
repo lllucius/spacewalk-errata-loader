@@ -138,7 +138,6 @@ class Erratum(object):
         for group in self._package_groups:
             if self._package_groups[group] is None:
                 ERROR("No packages added to group '{0}'", group)
-
                 return False
 
         return True
