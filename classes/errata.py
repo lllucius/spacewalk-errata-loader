@@ -25,7 +25,7 @@ class Errata(object):
             return
 
         if self.is_erratum_in_cache(erratum):
-            WARN("Erratum '%s' already exists", erratum.advisory_name)
+            WARN("Erratum '{0}' already exists", erratum.advisory_name)
             return
 
         groups = erratum.get_groups()
@@ -55,12 +55,12 @@ class Errata(object):
                         if (not allmissing) or \
                            (allmissing and not self.config.suppress_missing_group):
                             for name in missing:
-                                WARN("missing %s from %s", name, group)
+                                WARN("missing {0} from {1}", name, group)
                     if self.config.publish_with_missing and not allmissing:
                         erratum.add_channel(channel)
 
         if len(erratum.packages) == 0:
-            WARN("All packages missing for Erratum %s", erratum.advisory_name)
+            WARN("All packages missing for Erratum {0}", erratum.advisory_name)
             return
 
         if len(erratum.channelLabel) == 0:
@@ -77,7 +77,7 @@ class Errata(object):
                   }
         self.errata_set_details(erratum, details)
 
-        INFO("Published %s", erratum.advisory_name)
+        INFO("Published {0}", erratum.advisory_name)
 
         return
 

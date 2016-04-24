@@ -18,7 +18,7 @@ class FileArchive(object):
     def __process_message(self, src):
         self.errata_processed += 1
         if self.errata_processed > self.config.max_errata:
-            ERROR("Maximum number of errata (%s) processed", self.config.max_errata)
+            ERROR("Maximum number of errata ({0}) processed", self.config.max_errata)
             return
 
         msg = email.message_from_string(src)
@@ -36,18 +36,18 @@ class FileArchive(object):
         errata = []
 
         INFO("-----------------------------------------------------------")
-        INFO("Extracting errata from %s", filename)
+        INFO("Extracting errata from {0}", filename)
 
         if not os.path.exists(filename):
-            ERROR("Input file %s does not exist", filename)
+            ERROR("Input file {0} does not exist", filename)
             return
 
         if not os.path.isfile(filename):
-            ERROR("Input file %s is not a normal file", filename)
+            ERROR("Input file {0} is not a normal file", filename)
             return
 
         if not os.access(filename, os.R_OK):
-            ERROR("Input file %s is not readable", filename)
+            ERROR("Input file {0} is not readable", filename)
             return
 
         if filename.endswith(".gz"):

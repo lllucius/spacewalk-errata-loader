@@ -39,6 +39,9 @@
 # Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
 #
 
+from __future__ import unicode_literals
+import gettext
+
 from argparse import *
 from datetime import datetime
 from ConfigParser import SafeConfigParser
@@ -47,10 +50,9 @@ import sys
 
 from classes.moduleloader import ModuleLoader
 from classes.log import *
-from version import *
+from classes.version import *
 
-#Config constants.
-CONFIG_FILE="loader.cfg"
+CONFIG_FILE=PACKAGE_NAME + ".cfg"
 
 class StoreAction(Action):
     def __init__(self,
@@ -185,7 +187,7 @@ def process_args(loader):
 
     default_date = datetime(datetime.today().year, datetime.today().month, 1).strftime("%Y-%m")
 
-    parser = ArgumentParser(version=VERSION)
+    parser = ArgumentParser(version=PACKAGE_VERSION)
     parser.register("action", None, StoreAction)
     parser.register("action", "store", StoreAction)
     parser.register("action", "store_const", StoreConstAction)
@@ -193,62 +195,62 @@ def process_args(loader):
     parser.register("action", "store_false", StoreFalseAction)
 
     parser.add_argument("dist", choices=processor_names,
-                        help="The target distribution")
+                        help=_("The target distribution"))
     parser.add_argument("sources", nargs="*",
-                        help="List of files or URLs to pull errata from")
+                        help=_("List of files or URLs to pull errata from"))
 
-    group = parser.add_argument_group("server arguments")
+    group = parser.add_argument_group(_("server arguments"))
     group.add_argument("-s", "--server", dest="server", type=str,
-                      help="Spacewalk server hostname")
+                      help=_("Spacewalk server hostname"))
     group.add_argument("-u", "--user", dest="user", type=str,
-                      help="Spacewalk userid")
+                      help=_("Spacewalk userid"))
     group.add_argument("-p", "--password", dest="password", type=str,
-                      help="Spacewalk password (cleartext)")
+                      help=_("Spacewalk password (cleartext)"))
 
-    group = parser.add_argument_group("general arguments")
+    group = parser.add_argument_group(_("general arguments"))
     group.add_argument("--http-proxy", dest="http_proxy", type=str,
-                      help="Proxy server URL for HTTP requests")
+                      help=_("Proxy server URL for HTTP requests"))
     group.add_argument("--https-proxy", dest="https_proxy", type=str,
-                      help="Proxy server URL for HTTPS requests")
+                      help=_("Proxy server URL for HTTPS requests"))
     group.add_argument("--use-list-digest", dest="use_list_digest", action="store_true",
-                      help="Use the list digest instead of individual messages")
+                      help=_("Use the list digest instead of individual messages"))
     group.add_argument("-l", "--load", dest="load_cache", action="store_true",
-                      help="Load the package cache at startup")
+                      help=_("Load the package cache at startup"))
     group.add_argument("-n", "--no-load", dest="load_cache", action="store_false",
-                      help="Do not load the package cache at startup")
+                      help=_("Do not load the package cache at startup"))
     group.add_argument("--dry-run", dest="dry_run", action="store_true",
-                      help="Process the errata, but do not publish")
+                      help=_("Process the errata, but do not publish"))
     group.add_argument("--verbose", dest="verbose", action="store_true",
-                      help="Enable verbose logging")
+                      help=_("Enable verbose logging"))
     group.add_argument("--debug", dest="debug", action="store_true",
-                      help="Enable debug logging")
+                      help=_("Enable debug logging"))
 
-    group = parser.add_argument_group("errata arguments")
+    group = parser.add_argument_group(_("errata arguments"))
     group.add_argument("-c", "--channels", dest="channels", type=str,
-                      help="List of channels where to publish errata, separated by comma")
+                      help=_("List of channels where to publish errata, separated by comma"))
     group.add_argument("-f", "--from", dest="from_date", type=dateArg, default=default_date,
-                      help="Starting date (YYYY-MM) from which to pull errata")
+                      help=_("Starting date (YYYY-MM) from which to pull errata"))
     group.add_argument("-t", "--to", dest="to_date", type=dateArg, default=default_date,
-                      help="Ending date (YYYY-MM) from which to pull errata")
+                      help=_("Ending date (YYYY-MM) from which to pull errata"))
     group.add_argument("--max-errata", dest="max_errata", type=int, default=10000,
-                      help="Maximum number of errata to process at once")
+                      help=_("Maximum number of errata to process at once"))
     group.add_argument("--publish-with-missing", dest="publish_with_missing", action="store_true",
-                      help="Publish erratum even if packages are missing")
+                      help=_("Publish erratum even if packages are missing"))
     group.add_argument("--report-missing", dest="report_missing", action="store_true",
-                      help="Show packages that are missing")
+                      help=_("Show packages that are missing"))
     group.add_argument("--suppress-missing-group", dest="suppress_missing_group", action="store_true",
-                      help="Do not show missing packages if all are missing for group")
+                      help=_("Do not show missing packages if all are missing for group"))
 
-    group = parser.add_argument_group("config arguments")
+    group = parser.add_argument_group(_("config arguments"))
     group.add_argument("--conf", dest="config", type=str, default=CONFIG_FILE,
-                      help="Read the specified config file instead of the default")
+                      help=_("Read the specified config file instead of the default"))
     group.add_argument("--show-config", dest="show_config", action="store_true",
-                      help="Just print configuration information")
+                      help=_("Just print configuration information"))
 
     for name in processor_names:
         module = loader.get_module(name)
         if hasattr(module, "add_command_arguments"):
-            group = parser.add_argument_group("%s arguments" % name)
+            group = parser.add_argument_group(_("{0} arguments"),format(name))
             module.add_command_arguments(group)
 
     args = parser.parse_args()
@@ -267,6 +269,8 @@ def process_args(loader):
     return args
 
 def main():
+    gettext.install(PACKAGE_NAME, unicode=True)
+
     loader = ModuleLoader()
     loader.load_modules("Processor", "processors")
 
@@ -279,7 +283,7 @@ def main():
     if config.show_config:
         CRITICAL("Current configuration:")
         for var in sorted(vars(config)):
-            CRITICAL("%-32s = %s", var, getattr(config, var))
+            CRITICAL("{0:<32} = {1}", var, getattr(config, var))
         sys.exit(0)
 
     if config.http_proxy is not None:

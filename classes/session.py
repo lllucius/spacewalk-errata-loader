@@ -92,7 +92,7 @@ class Session(object):
                                              erratum.channelLabel)
         except xmlrpclib.Fault, f:
             if f.faultCode == 2601:
-                ERROR("Erratum already exists: %s", erratum.advisory_name)
+                ERROR("Erratum already exists: {0}", erratum.advisory_name)
                 return False
             if f.faultCode != -20:
                 raise

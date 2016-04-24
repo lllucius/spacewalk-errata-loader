@@ -29,15 +29,15 @@ class Preprocessors(ModuleLoader):
         msg["Subject"] = subject
 
         INFO("-----------------------------------------------------------")
-        INFO("processing: %s", subject)
+        INFO("processing: {0}", subject)
 
         for pp in self.get_modules():
             rc = pp.run(subject, msg)
             if rc ==  DROP:
-                WARN("Preprocessor '%s' dropped message: %s", pp.module_name, subject)
+                WARN("Preprocessor '{0}' dropped message: {1}", pp.module_name, subject)
                 return None
             if rc ==  PROCESSED:
-                INFO("Preprocessor '%s' processed message: %s", pp.module_name, subject)
+                INFO("Preprocessor '{0}' processed message: {1}", pp.module_name, subject)
                 break
 
         return self.process_message(msg)

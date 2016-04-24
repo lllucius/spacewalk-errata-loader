@@ -26,22 +26,22 @@ class Log(object):
                 handler.setLevel(level)
 
     def debug(self,*args, **kwargs):
-        self.logger.debug(*args, **kwargs)
+        self.logger.debug(_(args[0]).format(*args[1:]), **kwargs)
 
     def info(self,*args, **kwargs):
-        self.logger.info(*args, **kwargs)
+        self.logger.info(_(args[0]).format(*args[1:]), **kwargs)
 
     def warn(self, *args, **kwargs):
-        self.logger.warn(*args, **kwargs)
+        self.logger.warn(_(args[0]).format(*args[1:]), **kwargs)
 
     def error(self, *args, **kwargs):
-        self.logger.error(*args, **kwargs)
+        self.logger.error(_(args[0]).format(*args[1:]), **kwargs)
 
     def critical(self, *args, **kwargs):
-        self.logger.critical(*args, **kwargs)
+        self.logger.critical(_(args[0]).format(*args[1:]), **kwargs)
 
     def exception(self, *args, **kwargs):
-        self.logger.exception(*args, **kwargs)
+        self.logger.exception(_(args[0]).format(*args[1:]), **kwargs)
 
 def DEBUG(*args, **kwargs):
     get_logger().debug(*args, **kwargs)
@@ -64,7 +64,7 @@ def EXCEPTION(*args, **kwargs):
 def get_logger():
     global __logger
 
-    if '__logger' not in globals():
+    if "__logger" not in globals():
         __logger = Log()
 
     return __logger

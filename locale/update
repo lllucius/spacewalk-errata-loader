@@ -1,0 +1,3 @@
+#!/bin/sh
+
+xgettext -k_ -kEXCEPTION -kCRITICAL -kERROR -kWARN -kINFO -kDEBUG -L Python -o spacewalk-errata-loader.pot $(find .. -name \*.py)

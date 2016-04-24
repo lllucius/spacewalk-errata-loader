@@ -27,10 +27,10 @@ class ListArchive(object):
     def __process_message(self, url):
         self.errata_processed += 1
         if self.errata_processed > self.config.max_errata:
-            ERROR("Maximum number of errata (%s) processed", self.config.max_errata)
+            ERROR("Maximum number of errata ({0}) processed", self.config.max_errata)
 
         INFO("-----------------------------------------------------------")
-        INFO("Downloading errata from %s", url)
+        INFO("Downloading errata from {0}", url)
         with closing(urllib2.urlopen(url)) as f:
             src = f.read()
 
@@ -39,7 +39,7 @@ class ListArchive(object):
         body_match = self.__body_re.search(src)
 
         if subject_match is None or date_match is None or body_match is None:
-            ERROR("Unexpected page format at %s", url)
+            ERROR("Unexpected page format at {0}", url)
             return
 
         msg = email.Message.Message()
@@ -82,7 +82,7 @@ class ListArchive(object):
                 url = urlbase + "/" + fromym.strftime("%Y-%B.txt.gz")
 
                 INFO("-----------------------------------------------------------")
-                INFO("Downloading errata from %s", url)
+                INFO("Downloading errata from {0}", url)
 
                 src = tempfile.NamedTemporaryFile()
                 with closing(urllib2.urlopen(url)) as f:
@@ -95,7 +95,7 @@ class ListArchive(object):
                 url = urlbase + "/" + fromym.strftime("%Y-%B/")
 
                 INFO("-----------------------------------------------------------")
-                INFO("Downloading errata from %s", url)
+                INFO("Downloading errata from {0}", url)
 
                 with closing(urllib2.urlopen(url)) as f:
                     src = f.read()

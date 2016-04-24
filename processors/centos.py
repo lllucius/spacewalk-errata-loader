@@ -28,12 +28,10 @@ class CentosMessageParser(object):
         return
 
     def __process_body(self, msg, erratum):
-        subject = msg["Subject"]
         body = msg.get_payload()
 
         match = self.__id_re.search(body)
         if match is None:
-            ERROR("Message doesn't appear to be an advisory: %s", subject)
             return False
 
         erratum.errata_type = {
@@ -42,18 +40,17 @@ class CentosMessageParser(object):
                                "BugFix": Erratum.BUGFIX,
                                "Enhancement": Erratum.ENHANCEMENT
                               }[match.group("type")]
-        erratum.advisory_name = "CE%sA-%s:%s" % (match.group("type")[0],
-                                                 match.group("year"),
-                                                 match.group("id"))
-        erratum.synopsis = "%s %s Update" % (erratum._package_name,
-                                             match.group("type"))
-        if erratum.errata_type ==  Erratum.SECURITY:
-            erratum.synopsis = "%s: %s" % (match.group("severity"),
-                                           erratum.synopsis)
+        erratum.advisory_name = "CE{0}A-{1}:{2}".format(match.group("type")[0],
+                                                        match.group("year"),
+                                                        match.group("id"))
+        erratum.synopsis = "{0} {1} Update".format(erratum._package_name,
+                                                   match.group("type"))
+        if erratum.errata_type == Erratum.SECURITY:
+            erratum.synopsis = "{0}: {1}".format(match.group("severity"),
+                                                 erratum.synopsis)
 
         match = self.__upstream_re.search(body)
         if match is None:
-            ERROR("Message doesn't appear to be an advisory: %s", subject)
             return False
 
         erratum.topic = match.group("url")
@@ -63,7 +60,7 @@ class CentosMessageParser(object):
 
         match = self.__pkgs_re.search(body)
         if match is None:
-            ERROR("Message doesn't appear to be an advisory: %s", subject)
+            return False
 
         for match in self.__arch_re.finditer(match.group("pkgs")):
             arch = match.group("arch")
@@ -74,17 +71,14 @@ class CentosMessageParser(object):
         erratum.product = "CentoOS"
         erratum.description = "Automatically imported CentOS erratum"
         erratum.solution = "Install the associated packages"
-        erratum.notes = "Errata announced by CentOS on " + erratum.issue_date.strftime("%Y-%m-%d")
+        erratum.notes = "Errata announced by CentOS on {0}".format(erratum.issue_date.strftime("%Y-%m-%d"))
         return True
 
     #Construct the basic details about the errata from the message subject
     def __process_subject(self, msg, erratum):
-        subject = msg["Subject"]
-
-        subject_match = self.__subject_re.match(subject)
+        subject_match = self.__subject_re.match(msg["Subject"])
 
         if subject_match is None:
-            ERROR("Message doesn't appear to be an advisory: %s", subject)
             return False
 
         erratum._product_version = subject_match.group("version")
@@ -93,18 +87,19 @@ class CentosMessageParser(object):
         return True
 
     def process_message(self, msg):
-
         erratum = Erratum()
 
         if not self.__process_subject(msg, erratum):
+            ERROR("Message doesn't appear to be an advisory: {0}", msg["Subject"])
             return None
 
         if hasattr(self.config, "versions"):
             if erratum._product_version not in self.config.versions.split(","):
-                INFO("Version '%s' not applicable", erratum._product_version)
+                INFO("Version '{0}' not applicable", erratum._product_version)
                 return None
 
         if not self.__process_body(msg, erratum):
+            ERROR("Message doesn't appear to be an advisory: {0}", msg["Subject"])
             return None
 
         return erratum
@@ -118,5 +113,5 @@ class Processor(ProcessorBase, CentosMessageParser):
 
     def add_command_arguments(self, parser):
         parser.add_argument("--centos-versions", dest="versions", type=str,
-                           help="Limit processing to comma separated version numbers")
+                           help=_("Limit processing to comma separated version numbers"))
 

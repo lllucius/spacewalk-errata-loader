@@ -1,0 +1,375 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-04-23 18:58-0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../processors/ubuntu.py:116 ../processors/ubuntu.py:120
+#, python-format
+msgid "Message doesn't appear to be an advisory: %s"
+msgstr ""
+
+#: ../processors/centos.py:93 ../processors/centos.py:102
+msgid "Message doesn't appear to be an advisory: {0}"
+msgstr ""
+
+#: ../processors/centos.py:98
+msgid "Version '{0}' not applicable"
+msgstr ""
+
+#: ../processors/centos.py:116
+msgid "Limit processing to comma separated version numbers"
+msgstr ""
+
+#: ../spacewalk-errata-loader.py:198
+msgid "The target distribution"
+msgstr ""
+
+#: ../spacewalk-errata-loader.py:200
+msgid "List of files or URLs to pull errata from"
+msgstr ""
+
+#: ../spacewalk-errata-loader.py:202
+msgid "server arguments"
+msgstr ""
+
+#: ../spacewalk-errata-loader.py:204
+msgid "Spacewalk server hostname"
+msgstr ""
+
+#: ../spacewalk-errata-loader.py:206
+msgid "Spacewalk userid"
+msgstr ""
+
+#: ../spacewalk-errata-loader.py:208
+msgid "Spacewalk password (cleartext)"
+msgstr ""
+
+#: ../spacewalk-errata-loader.py:210
+msgid "general arguments"
+msgstr ""
+
+#: ../spacewalk-errata-loader.py:212
+msgid "Proxy server URL for HTTP requests"
+msgstr ""
+
+#: ../spacewalk-errata-loader.py:214
+msgid "Proxy server URL for HTTPS requests"
+msgstr ""
+
+#: ../spacewalk-errata-loader.py:216
+msgid "Use the list digest instead of individual messages"
+msgstr ""
+
+#: ../spacewalk-errata-loader.py:218
+msgid "Load the package cache at startup"
+msgstr ""
+
+#: ../spacewalk-errata-loader.py:220
+msgid "Do not load the package cache at startup"
+msgstr ""
+
+#: ../spacewalk-errata-loader.py:222
+msgid "Process the errata, but do not publish"
+msgstr ""
+
+#: ../spacewalk-errata-loader.py:224
+msgid "Enable verbose logging"
+msgstr ""
+
+#: ../spacewalk-errata-loader.py:226
+msgid "Enable debug logging"
+msgstr ""
+
+#: ../spacewalk-errata-loader.py:228
+msgid "errata arguments"
+msgstr ""
+
+#: ../spacewalk-errata-loader.py:230
+msgid "List of channels where to publish errata, separated by comma"
+msgstr ""
+
+#: ../spacewalk-errata-loader.py:232
+msgid "Starting date (YYYY-MM) from which to pull errata"
+msgstr ""
+
+#: ../spacewalk-errata-loader.py:234
+msgid "Ending date (YYYY-MM) from which to pull errata"
+msgstr ""
+
+#: ../spacewalk-errata-loader.py:236
+msgid "Maximum number of errata to process at once"
+msgstr ""
+
+#: ../spacewalk-errata-loader.py:238
+msgid "Publish erratum even if packages are missing"
+msgstr ""
+
+#: ../spacewalk-errata-loader.py:240
+msgid "Show packages that are missing"
+msgstr ""
+
+#: ../spacewalk-errata-loader.py:242
+msgid "Do not show missing packages if all are missing for group"
+msgstr ""
+
+#: ../spacewalk-errata-loader.py:244
+msgid "config arguments"
+msgstr ""
+
+#: ../spacewalk-errata-loader.py:246
+msgid "Read the specified config file instead of the default"
+msgstr ""
+
+#: ../spacewalk-errata-loader.py:248
+msgid "Just print configuration information"
+msgstr ""
+
+#: ../spacewalk-errata-loader.py:253
+msgid "{0} arguments"
+msgstr ""
+
+#: ../spacewalk-errata-loader.py:284
+msgid "Current configuration:"
+msgstr ""
+
+#: ../spacewalk-errata-loader.py:286
+msgid "{0:<32} = {1}"
+msgstr ""
+
+#: ../classes/session.py:37
+msgid "Failed to login"
+msgstr ""
+
+#: ../classes/session.py:48
+msgid "Failed to logout"
+msgstr ""
+
+#: ../classes/session.py:95
+msgid "Erratum already exists: {0}"
+msgstr ""
+
+#: ../classes/listarchive.py:30 ../classes/filearchive.py:21
+msgid "Maximum number of errata ({0}) processed"
+msgstr ""
+
+#: ../classes/listarchive.py:32 ../classes/listarchive.py:84
+#: ../classes/listarchive.py:97 ../classes/preprocessor.py:31
+#: ../classes/filearchive.py:38
+msgid "-----------------------------------------------------------"
+msgstr ""
+
+#: ../classes/listarchive.py:33 ../classes/listarchive.py:85
+#: ../classes/listarchive.py:98
+msgid "Downloading errata from {0}"
+msgstr ""
+
+#: ../classes/listarchive.py:42
+msgid "Unexpected page format at {0}"
+msgstr ""
+
+#: ../classes/listarchive.py:63
+msgid "No URL for mailing list"
+msgstr ""
+
+#: ../classes/erratum.py:131
+msgid "Erratum is missing the '{0}'"
+msgstr ""
+
+#: ../classes/erratum.py:135
+msgid "No packages added to erratum"
+msgstr ""
+
+#: ../classes/erratum.py:140
+msgid "No packages added to group '{0}'"
+msgstr ""
+
+#: ../classes/erratum.py:162
+msgid "Invalid group name {0}"
+msgstr ""
+
+#: ../classes/erratum.py:165
+msgid "Name {0} not in group {1}"
+msgstr ""
+
+#: ../classes/erratum.py:169
+msgid "MISSING: "
+msgstr ""
+
+#: ../classes/erratum.py:172
+msgid "Synopsis:"
+msgstr ""
+
+#: ../classes/erratum.py:172 ../classes/erratum.py:173
+#: ../classes/erratum.py:174 ../classes/erratum.py:175
+#: ../classes/erratum.py:176 ../classes/erratum.py:177
+#: ../classes/erratum.py:178 ../classes/erratum.py:179
+#: ../classes/erratum.py:180 ../classes/erratum.py:181
+#: ../classes/erratum.py:182 ../classes/erratum.py:183
+#: ../classes/erratum.py:184 ../classes/erratum.py:188
+#: ../classes/erratum.py:193 ../classes/erratum.py:198
+#: ../classes/erratum.py:203 ../classes/erratum.py:207
+#: ../classes/erratum.py:208 ../classes/erratum.py:213
+msgid "{0:<20} = {1}"
+msgstr ""
+
+#: ../classes/erratum.py:173
+msgid "Name:"
+msgstr ""
+
+#: ../classes/erratum.py:174
+msgid "Release:"
+msgstr ""
+
+#: ../classes/erratum.py:175
+msgid "Type:"
+msgstr ""
+
+#: ../classes/erratum.py:176
+msgid "Product:"
+msgstr ""
+
+#: ../classes/erratum.py:177
+msgid "From:"
+msgstr ""
+
+#: ../classes/erratum.py:178
+msgid "Topic:"
+msgstr ""
+
+#: ../classes/erratum.py:179
+msgid "Description:"
+msgstr ""
+
+#: ../classes/erratum.py:180
+msgid "References:"
+msgstr ""
+
+#: ../classes/erratum.py:181
+msgid "Notes:"
+msgstr ""
+
+#: ../classes/erratum.py:182
+msgid "Solution:"
+msgstr ""
+
+#: ../classes/erratum.py:183
+msgid "Issued:"
+msgstr ""
+
+#: ../classes/erratum.py:184
+msgid "Updated:"
+msgstr ""
+
+#: ../classes/erratum.py:186
+msgid "Keywords:"
+msgstr ""
+
+#: ../classes/erratum.py:191
+msgid "Package IDs:"
+msgstr ""
+
+#: ../classes/erratum.py:196
+msgid "Channels:"
+msgstr ""
+
+#: ../classes/erratum.py:201
+msgid "CVEs:"
+msgstr ""
+
+#: ../classes/erratum.py:206
+msgid " "
+msgstr ""
+
+#: ../classes/erratum.py:207
+msgid "Version:"
+msgstr ""
+
+#: ../classes/erratum.py:208
+msgid "Package:"
+msgstr ""
+
+#: ../classes/erratum.py:210
+msgid "Package groups:"
+msgstr ""
+
+#: ../classes/preprocessor.py:32
+msgid "processing: {0}"
+msgstr ""
+
+#: ../classes/preprocessor.py:37
+msgid "Preprocessor '{0}' dropped message: {1}"
+msgstr ""
+
+#: ../classes/preprocessor.py:40
+msgid "Preprocessor '{0}' processed message: {1}"
+msgstr ""
+
+#: ../classes/packages.py:16
+msgid "Loading package cache for {0}"
+msgstr ""
+
+#: ../classes/packages.py:26
+msgid "PACKAGE: {0}"
+msgstr ""
+
+#: ../classes/packages.py:32
+msgid "NVRA: {0}"
+msgstr ""
+
+#: ../classes/packages.py:38
+msgid "NVR: {0}"
+msgstr ""
+
+#: ../classes/filearchive.py:39
+msgid "Extracting errata from {0}"
+msgstr ""
+
+#: ../classes/filearchive.py:42
+msgid "Input file {0} does not exist"
+msgstr ""
+
+#: ../classes/filearchive.py:46
+msgid "Input file {0} is not a normal file"
+msgstr ""
+
+#: ../classes/filearchive.py:50
+msgid "Input file {0} is not readable"
+msgstr ""
+
+#: ../classes/errata.py:10
+msgid "Loading errata cache"
+msgstr ""
+
+#: ../classes/errata.py:28
+msgid "Erratum '{0}' already exists"
+msgstr ""
+
+#: ../classes/errata.py:58
+msgid "missing {0} from {1}"
+msgstr ""
+
+#: ../classes/errata.py:63
+msgid "All packages missing for Erratum {0}"
+msgstr ""
+
+#: ../classes/errata.py:67
+msgid "Erratum not assigned to any channels"
+msgstr ""
+
+#: ../classes/errata.py:80
+msgid "Published {0}"
+msgstr ""

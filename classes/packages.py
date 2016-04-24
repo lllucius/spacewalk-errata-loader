@@ -13,7 +13,7 @@ class Packages(object):
         self.channels = {}
 
     def __cache_packages_for_channel(self, channel):
-        INFO("Loading package cache for %s", channel)
+        INFO("Loading package cache for {0}", channel)
         packages = self.channel_software_list_all_packages(channel)
 
         self.idIndex = {}
@@ -23,19 +23,19 @@ class Packages(object):
             self.__cache_package_for_channel(channel, p)
 
     def __cache_package_for_channel(self, channel, package):
-        DEBUG("PACKAGE: %s", package)
+        DEBUG("PACKAGE: {0}", package)
 
-        nvra = "%s-%s-%s.%s" % (package["name"],
-                                package["version"],
-                                package["release"],
-                                package["arch_label"])
-        DEBUG("NVRA: %s", nvra)
+        nvra = "{0}-{1}-{2}.{3}".format(package["name"],
+                                        package["version"],
+                                        package["release"],
+                                        package["arch_label"])
+        DEBUG("NVRA: {0}", nvra)
         self.channels[channel][nvra] = package["id"]
 
-        nvr = "%s-%s-%s" % (package["name"],
-                            package["version"],
-                            package["release"])
-        DEBUG("NVR: %s", nvr)
+        nvr = "{0}-{1}-{2}".format(package["name"],
+                                   package["version"],
+                                   package["release"])
+        DEBUG("NVR: {0}", nvr)
         self.channels[channel][nvr] = package["id"]
 
     def get_channels(self):
@@ -67,13 +67,13 @@ class Packages(object):
         # But, it would work with others.  So, just search
         # both ways instead.
         escaped = self.__escape_re.sub(r"\\\1", name)
-        query = "filename:%s or filename:%s*" % (escaped, escaped)
+        query = "filename:{0} or filename:{0}*".format(escaped)
         packages = self.packages_search_advanced(query)
         for pkg in packages:
-            nvra = "%s-%s-%s.%s" % (pkg["name"],
-                                    pkg["version"],
-                                    pkg["release"],
-                                    pkg["arch"])
+            nvra = "{0}-{1}-{2}.{3}".format(pkg["name"],
+                                            pkg["version"],
+                                            pkg["release"],
+                                            pkg["arch"])
             if nvra.startswith(name + "."):
                 details = self.packages_get_details(pkg)
                 if details is not None:

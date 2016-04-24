@@ -128,7 +128,7 @@ class Erratum(object):
 
         for attr in required:
             if info[attr] is None:
-                ERROR("Erratum is missing the '%s'", attr)
+                ERROR("Erratum is missing the '{0}'", attr)
                 return False
 
         if self._package_groups is None:
@@ -137,7 +137,8 @@ class Erratum(object):
 
         for group in self._package_groups:
             if self._package_groups[group] is None:
-                ERROR("No packages added to group '%s'", group)
+                ERROR("No packages added to group '{0}'", group)
+
                 return False
 
         return True
@@ -158,57 +159,57 @@ class Erratum(object):
 
     def set_missing(self, group, name):
         if group not in self._package_groups:
-            CRITICAL("Invalid group name %s", group)
+            CRITICAL("Invalid group name {0}", group)
             return
         if name not in self._package_groups[group]:
-            CRITICAL("Name %s not in group %s", name, group)
+            CRITICAL("Name {0} not in group {1}", name, group)
             return
         ndx = self._package_groups[group].index(name)
         self._package_groups[group][ndx] = \
-            "MISSING: " + self._package_groups[group][ndx]
+            _("MISSING: ") + self._package_groups[group][ndx]
 
     def show(self):
-        INFO("%-20s = %s", "Synopsis:", self.synopsis)
-        INFO("%-20s = %s", "Name:", self.advisory_name)
-        INFO("%-20s = %s", "Release:", self.advisory_release)
-        INFO("%-20s = %s", "Type:", self.advisory_type)
-        INFO("%-20s = %s", "Product:", self.product)
-        INFO("%-20s = %s", "From:", self.errataFrom)
-        INFO("%-20s = %s", "Topic:", self.topic)
-        INFO("%-20s = %s", "Description:", self.description)
-        INFO("%-20s = %s", "References:", self.references)
-        INFO("%-20s = %s", "Notes:", self.notes)
-        INFO("%-20s = %s", "Solution:", self.solution)
-        INFO("%-20s = %s", "Issued:", self.issue_date)
-        INFO("%-20s = %s", "Updated:", self.update_date)
+        INFO("{0:<20} = {1}", _("Synopsis:"), self.synopsis)
+        INFO("{0:<20} = {1}", _("Name:"), self.advisory_name)
+        INFO("{0:<20} = {1}", _("Release:"), self.advisory_release)
+        INFO("{0:<20} = {1}", _("Type:"), self.advisory_type)
+        INFO("{0:<20} = {1}", _("Product:"), self.product)
+        INFO("{0:<20} = {1}", _("From:"), self.errataFrom)
+        INFO("{0:<20} = {1}", _("Topic:"), self.topic)
+        INFO("{0:<20} = {1}", _("Description:"), self.description)
+        INFO("{0:<20} = {1}", _("References:"), self.references)
+        INFO("{0:<20} = {1}", _("Notes:"), self.notes)
+        INFO("{0:<20} = {1}", _("Solution:"), self.solution)
+        INFO("{0:<20} = {1}", _("Issued:"), self.issue_date)
+        INFO("{0:<20} = {1}", _("Updated:"), self.update_date)
 
-        n = "Keywords:"
+        n = _("Keywords:")
         for keyword in self.keywords:
-            INFO("%-20s = %s", n, keyword)
+            INFO("{0:<20} = {1}", n, keyword)
             n = ""
 
-        n = "Package IDs:"
+        n = _("Package IDs:")
         for pkg in self.packages:
-            INFO("%-20s = %s", n, pkg)
+            INFO("{0:<20} = {1}", n, pkg)
             n = ""
 
-        n = "Channels:"
+        n = _("Channels:")
         for channel in self.channelLabel:
-            INFO("%-20s = %s", n, channel)
+            INFO("{0:<20} = {1}", n, channel)
             n = ""
 
-        n = "CVEs:"
+        n = _("CVEs:")
         for cve in self.cves:
-            INFO("%-20s = %s", n, cve)
+            INFO("{0:<20} = {1}", n, cve)
             n = ""
 
-        INFO("")
-        INFO("%-20s = %s", "Version:", self._product_version)
-        INFO("%-20s = %s", "Package:", self._package_name)
+        INFO(" ")
+        INFO("{0:<20} = {1}", _("Version:"), self._product_version)
+        INFO("{0:<20} = {1}", _("Package:"), self._package_name)
 
         INFO("Package groups:")
         for group in self._package_groups:
             for pkg in self._package_groups[group]:
-                INFO("%-20s = %s", group, pkg)
+                INFO("{0:<20} = {1}", group, pkg)
                 group = ""
 

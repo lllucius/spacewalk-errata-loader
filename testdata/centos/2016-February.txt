@@ -1,0 +1,2945 @@
+From johnny at centos.org  Mon Feb  1 10:06:38 2016
+From: johnny at centos.org (Johnny Hughes)
+Date: Mon, 1 Feb 2016 10:06:38 +0000
+Subject: [CentOS-announce] CESA-2016:0082 Important CentOS 6 qemu-kvm
+	Security Update
+Message-ID: <20160201100638.GA48502@n04.lon1.karan.org>
+
+
+CentOS Errata and Security Advisory 2016:0082 Important
+
+Upstream details at : https://rhn.redhat.com/errata/RHSA-2016-0082.html
+
+The following updated files have been uploaded and are currently 
+syncing to the mirrors: ( sha256sum Filename ) 
+
+i386:
+a1f7d969256f40bceda80f8b528483daa4c46ffd1aa161d688b5213e82534728  qemu-guest-agent-0.12.1.2-2.479.el6_7.4.i686.rpm
+
+x86_64:
+1e0bbdb48082401bf939242e8365ed87d978d810461fd5f5f8a07fb27cc68908  qemu-guest-agent-0.12.1.2-2.479.el6_7.4.x86_64.rpm
+5659db7806844d947e48a239a10e171bfe614f6ec55e41dc4456bbf681ed93a3  qemu-img-0.12.1.2-2.479.el6_7.4.x86_64.rpm
+02c1fb0cf175af0ef966c9bdba504598dcc296acd84943e84c6950b660119858  qemu-kvm-0.12.1.2-2.479.el6_7.4.x86_64.rpm
+3a706f6a6c9dd68d53403d9bf28e0460d166ccb14b5e236cb3a570fed8981945  qemu-kvm-tools-0.12.1.2-2.479.el6_7.4.x86_64.rpm
+
+Source:
+15dd53d31a04e2fbff8ed17825a00a8db774e4b765d21cb8e425dfa7f420e1ed  qemu-kvm-0.12.1.2-2.479.el6_7.4.src.rpm
+
+
+
+-- 
+Johnny Hughes
+CentOS Project { http://www.centos.org/ }
+irc: hughesjr, #centos at irc.freenode.net
+Twitter: @JohnnyCentOS
+
+
+From johnny at centos.org  Mon Feb  1 10:07:16 2016
+From: johnny at centos.org (Johnny Hughes)
+Date: Mon, 1 Feb 2016 10:07:16 +0000
+Subject: [CentOS-announce] CESA-2016:0083 Important CentOS 7 qemu-kvm
+	Security Update
+Message-ID: <20160201100716.GA48601@n04.lon1.karan.org>
+
+
+CentOS Errata and Security Advisory 2016:0083 Important
+
+Upstream details at : https://rhn.redhat.com/errata/RHSA-2016-0083.html
+
+The following updated files have been uploaded and are currently 
+syncing to the mirrors: ( sha256sum Filename ) 
+
+x86_64:
+4b32c17ff1beedcb1f6061718d320fabefdfbc097c158d4b1dae708fd42fdcea  libcacard-1.5.3-105.el7_2.3.i686.rpm
+e67108224ae1a48a7e3fe50c844eb72cbb1f2577e14a8b4125223a7733fae0d1  libcacard-1.5.3-105.el7_2.3.x86_64.rpm
+d87a6e35540834492782b7b8912a4585aa1aed9bc8e8be2411869ac629992b2e  libcacard-devel-1.5.3-105.el7_2.3.i686.rpm
+de52616bc23aa304b8e5754dbd01ea01885be400a7c1971f175a71a4c319c8e2  libcacard-devel-1.5.3-105.el7_2.3.x86_64.rpm
+9d5121b15522703d568ef24aa6445d70aa25cce27bff49c94ebebe0d484b461e  libcacard-tools-1.5.3-105.el7_2.3.x86_64.rpm
+f6b81452aa1929447d9bc9b1801276e11c20f356a5fffff4817994da23073ce6  qemu-img-1.5.3-105.el7_2.3.x86_64.rpm
+21eaddeefef89775defa32724cb48d501184212b8d05d128a3c83911c1fc2099  qemu-kvm-1.5.3-105.el7_2.3.x86_64.rpm
+89bb7aa5f7b8d0ed361b7b9090f7a3a508213829237da9e39b3a1d7a674b4fcc  qemu-kvm-common-1.5.3-105.el7_2.3.x86_64.rpm
+eb6f93064a64451b608d32f292e94fad18c53a16790507fe2d97bf1d0b78e006  qemu-kvm-tools-1.5.3-105.el7_2.3.x86_64.rpm
+
+Source:
+f963af3a6d471d8b82c5afef2fc76ef4f1dd3985e10ceafe2b04e04ef1571bf4  qemu-kvm-1.5.3-105.el7_2.3.src.rpm
+
+
+
+-- 
+Johnny Hughes
+CentOS Project { http://www.centos.org/ }
+irc: hughesjr, #centos at irc.freenode.net
+Twitter: @JohnnyCentOS
+
+
+From johnny at centos.org  Thu Feb  4 21:40:52 2016
+From: johnny at centos.org (Johnny Hughes)
+Date: Thu, 4 Feb 2016 21:40:52 +0000
+Subject: [CentOS-announce] CEBA-2016:0111 CentOS 6 pango FASTTRACK BugFix
+	Update
+Message-ID: <20160204214052.GA18520@n04.lon1.karan.org>
+
+
+CentOS Errata and Bugfix Advisory 2016:0111 
+
+Upstream details at : https://rhn.redhat.com/errata/RHBA-2016-0111.html
+
+The following updated files have been uploaded and are currently 
+syncing to the mirrors: ( sha256sum Filename ) 
+
+i386:
+1ae8ed9e7dfc0a5d162f1fb129bfdd2c7fb7d849ca0595da225a73796e770cb6  pango-1.28.1-11.el6.i686.rpm
+bf2effc6dc9d35fbd5b0505dbcd3971733cd0ca4f909423fbed66aaaf8c33ede  pango-devel-1.28.1-11.el6.i686.rpm
+
+x86_64:
+1ae8ed9e7dfc0a5d162f1fb129bfdd2c7fb7d849ca0595da225a73796e770cb6  pango-1.28.1-11.el6.i686.rpm
+0663a5ce99cebf5285d96c4d92fc83155e859976bfd72980bf8691c3e89f92ad  pango-1.28.1-11.el6.x86_64.rpm
+bf2effc6dc9d35fbd5b0505dbcd3971733cd0ca4f909423fbed66aaaf8c33ede  pango-devel-1.28.1-11.el6.i686.rpm
+1536c68fa4ab95ebf1a5852d86d5b3b70d50e14ad213c03d4a79379e12784092  pango-devel-1.28.1-11.el6.x86_64.rpm
+
+Source:
+b7769f4cfbec69171ef48b8e2bb686555a578515eec225ebebfae286a343e384  pango-1.28.1-11.el6.src.rpm
+
+
+
+-- 
+Johnny Hughes
+CentOS Project { http://www.centos.org/ }
+irc: hughesjr, #centos at irc.freenode.net
+Twitter: @JohnnyCentOS
+
+
+From johnny at centos.org  Thu Feb  4 21:41:12 2016
+From: johnny at centos.org (Johnny Hughes)
+Date: Thu, 4 Feb 2016 21:41:12 +0000
+Subject: [CentOS-announce] CEBA-2016:0112 CentOS 6 cups-pk-helper FASTTRACK
+	BugFix Update
+Message-ID: <20160204214112.GA18616@n04.lon1.karan.org>
+
+
+CentOS Errata and Bugfix Advisory 2016:0112 
+
+Upstream details at : https://rhn.redhat.com/errata/RHBA-2016-0112.html
+
+The following updated files have been uploaded and are currently 
+syncing to the mirrors: ( sha256sum Filename ) 
+
+i386:
+67aaac8ee7bce20c58ecccae6ef50b97bc6e43b94abe0fb74d24d48cac255520  cups-pk-helper-0.0.4-13.el6.i686.rpm
+
+x86_64:
+93cb016bf995f20f612d711f9f0b41ccd31ef79d53530e6674f84cc385e2173c  cups-pk-helper-0.0.4-13.el6.x86_64.rpm
+
+Source:
+bc7096b268fc16456e9f63fc55bce2090e246f568cf0dd71357a06c19e21c35c  cups-pk-helper-0.0.4-13.el6.src.rpm
+
+
+
+-- 
+Johnny Hughes
+CentOS Project { http://www.centos.org/ }
+irc: hughesjr, #centos at irc.freenode.net
+Twitter: @JohnnyCentOS
+
+
+From johnny at centos.org  Thu Feb  4 21:41:47 2016
+From: johnny at centos.org (Johnny Hughes)
+Date: Thu, 4 Feb 2016 21:41:47 +0000
+Subject: [CentOS-announce] CEBA-2016:0113 CentOS 6 pulseaudio FASTTRACK
+	BugFix Update
+Message-ID: <20160204214147.GA19083@n04.lon1.karan.org>
+
+
+CentOS Errata and Bugfix Advisory 2016:0113 
+
+Upstream details at : https://rhn.redhat.com/errata/RHBA-2016-0113.html
+
+The following updated files have been uploaded and are currently 
+syncing to the mirrors: ( sha256sum Filename ) 
+
+i386:
+4c589de07eb7a99d5e7b53663f729c99a175dc29c8381f08ca956a75589a674b  pulseaudio-0.9.21-24.el6.i686.rpm
+267af660554bcd901bd18ef0589ca2fc68cd4dc73335435b4a53ac343c0187f7  pulseaudio-esound-compat-0.9.21-24.el6.i686.rpm
+71657db3b779d30494918e188b70310147e92b1fa224509079ce601a1c91b959  pulseaudio-gdm-hooks-0.9.21-24.el6.i686.rpm
+ebb56fd219094a860dab8c3d703fc6c50d084384083df1fe04a9616d423fd2f9  pulseaudio-libs-0.9.21-24.el6.i686.rpm
+70358534593525744fdd92a8d85d4453e28c09ceb1eb4d2ce029b38c6e3765ce  pulseaudio-libs-devel-0.9.21-24.el6.i686.rpm
+ee0884955f5ab06488b2049b8065fdca2742404e72a74b39387f57b027bdb15a  pulseaudio-libs-glib2-0.9.21-24.el6.i686.rpm
+a8e7c5f5dc349797a2a6753aefe4ef0ebfb93223c0b9ff16f34c81c53ae69cb1  pulseaudio-libs-zeroconf-0.9.21-24.el6.i686.rpm
+2de4b1e2b89ba63677dfb055b5019829f55fa5cdb8a236c1f95987341a078e73  pulseaudio-module-bluetooth-0.9.21-24.el6.i686.rpm
+744089a86c8bc4fd633113b078862c58f8bda61044f36ce7e5d85e2030ae6386  pulseaudio-module-gconf-0.9.21-24.el6.i686.rpm
+fab49205f7498c88ab89210d6ab7cf2f9d4743e296c8a6df77dcb7cd3aec01d2  pulseaudio-module-x11-0.9.21-24.el6.i686.rpm
+ef2eb4541211bea9288a956da901cf6dca023eba52f86c8f87b13527c2047ab9  pulseaudio-module-zeroconf-0.9.21-24.el6.i686.rpm
+32de7887a9cc5ddfd301c790376404d91690b4ba309201b8247676d3c61bcab1  pulseaudio-utils-0.9.21-24.el6.i686.rpm
+
+x86_64:
+0ea4f6fda07bf5bae0b547b5aea8f3e159b12a96ca09961021610c891201e4da  pulseaudio-0.9.21-24.el6.x86_64.rpm
+226a3e53366272dc59e1415b380189dc4bf96a657dc2aab66dd16d566542e9c5  pulseaudio-esound-compat-0.9.21-24.el6.x86_64.rpm
+7c7a81172658d198d3b83282ff57f7045948ddf1aeb97fde68d6d3557a5082a0  pulseaudio-gdm-hooks-0.9.21-24.el6.x86_64.rpm
+ebb56fd219094a860dab8c3d703fc6c50d084384083df1fe04a9616d423fd2f9  pulseaudio-libs-0.9.21-24.el6.i686.rpm
+aa10e4e3dd1eec5b1db5f881ff4d3c51f29390029cc2837fffeb9c93bc34106c  pulseaudio-libs-0.9.21-24.el6.x86_64.rpm
+70358534593525744fdd92a8d85d4453e28c09ceb1eb4d2ce029b38c6e3765ce  pulseaudio-libs-devel-0.9.21-24.el6.i686.rpm
+0a6de74b5db14015c1a48382aab5ceef1dbab2b42f63909b747579d459220cc3  pulseaudio-libs-devel-0.9.21-24.el6.x86_64.rpm
+ee0884955f5ab06488b2049b8065fdca2742404e72a74b39387f57b027bdb15a  pulseaudio-libs-glib2-0.9.21-24.el6.i686.rpm
+6a0948fbcfc1131c5eb8a48a17b3d9a7c325cbc112f3d982012bfafc6abc6d59  pulseaudio-libs-glib2-0.9.21-24.el6.x86_64.rpm
+a8e7c5f5dc349797a2a6753aefe4ef0ebfb93223c0b9ff16f34c81c53ae69cb1  pulseaudio-libs-zeroconf-0.9.21-24.el6.i686.rpm
+063a8f2ea4832bb8ae834b2065f1f9c6c94b317d9ba778796073e4e70725e025  pulseaudio-libs-zeroconf-0.9.21-24.el6.x86_64.rpm
+3bc75e942608c68b23cf0558a81eb603f0b09b61f746b21a6eeb7c2c2b73a565  pulseaudio-module-bluetooth-0.9.21-24.el6.x86_64.rpm
+ccc7e36bb82f5f9e0043aea2cd86ae1fd95ceb6189e82fdcc301711b9cc8e627  pulseaudio-module-gconf-0.9.21-24.el6.x86_64.rpm
+c22d5a893787abc488f1faf5a83d7bab930847b5855d53454a7e50d67e49ccbf  pulseaudio-module-x11-0.9.21-24.el6.x86_64.rpm
+84ac4da72f98afda36c43287a9cdc9f787ff9d5c0021fa26d866af01807491d3  pulseaudio-module-zeroconf-0.9.21-24.el6.x86_64.rpm
+32de7887a9cc5ddfd301c790376404d91690b4ba309201b8247676d3c61bcab1  pulseaudio-utils-0.9.21-24.el6.i686.rpm
+fc0c61ac740953695ad5de56995baf04754a134b9b0091a0276f5793406c4ff0  pulseaudio-utils-0.9.21-24.el6.x86_64.rpm
+
+Source:
+2f389e54669332bdc4676fb2c62520a6f71aa54a153bfbbc5c89f5de9f84834e  pulseaudio-0.9.21-24.el6.src.rpm
+
+
+
+-- 
+Johnny Hughes
+CentOS Project { http://www.centos.org/ }
+irc: hughesjr, #centos at irc.freenode.net
+Twitter: @JohnnyCentOS
+
+
+From johnny at centos.org  Thu Feb  4 21:42:17 2016
+From: johnny at centos.org (Johnny Hughes)
+Date: Thu, 4 Feb 2016 21:42:17 +0000
+Subject: [CentOS-announce] CEBA-2016:0110 CentOS 6 paps FASTTRACK BugFix
+	Update
+Message-ID: <20160204214217.GA19339@n04.lon1.karan.org>
+
+
+CentOS Errata and Bugfix Advisory 2016:0110 
+
+Upstream details at : https://rhn.redhat.com/errata/RHBA-2016-0110.html
+
+The following updated files have been uploaded and are currently 
+syncing to the mirrors: ( sha256sum Filename ) 
+
+i386:
+10407eeb7b75e7d5d7c18fff8a7553be96f96ca65a470ef1589d6c780413fbac  paps-0.6.8-13.el6.3.i686.rpm
+ef013597297b221d5e774a6358fb7770866991a8f53fa93cc3e81fa11eb423fe  paps-devel-0.6.8-13.el6.3.i686.rpm
+ef9eae81a709c5ad262364a88278c2678a049c903d800b97232e06d28b86ddcb  paps-libs-0.6.8-13.el6.3.i686.rpm
+
+x86_64:
+ef70304e79708de5fee404a675c1fc70b57f58808b14a4ca1c3fe465f6593d0e  paps-0.6.8-13.el6.3.x86_64.rpm
+ef013597297b221d5e774a6358fb7770866991a8f53fa93cc3e81fa11eb423fe  paps-devel-0.6.8-13.el6.3.i686.rpm
+f64d27e5e9e11d9c17666fce732fbfbaf798bc0912507c0d8a5206cd8f1852e6  paps-devel-0.6.8-13.el6.3.x86_64.rpm
+ef9eae81a709c5ad262364a88278c2678a049c903d800b97232e06d28b86ddcb  paps-libs-0.6.8-13.el6.3.i686.rpm
+4cca3246b91485ccbf63b0b93812d376787350bbb71be895aceee57ad60f253d  paps-libs-0.6.8-13.el6.3.x86_64.rpm
+
+Source:
+b706deeb57bd91e461a5ace269779f02260111a923677cfad7d3e7fbaacff82f  paps-0.6.8-13.el6.3.src.rpm
+
+
+
+-- 
+Johnny Hughes
+CentOS Project { http://www.centos.org/ }
+irc: hughesjr, #centos at irc.freenode.net
+Twitter: @JohnnyCentOS
+
+
+From johnny at centos.org  Thu Feb  4 21:42:52 2016
+From: johnny at centos.org (Johnny Hughes)
+Date: Thu, 4 Feb 2016 21:42:52 +0000
+Subject: [CentOS-announce] CEBA-2016:0114 CentOS 6 gedit FASTTRACK BugFix
+	Update
+Message-ID: <20160204214252.GA19564@n04.lon1.karan.org>
+
+
+CentOS Errata and Bugfix Advisory 2016:0114 
+
+Upstream details at : https://rhn.redhat.com/errata/RHBA-2016-0114.html
+
+The following updated files have been uploaded and are currently 
+syncing to the mirrors: ( sha256sum Filename ) 
+
+i386:
+5849aebc9ed3b1e12d44b61d9aee1a256a3bdd116261586f042edbeaf1fa41d3  gedit-2.28.4-4.el6.i686.rpm
+433783573ba98a06768256f918acfdef155428a0da9191929ffee8631fd32dc7  gedit-devel-2.28.4-4.el6.i686.rpm
+
+x86_64:
+4e1971a77c40178e51681780705e5de9d905bff6b8409ef469f7cfd93fbc14ac  gedit-2.28.4-4.el6.x86_64.rpm
+433783573ba98a06768256f918acfdef155428a0da9191929ffee8631fd32dc7  gedit-devel-2.28.4-4.el6.i686.rpm
+c6e34f37c82dea4f926e359e3794ef8b946cf8690634695c4cfc8b55b759fa63  gedit-devel-2.28.4-4.el6.x86_64.rpm
+
+Source:
+0956db00b0cd9e04fbf230ef7406467459c1b9f3d408003b22d8e2844fdc8118  gedit-2.28.4-4.el6.src.rpm
+
+
+
+-- 
+Johnny Hughes
+CentOS Project { http://www.centos.org/ }
+irc: hughesjr, #centos at irc.freenode.net
+Twitter: @JohnnyCentOS
+
+
+From johnny at centos.org  Thu Feb  4 21:43:19 2016
+From: johnny at centos.org (Johnny Hughes)
+Date: Thu, 4 Feb 2016 21:43:19 +0000
+Subject: [CentOS-announce] CEBA-2016:0115 CentOS 6 urw-fonts FASTTRACK
+	BugFix Update
+Message-ID: <20160204214319.GA19741@n04.lon1.karan.org>
+
+
+CentOS Errata and Bugfix Advisory 2016:0115 
+
+Upstream details at : https://rhn.redhat.com/errata/RHBA-2016-0115.html
+
+The following updated files have been uploaded and are currently 
+syncing to the mirrors: ( sha256sum Filename ) 
+
+i386:
+30ae1a14b811b5901ecdd71ec8a3f3f2077aa677bc5a167e36ebdcd7b8b7a62b  urw-fonts-2.4-11.el6.noarch.rpm
+
+x86_64:
+30ae1a14b811b5901ecdd71ec8a3f3f2077aa677bc5a167e36ebdcd7b8b7a62b  urw-fonts-2.4-11.el6.noarch.rpm
+
+Source:
+1ce20bfa857d46472a6e791e5f152e58f7aa6fa3cebf6cd360b5c7a491d2ee8c  urw-fonts-2.4-11.el6.src.rpm
+
+
+
+-- 
+Johnny Hughes
+CentOS Project { http://www.centos.org/ }
+irc: hughesjr, #centos at irc.freenode.net
+Twitter: @JohnnyCentOS
+
+
+From johnny at centos.org  Tue Feb  9 15:17:22 2016
+From: johnny at centos.org (Johnny Hughes)
+Date: Tue, 9 Feb 2016 15:17:22 +0000
+Subject: [CentOS-announce] CEEA-2016:0154 CentOS 5 tzdata Enhancement Update
+Message-ID: <20160209151722.GA30616@chakra.karan.org>
+
+
+CentOS Errata and Enhancement Advisory 2016:0154 
+
+Upstream details at : https://rhn.redhat.com/errata/RHEA-2016-0154.html
+
+The following updated files have been uploaded and are currently 
+syncing to the mirrors: ( sha256sum Filename ) 
+
+i386:
+2206affe6dc8666f47f16d807c791a6cb3c8813e6e20ba8030de444b7aac7ee5  tzdata-2016a-1.el5.i386.rpm
+5de6eaee71ec32756feafdcccec1259c04affe07123e1cbf80a6a7cb700d127d  tzdata-java-2016a-1.el5.i386.rpm
+
+x86_64:
+5cfb394e27141600abdcb251ca4ced68dd967142566c3f1a2eadc2314c2c35c2  tzdata-2016a-1.el5.x86_64.rpm
+ea0155a50f5ef2d5e72a9887d701c8222a8560981b12d536e4c78cd9b4b348e9  tzdata-java-2016a-1.el5.x86_64.rpm
+
+Source:
+f8ae6b5e0e231633d8d8b729bc94e8e005c3f1268050b65a70633364066ac849  tzdata-2016a-1.el5.src.rpm
+
+
+
+-- 
+Johnny Hughes
+CentOS Project { http://www.centos.org/ }
+irc: hughesjr, #centos at irc.freenode.net
+Twitter: JohnnyCentOS
+
+
+From johnny at centos.org  Tue Feb  9 15:42:57 2016
+From: johnny at centos.org (Johnny Hughes)
+Date: Tue, 9 Feb 2016 15:42:57 +0000
+Subject: [CentOS-announce] CEEA-2016:0154 CentOS 7 tzdata Enhancement Update
+Message-ID: <20160209154257.GA21926@n04.lon1.karan.org>
+
+
+CentOS Errata and Enhancement Advisory 2016:0154 
+
+Upstream details at : https://rhn.redhat.com/errata/RHEA-2016-0154.html
+
+The following updated files have been uploaded and are currently 
+syncing to the mirrors: ( sha256sum Filename ) 
+
+x86_64:
+9be72634325e48e3f199d6cfac392184b2c2566392e5e82d7cd1b355e9855b9f  tzdata-2016a-1.el7.noarch.rpm
+b7e70dc8cf2d006cfaf101e14d3b4f7e6d9a4b7978c99b0f58f3702d7f337ad6  tzdata-java-2016a-1.el7.noarch.rpm
+
+Source:
+2abe0db0ffb110c3c05f719ea9c4d2197d5c97672f089121bae9e95142278568  tzdata-2016a-1.el7.src.rpm
+
+
+
+-- 
+Johnny Hughes
+CentOS Project { http://www.centos.org/ }
+irc: hughesjr, #centos at irc.freenode.net
+Twitter: @JohnnyCentOS
+
+
+From johnny at centos.org  Tue Feb  9 15:47:03 2016
+From: johnny at centos.org (Johnny Hughes)
+Date: Tue, 9 Feb 2016 15:47:03 +0000
+Subject: [CentOS-announce] CEBA-2016:0138 CentOS 6 sg3_utils BugFix Update
+Message-ID: <20160209154703.GA22226@n04.lon1.karan.org>
+
+
+CentOS Errata and Bugfix Advisory 2016:0138 
+
+Upstream details at : https://rhn.redhat.com/errata/RHBA-2016-0138.html
+
+The following updated files have been uploaded and are currently 
+syncing to the mirrors: ( sha256sum Filename ) 
+
+i386:
+1919a5451c5e0650d3a5ecb70b878a3ee6c6eb4c4ba87873e78e72804910cb52  sg3_utils-1.28-9.el6_7.i686.rpm
+df286a7c80a557bb941f4f71a0a097ac3c366a188f169c6c6ccbb03403385fbe  sg3_utils-devel-1.28-9.el6_7.i686.rpm
+d62626c4cc2be45fbfa5c52b1d61584f67a58527fcf228f758a15a7070010155  sg3_utils-libs-1.28-9.el6_7.i686.rpm
+
+x86_64:
+3b077835d799331a88b77749a08df28373d68a1cda9055c3632540c50756f846  sg3_utils-1.28-9.el6_7.x86_64.rpm
+df286a7c80a557bb941f4f71a0a097ac3c366a188f169c6c6ccbb03403385fbe  sg3_utils-devel-1.28-9.el6_7.i686.rpm
+6cf89c234e97c0bd5ec2311c93da1e50c86b94eeb4f35ed1f902fd63cbd7df74  sg3_utils-devel-1.28-9.el6_7.x86_64.rpm
+d62626c4cc2be45fbfa5c52b1d61584f67a58527fcf228f758a15a7070010155  sg3_utils-libs-1.28-9.el6_7.i686.rpm
+4371bdac330d017132adaee0dae5d6a61a75162ab4534e24ec8e307eb9028b2b  sg3_utils-libs-1.28-9.el6_7.x86_64.rpm
+
+Source:
+341b948ba806e537994b961a02d5e4e61cb3a7ad5ee2f057792ea1c6a085339b  sg3_utils-1.28-9.el6_7.src.rpm
+
+
+
+-- 
+Johnny Hughes
+CentOS Project { http://www.centos.org/ }
+irc: hughesjr, #centos at irc.freenode.net
+Twitter: @JohnnyCentOS
+
+
+From johnny at centos.org  Tue Feb  9 15:47:30 2016
+From: johnny at centos.org (Johnny Hughes)
+Date: Tue, 9 Feb 2016 15:47:30 +0000
+Subject: [CentOS-announce] CEBA-2016:0147 CentOS 6 389-ds-base BugFix Update
+Message-ID: <20160209154730.GA22471@n04.lon1.karan.org>
+
+
+CentOS Errata and Bugfix Advisory 2016:0147 
+
+Upstream details at : https://rhn.redhat.com/errata/RHBA-2016-0147.html
+
+The following updated files have been uploaded and are currently 
+syncing to the mirrors: ( sha256sum Filename ) 
+
+i386:
+aa39d9478caa6b09b42ccc106546624638e70232b6cff445b5f6964f9faf00ad  389-ds-base-1.2.11.15-69.el6_7.i686.rpm
+f8ed3e0f0a8f862faecbefc969c61c7870582ec2fcf545b3e1f02e3b40d895c5  389-ds-base-devel-1.2.11.15-69.el6_7.i686.rpm
+9077cc565c69c31020c513359e49dc0280159d2933bf12fd2e3a3453996fa498  389-ds-base-libs-1.2.11.15-69.el6_7.i686.rpm
+
+x86_64:
+8e35047f26924a010076e256ca72dbeca96434af305f9da2bffc22327938d5d7  389-ds-base-1.2.11.15-69.el6_7.x86_64.rpm
+f8ed3e0f0a8f862faecbefc969c61c7870582ec2fcf545b3e1f02e3b40d895c5  389-ds-base-devel-1.2.11.15-69.el6_7.i686.rpm
+58c947e594f9ce29833b3e5ab8306559ada9ccd34299cc552de806b2ea4c2383  389-ds-base-devel-1.2.11.15-69.el6_7.x86_64.rpm
+9077cc565c69c31020c513359e49dc0280159d2933bf12fd2e3a3453996fa498  389-ds-base-libs-1.2.11.15-69.el6_7.i686.rpm
+376727df7e5df0fa0704c26df831628a9866e2f4c5c3d0a476726abb4ceb36b7  389-ds-base-libs-1.2.11.15-69.el6_7.x86_64.rpm
+
+Source:
+a7926c63a02a4dcbbb4246498a509bf5d71b070456f2e3f5024440c095cf65b5  389-ds-base-1.2.11.15-69.el6_7.src.rpm
+
+
+
+-- 
+Johnny Hughes
+CentOS Project { http://www.centos.org/ }
+irc: hughesjr, #centos at irc.freenode.net
+Twitter: @JohnnyCentOS
+
+
+From johnny at centos.org  Tue Feb  9 15:48:10 2016
+From: johnny at centos.org (Johnny Hughes)
+Date: Tue, 9 Feb 2016 15:48:10 +0000
+Subject: [CentOS-announce] CEBA-2016:0153  CentOS 6 sssd BugFix Update
+Message-ID: <20160209154810.GA23224@n04.lon1.karan.org>
+
+
+CentOS Errata and Bugfix Advisory 2016:0153 
+
+Upstream details at : https://rhn.redhat.com/errata/RHBA-2016-0153.html
+
+The following updated files have been uploaded and are currently 
+syncing to the mirrors: ( sha256sum Filename ) 
+
+i386:
+51e4b292cca39ca7533cd14267520f41574954784efcbcbd8e72fd55d6cba332  libipa_hbac-1.12.4-47.el6_7.7.i686.rpm
+55794f3a2faecec95f22676a0535f24cbc363ef7802d27c46e773f8b28074a3d  libipa_hbac-devel-1.12.4-47.el6_7.7.i686.rpm
+81668e276dccec0cefd574f5990965577065059543f28efcc1b06e19f1af43b9  libipa_hbac-python-1.12.4-47.el6_7.7.i686.rpm
+35e05d14e72c17d9e465209bfb2c41296ad623af5329d89798821bee3a84bc8c  libsss_idmap-1.12.4-47.el6_7.7.i686.rpm
+df605791859139c147c87acc7f54e9e378287c3f6223e95f28e773172a8afab5  libsss_idmap-devel-1.12.4-47.el6_7.7.i686.rpm
+540794861c9de7d4c8423109c9de59be6c596f677064f5c421923038649a486d  libsss_nss_idmap-1.12.4-47.el6_7.7.i686.rpm
+376cff3a7a443246b9e3dc65fff0f5993fd6a23d373d014310e1f58efd9a3809  libsss_nss_idmap-devel-1.12.4-47.el6_7.7.i686.rpm
+e703da5176fb17e21cf60f67d5b195599170867e2a3ff60da6fa8aed5192e6e1  libsss_nss_idmap-python-1.12.4-47.el6_7.7.i686.rpm
+9af26db52aca48af87b6850bab67961f215e7e82c80005564032917de46f1c23  libsss_simpleifp-1.12.4-47.el6_7.7.i686.rpm
+cca32fcef14aef1ee7ba3f1fbd0bff5c82292fc54af1201340350b08a0c40e47  libsss_simpleifp-devel-1.12.4-47.el6_7.7.i686.rpm
+6210777c6fca1e97b6f4b8ea043079e76c5e47d003cb6a82aca31efbab1828a9  python-sssdconfig-1.12.4-47.el6_7.7.noarch.rpm
+3bd6bc0c7d35cc735630e48e4b09dd74037beb94ea78f0c1d1b70784bf3ab173  sssd-1.12.4-47.el6_7.7.i686.rpm
+c2904d2d72c778316bfc293992a9ef9f5e029f52d48e7b2605b89b472c35796e  sssd-ad-1.12.4-47.el6_7.7.i686.rpm
+fd6a90253924b7d7a89fbcca363598ad6971be632e0c0d6662e5bc0471aee430  sssd-client-1.12.4-47.el6_7.7.i686.rpm
+07c7fec6b5b7eb8eb1b3f404341b4ce4b7c4c9580ba9b16453dfe7b8aefafad3  sssd-common-1.12.4-47.el6_7.7.i686.rpm
+51b6d84ae56979b6082fde7cb29362b42dbed3abcf7758fcd615c50a0b7171a7  sssd-common-pac-1.12.4-47.el6_7.7.i686.rpm
+44ff993bcef253cbdd893a0214c09a8be7f602040827284e12de6c9acaf3a8be  sssd-dbus-1.12.4-47.el6_7.7.i686.rpm
+fc1fa63e36a83ec02bb16e65de8cc1bdf1c67ee63ecdf85cdcaeb1cfd0b25a27  sssd-ipa-1.12.4-47.el6_7.7.i686.rpm
+de1e67a1809a50325199b852b44ab04abf0975fc6421c8b755265894cd0e0447  sssd-krb5-1.12.4-47.el6_7.7.i686.rpm
+6f762693e1bec75e798b2ad357f18bd9dc72e052ca602268d38350b8e1151d30  sssd-krb5-common-1.12.4-47.el6_7.7.i686.rpm
+4a0b2c472c5751d213e7c3403c4cb79a40e760c6cdca1bb1c16449ce8a2a6d37  sssd-ldap-1.12.4-47.el6_7.7.i686.rpm
+fc7275c1ef903360356fe36f2059925b0526e74ae3b7c0ffcc1d71bd04edac22  sssd-proxy-1.12.4-47.el6_7.7.i686.rpm
+42565856640ee6f50c859b12eba8b615040e3df049f847114641cfb76653a130  sssd-tools-1.12.4-47.el6_7.7.i686.rpm
+
+x86_64:
+51e4b292cca39ca7533cd14267520f41574954784efcbcbd8e72fd55d6cba332  libipa_hbac-1.12.4-47.el6_7.7.i686.rpm
+9cd92ab10719f55477c070c68114d5fdf49c45d24b0fd0efed91f5d202321886  libipa_hbac-1.12.4-47.el6_7.7.x86_64.rpm
+55794f3a2faecec95f22676a0535f24cbc363ef7802d27c46e773f8b28074a3d  libipa_hbac-devel-1.12.4-47.el6_7.7.i686.rpm
+ce2fab0b2d3b6bb78a701a12e59f4e4de8d98cda711a2dba0f2aa2f7c7d1a43f  libipa_hbac-devel-1.12.4-47.el6_7.7.x86_64.rpm
+8fae39b8711928c4ef8279082c82fa91b5afd5d61be9c9651772889140aae538  libipa_hbac-python-1.12.4-47.el6_7.7.x86_64.rpm
+35e05d14e72c17d9e465209bfb2c41296ad623af5329d89798821bee3a84bc8c  libsss_idmap-1.12.4-47.el6_7.7.i686.rpm
+097059c5339afc191a6b34e7015c5071769c532a818b16ab9c2b783952a0c50e  libsss_idmap-1.12.4-47.el6_7.7.x86_64.rpm
+df605791859139c147c87acc7f54e9e378287c3f6223e95f28e773172a8afab5  libsss_idmap-devel-1.12.4-47.el6_7.7.i686.rpm
+27f09d38748c7c9ee8ff5e982a7b50f8e5524a05444667bc92d88d7285603905  libsss_idmap-devel-1.12.4-47.el6_7.7.x86_64.rpm
+540794861c9de7d4c8423109c9de59be6c596f677064f5c421923038649a486d  libsss_nss_idmap-1.12.4-47.el6_7.7.i686.rpm
+79c96d43680e7432a365447929fb2357e08224630d45f885041a2751dd4413c9  libsss_nss_idmap-1.12.4-47.el6_7.7.x86_64.rpm
+376cff3a7a443246b9e3dc65fff0f5993fd6a23d373d014310e1f58efd9a3809  libsss_nss_idmap-devel-1.12.4-47.el6_7.7.i686.rpm
+8125b111ffc987d58de3b5fa1eb701ae9db63499c1b3fd17bb49731eb384a21e  libsss_nss_idmap-devel-1.12.4-47.el6_7.7.x86_64.rpm
+b8ce73a1f42324e75d9f40cccf0669fcc7385a91dfb55cd51e6240b913096058  libsss_nss_idmap-python-1.12.4-47.el6_7.7.x86_64.rpm
+9af26db52aca48af87b6850bab67961f215e7e82c80005564032917de46f1c23  libsss_simpleifp-1.12.4-47.el6_7.7.i686.rpm
+51065b9820632d4def7b848a00d8b350438e239f8cfa2f401634467007bff980  libsss_simpleifp-1.12.4-47.el6_7.7.x86_64.rpm
+cca32fcef14aef1ee7ba3f1fbd0bff5c82292fc54af1201340350b08a0c40e47  libsss_simpleifp-devel-1.12.4-47.el6_7.7.i686.rpm
+fe31d01672913a521147dc28277e5832dd4f2dc5c5268614bd40fcf266cf1e06  libsss_simpleifp-devel-1.12.4-47.el6_7.7.x86_64.rpm
+6210777c6fca1e97b6f4b8ea043079e76c5e47d003cb6a82aca31efbab1828a9  python-sssdconfig-1.12.4-47.el6_7.7.noarch.rpm
+4cf18138cf7583dee9c2e7e5795cd27b17dfbad1f8798b2d0b9c9a50b51013e6  sssd-1.12.4-47.el6_7.7.x86_64.rpm
+1dd7cfa90e9b3b1790bfbfb418ddce82bd230cef2752601b8a3aac99a694119f  sssd-ad-1.12.4-47.el6_7.7.x86_64.rpm
+fd6a90253924b7d7a89fbcca363598ad6971be632e0c0d6662e5bc0471aee430  sssd-client-1.12.4-47.el6_7.7.i686.rpm
+cef92d2e2a729d05ac338d42e634b136ed705a6cbe6df0fb597474247dc82a2f  sssd-client-1.12.4-47.el6_7.7.x86_64.rpm
+66dfa35b8f50a8c97c771a69eee4b5f9108d10c4ab20497831bb693945455df8  sssd-common-1.12.4-47.el6_7.7.x86_64.rpm
+72ab8eb075ec7fe5462fac86527351270acf1b5ec8d0f37cd160b71d69bccc60  sssd-common-pac-1.12.4-47.el6_7.7.x86_64.rpm
+9d9027d6f7a1fcbfc03a558ad1b085fcb1fe1484a5abff106931b77bd5fbf1b5  sssd-dbus-1.12.4-47.el6_7.7.x86_64.rpm
+d50c87fa4cc87b9c6d01c0c2eccf0ed9a9a625882cc4202ad50a72bf14694e24  sssd-ipa-1.12.4-47.el6_7.7.x86_64.rpm
+1fe86a897cd16baf952f6ebecc1b4426df15a82a8cf0a690869ce70d9aa04b1a  sssd-krb5-1.12.4-47.el6_7.7.x86_64.rpm
+bd5dca7180605707b2a911d246f724d10ca7b192b300d7814ecdb9f843d5adb8  sssd-krb5-common-1.12.4-47.el6_7.7.x86_64.rpm
+4e2e403116d2e554a432da6f6c6e33497fd665daaeb08301cd0a7ed779dc9be5  sssd-ldap-1.12.4-47.el6_7.7.x86_64.rpm
+7a127f078b8db2c524a0463dfcfae6e196ef6f5dea0f5cd80c076626a1b1285a  sssd-proxy-1.12.4-47.el6_7.7.x86_64.rpm
+a812e16817ef954d3b940094c49453881201a065f44505444f7556a6d012ae1c  sssd-tools-1.12.4-47.el6_7.7.x86_64.rpm
+
+Source:
+5d358e3ee87ca7308c3ba9d83e845b51223d2e57af006aaeb5db59b321c09f7d  sssd-1.12.4-47.el6_7.7.src.rpm
+
+
+
+-- 
+Johnny Hughes
+CentOS Project { http://www.centos.org/ }
+irc: hughesjr, #centos at irc.freenode.net
+Twitter: @JohnnyCentOS
+
+
+From johnny at centos.org  Tue Feb  9 15:48:38 2016
+From: johnny at centos.org (Johnny Hughes)
+Date: Tue, 9 Feb 2016 15:48:38 +0000
+Subject: [CentOS-announce] CEBA-2016:0144 CentOS 6 chkconfig BugFix Update
+Message-ID: <20160209154838.GA23424@n04.lon1.karan.org>
+
+
+CentOS Errata and Bugfix Advisory 2016:0144 
+
+Upstream details at : https://rhn.redhat.com/errata/RHBA-2016-0144.html
+
+The following updated files have been uploaded and are currently 
+syncing to the mirrors: ( sha256sum Filename ) 
+
+i386:
+1d70e69be938a503142b66519b4f1866e98e83c08b161cc3dc6f39e66a9abcb8  chkconfig-1.3.49.3-5.el6_7.2.i686.rpm
+a7a66292f85d0beb03021a41359fca7fba2b0af4c85e11814abf614f821a4a8a  ntsysv-1.3.49.3-5.el6_7.2.i686.rpm
+
+x86_64:
+8af257f37c0370b3d499b8e998f49245b8cd2f437ba0f259587a2f6153d45698  chkconfig-1.3.49.3-5.el6_7.2.x86_64.rpm
+d5392edb78b06c73c95ad2fcee3ff8c59733d217b837a1abff5710570d77d55c  ntsysv-1.3.49.3-5.el6_7.2.x86_64.rpm
+
+Source:
+dae891cfff2848ee45d6005c9a9ebbee5113bce8085d931d69529964285cbdb9  chkconfig-1.3.49.3-5.el6_7.2.src.rpm
+
+
+
+-- 
+Johnny Hughes
+CentOS Project { http://www.centos.org/ }
+irc: hughesjr, #centos at irc.freenode.net
+Twitter: @JohnnyCentOS
+
+
+From johnny at centos.org  Tue Feb  9 15:49:03 2016
+From: johnny at centos.org (Johnny Hughes)
+Date: Tue, 9 Feb 2016 15:49:03 +0000
+Subject: [CentOS-announce] CEBA-2016:0146 CentOS 6 libgovirt BugFix Update
+Message-ID: <20160209154903.GA23655@n04.lon1.karan.org>
+
+
+CentOS Errata and Bugfix Advisory 2016:0146 
+
+Upstream details at : https://rhn.redhat.com/errata/RHBA-2016-0146.html
+
+The following updated files have been uploaded and are currently 
+syncing to the mirrors: ( sha256sum Filename ) 
+
+i386:
+1cee518644f5f9fe771c84f4404e0764728f01ff2e58be7caf46e934d5e6c362  libgovirt-0.3.2-1.el6_7.2.i686.rpm
+78ee98a04745aa4a2e5724be48cb282bb7163788563a37b0e931895d29706daa  libgovirt-devel-0.3.2-1.el6_7.2.i686.rpm
+
+x86_64:
+1cee518644f5f9fe771c84f4404e0764728f01ff2e58be7caf46e934d5e6c362  libgovirt-0.3.2-1.el6_7.2.i686.rpm
+da0262d42776226041427b9ae8fa9adb3a94f3dd1d1858b4e8ebf4d93a36186d  libgovirt-0.3.2-1.el6_7.2.x86_64.rpm
+78ee98a04745aa4a2e5724be48cb282bb7163788563a37b0e931895d29706daa  libgovirt-devel-0.3.2-1.el6_7.2.i686.rpm
+3004ea2dfac6128d16f1a0e00295e9f444aea517546abcb994346b52239a56d6  libgovirt-devel-0.3.2-1.el6_7.2.x86_64.rpm
+
+Source:
+056be1db172f22734921a8961b073ad63a46cc9dd9f4d9af0a5aa4754455872e  libgovirt-0.3.2-1.el6_7.2.src.rpm
+
+
+
+-- 
+Johnny Hughes
+CentOS Project { http://www.centos.org/ }
+irc: hughesjr, #centos at irc.freenode.net
+Twitter: @JohnnyCentOS
+
+
+From johnny at centos.org  Tue Feb  9 15:49:36 2016
+From: johnny at centos.org (Johnny Hughes)
+Date: Tue, 9 Feb 2016 15:49:36 +0000
+Subject: [CentOS-announce] CEBA-2016:0148  CentOS 6 poppler BugFix Update
+Message-ID: <20160209154936.GA24090@n04.lon1.karan.org>
+
+
+CentOS Errata and Bugfix Advisory 2016:0148 
+
+Upstream details at : https://rhn.redhat.com/errata/RHBA-2016-0148.html
+
+The following updated files have been uploaded and are currently 
+syncing to the mirrors: ( sha256sum Filename ) 
+
+i386:
+dd135b4869242fe174b57fad16abe51226cc931dabcd6dfc2b1a6f4184665cef  poppler-0.12.4-5.el6_7.1.i686.rpm
+b5d72ad0bf23ad132c01c8b9ab1e20d7c4e70787aa3899a353d808b58c60b8c4  poppler-devel-0.12.4-5.el6_7.1.i686.rpm
+19d6c9db7ba9a678340b78ea5fae5c8f50c52c953c902af016aa1e6f76087246  poppler-glib-0.12.4-5.el6_7.1.i686.rpm
+d719081f1c21b681be82d4cb7998759a4453a7310e54e8b0df12d4404d4e217a  poppler-glib-devel-0.12.4-5.el6_7.1.i686.rpm
+4c5fa6b4ed015992dfca026d7e2952a842952533571d7dd03de641d8800e32e4  poppler-qt-0.12.4-5.el6_7.1.i686.rpm
+1ee661555bc135bfc0783c0e7aa72b3f5001789143acf65a79b4b1ea1fa2ee25  poppler-qt4-0.12.4-5.el6_7.1.i686.rpm
+8849fa7bd7b07de4031a09b10a93aabbaef035275e69833d3dc699cade2d9a41  poppler-qt4-devel-0.12.4-5.el6_7.1.i686.rpm
+46d1f6019c9e5676fbb271f0da52ea65ec5801bccbb19810942045b7a3391c0a  poppler-qt-devel-0.12.4-5.el6_7.1.i686.rpm
+6ef491969721dcb8d9a514d76766fd0e3024ab322a04c4370f9118d1f66202b6  poppler-utils-0.12.4-5.el6_7.1.i686.rpm
+
+x86_64:
+dd135b4869242fe174b57fad16abe51226cc931dabcd6dfc2b1a6f4184665cef  poppler-0.12.4-5.el6_7.1.i686.rpm
+3a95a26fee1ab314eb595b9a1fc49da1ba5bcb8e26e179fb8d0b4fe4c9458715  poppler-0.12.4-5.el6_7.1.x86_64.rpm
+b5d72ad0bf23ad132c01c8b9ab1e20d7c4e70787aa3899a353d808b58c60b8c4  poppler-devel-0.12.4-5.el6_7.1.i686.rpm
+99dee45534427370d8739a8559b43867a9de734aef3258a4bc327e22a437714a  poppler-devel-0.12.4-5.el6_7.1.x86_64.rpm
+19d6c9db7ba9a678340b78ea5fae5c8f50c52c953c902af016aa1e6f76087246  poppler-glib-0.12.4-5.el6_7.1.i686.rpm
+d9636c9ae131550028e77d66910305cd6904e9dfb12a3e016735b42008fca614  poppler-glib-0.12.4-5.el6_7.1.x86_64.rpm
+d719081f1c21b681be82d4cb7998759a4453a7310e54e8b0df12d4404d4e217a  poppler-glib-devel-0.12.4-5.el6_7.1.i686.rpm
+5b59993a27c3b9def1f2626b33dc56108675a1b2b9afdf15032da5e2c86c17c2  poppler-glib-devel-0.12.4-5.el6_7.1.x86_64.rpm
+4c5fa6b4ed015992dfca026d7e2952a842952533571d7dd03de641d8800e32e4  poppler-qt-0.12.4-5.el6_7.1.i686.rpm
+6a42c8071f57c0c511a33005ce70c8972dfd6f74bd5d8edf59a584d4f19c56ab  poppler-qt-0.12.4-5.el6_7.1.x86_64.rpm
+1ee661555bc135bfc0783c0e7aa72b3f5001789143acf65a79b4b1ea1fa2ee25  poppler-qt4-0.12.4-5.el6_7.1.i686.rpm
+d821c8cb85c5db391c761b3568b489e9d3a5ecbca00369dad032a973f6a4cfce  poppler-qt4-0.12.4-5.el6_7.1.x86_64.rpm
+8849fa7bd7b07de4031a09b10a93aabbaef035275e69833d3dc699cade2d9a41  poppler-qt4-devel-0.12.4-5.el6_7.1.i686.rpm
+408e905578a7623307d2e4d2ec5a1878d8709ccb1714ce6fe285033f65ee8308  poppler-qt4-devel-0.12.4-5.el6_7.1.x86_64.rpm
+46d1f6019c9e5676fbb271f0da52ea65ec5801bccbb19810942045b7a3391c0a  poppler-qt-devel-0.12.4-5.el6_7.1.i686.rpm
+75c132a51ae772d2c1f621a222ca9ee37f2213ec45c442637f5f4641566db587  poppler-qt-devel-0.12.4-5.el6_7.1.x86_64.rpm
+e3aef23ba80e64a13b654739247bceac5426a58363dbce33f3d593ca920b8159  poppler-utils-0.12.4-5.el6_7.1.x86_64.rpm
+
+Source:
+5e31aee5a5467f7024f662c91d04d0592e46e58f3fb824f31fa89ca805924b4f  poppler-0.12.4-5.el6_7.1.src.rpm
+
+
+
+-- 
+Johnny Hughes
+CentOS Project { http://www.centos.org/ }
+irc: hughesjr, #centos at irc.freenode.net
+Twitter: @JohnnyCentOS
+
+
+From johnny at centos.org  Tue Feb  9 15:50:12 2016
+From: johnny at centos.org (Johnny Hughes)
+Date: Tue, 9 Feb 2016 15:50:12 +0000
+Subject: [CentOS-announce] CEBA-2016:0141  CentOS 6 php BugFix Update
+Message-ID: <20160209155012.GA24847@n04.lon1.karan.org>
+
+
+CentOS Errata and Bugfix Advisory 2016:0141 
+
+Upstream details at : https://rhn.redhat.com/errata/RHBA-2016-0141.html
+
+The following updated files have been uploaded and are currently 
+syncing to the mirrors: ( sha256sum Filename ) 
+
+i386:
+4f10a5600a1fd8e44870505fb4dd167a620847182284727dc7c58bd09fd53a15  php-5.3.3-46.el6_7.1.i686.rpm
+6317dca16cc084910bfec357d9d0d6c5f0bbe4e14b834ad7588f2012dc8d1c06  php-bcmath-5.3.3-46.el6_7.1.i686.rpm
+3d02c9401761c4430c09461dcf77521acdf1e155ddbc11cf470a66983fd64c27  php-cli-5.3.3-46.el6_7.1.i686.rpm
+ac58e2e999d7537fd70d1b2af468a128ed9749a59a65176c57368c42679e338c  php-common-5.3.3-46.el6_7.1.i686.rpm
+917021fae59cc85ee0daf424165f3595d6583ae7ed9876608a1ba664ac4e1675  php-dba-5.3.3-46.el6_7.1.i686.rpm
+31eb6087892de002f67c21f522cec72a887effa25ea01cdf2ab0d7922e8c51d7  php-devel-5.3.3-46.el6_7.1.i686.rpm
+02041a6a558fb5ffa8913e539d73e27150203e91bf7697541d4c93705a79d011  php-embedded-5.3.3-46.el6_7.1.i686.rpm
+79698fa5a4d6c7f348f8abdefe345e875a900a56be37b74fa2bcff8c118c189f  php-enchant-5.3.3-46.el6_7.1.i686.rpm
+853dbbb6d2ef618643d79d35be5741323b92a7c095de3afbc6458940825b2847  php-fpm-5.3.3-46.el6_7.1.i686.rpm
+f5ee4848332d67e3f8731a9a2256fdee0977bb1933c49cf6a2b17800c9f8abc4  php-gd-5.3.3-46.el6_7.1.i686.rpm
+502cb899f20bd897851d6cdb1d2bd7d9c7eae6a7acb15989c1a5285d06a5c2f3  php-imap-5.3.3-46.el6_7.1.i686.rpm
+deeb5fba15375e8a186f43852f0ed254a3a6812207d7a024d05d5e47233ef5f0  php-intl-5.3.3-46.el6_7.1.i686.rpm
+c852850cb7a7ce0dba972a4f40da4de06f9b88ee2ff179eb726a932ebb91d075  php-ldap-5.3.3-46.el6_7.1.i686.rpm
+b0b021c89879cbffafa445696c4c1ea5faa32a14a352d92b24aa8cf976e94318  php-mbstring-5.3.3-46.el6_7.1.i686.rpm
+1c14a174bbe9ea378a238814bd2babdd7e1d494569622e0ed679fbd03eac0abf  php-mysql-5.3.3-46.el6_7.1.i686.rpm
+919204a88c420a9b28bd3b7fbba854afd6f0812437540d5eefe554e3c4beb2df  php-odbc-5.3.3-46.el6_7.1.i686.rpm
+7360d7458cc9aeef86f27587c9ea79c926d75bcf42f9461d0f042b89cdfc2808  php-pdo-5.3.3-46.el6_7.1.i686.rpm
+cabbd7a43f65232e69f7eeb06b6be3346ccdd8c7236466606fe83a6916a6174b  php-pgsql-5.3.3-46.el6_7.1.i686.rpm
+60c6a5aae294cd0f7a79c9ea93a04b309e29b5dca6121bca4b6121cffad663ac  php-process-5.3.3-46.el6_7.1.i686.rpm
+f57ded25f2f66f0eecc13fb90a0924b39196621d029ffebe0e385f76cb77790f  php-pspell-5.3.3-46.el6_7.1.i686.rpm
+4742900f6aff61796ea0ed587d96eeb0e0b209b4587b5ce73b628ad7b7e1ecf8  php-recode-5.3.3-46.el6_7.1.i686.rpm
+5c031ce7e190b1d60ce637ea4c686ad5ce145187356873ed3817bfc8ef705a56  php-snmp-5.3.3-46.el6_7.1.i686.rpm
+b08134f41338208a30058932c061d28eae6b0a20045108d0949186b8bf3a568f  php-soap-5.3.3-46.el6_7.1.i686.rpm
+5e0caa75346ea6ec26ab1c715cb24ff79486c947269022f391e055fdb28461dd  php-tidy-5.3.3-46.el6_7.1.i686.rpm
+ab53a135aa80f46084709dd3066551e6cdb85267effe6c8af879bf7c7ef0749a  php-xml-5.3.3-46.el6_7.1.i686.rpm
+3d7ddb29cc7995eccd763c2552d3e33ee6e665f6f9b52fd0884a29e293979231  php-xmlrpc-5.3.3-46.el6_7.1.i686.rpm
+51b1c17c329b0153e738c5616bd025abef8d39d41d72dfa7b3b6d4db6e308021  php-zts-5.3.3-46.el6_7.1.i686.rpm
+
+x86_64:
+70f1719df122bb0150bf25e2e193d089151e3c054f3e2f9f0f000b929ef14a56  php-5.3.3-46.el6_7.1.x86_64.rpm
+ba2e1b7b1ff42fad16b023e5f6b1f692201c2ceca4b6ef8c48abce5bca455387  php-bcmath-5.3.3-46.el6_7.1.x86_64.rpm
+e767bc7ba579195ba9992c4677c98576e7c21347481647329dcffa85afe0619e  php-cli-5.3.3-46.el6_7.1.x86_64.rpm
+77c63cbcbcf4e816105d87e402d8b539d2b047445eeb4cccf1184e940fe536c0  php-common-5.3.3-46.el6_7.1.x86_64.rpm
+5588a217771d7a8c2996f274d5881ca9e961ab389e5c4474c7650035edd198e4  php-dba-5.3.3-46.el6_7.1.x86_64.rpm
+c5ee3a201173509ddfe9d5da4880884022311accb46decbeaf7d71e6a1103a2a  php-devel-5.3.3-46.el6_7.1.x86_64.rpm
+a0a272cad9faab11a32780e1b3a09b2d3561454fa969480f5cdc97bc3682b3d9  php-embedded-5.3.3-46.el6_7.1.x86_64.rpm
+d63d5b365a4e3b5656cd73fc39ed0d52855702cf31d1772c9560e193cfa1ad86  php-enchant-5.3.3-46.el6_7.1.x86_64.rpm
+926d06b6d2f2911dd3d091661dc036e996a4561f8a65a587d2377ffad8311e14  php-fpm-5.3.3-46.el6_7.1.x86_64.rpm
+3ede04bc484b17e424fa228f4ec2067c1ee46b86363e064ce4bf8486bfb05db5  php-gd-5.3.3-46.el6_7.1.x86_64.rpm
+59c74c1b7d862b17dc2d8fe482ffa35409734af8b05f56078f620c545bd0a628  php-imap-5.3.3-46.el6_7.1.x86_64.rpm
+94317c314a183d63f3a65e05d83c9236bffda543a06315c913f0d6869c18fe2e  php-intl-5.3.3-46.el6_7.1.x86_64.rpm
+8cfe0b7ab2301c31583b3ca2e8d7a7e665c00b97d1aeeaafa5da77d36264f8e8  php-ldap-5.3.3-46.el6_7.1.x86_64.rpm
+6d2dcd0080f9968de50b94a664a9e3ca912566c2dc1d71053654346432db4a25  php-mbstring-5.3.3-46.el6_7.1.x86_64.rpm
+1c267526236ad00a52c14e1901bf2488f31ac8a5ed95943dcb910c17babc98b2  php-mysql-5.3.3-46.el6_7.1.x86_64.rpm
+ff7dfe9e1a8706d7d45ecedfb418c77ebe4ac53fde81a798902fbd42a9645488  php-odbc-5.3.3-46.el6_7.1.x86_64.rpm
+8012869bd7d0baeb1a502a12c2266bae2b91461dc4f83674b130f480442f7127  php-pdo-5.3.3-46.el6_7.1.x86_64.rpm
+5ec2215cbe64fde50a86bca751339b8efd786b550f2892ebde2aa740df650723  php-pgsql-5.3.3-46.el6_7.1.x86_64.rpm
+ad899d23f096048783ede8f1fbbf27a280b54e1fbbb5eb0963b3f540f223403f  php-process-5.3.3-46.el6_7.1.x86_64.rpm
+7d468e9659f69b2a75cda709a195320f9774b58b355fce70b017a929ab059d4d  php-pspell-5.3.3-46.el6_7.1.x86_64.rpm
+0ec2064c329f133f20e5674edaf4db0f99fa72b78b71c30ab54d68c0a5367983  php-recode-5.3.3-46.el6_7.1.x86_64.rpm
+84207d7425ec7c5de2252a778aa647a02c57e27e2d407d23899ea648e111c0f3  php-snmp-5.3.3-46.el6_7.1.x86_64.rpm
+ea27e79bd316ffe6a6934e790d7fc8a36c1bdb4575625c36c0ea101305db5094  php-soap-5.3.3-46.el6_7.1.x86_64.rpm
+b3a7f2b841ba4aa2cf2ee1a510acd367af09609065bbf360550b4fe06d4e88e6  php-tidy-5.3.3-46.el6_7.1.x86_64.rpm
+a75e9ddc54352ed20b6d540a67270dba0ee470f33f48e2b1fb4116fad4f5b6dd  php-xml-5.3.3-46.el6_7.1.x86_64.rpm
+1d2b226360866c6a6bcc96085e0b3d3a6b99378546afc8efaee684a6ae27b79c  php-xmlrpc-5.3.3-46.el6_7.1.x86_64.rpm
+991b6f4499b3301ba0961cc7ef524fabee95adc662bbd368b96666d63d1a1ac5  php-zts-5.3.3-46.el6_7.1.x86_64.rpm
+
+Source:
+299c3a8770d36ca3876521f2c29521b035340b93d97ad914be6a97a4aaefe9d6  php-5.3.3-46.el6_7.1.src.rpm
+
+
+
+-- 
+Johnny Hughes
+CentOS Project { http://www.centos.org/ }
+irc: hughesjr, #centos at irc.freenode.net
+Twitter: @JohnnyCentOS
+
+
+From johnny at centos.org  Tue Feb  9 15:50:49 2016
+From: johnny at centos.org (Johnny Hughes)
+Date: Tue, 9 Feb 2016 15:50:49 +0000
+Subject: [CentOS-announce] CEBA-2016:0143  CentOS 6 kdelibs BugFix Update
+Message-ID: <20160209155049.GA25156@n04.lon1.karan.org>
+
+
+CentOS Errata and Bugfix Advisory 2016:0143 
+
+Upstream details at : https://rhn.redhat.com/errata/RHBA-2016-0143.html
+
+The following updated files have been uploaded and are currently 
+syncing to the mirrors: ( sha256sum Filename ) 
+
+i386:
+4de1d05e988b80b60673e12428bd9ed81bbe3dd75d10e147636ec9ad2baba79d  kdelibs-4.3.4-24.el6_7.i686.rpm
+282b622c62f8a602871e2676c35ee19f161c66c15014b1f905b4a253876bcf4e  kdelibs-apidocs-4.3.4-24.el6_7.noarch.rpm
+259fca3b392cc5c3e89b031b51283e8eef9c486291df7169ae7bcc711685c2b6  kdelibs-common-4.3.4-24.el6_7.i686.rpm
+5d6aed9f56abdf3c9157a5291616f4b581e909734f9ab7cf763cbe1cdc28f1a6  kdelibs-devel-4.3.4-24.el6_7.i686.rpm
+
+x86_64:
+4de1d05e988b80b60673e12428bd9ed81bbe3dd75d10e147636ec9ad2baba79d  kdelibs-4.3.4-24.el6_7.i686.rpm
+221cf5c594896241ecababd31f7995cf4c8367864a9054f22a96833eea9d4277  kdelibs-4.3.4-24.el6_7.x86_64.rpm
+282b622c62f8a602871e2676c35ee19f161c66c15014b1f905b4a253876bcf4e  kdelibs-apidocs-4.3.4-24.el6_7.noarch.rpm
+92e316309fcc17bd26613f3d587d1a701bfb6bdc69bc575c89cc7fdbe6086195  kdelibs-common-4.3.4-24.el6_7.x86_64.rpm
+5d6aed9f56abdf3c9157a5291616f4b581e909734f9ab7cf763cbe1cdc28f1a6  kdelibs-devel-4.3.4-24.el6_7.i686.rpm
+ec5c6a505ebfca5ad19b00ebd0eb8ed910b2fe02503b929fbc0a6e4668e6232b  kdelibs-devel-4.3.4-24.el6_7.x86_64.rpm
+
+Source:
+5442a51ae6ffb59d5d0cb30469e8bfcaafe38382eb767ed0848fb4003444fa47  kdelibs-4.3.4-24.el6_7.src.rpm
+
+
+
+-- 
+Johnny Hughes
+CentOS Project { http://www.centos.org/ }
+irc: hughesjr, #centos at irc.freenode.net
+Twitter: @JohnnyCentOS
+
+
+From johnny at centos.org  Tue Feb  9 15:51:24 2016
+From: johnny at centos.org (Johnny Hughes)
+Date: Tue, 9 Feb 2016 15:51:24 +0000
+Subject: [CentOS-announce] CEBA-2016:0139  CentOS 6 cluster BugFix Update
+Message-ID: <20160209155124.GA25421@n04.lon1.karan.org>
+
+
+CentOS Errata and Bugfix Advisory 2016:0139 
+
+Upstream details at : https://rhn.redhat.com/errata/RHBA-2016-0139.html
+
+The following updated files have been uploaded and are currently 
+syncing to the mirrors: ( sha256sum Filename ) 
+
+i386:
+75d62c53db3f6c04eb8f904d040aada92e0d96b930b3c9507c1ecea45692e761  clusterlib-3.0.12.1-73.el6_7.2.i686.rpm
+a50adfa9e87ffd571aee383a5f9bb9c16d6e74108cb88b15607db22a848fdedb  clusterlib-devel-3.0.12.1-73.el6_7.2.i686.rpm
+201754b19c7b5968895a0b2f9449dde6a440079c684cecbf0b7d76c97260f2db  cman-3.0.12.1-73.el6_7.2.i686.rpm
+cd5071506b8e8b4d0f01dee8f6ce5fba40b6f384e7f123b3b7896e96f4bb6983  gfs2-utils-3.0.12.1-73.el6_7.2.i686.rpm
+
+x86_64:
+75d62c53db3f6c04eb8f904d040aada92e0d96b930b3c9507c1ecea45692e761  clusterlib-3.0.12.1-73.el6_7.2.i686.rpm
+eccf692a1e68e7e2f9b691bf60f55668a9d9b49a6ff5a47cd59bc384a481845c  clusterlib-3.0.12.1-73.el6_7.2.x86_64.rpm
+a50adfa9e87ffd571aee383a5f9bb9c16d6e74108cb88b15607db22a848fdedb  clusterlib-devel-3.0.12.1-73.el6_7.2.i686.rpm
+b2becf3119fe68f3726eeff603b3166a1a77e9f38d5c6b0bc1794cd954680baa  clusterlib-devel-3.0.12.1-73.el6_7.2.x86_64.rpm
+d5172462252cfe092a7e0f960c14d2b93123dd2ffe4f2c0d05813645588e6ccf  cman-3.0.12.1-73.el6_7.2.x86_64.rpm
+44c9a4e29655d4529df799eeba5887f79099de18c32cdc84a4598385d54a88e7  gfs2-utils-3.0.12.1-73.el6_7.2.x86_64.rpm
+
+Source:
+9af06e10bc84388dd25a5b92a301ff0865a9577809e3666a2f6f9b869f75603f  cluster-3.0.12.1-73.el6_7.2.src.rpm
+
+
+
+-- 
+Johnny Hughes
+CentOS Project { http://www.centos.org/ }
+irc: hughesjr, #centos at irc.freenode.net
+Twitter: @JohnnyCentOS
+
+
+From johnny at centos.org  Tue Feb  9 15:52:04 2016
+From: johnny at centos.org (Johnny Hughes)
+Date: Tue, 9 Feb 2016 15:52:04 +0000
+Subject: [CentOS-announce] CEBA-2016:0149  CentOS 6 dnsmasq BugFix Update
+Message-ID: <20160209155204.GA25630@n04.lon1.karan.org>
+
+
+CentOS Errata and Bugfix Advisory 2016:0149 
+
+Upstream details at : https://rhn.redhat.com/errata/RHBA-2016-0149.html
+
+The following updated files have been uploaded and are currently 
+syncing to the mirrors: ( sha256sum Filename ) 
+
+i386:
+eb8770512bd0bfb39b8aa41d0b9c8b6d24fe7419dd4988a166ff5f5105b79065  dnsmasq-2.48-16.el6_7.i686.rpm
+38e6099952d1ec7e6afe5b2753c812b65ea4214a06785b13bac88e5baa41a552  dnsmasq-utils-2.48-16.el6_7.i686.rpm
+
+x86_64:
+3a7f9ee64d28093b0b0f1f0c0a6caf93c62ded468c04e5193b789211311b671d  dnsmasq-2.48-16.el6_7.x86_64.rpm
+86efd61b9f109060b0f82e5933a45dfa0060a9d48e529b0f5abd38b795096318  dnsmasq-utils-2.48-16.el6_7.x86_64.rpm
+
+Source:
+fc0698a722429611ad077e318664a348acdfe7496c5e5b73c9c4819106ed41e2  dnsmasq-2.48-16.el6_7.src.rpm
+
+
+
+-- 
+Johnny Hughes
+CentOS Project { http://www.centos.org/ }
+irc: hughesjr, #centos at irc.freenode.net
+Twitter: @JohnnyCentOS
+
+
+From johnny at centos.org  Tue Feb  9 15:52:39 2016
+From: johnny at centos.org (Johnny Hughes)
+Date: Tue, 9 Feb 2016 15:52:39 +0000
+Subject: [CentOS-announce] CEBA-2016:0145 CentOS 6 kexec-tools BugFix Update
+Message-ID: <20160209155239.GA25830@n04.lon1.karan.org>
+
+
+CentOS Errata and Bugfix Advisory 2016:0145 
+
+Upstream details at : https://rhn.redhat.com/errata/RHBA-2016-0145.html
+
+The following updated files have been uploaded and are currently 
+syncing to the mirrors: ( sha256sum Filename ) 
+
+i386:
+6b10453486d1b5a44bbea742f37b0a8bec506a0e1b84bab573cc76f06481cfd4  kexec-tools-2.0.0-286.el6_7.1.i686.rpm
+b88e799668227e99d5d2ad555c8f16acf1a3abb5281438a7b8f74ccec080326c  kexec-tools-eppic-2.0.0-286.el6_7.1.i686.rpm
+
+x86_64:
+f5f2dc69edd57cb81d89323cae6c54aa2194b557f5a4f252508a9ff246ef33ec  kexec-tools-2.0.0-286.el6_7.1.x86_64.rpm
+8f9e60463a8f5fbe5c3fb75e6ea3bda57d17a737559cab8537541d37b6da6585  kexec-tools-eppic-2.0.0-286.el6_7.1.x86_64.rpm
+
+Source:
+b75a30d81914ad039283cb6135aee9e376db119561c2de3f4f6a2acc9fc7d041  kexec-tools-2.0.0-286.el6_7.1.src.rpm
+
+
+
+-- 
+Johnny Hughes
+CentOS Project { http://www.centos.org/ }
+irc: hughesjr, #centos at irc.freenode.net
+Twitter: @JohnnyCentOS
+
+
+From johnny at centos.org  Tue Feb  9 15:53:05 2016
+From: johnny at centos.org (Johnny Hughes)
+Date: Tue, 9 Feb 2016 15:53:05 +0000
+Subject: [CentOS-announce] CEBA-2016:0142 CentOS 6 librdmacm BugFix Update
+Message-ID: <20160209155305.GA26103@n04.lon1.karan.org>
+
+
+CentOS Errata and Bugfix Advisory 2016:0142 
+
+Upstream details at : https://rhn.redhat.com/errata/RHBA-2016-0142.html
+
+The following updated files have been uploaded and are currently 
+syncing to the mirrors: ( sha256sum Filename ) 
+
+i386:
+39ad59a6e8a1958beb1730e2b12916603a4df39b6612165d48fef1da47035da8  librdmacm-1.0.19.1-1.1.el6_7.i686.rpm
+0ac076f4b3c08974a32c2731ae7ba9a6be0d11ff5c8c0d52978601f5d99814f6  librdmacm-devel-1.0.19.1-1.1.el6_7.i686.rpm
+1f52b1e5bee862ff38678b96b60cc63c0252ac31ec9e9a5c77b3f9735632cd8f  librdmacm-static-1.0.19.1-1.1.el6_7.i686.rpm
+9264ba6b0b5fbbfef24cbe92676c723864f1856a60e84d81675c5ed4159d1711  librdmacm-utils-1.0.19.1-1.1.el6_7.i686.rpm
+
+x86_64:
+39ad59a6e8a1958beb1730e2b12916603a4df39b6612165d48fef1da47035da8  librdmacm-1.0.19.1-1.1.el6_7.i686.rpm
+d04cec523785e5f66a5ef3c331861083f40685a80c184292444cfe449bf7e924  librdmacm-1.0.19.1-1.1.el6_7.x86_64.rpm
+0ac076f4b3c08974a32c2731ae7ba9a6be0d11ff5c8c0d52978601f5d99814f6  librdmacm-devel-1.0.19.1-1.1.el6_7.i686.rpm
+a55cd80b424a17640828db2e321d0f41dc9f1222f463b26bc659b78bd025d518  librdmacm-devel-1.0.19.1-1.1.el6_7.x86_64.rpm
+ae8647f4c02b9f1eb7543add922f08ee7b6e49fe64b5ff6f80ec4f3eae9c0001  librdmacm-static-1.0.19.1-1.1.el6_7.x86_64.rpm
+58fe5ad1ba130494c70741d4b5801e54836f9eeae9f1c9a85134b74c0bbd3f6d  librdmacm-utils-1.0.19.1-1.1.el6_7.x86_64.rpm
+
+Source:
+8b245fc2b1b299c289756fc64c4712686d083456e6976fb908147c6b722bcaca  librdmacm-1.0.19.1-1.1.el6_7.src.rpm
+
+
+
+-- 
+Johnny Hughes
+CentOS Project { http://www.centos.org/ }
+irc: hughesjr, #centos at irc.freenode.net
+Twitter: @JohnnyCentOS
+
+
+From johnny at centos.org  Tue Feb  9 15:54:06 2016
+From: johnny at centos.org (Johnny Hughes)
+Date: Tue, 9 Feb 2016 15:54:06 +0000
+Subject: [CentOS-announce] CEBA-2016:0151  CentOS 6 pki-core BugFix Update
+Message-ID: <20160209155406.GA26562@n04.lon1.karan.org>
+
+
+CentOS Errata and Bugfix Advisory 2016:0151 
+
+Upstream details at : https://rhn.redhat.com/errata/RHBA-2016-0151.html
+
+The following updated files have been uploaded and are currently 
+syncing to the mirrors: ( sha256sum Filename ) 
+
+i386:
+0d04ce18e0720742a79233a2bc11461396bd60225c238c9912b7f13be6d78c34  pki-ca-9.0.3-45.el6_7.noarch.rpm
+e87873cc54e3b211dd1d7df1d0c7815bb2cdad59c25fca24a2234fab2f93c380  pki-common-9.0.3-45.el6_7.noarch.rpm
+6370ab6650b243b786ba1d49eee3b2d5504d2e1b4672f72baff21d1444471c5e  pki-common-javadoc-9.0.3-45.el6_7.noarch.rpm
+439ea071861c996bc70749870749bfcbd8bc9d59cbed71ca7f03951c00399b66  pki-java-tools-9.0.3-45.el6_7.noarch.rpm
+37aeb9aec661c891fbe268ad19836202385e8a9e41a6a5bac7959c46e2eba689  pki-java-tools-javadoc-9.0.3-45.el6_7.noarch.rpm
+61e92afd7679d4f3962b3d6e7a990e7625badb3184e27adb96b710d49eb10284  pki-native-tools-9.0.3-45.el6_7.i686.rpm
+315c5e5778cbb07bd436e770ef3fa9c6cf80531f95f145f2a687b2c0d0799ca6  pki-selinux-9.0.3-45.el6_7.noarch.rpm
+4dc6e07d339386ab56618eef7c1f383802dbc1f41394f05ea228af6d8c8c15fb  pki-setup-9.0.3-45.el6_7.noarch.rpm
+3bea3d076081de12c8cc99b2e884e628348f57d047051a6bb513189dc813a583  pki-silent-9.0.3-45.el6_7.noarch.rpm
+0a0cfdfa4e3f9343e880b4f99d36fb3fc13803b97822947a6abc1757ac8f07a4  pki-symkey-9.0.3-45.el6_7.i686.rpm
+86e1246df7106f2db3fd91eefc3683b2b8ed9d0dd2536878ce70ab8d0a8dac7d  pki-util-9.0.3-45.el6_7.noarch.rpm
+2f3680a038568c84e4ec9698b3d8d99429fbb9d6da9e96a049d956c176d2c944  pki-util-javadoc-9.0.3-45.el6_7.noarch.rpm
+
+x86_64:
+0d04ce18e0720742a79233a2bc11461396bd60225c238c9912b7f13be6d78c34  pki-ca-9.0.3-45.el6_7.noarch.rpm
+e87873cc54e3b211dd1d7df1d0c7815bb2cdad59c25fca24a2234fab2f93c380  pki-common-9.0.3-45.el6_7.noarch.rpm
+6370ab6650b243b786ba1d49eee3b2d5504d2e1b4672f72baff21d1444471c5e  pki-common-javadoc-9.0.3-45.el6_7.noarch.rpm
+439ea071861c996bc70749870749bfcbd8bc9d59cbed71ca7f03951c00399b66  pki-java-tools-9.0.3-45.el6_7.noarch.rpm
+37aeb9aec661c891fbe268ad19836202385e8a9e41a6a5bac7959c46e2eba689  pki-java-tools-javadoc-9.0.3-45.el6_7.noarch.rpm
+3231e9a3721ace388304f392b907994ee0f70302dc913f8e3df23c1bdb0053e5  pki-native-tools-9.0.3-45.el6_7.x86_64.rpm
+315c5e5778cbb07bd436e770ef3fa9c6cf80531f95f145f2a687b2c0d0799ca6  pki-selinux-9.0.3-45.el6_7.noarch.rpm
+4dc6e07d339386ab56618eef7c1f383802dbc1f41394f05ea228af6d8c8c15fb  pki-setup-9.0.3-45.el6_7.noarch.rpm
+3bea3d076081de12c8cc99b2e884e628348f57d047051a6bb513189dc813a583  pki-silent-9.0.3-45.el6_7.noarch.rpm
+de16c0a61d1be9d94e1f5a0536527c3e18ca112c276e6b655beaa9f8ae54216d  pki-symkey-9.0.3-45.el6_7.x86_64.rpm
+86e1246df7106f2db3fd91eefc3683b2b8ed9d0dd2536878ce70ab8d0a8dac7d  pki-util-9.0.3-45.el6_7.noarch.rpm
+2f3680a038568c84e4ec9698b3d8d99429fbb9d6da9e96a049d956c176d2c944  pki-util-javadoc-9.0.3-45.el6_7.noarch.rpm
+
+Source:
+10e8362d9eae2ad4eb9fdc3354c2b15ab11dd7c22a933dea360b51990aab711d  pki-core-9.0.3-45.el6_7.src.rpm
+
+
+
+-- 
+Johnny Hughes
+CentOS Project { http://www.centos.org/ }
+irc: hughesjr, #centos at irc.freenode.net
+Twitter: @JohnnyCentOS
+
+
+From johnny at centos.org  Tue Feb  9 15:54:25 2016
+From: johnny at centos.org (Johnny Hughes)
+Date: Tue, 9 Feb 2016 15:54:25 +0000
+Subject: [CentOS-announce] CEBA-2016:0137 CentOS 6 virt-manager BugFix Update
+Message-ID: <20160209155425.GA26741@n04.lon1.karan.org>
+
+
+CentOS Errata and Bugfix Advisory 2016:0137 
+
+Upstream details at : https://rhn.redhat.com/errata/RHBA-2016-0137.html
+
+The following updated files have been uploaded and are currently 
+syncing to the mirrors: ( sha256sum Filename ) 
+
+i386:
+fc948e7a87688de166402d2c40a171372ab9e1de00a8f0e2f15632d3b58a311a  virt-manager-0.9.0-29.el6_7.1.i686.rpm
+
+x86_64:
+7d6c65440b57e8c15f6cdd1a130c8a80bc39fd2ebe2bcbce0f6bf2b12912f1c3  virt-manager-0.9.0-29.el6_7.1.x86_64.rpm
+
+Source:
+2c4a970a4da5cefda1f62df9b89efe67a4b9cdd4a35cadc859b473c54f091d5f  virt-manager-0.9.0-29.el6_7.1.src.rpm
+
+
+
+-- 
+Johnny Hughes
+CentOS Project { http://www.centos.org/ }
+irc: hughesjr, #centos at irc.freenode.net
+Twitter: @JohnnyCentOS
+
+
+From johnny at centos.org  Tue Feb  9 15:54:51 2016
+From: johnny at centos.org (Johnny Hughes)
+Date: Tue, 9 Feb 2016 15:54:51 +0000
+Subject: [CentOS-announce] CEEA-2016:0154 CentOS 6 tzdata Enhancement Update
+Message-ID: <20160209155451.GA26951@n04.lon1.karan.org>
+
+
+CentOS Errata and Enhancement Advisory 2016:0154 
+
+Upstream details at : https://rhn.redhat.com/errata/RHEA-2016-0154.html
+
+The following updated files have been uploaded and are currently 
+syncing to the mirrors: ( sha256sum Filename ) 
+
+i386:
+c8ced0767945e5477714ec732b38617abfae699b05c21ae1aea3a6c50bad79fd  tzdata-2016a-2.el6.noarch.rpm
+fb86a5d4c4786e28664331099267f4a1fe295619dd59c2d8fc4c4aa21cff2651  tzdata-java-2016a-2.el6.noarch.rpm
+
+x86_64:
+c8ced0767945e5477714ec732b38617abfae699b05c21ae1aea3a6c50bad79fd  tzdata-2016a-2.el6.noarch.rpm
+fb86a5d4c4786e28664331099267f4a1fe295619dd59c2d8fc4c4aa21cff2651  tzdata-java-2016a-2.el6.noarch.rpm
+
+Source:
+9f050dfb59da89c8274e4884900f7a39ea87ffa76db8065c538cd6aeee3e0c25  tzdata-2016a-2.el6.src.rpm
+
+
+
+-- 
+Johnny Hughes
+CentOS Project { http://www.centos.org/ }
+irc: hughesjr, #centos at irc.freenode.net
+Twitter: @JohnnyCentOS
+
+
+From johnny at centos.org  Tue Feb  9 18:01:53 2016
+From: johnny at centos.org (Johnny Hughes)
+Date: Tue, 9 Feb 2016 18:01:53 +0000
+Subject: [CentOS-announce] CEBA-2016:0134  CentOS 6 firefox BugFix Update
+Message-ID: <20160209180153.GA47439@n04.lon1.karan.org>
+
+
+CentOS Errata and Bugfix Advisory 2016:0134 
+
+Upstream details at : https://rhn.redhat.com/errata/RHBA-2016-0134.html
+
+The following updated files have been uploaded and are currently 
+syncing to the mirrors: ( sha256sum Filename ) 
+
+i386:
+732d70ca9a967fcd57ca72070966871c2962d75daf354e353ec62f277ba5e801  firefox-38.6.0-2.el6.centos.i686.rpm
+
+x86_64:
+732d70ca9a967fcd57ca72070966871c2962d75daf354e353ec62f277ba5e801  firefox-38.6.0-2.el6.centos.i686.rpm
+970b53958a88395b0cdf9564fddcc953669449cfac05cb377b8208718977a78a  firefox-38.6.0-2.el6.centos.x86_64.rpm
+
+Source:
+a26f1e526805cef57139007e5fee42e8e0fa1b1aad682337a0a9c56949923598  firefox-38.6.0-2.el6.centos.src.rpm
+
+
+
+-- 
+Johnny Hughes
+CentOS Project { http://www.centos.org/ }
+irc: hughesjr, #centos at irc.freenode.net
+Twitter: @JohnnyCentOS
+
+
+From johnny at centos.org  Tue Feb  9 18:02:24 2016
+From: johnny at centos.org (Johnny Hughes)
+Date: Tue, 9 Feb 2016 18:02:24 +0000
+Subject: [CentOS-announce] CEBA-2016:0140  CentOS 6 httpd BugFix Update
+Message-ID: <20160209180224.GA47734@n04.lon1.karan.org>
+
+
+CentOS Errata and Bugfix Advisory 2016:0140 
+
+Upstream details at : https://rhn.redhat.com/errata/RHBA-2016-0140.html
+
+The following updated files have been uploaded and are currently 
+syncing to the mirrors: ( sha256sum Filename ) 
+
+i386:
+5f1add7f698255f1219f6048fc929925711076c79400af243b8543ed572828cf  httpd-2.2.15-47.el6.centos.2.i686.rpm
+42b422488545690e24b1e35a091ac4a61f73be25babb35a8eed66fbbad22e3b0  httpd-devel-2.2.15-47.el6.centos.2.i686.rpm
+eca70b9bc3314c7f1b32be6779a4f13d6c8c3aee23eb9d24d9716b4736dd599f  httpd-manual-2.2.15-47.el6.centos.2.noarch.rpm
+35e16836eed1f15dc9edaa3bc831b78b3bdfbaf8c3a75cef83454db5eefa38b3  httpd-tools-2.2.15-47.el6.centos.2.i686.rpm
+3acf2b5d65e7bee28ffac1c225f88695dedb083ce63d3fa1d41a77fa66e373b1  mod_ssl-2.2.15-47.el6.centos.2.i686.rpm
+
+x86_64:
+7d2ffb2a1f1c1a48c3a9c43db10542e6345fa8cc2821f9ca075d72fc6226b0c2  httpd-2.2.15-47.el6.centos.2.x86_64.rpm
+42b422488545690e24b1e35a091ac4a61f73be25babb35a8eed66fbbad22e3b0  httpd-devel-2.2.15-47.el6.centos.2.i686.rpm
+f279fa5f74d6fee985fd7589bc40984dba1127af4e13fd1137a7458e70d010eb  httpd-devel-2.2.15-47.el6.centos.2.x86_64.rpm
+eca70b9bc3314c7f1b32be6779a4f13d6c8c3aee23eb9d24d9716b4736dd599f  httpd-manual-2.2.15-47.el6.centos.2.noarch.rpm
+d9e24bf3eb5bdb4d692c8fe1707250c4efd485051a7103ec960b07b2e2f06501  httpd-tools-2.2.15-47.el6.centos.2.x86_64.rpm
+c3e793ddcb4f9bb9ad89b1f4d9bd182b2dfd98b2bedad6c4ce25c8feeca6f7a1  mod_ssl-2.2.15-47.el6.centos.2.x86_64.rpm
+
+Source:
+eff61018e9d2efbd5699d64825d4ebb8fe2e492f70dde1ea08a0416a82af629d  httpd-2.2.15-47.el6.centos.2.src.rpm
+
+
+
+-- 
+Johnny Hughes
+CentOS Project { http://www.centos.org/ }
+irc: hughesjr, #centos at irc.freenode.net
+Twitter: @JohnnyCentOS
+
+
+From johnny at centos.org  Tue Feb  9 18:02:55 2016
+From: johnny at centos.org (Johnny Hughes)
+Date: Tue, 9 Feb 2016 18:02:55 +0000
+Subject: [CentOS-announce] CEBA-2016:0136  CentOS 6 httpd BugFix Update
+Message-ID: <20160209180255.GA48037@n04.lon1.karan.org>
+
+
+CentOS Errata and Bugfix Advisory 2016:0136 
+
+Upstream details at : https://rhn.redhat.com/errata/RHBA-2016-0136.html
+
+The following updated files have been uploaded and are currently 
+syncing to the mirrors: ( sha256sum Filename ) 
+
+i386:
+4eaf1cbed674c7a1da99f48f306beccc18805873a1ec19ca9d3ac4033e7a7054  httpd-2.2.15-47.el6.centos.3.i686.rpm
+f2870eda1af2066dccd1c885b634c165ca57fe05d839bb916c2747df0ee4c3c4  httpd-devel-2.2.15-47.el6.centos.3.i686.rpm
+9c812ec8277965da7fd803631accfb765f337797ab3ffab117fa162e8db6eb61  httpd-manual-2.2.15-47.el6.centos.3.noarch.rpm
+95dbc5069bbcca57a673a8df92b88a7eb65e0bfc89f495acd39b35851d74953d  httpd-tools-2.2.15-47.el6.centos.3.i686.rpm
+ff256a68391af5ad882635860208972c630bf2b6b8ddefd044374da38e85383c  mod_ssl-2.2.15-47.el6.centos.3.i686.rpm
+
+x86_64:
+046d6ef58c5f35a35f14496f86462ebd7fcb1e691e846c0285159009aabb8d94  httpd-2.2.15-47.el6.centos.3.x86_64.rpm
+f2870eda1af2066dccd1c885b634c165ca57fe05d839bb916c2747df0ee4c3c4  httpd-devel-2.2.15-47.el6.centos.3.i686.rpm
+3e92898a5b28a0c94ff84363fb7bae7b57549b1e02f1e69bc402a6f97624a0f5  httpd-devel-2.2.15-47.el6.centos.3.x86_64.rpm
+9c812ec8277965da7fd803631accfb765f337797ab3ffab117fa162e8db6eb61  httpd-manual-2.2.15-47.el6.centos.3.noarch.rpm
+a9d5c20095989ee43b1c49e97233cf92b86692760e494ec038b3ebe86cf6ce1d  httpd-tools-2.2.15-47.el6.centos.3.x86_64.rpm
+9be33b33188f440f2595f4d9511e40532b98bbc8ec1fd467330e9328b00ddf23  mod_ssl-2.2.15-47.el6.centos.3.x86_64.rpm
+
+Source:
+b8e08c972f702205b46622a0870523199fa41865dd69ac1802fcf6fc005323ec  httpd-2.2.15-47.el6.centos.3.src.rpm
+
+
+
+-- 
+Johnny Hughes
+CentOS Project { http://www.centos.org/ }
+irc: hughesjr, #centos at irc.freenode.net
+Twitter: @JohnnyCentOS
+
+
+From johnny at centos.org  Wed Feb 10 13:40:43 2016
+From: johnny at centos.org (Johnny Hughes)
+Date: Wed, 10 Feb 2016 13:40:43 +0000
+Subject: [CentOS-announce] CEBA-2016:0135 CentOS 6 initscripts BugFix Update
+Message-ID: <20160210134043.GA3564@n04.lon1.karan.org>
+
+
+CentOS Errata and Bugfix Advisory 2016:0135 
+
+Upstream details at : https://rhn.redhat.com/errata/RHBA-2016-0135.html
+
+The following updated files have been uploaded and are currently 
+syncing to the mirrors: ( sha256sum Filename ) 
+
+i386:
+8b01c5a973be1847170dd540c677e764b2282c39bf7230897af64fd72a78aac6  debugmode-9.03.49-1.el6.centos.4.i686.rpm
+10fd055a885c30ef304379e9a96a5541823e02527f8a7e7a09ccf03af8e38527  initscripts-9.03.49-1.el6.centos.4.i686.rpm
+
+x86_64:
+e5fc9a1f0b997ee675da188ece3f61891773e33ec3291385afcdee42c46f8b1b  debugmode-9.03.49-1.el6.centos.4.x86_64.rpm
+84c2251f9a7ee410a292ad0db3371b6b8deaae55906f18f3f269e2dafbd16d1c  initscripts-9.03.49-1.el6.centos.4.x86_64.rpm
+
+Source:
+93875323760b38d60f4741b8de01d33e55e074a185bb14e1bb085fe03e23e80f  initscripts-9.03.49-1.el6.centos.4.src.rpm
+
+
+
+-- 
+Johnny Hughes
+CentOS Project { http://www.centos.org/ }
+irc: hughesjr, #centos at irc.freenode.net
+Twitter: @JohnnyCentOS
+
+
+From johnny at centos.org  Wed Feb 10 13:41:02 2016
+From: johnny at centos.org (Johnny Hughes)
+Date: Wed, 10 Feb 2016 13:41:02 +0000
+Subject: [CentOS-announce] CEBA-2016:0150  CentOS 6 kernel BugFix Update
+Message-ID: <20160210134102.GA3726@n04.lon1.karan.org>
+
+
+CentOS Errata and Bugfix Advisory 2016:0150 
+
+Upstream details at : https://rhn.redhat.com/errata/RHBA-2016-0150.html
+
+The following updated files have been uploaded and are currently 
+syncing to the mirrors: ( sha256sum Filename ) 
+
+i386:
+b5f33a81b28d0a89af970bc08c4a07856c13f9789fe520e90d237dc7a2e5df65  kernel-2.6.32-573.18.1.el6.i686.rpm
+8b375b6d363800343bc325966b4db96347e2508db458547b0df5dc63581e2793  kernel-abi-whitelists-2.6.32-573.18.1.el6.noarch.rpm
+cba169e9faf5ebc0ba25011f3b920de1a3a2943b7e46be6292193b31df7b8a5a  kernel-debug-2.6.32-573.18.1.el6.i686.rpm
+a4bf157c52dc0d736ef7a65a073e543b3f2cf0070aa938da41eeecaca11e783d  kernel-debug-devel-2.6.32-573.18.1.el6.i686.rpm
+5151ae3d0f6dde51c1ec991e14b88f0308ef7d46975ee7e9ed036f1381153901  kernel-devel-2.6.32-573.18.1.el6.i686.rpm
+74ff6b30bd2603f2e859e899a653aaac2daa0ee534abd5ab3e32a8ffc2cdb2fb  kernel-doc-2.6.32-573.18.1.el6.noarch.rpm
+38a27fbf4e7fa229fe8ab6b8cf25ec08031c376cf51ec38400197bc478d0255a  kernel-firmware-2.6.32-573.18.1.el6.noarch.rpm
+f318d66d12c72c060e8f644aa90d0c10099f1ab8ba5e24875f2a1ace22e35a57  kernel-headers-2.6.32-573.18.1.el6.i686.rpm
+81ef77b0d7841946bf8825e599c1f6a6015082013b5ea02a836db34e19ca7fbc  perf-2.6.32-573.18.1.el6.i686.rpm
+a8fa3ef717f09235052dd6bd4285be52ff494ea8c242788df16eda5b9aed7fb6  python-perf-2.6.32-573.18.1.el6.i686.rpm
+
+x86_64:
+1cb5031871e077e7d70fec7801901a948438d10f226ffb4311540c28f9253a55  kernel-2.6.32-573.18.1.el6.x86_64.rpm
+8b375b6d363800343bc325966b4db96347e2508db458547b0df5dc63581e2793  kernel-abi-whitelists-2.6.32-573.18.1.el6.noarch.rpm
+9f31b8f7f4db48d8ba30c16564cb6ad614d04b7d63811c274134654607cbce08  kernel-debug-2.6.32-573.18.1.el6.x86_64.rpm
+a4bf157c52dc0d736ef7a65a073e543b3f2cf0070aa938da41eeecaca11e783d  kernel-debug-devel-2.6.32-573.18.1.el6.i686.rpm
+16cb431b4a01c6b3b915e646c971fa0c79e62f4feeffd57939f39df687ebc6a3  kernel-debug-devel-2.6.32-573.18.1.el6.x86_64.rpm
+b81c297339078d80dda73d86a1aec61c50d7fb05728585c1ebbe81bb088851bf  kernel-devel-2.6.32-573.18.1.el6.x86_64.rpm
+74ff6b30bd2603f2e859e899a653aaac2daa0ee534abd5ab3e32a8ffc2cdb2fb  kernel-doc-2.6.32-573.18.1.el6.noarch.rpm
+38a27fbf4e7fa229fe8ab6b8cf25ec08031c376cf51ec38400197bc478d0255a  kernel-firmware-2.6.32-573.18.1.el6.noarch.rpm
+9dd3a3533ebb6646bafafef2229b6142fa0277f34a534e7c74f3c8cacafd7296  kernel-headers-2.6.32-573.18.1.el6.x86_64.rpm
+5ff27ecbdca7013f093d697f4ba3bcaa9b14be03ef79cafb4a3ed3d0aef1bf69  perf-2.6.32-573.18.1.el6.x86_64.rpm
+c5fee073bee1f19dc848a8302e07e4241e49cbff55f35a3db5ae903352f11dc4  python-perf-2.6.32-573.18.1.el6.x86_64.rpm
+
+Source:
+ef3c944af9b7e94448e3c343da7d6f582b267aa9a5653586b8b9332351b01afc  kernel-2.6.32-573.18.1.el6.src.rpm
+
+
+
+-- 
+Johnny Hughes
+CentOS Project { http://www.centos.org/ }
+irc: hughesjr, #centos at irc.freenode.net
+Twitter: @JohnnyCentOS
+
+
+From johnny at centos.org  Wed Feb 10 13:41:55 2016
+From: johnny at centos.org (Johnny Hughes)
+Date: Wed, 10 Feb 2016 13:41:55 +0000
+Subject: [CentOS-announce] CESA-2016:0152 Moderate CentOS 6 sos Security
+	Update
+Message-ID: <20160210134155.GA3927@n04.lon1.karan.org>
+
+
+CentOS Errata and Security Advisory 2016:0152 Moderate
+
+Upstream details at : https://rhn.redhat.com/errata/RHSA-2016-0152.html
+
+The following updated files have been uploaded and are currently 
+syncing to the mirrors: ( sha256sum Filename ) 
+
+i386:
+548987e4eedc2c4a63186790fa4f196525765d08460578d07ee28d7922ae12c7  sos-3.2-28.el6.centos.2.noarch.rpm
+
+x86_64:
+548987e4eedc2c4a63186790fa4f196525765d08460578d07ee28d7922ae12c7  sos-3.2-28.el6.centos.2.noarch.rpm
+
+Source:
+7ebe43dc6e675b49849eeafe99285a67f1718b4fc9b72fb289a038ff2f75ae9a  sos-3.2-28.el6.centos.2.src.rpm
+
+
+
+-- 
+Johnny Hughes
+CentOS Project { http://www.centos.org/ }
+irc: hughesjr, #centos at irc.freenode.net
+Twitter: @JohnnyCentOS
+
+
+From johnny at centos.org  Wed Feb 17 00:14:36 2016
+From: johnny at centos.org (Johnny Hughes)
+Date: Wed, 17 Feb 2016 00:14:36 +0000
+Subject: [CentOS-announce] CESA-2016:0197 Critical CentOS 5 firefox Security
+	Update
+Message-ID: <20160217001436.GA16167@chakra.karan.org>
+
+
+CentOS Errata and Security Advisory 2016:0197 Critical
+
+Upstream details at : https://rhn.redhat.com/errata/RHSA-2016-0197.html
+
+The following updated files have been uploaded and are currently 
+syncing to the mirrors: ( sha256sum Filename ) 
+
+i386:
+a2d0d6fda571da2223098262cbf01244ebb0703ac048e7d3ecb6c0c6e25eff01  firefox-38.6.1-1.el5.centos.i386.rpm
+
+x86_64:
+a2d0d6fda571da2223098262cbf01244ebb0703ac048e7d3ecb6c0c6e25eff01  firefox-38.6.1-1.el5.centos.i386.rpm
+30e1b8e21da2407cf2c3441f428369b2cfd5aa3d84c10a4855963f83218f0dd9  firefox-38.6.1-1.el5.centos.x86_64.rpm
+
+Source:
+170e0a19786c49db6728a2a7c64aef0341d709b1a90a42a5d3bf2cdf54eb3d03  firefox-38.6.1-1.el5.centos.src.rpm
+
+
+
+-- 
+Johnny Hughes
+CentOS Project { http://www.centos.org/ }
+irc: hughesjr, #centos at irc.freenode.net
+Twitter: JohnnyCentOS
+
+
+From johnny at centos.org  Wed Feb 17 00:39:19 2016
+From: johnny at centos.org (Johnny Hughes)
+Date: Wed, 17 Feb 2016 00:39:19 +0000
+Subject: [CentOS-announce] CESA-2016:0175 Critical CentOS 6 glibc Security
+	Update
+Message-ID: <20160217003919.GA10044@n04.lon1.karan.org>
+
+
+CentOS Errata and Security Advisory 2016:0175 Critical
+
+Upstream details at : https://rhn.redhat.com/errata/RHSA-2016-0175.html
+
+The following updated files have been uploaded and are currently 
+syncing to the mirrors: ( sha256sum Filename ) 
+
+i386:
+b864b56998c7f54ad2ff8a88e6d2e2e9bbb7fed5b5cd1a5a37335df3db1009f5  glibc-2.12-1.166.el6_7.7.i686.rpm
+05d0ad7fafb040ac70f955b46c82c2bcb35a11a867f4b024e6cdfc393cefa7e4  glibc-common-2.12-1.166.el6_7.7.i686.rpm
+513c3cb75d24f59cbdfcf8bf1cdc3314e3299e6959bbf302135952144c11d2a1  glibc-devel-2.12-1.166.el6_7.7.i686.rpm
+03489e5b23bfa62b1b5bf48b885641b00d5a3818d2a77ad725541725f9dfbef8  glibc-headers-2.12-1.166.el6_7.7.i686.rpm
+73246d158f90d36cefa03f521ed999b3efc1af5e87fe60702694455efba9aef7  glibc-static-2.12-1.166.el6_7.7.i686.rpm
+5f702bcc4c400a3356e2f8947e3b804d8012c3694da010db9867cb8bc50f8f95  glibc-utils-2.12-1.166.el6_7.7.i686.rpm
+53c7532df4e2f618f3021b496f208118bfade6254c5c506ae25de6f0678ce9ec  nscd-2.12-1.166.el6_7.7.i686.rpm
+
+x86_64:
+b864b56998c7f54ad2ff8a88e6d2e2e9bbb7fed5b5cd1a5a37335df3db1009f5  glibc-2.12-1.166.el6_7.7.i686.rpm
+2c8769972f74c508392cf3d26ccaf1e977e26c6de17607d0f0efcd94c893e497  glibc-2.12-1.166.el6_7.7.x86_64.rpm
+9270e196264742aa6dad454f91edc72535a8fd5e55e0aa205008d3756eae990a  glibc-common-2.12-1.166.el6_7.7.x86_64.rpm
+513c3cb75d24f59cbdfcf8bf1cdc3314e3299e6959bbf302135952144c11d2a1  glibc-devel-2.12-1.166.el6_7.7.i686.rpm
+3a3485584c5fc24aa37f975e5b6cd4b3d7bd3edf03b0c313ba820a137306af43  glibc-devel-2.12-1.166.el6_7.7.x86_64.rpm
+5257cdc2fe323f0f2f6ac6e5db955d0cc48ce8d352bde2e91b5dd0e0ac21be09  glibc-headers-2.12-1.166.el6_7.7.x86_64.rpm
+73246d158f90d36cefa03f521ed999b3efc1af5e87fe60702694455efba9aef7  glibc-static-2.12-1.166.el6_7.7.i686.rpm
+3e49f9f87e8fe44b497ebbd7710fc5cdcd9254b699616511248e8f907ac9b435  glibc-static-2.12-1.166.el6_7.7.x86_64.rpm
+d4d6d1710d129d60023172b9503b67772cf61c3113ad9a5eebda12e5093c2ae8  glibc-utils-2.12-1.166.el6_7.7.x86_64.rpm
+3cd7688eabc5d06930ef56b56df5549857520ce7e6addce45f222f4b2ea96015  nscd-2.12-1.166.el6_7.7.x86_64.rpm
+
+Source:
+cf324b8eedeeeb49f27006d4defc9711190213269c5206964fd09e7107c87ba4  glibc-2.12-1.166.el6_7.7.src.rpm
+
+
+
+-- 
+Johnny Hughes
+CentOS Project { http://www.centos.org/ }
+irc: hughesjr, #centos at irc.freenode.net
+Twitter: @JohnnyCentOS
+
+
+From johnny at centos.org  Wed Feb 17 00:39:45 2016
+From: johnny at centos.org (Johnny Hughes)
+Date: Wed, 17 Feb 2016 00:39:45 +0000
+Subject: [CentOS-announce] CESA-2016:0197 Critical CentOS 6 firefox Security
+	Update
+Message-ID: <20160217003945.GA10136@n04.lon1.karan.org>
+
+
+CentOS Errata and Security Advisory 2016:0197 Critical
+
+Upstream details at : https://rhn.redhat.com/errata/RHSA-2016-0197.html
+
+The following updated files have been uploaded and are currently 
+syncing to the mirrors: ( sha256sum Filename ) 
+
+i386:
+7167280cc821d30fcca5ff4491ed326eaf032a8a5c36070b15f64c4a2272fecc  firefox-38.6.1-1.el6.centos.i686.rpm
+
+x86_64:
+7167280cc821d30fcca5ff4491ed326eaf032a8a5c36070b15f64c4a2272fecc  firefox-38.6.1-1.el6.centos.i686.rpm
+eae996ab0c6f42ac6d7146049f01ca53e5d32a9772f04e449d9aadd326045d6c  firefox-38.6.1-1.el6.centos.x86_64.rpm
+
+Source:
+9ed5d4a04223eb8e1e7f709085c70c1f58a4e2621d1a5ebf29c3f98b71023018  firefox-38.6.1-1.el6.centos.src.rpm
+
+
+
+-- 
+Johnny Hughes
+CentOS Project { http://www.centos.org/ }
+irc: hughesjr, #centos at irc.freenode.net
+Twitter: @JohnnyCentOS
+
+
+From johnny at centos.org  Wed Feb 17 00:45:29 2016
+From: johnny at centos.org (Johnny Hughes)
+Date: Wed, 17 Feb 2016 00:45:29 +0000
+Subject: [CentOS-announce] CEEA-2016:0240 CentOS 6 acpid FASTTRACK
+	Enhancement Update
+Message-ID: <20160217004529.GA10379@n04.lon1.karan.org>
+
+
+CentOS Errata and Enhancement Advisory 2016:0240 
+
+Upstream details at : https://rhn.redhat.com/errata/RHEA-2016-0240.html
+
+The following updated files have been uploaded and are currently 
+syncing to the mirrors: ( sha256sum Filename ) 
+
+i386:
+da8fc685211b062186cf29073058585940221109e950b4fbcdb9b4650898839d  acpid-1.0.10-3.el6.i686.rpm
+
+x86_64:
+204e93de22442b69520c72ab32420b6634a7088702ba5cb7bc817771e33347a6  acpid-1.0.10-3.el6.x86_64.rpm
+
+Source:
+6568f646700c08bdf8ea940eec4587551667aff8ccaf21dc2d4afad734ac7b0e  acpid-1.0.10-3.el6.src.rpm
+
+
+
+-- 
+Johnny Hughes
+CentOS Project { http://www.centos.org/ }
+irc: hughesjr, #centos at irc.freenode.net
+Twitter: @JohnnyCentOS
+
+
+From johnny at centos.org  Wed Feb 17 01:35:48 2016
+From: johnny at centos.org (Johnny Hughes)
+Date: Wed, 17 Feb 2016 01:35:48 +0000
+Subject: [CentOS-announce] CESA-2016:0197 Critical CentOS 7 firefox Security
+	Update
+Message-ID: <20160217013548.GA11323@n04.lon1.karan.org>
+
+
+CentOS Errata and Security Advisory 2016:0197 Critical
+
+Upstream details at : https://rhn.redhat.com/errata/RHSA-2016-0197.html
+
+The following updated files have been uploaded and are currently 
+syncing to the mirrors: ( sha256sum Filename ) 
+
+x86_64:
+0a48ebf3d18b97fba09c7dd3028564e368e3c3b0ec89c4243aa0d2bbb45ebee3  firefox-38.6.1-1.el7.centos.i686.rpm
+111fbc34687d70dabe62d7158cb30ee4b73dddf0df23e77f15b35fcff1844d98  firefox-38.6.1-1.el7.centos.x86_64.rpm
+
+Source:
+f0a79619094f981d60033e612dea447c322e504e70e39dde49ad726887997e29  firefox-38.6.1-1.el7.centos.src.rpm
+
+
+
+-- 
+Johnny Hughes
+CentOS Project { http://www.centos.org/ }
+irc: hughesjr, #centos at irc.freenode.net
+Twitter: @JohnnyCentOS
+
+
+From johnny at centos.org  Wed Feb 17 01:37:20 2016
+From: johnny at centos.org (Johnny Hughes)
+Date: Wed, 17 Feb 2016 01:37:20 +0000
+Subject: [CentOS-announce] CESA-2016:0176 Critical CentOS 7 glibc Security
+	Update
+Message-ID: <20160217013720.GA11446@n04.lon1.karan.org>
+
+
+CentOS Errata and Security Advisory 2016:0176 Critical
+
+Upstream details at : https://rhn.redhat.com/errata/RHSA-2016-0176.html
+
+The following updated files have been uploaded and are currently 
+syncing to the mirrors: ( sha256sum Filename ) 
+
+x86_64:
+b41941025252ec75500aad92938364bcfdfc2c77b460281310a410b3bf463d97  glibc-2.17-106.el7_2.4.i686.rpm
+e2d2ca19beac6658ad87a5641ad81e3a641c1fa036b39486e7df9992966c7403  glibc-2.17-106.el7_2.4.x86_64.rpm
+b4827a93ca1d9a5307b2dfc3104414c8c0799197e20c08af99dc0065aab18f5e  glibc-common-2.17-106.el7_2.4.x86_64.rpm
+6db526f8e531162742986017f72b6999a74e54854b7e50a2cb5d91ab24ff4d22  glibc-devel-2.17-106.el7_2.4.i686.rpm
+83a1b66386844e44f2529649f46feb35bd61cb30007581a9e068c126100fbfe9  glibc-devel-2.17-106.el7_2.4.x86_64.rpm
+e1717949debd2d33b5ff8313a2dade5d3c32084cbba6bb69db63af78120c8b98  glibc-headers-2.17-106.el7_2.4.x86_64.rpm
+63fea49c8f5b86585e47f5faa46a1d66c324a9e782f2dda68efdd26e936f87b9  glibc-static-2.17-106.el7_2.4.i686.rpm
+72d371bf9c4c448a87b3925c493a413e89a631ba3ea61c994fcc500da137c76c  glibc-static-2.17-106.el7_2.4.x86_64.rpm
+b2f505f33c1c156542535bfd48f0a2a5e788f71a97b295d6115249bcb67144ad  glibc-utils-2.17-106.el7_2.4.x86_64.rpm
+113529ecc25d4c6120656713558db5cad2c73fcf7d5819800226758d01c85242  nscd-2.17-106.el7_2.4.x86_64.rpm
+
+Source:
+ebc37790d051eb03068f8e1320a19fe6e840e0846543281372f250c5cf29d890  glibc-2.17-106.el7_2.4.src.rpm
+
+
+
+-- 
+Johnny Hughes
+CentOS Project { http://www.centos.org/ }
+irc: hughesjr, #centos at irc.freenode.net
+Twitter: @JohnnyCentOS
+
+
+From johnny at centos.org  Wed Feb 17 01:41:01 2016
+From: johnny at centos.org (Johnny Hughes)
+Date: Wed, 17 Feb 2016 01:41:01 +0000
+Subject: [CentOS-announce] CEBA-2016:0177 CentOS 7 coreutils BugFix Update
+Message-ID: <20160217014101.GA11592@n04.lon1.karan.org>
+
+
+CentOS Errata and Bugfix Advisory 2016:0177 
+
+Upstream details at : https://rhn.redhat.com/errata/RHBA-2016-0177.html
+
+The following updated files have been uploaded and are currently 
+syncing to the mirrors: ( sha256sum Filename ) 
+
+x86_64:
+af401a6271ce4b3b2e5a9b7e8fa1b472afb3c0068a07004102ac87ba2766be52  coreutils-8.22-15.el7_2.1.x86_64.rpm
+
+Source:
+9a6afa0482d903794029ba25cb334c3db39e72810947be745c7555f0065aa54d  coreutils-8.22-15.el7_2.1.src.rpm
+
+
+
+-- 
+Johnny Hughes
+CentOS Project { http://www.centos.org/ }
+irc: hughesjr, #centos at irc.freenode.net
+Twitter: @JohnnyCentOS
+
+
+From johnny at centos.org  Wed Feb 17 01:41:18 2016
+From: johnny at centos.org (Johnny Hughes)
+Date: Wed, 17 Feb 2016 01:41:18 +0000
+Subject: [CentOS-announce] CEBA-2016:0198 CentOS 7
+ golang-github-cpuguy83-go-md2man BugFix Update
+Message-ID: <20160217014118.GA11664@n04.lon1.karan.org>
+
+
+CentOS Errata and Bugfix Advisory 2016:0198 
+
+Upstream details at : https://rhn.redhat.com/errata/RHBA-2016-0198.html
+
+The following updated files have been uploaded and are currently 
+syncing to the mirrors: ( sha256sum Filename ) 
+
+x86_64:
+bd99ac19912c977b1a71c9f0a216ca169a3fddaf42067c941c21063adcf05450  golang-github-cpuguy83-go-md2man-1.0.4-2.el7_2.x86_64.rpm
+
+Source:
+e11d5402d60250008024d2aedfca8b62a5ecb6125e575a7a1a9f3e1b26e5d803  golang-github-cpuguy83-go-md2man-1.0.4-2.el7_2.src.rpm
+
+
+
+-- 
+Johnny Hughes
+CentOS Project { http://www.centos.org/ }
+irc: hughesjr, #centos at irc.freenode.net
+Twitter: @JohnnyCentOS
+
+
+From johnny at centos.org  Wed Feb 17 01:41:36 2016
+From: johnny at centos.org (Johnny Hughes)
+Date: Wed, 17 Feb 2016 01:41:36 +0000
+Subject: [CentOS-announce] CESA-2016:0189 Moderate CentOS 7 polkit Security
+	Update
+Message-ID: <20160217014136.GA11739@n04.lon1.karan.org>
+
+
+CentOS Errata and Security Advisory 2016:0189 Moderate
+
+Upstream details at : https://rhn.redhat.com/errata/RHSA-2016-0189.html
+
+The following updated files have been uploaded and are currently 
+syncing to the mirrors: ( sha256sum Filename ) 
+
+x86_64:
+f613efc80ab4af3b2f94e5aea7581f93d923037533b7a943773aaa8072e54d34  polkit-0.112-6.el7_2.i686.rpm
+dfa632212538b49481188cd8b4467c0ef0a65d17f8eb6ed23bbc0fd28e475224  polkit-0.112-6.el7_2.x86_64.rpm
+3a18e8439e91729d3aee8686a8ea03571b8c6c137bf865c7f5f0a51e1a1eac10  polkit-devel-0.112-6.el7_2.i686.rpm
+9000c3413fece53c7aad4e06a86ad86a216fdd1ecf49bfdf54a8a0a0697192e0  polkit-devel-0.112-6.el7_2.x86_64.rpm
+4801f626b2e4d560aee67c163ff1de1e59eaa15c9ffe8bc3b7f771cdb4a4b830  polkit-docs-0.112-6.el7_2.noarch.rpm
+
+Source:
+58aa4dc3adbb4a9d205d26c28608cf3943312d0dfb277cd1f1c74d154bc5cb54  polkit-0.112-6.el7_2.src.rpm
+
+
+
+-- 
+Johnny Hughes
+CentOS Project { http://www.centos.org/ }
+irc: hughesjr, #centos at irc.freenode.net
+Twitter: @JohnnyCentOS
+
+
+From johnny at centos.org  Wed Feb 17 01:41:55 2016
+From: johnny at centos.org (Johnny Hughes)
+Date: Wed, 17 Feb 2016 01:41:55 +0000
+Subject: [CentOS-announce] CEBA-2016:0199  CentOS 7 systemd BugFix Update
+Message-ID: <20160217014155.GA11851@n04.lon1.karan.org>
+
+
+CentOS Errata and Bugfix Advisory 2016:0199 
+
+Upstream details at : https://rhn.redhat.com/errata/RHBA-2016-0199.html
+
+The following updated files have been uploaded and are currently 
+syncing to the mirrors: ( sha256sum Filename ) 
+
+x86_64:
+cc07efafead20dd350d73ae6e72b6f41d401a9b252556b7cd2a2d66499ab5627  libgudev1-219-19.el7_2.4.i686.rpm
+1f9a14076339af831896223d165e30ac503aaf3db71a3a7284757355508a7b7a  libgudev1-219-19.el7_2.4.x86_64.rpm
+90b064f5a8247becbbcd7dd238981e3251cbb12c0f10c0f4fbecd46524d80185  libgudev1-devel-219-19.el7_2.4.i686.rpm
+b75a447c064c94ed2b17be09f46fa44822885a96aa08908d82c02bcd9815ded3  libgudev1-devel-219-19.el7_2.4.x86_64.rpm
+1354d034d99b38ec0cb951cceec173054b3f9144f579ab4d1ced7db0b9fbe8bd  systemd-219-19.el7_2.4.x86_64.rpm
+ae5c74c88a4c8d21e0970163a2aca8f4352880ccb96e4e57c8ef9eb8b4f385b3  systemd-devel-219-19.el7_2.4.i686.rpm
+0f8e5cf22a76eba956a3a8d7f9bd4a39baf2b9a556cf09596aa00b236ee22081  systemd-devel-219-19.el7_2.4.x86_64.rpm
+59f85916f491cd4cda6c10a79b66c40627c2108b4e535b6315eec21f1da06117  systemd-journal-gateway-219-19.el7_2.4.x86_64.rpm
+a967f26fa4d36383ad3c76bd06f2cd8bbd9698dda7131fe87973de05ad6ca8ec  systemd-libs-219-19.el7_2.4.i686.rpm
+c01f254978a9579b41e942b36dea86ffc89dcc6e8443d6c0e383ffc6938ab2d1  systemd-libs-219-19.el7_2.4.x86_64.rpm
+5d4ae810c815bee5985ea76649cbf4d3352a30ef0b298936afc350b3dabd08ff  systemd-networkd-219-19.el7_2.4.x86_64.rpm
+8e89c0c5d98a24326341abeb4ce75992c49660d92d7c6a6e95588669a54b2109  systemd-python-219-19.el7_2.4.x86_64.rpm
+fc19544c0099ca210183e446ce8555134113dd1fb973d657fb1c8ef28d2f2430  systemd-resolved-219-19.el7_2.4.i686.rpm
+5925050c0f4636399294dd2d9e16839ba18f4644fe3286a64183cb1b0a249f6d  systemd-resolved-219-19.el7_2.4.x86_64.rpm
+4b7615f555b579efd70fa4a66fdcf0b002b1b55406aa8e6cd4ca0772c0f8eeec  systemd-sysv-219-19.el7_2.4.x86_64.rpm
+
+Source:
+109c6ca2e41a3a5b95dc7069a713674115d45152461d5d315816c9bf3e0f5a0b  systemd-219-19.el7_2.4.src.rpm
+
+
+
+-- 
+Johnny Hughes
+CentOS Project { http://www.centos.org/ }
+irc: hughesjr, #centos at irc.freenode.net
+Twitter: @JohnnyCentOS
+
+
+From johnny at centos.org  Wed Feb 17 01:42:12 2016
+From: johnny at centos.org (Johnny Hughes)
+Date: Wed, 17 Feb 2016 01:42:12 +0000
+Subject: [CentOS-announce] CESA-2016:0204 Important CentOS 7 389-ds-base
+	Security Update
+Message-ID: <20160217014212.GA11932@n04.lon1.karan.org>
+
+
+CentOS Errata and Security Advisory 2016:0204 Important
+
+Upstream details at : https://rhn.redhat.com/errata/RHSA-2016-0204.html
+
+The following updated files have been uploaded and are currently 
+syncing to the mirrors: ( sha256sum Filename ) 
+
+x86_64:
+e9a4261b4a290e15b6d6ebb8ae88bd94cf64d9c232121db8c460415e637b15d1  389-ds-base-1.3.4.0-26.el7_2.x86_64.rpm
+31b4affd7042649acbbdaffccb9886768ebd4f5500409ae4bc8dde72c69c682d  389-ds-base-devel-1.3.4.0-26.el7_2.x86_64.rpm
+ec48aaabb93dd5f2b24283581b24f2b9dafaa3b6d384437fb63227c370bbaf5b  389-ds-base-libs-1.3.4.0-26.el7_2.x86_64.rpm
+
+Source:
+6b4ad4c29a9691603553e388761b30fac6fc7b42b6684dafa04d063cba51a1d8  389-ds-base-1.3.4.0-26.el7_2.src.rpm
+
+
+
+-- 
+Johnny Hughes
+CentOS Project { http://www.centos.org/ }
+irc: hughesjr, #centos at irc.freenode.net
+Twitter: @JohnnyCentOS
+
+
+From johnny at centos.org  Wed Feb 17 01:42:27 2016
+From: johnny at centos.org (Johnny Hughes)
+Date: Wed, 17 Feb 2016 01:42:27 +0000
+Subject: [CentOS-announce] CEBA-2016:0183  CentOS 7 avahi BugFix Update
+Message-ID: <20160217014227.GA12117@n04.lon1.karan.org>
+
+
+CentOS Errata and Bugfix Advisory 2016:0183 
+
+Upstream details at : https://rhn.redhat.com/errata/RHBA-2016-0183.html
+
+The following updated files have been uploaded and are currently 
+syncing to the mirrors: ( sha256sum Filename ) 
+
+x86_64:
+d9e301f787f9d52204a111af639f106c559c08a8e87a2354e3261d890a578db6  avahi-0.6.31-15.el7_2.1.i686.rpm
+349f271054269cd832676f2248e6b1b4ccb310c302cbcff0abf26887067a6717  avahi-0.6.31-15.el7_2.1.x86_64.rpm
+3c8a2dfa726bb4ef19893669cedd2e037c0f001825b7befe21a7a98a70b5b3a3  avahi-autoipd-0.6.31-15.el7_2.1.x86_64.rpm
+fbad369d09d99bfa07dd238cb04532e059e89c4c25d9064b4f2b2ac23b990f89  avahi-compat-howl-0.6.31-15.el7_2.1.i686.rpm
+050be3a9be77ce82299ce1eb5c3eaac6c9e4719c2df8bc65e7766cb0a488f91b  avahi-compat-howl-0.6.31-15.el7_2.1.x86_64.rpm
+840a435d2224ec5b954005e062e93c9e2b673097d5af772232f931e740f03d95  avahi-compat-howl-devel-0.6.31-15.el7_2.1.i686.rpm
+271cbbe27efe8d88a82c0e82aeb6ca58d828f5837a998b82f1bd1c42e107dd42  avahi-compat-howl-devel-0.6.31-15.el7_2.1.x86_64.rpm
+7b252a27e4080fb6241904aa216f0aa434aadbf112cd91abb4872ad76ab174d7  avahi-compat-libdns_sd-0.6.31-15.el7_2.1.i686.rpm
+bd036bbbcfe173a62c41fa6390cbcf049d5f65820b4746569fde5537b999504f  avahi-compat-libdns_sd-0.6.31-15.el7_2.1.x86_64.rpm
+49d0f54c62419f20557caabfd94efb3f6891c7d2f7c5c18bbbf54c890d1a101c  avahi-compat-libdns_sd-devel-0.6.31-15.el7_2.1.i686.rpm
+9970c74de1b7f63745adbb7224566b8946092daf87a7688ed0885d34644e115d  avahi-compat-libdns_sd-devel-0.6.31-15.el7_2.1.x86_64.rpm
+5ccae12e3a521eadb773a668cfca4d7506be28089c35b0864271a60dbe1699d5  avahi-devel-0.6.31-15.el7_2.1.i686.rpm
+b19a1ac57ca5acb9a901fd4b735403b48f119a9557481674a1c8e1602eb25ada  avahi-devel-0.6.31-15.el7_2.1.x86_64.rpm
+9ec0e00439b6aa7a7d6a0d4d27bf7d56ebbaca9be53b47eef45b9b70d00bcf5c  avahi-dnsconfd-0.6.31-15.el7_2.1.x86_64.rpm
+c82988bb199d6eeb977af8aa49e8bb6d53c20e275e39fb7af5ca70341ab95308  avahi-glib-0.6.31-15.el7_2.1.i686.rpm
+a788ff7b196c00b0e47e0b4dce987316f642b393d5851e6e5294317d1b989d94  avahi-glib-0.6.31-15.el7_2.1.x86_64.rpm
+7c8fcd049e197da96b95dd7ec35af94ac96a998e653532afb73118b90cc2142e  avahi-glib-devel-0.6.31-15.el7_2.1.i686.rpm
+8cc121aa812efae96801f6ed46a120671951542e565274bc91512fb9baf4f5bc  avahi-glib-devel-0.6.31-15.el7_2.1.x86_64.rpm
+8fa89d3c7b950c72bd3cdfb79162bdf194c19a8fc260266345a8567d4c606605  avahi-gobject-0.6.31-15.el7_2.1.i686.rpm
+62be361d61c314c78181b4ce92098cadd37081dc08693e66aae3853e396c1b37  avahi-gobject-0.6.31-15.el7_2.1.x86_64.rpm
+db332cfd8bfcaee3d94ebcc8ca436589a468f51ff23146cd1f77de8fb2642ea0  avahi-gobject-devel-0.6.31-15.el7_2.1.i686.rpm
+bf812eadaba9843de4ece3ce8581d56eb8e2817d43dd3ceef5d571337095cc3b  avahi-gobject-devel-0.6.31-15.el7_2.1.x86_64.rpm
+b01da55550507e29d9d2f6b6a6d86706a7034051591697e44a17e8fa8f497a77  avahi-libs-0.6.31-15.el7_2.1.i686.rpm
+1f2802d6f4206279fdcc29909d28db08d981ec5f9828edd844703902b9593236  avahi-libs-0.6.31-15.el7_2.1.x86_64.rpm
+b550b81d37ca2655bc0a44ad1c61bf8c3d3db0facc589a52c1d731cf21cdb0e0  avahi-qt3-0.6.31-15.el7_2.1.i686.rpm
+ac9756759364058161de83eb67d8a618655ef8df0db54684022498e8e50e7781  avahi-qt3-0.6.31-15.el7_2.1.x86_64.rpm
+fe6cbc13dc35aa119d88671530071dca8feb6f6841a59392b922b9eabad2d853  avahi-qt3-devel-0.6.31-15.el7_2.1.i686.rpm
+d59286f82a842a48df9164dd105372a61ed66bbc884df5321313962a5353143d  avahi-qt3-devel-0.6.31-15.el7_2.1.x86_64.rpm
+88cda419bc08d7b62f76303267b7e45aec3f761392766d93dd736c9683fa3878  avahi-qt4-0.6.31-15.el7_2.1.i686.rpm
+8fd1a8edaafc9f9bbb0c37549df6dace7eb3725f0a92c8d567d9b15a43be6ffc  avahi-qt4-0.6.31-15.el7_2.1.x86_64.rpm
+80b50604264964db26359e1febac5e17df161cffa42a1b2d4dd60b8af77c6ff4  avahi-qt4-devel-0.6.31-15.el7_2.1.i686.rpm
+03ec6d2318e7eb1829aeddbbd92308ec8cbfc06fe6f589b0a0ca354c5d6bcca7  avahi-qt4-devel-0.6.31-15.el7_2.1.x86_64.rpm
+b4b0d6d5a0d7899d684993e820e91fc986e6253535c3e6e1e5e2dbd454096fb0  avahi-tools-0.6.31-15.el7_2.1.x86_64.rpm
+5fd6985c9e3cbdbb32ef3345f2c12e7df014ef647b0bb8a2eacf98b5b58ee1b8  avahi-ui-0.6.31-15.el7_2.1.i686.rpm
+62c52eea52795a77fa3a770f530948668c99c8c6f239fbbaa4681265a6c9ee23  avahi-ui-0.6.31-15.el7_2.1.x86_64.rpm
+8db968f66df536a8b4de68e3e0a318145a04e21b05fdb60a23c0e86657d16752  avahi-ui-devel-0.6.31-15.el7_2.1.i686.rpm
+2098b820c81f1f404430f97f4a54a490dcb964c1c50ab029392a2bb9c127f083  avahi-ui-devel-0.6.31-15.el7_2.1.x86_64.rpm
+697bbe2af58ed398d30936e9861be6dde5f19386a07d15c4afe432d4fd372e18  avahi-ui-gtk3-0.6.31-15.el7_2.1.i686.rpm
+b2c4a1ebe791c31befe44e652d20caafdadd225afbe6251a2a9223bb0251f102  avahi-ui-gtk3-0.6.31-15.el7_2.1.x86_64.rpm
+ddafc6ffde517925ba06dadf98ebb3ff6df189972c3bbf85f723911e34a2b1d2  avahi-ui-tools-0.6.31-15.el7_2.1.x86_64.rpm
+
+Source:
+e799b9369265d02bce6202701ce4cb3fd499e714a2ed20b465d8628d402cbaf1  avahi-0.6.31-15.el7_2.1.src.rpm
+
+
+
+-- 
+Johnny Hughes
+CentOS Project { http://www.centos.org/ }
+irc: hughesjr, #centos at irc.freenode.net
+Twitter: @JohnnyCentOS
+
+
+From johnny at centos.org  Wed Feb 17 01:42:42 2016
+From: johnny at centos.org (Johnny Hughes)
+Date: Wed, 17 Feb 2016 01:42:42 +0000
+Subject: [CentOS-announce] CEBA-2016:0201 CentOS 7 createrepo BugFix Update
+Message-ID: <20160217014242.GA12180@n04.lon1.karan.org>
+
+
+CentOS Errata and Bugfix Advisory 2016:0201 
+
+Upstream details at : https://rhn.redhat.com/errata/RHBA-2016-0201.html
+
+The following updated files have been uploaded and are currently 
+syncing to the mirrors: ( sha256sum Filename ) 
+
+x86_64:
+71fd4f56a5d40c35f153ffe5aec1821ae7f648db062f5ee2a90d0afb0c45dd59  createrepo-0.9.9-25.el7_2.noarch.rpm
+
+Source:
+bef64d7b6be45b51985533c8b80fd270499bf8067b04348b734ce6f5ee85ae05  createrepo-0.9.9-25.el7_2.src.rpm
+
+
+
+-- 
+Johnny Hughes
+CentOS Project { http://www.centos.org/ }
+irc: hughesjr, #centos at irc.freenode.net
+Twitter: @JohnnyCentOS
+
+
+From johnny at centos.org  Wed Feb 17 01:42:56 2016
+From: johnny at centos.org (Johnny Hughes)
+Date: Wed, 17 Feb 2016 01:42:56 +0000
+Subject: [CentOS-announce] CEBA-2016:0178 CentOS 7 cyrus-sasl BugFix Update
+Message-ID: <20160217014256.GA12303@n04.lon1.karan.org>
+
+
+CentOS Errata and Bugfix Advisory 2016:0178 
+
+Upstream details at : https://rhn.redhat.com/errata/RHBA-2016-0178.html
+
+The following updated files have been uploaded and are currently 
+syncing to the mirrors: ( sha256sum Filename ) 
+
+x86_64:
+41bcfe83e915dfe6408766d8c5d7d172fffab42e55c39f44ee7ded90ef9bbdfd  cyrus-sasl-2.1.26-20.el7_2.i686.rpm
+006ed8acfa4c080b004f4124f03f05db1c20860724a335dbfa04dfad9d0ae9ae  cyrus-sasl-2.1.26-20.el7_2.x86_64.rpm
+840449d544d44e10a9f2296bd5c9b6628db42745608d5c9c1c132f41934a4403  cyrus-sasl-devel-2.1.26-20.el7_2.i686.rpm
+34a1b87e7ab80cd26139d1d8000043cb2361818992104283f040fc48113442c2  cyrus-sasl-devel-2.1.26-20.el7_2.x86_64.rpm
+fd59d42677cc51129307a5e6aa5e04218d65cbc955631a5ca86067bbd9e8f3e0  cyrus-sasl-gs2-2.1.26-20.el7_2.i686.rpm
+c84f8f93efbf5be90d7c38a2addb7a46699a3c7200f6ff04ca91c7d6ba1a9dcf  cyrus-sasl-gs2-2.1.26-20.el7_2.x86_64.rpm
+02853e4ed1efeb85f6cdcabb4253842dd0e83b6bba55225c38672317d25c3daa  cyrus-sasl-gssapi-2.1.26-20.el7_2.i686.rpm
+255763170db04027307798d2f5adb757c3a06350eec94340e5f48fa258e934b2  cyrus-sasl-gssapi-2.1.26-20.el7_2.x86_64.rpm
+b3010c44e23157036a2c815c99f0e540b5310af2078f10e74a6cfa02c4f19aa5  cyrus-sasl-ldap-2.1.26-20.el7_2.i686.rpm
+025f38984c02bce10fa8b512592e2e460b07e0da346a46a3365dd417ff7a3137  cyrus-sasl-ldap-2.1.26-20.el7_2.x86_64.rpm
+e328871faf9ec6f073a0667acc03815b2267e4e07aa6ec3c701718168cbb780f  cyrus-sasl-lib-2.1.26-20.el7_2.i686.rpm
+61f7eedd1a8eb447bb790c085f71b586d2583934a30ec9c4bed66b56b0fbf632  cyrus-sasl-lib-2.1.26-20.el7_2.x86_64.rpm
+125515cba343b684bfcbc5870ec002ada6bc79033bd8df079b5fb3b0abc6c4cc  cyrus-sasl-md5-2.1.26-20.el7_2.i686.rpm
+8423d6f83b97005d4505d027409371d3c2a7674f49825c3ca1f542c72dc852f3  cyrus-sasl-md5-2.1.26-20.el7_2.x86_64.rpm
+b00a807af848c298b114f5b697b5e897e3a54cb9481d2edbafe3ceb4f01fda45  cyrus-sasl-ntlm-2.1.26-20.el7_2.i686.rpm
+71327a4434cab879cb03d9ab41e7ae58131ee129139efdbc44b9e83ff8f3b4cd  cyrus-sasl-ntlm-2.1.26-20.el7_2.x86_64.rpm
+e2970c609d132acffd6023674ad8ad14d1aa95f10ff8aaa566ff38c8605295bf  cyrus-sasl-plain-2.1.26-20.el7_2.i686.rpm
+be32fe0ef28aea5d4467bf1110d99084c8b8b724893ad13c7f3872d1a3db83a4  cyrus-sasl-plain-2.1.26-20.el7_2.x86_64.rpm
+2dc0ee08a37b9c09f29164bb48de0ef734b50c3783fdcccc8e93ad9f99df4b7d  cyrus-sasl-scram-2.1.26-20.el7_2.i686.rpm
+0b57dc90ba7f466d03dde131235a20e16674fe467fee8e58abb346b5f3b04e0c  cyrus-sasl-scram-2.1.26-20.el7_2.x86_64.rpm
+e62d7d96fd7e5a4775d850a80be6606f229b8fe936b9dc0cc7ab212b7bbb6033  cyrus-sasl-sql-2.1.26-20.el7_2.i686.rpm
+624f488dbfb801aff0318f3c77823fb01364d41457c2ea11306148e63fd6b8a9  cyrus-sasl-sql-2.1.26-20.el7_2.x86_64.rpm
+
+Source:
+f8dc7cff9cbd04d416fac1f63eaf51d96b6f99439975dfdb3ecaec1dd2a71452  cyrus-sasl-2.1.26-20.el7_2.src.rpm
+
+
+
+-- 
+Johnny Hughes
+CentOS Project { http://www.centos.org/ }
+irc: hughesjr, #centos at irc.freenode.net
+Twitter: @JohnnyCentOS
+
+
+From johnny at centos.org  Wed Feb 17 01:43:12 2016
+From: johnny at centos.org (Johnny Hughes)
+Date: Wed, 17 Feb 2016 01:43:12 +0000
+Subject: [CentOS-announce] CEBA-2016:0207 CentOS 7 fence-agents BugFix Update
+Message-ID: <20160217014312.GA12529@n04.lon1.karan.org>
+
+
+CentOS Errata and Bugfix Advisory 2016:0207 
+
+Upstream details at : https://rhn.redhat.com/errata/RHBA-2016-0207.html
+
+The following updated files have been uploaded and are currently 
+syncing to the mirrors: ( sha256sum Filename ) 
+
+x86_64:
+ca659316be500ee6fd06c8d1c8e11219159557df96afa8d3eb869562742300c3  fence-agents-all-4.0.11-27.el7_2.5.x86_64.rpm
+256c74d675cba7c1bf4e275212facf14a7b11d986f39db25f2bc10ef2782cdab  fence-agents-apc-4.0.11-27.el7_2.5.x86_64.rpm
+0c04fda7ed14e6a8d71fe7619368ca7f66b0bcf5a2f36bdaae9b46ecd346d24d  fence-agents-apc-snmp-4.0.11-27.el7_2.5.x86_64.rpm
+ed7fb98f34a34c629768e2f85c2c97e1c9aad3e8ecd48b41e77c3c50be8f0e19  fence-agents-bladecenter-4.0.11-27.el7_2.5.x86_64.rpm
+4342436084781b9a019d1272db0a44a57193cb5e8b62bcf45c565a7ae7871a50  fence-agents-brocade-4.0.11-27.el7_2.5.x86_64.rpm
+651463c577ca1499730fd837c6721da9369cf2ed69c6e29b10bcc94c8bafbe20  fence-agents-cisco-mds-4.0.11-27.el7_2.5.x86_64.rpm
+9c45894d40ef9d62810eb91822973b5e110d28fe3bea223c9ee5088a76be51fb  fence-agents-cisco-ucs-4.0.11-27.el7_2.5.x86_64.rpm
+f91b2ba086a53d3165c73f914b4daf61ad40d9ba87048b8194ce4db18380cdb2  fence-agents-common-4.0.11-27.el7_2.5.x86_64.rpm
+0eb2e3b80d90f272c0b4139e449f3b13e57a0e2ca29c339657c8c6cf5a50f173  fence-agents-compute-4.0.11-27.el7_2.5.x86_64.rpm
+6922537780e19540af18b7cd1b43003f06654d7f4b5763aa0d06329de630a53c  fence-agents-drac5-4.0.11-27.el7_2.5.x86_64.rpm
+0c9646aee4836397bce1882f0fa7db47d889645faeeabbae9a4a2f43dbf8063c  fence-agents-eaton-snmp-4.0.11-27.el7_2.5.x86_64.rpm
+ed2e3550497fc26b67d381779efde4800c89f99db14c9c4068ac848fd1872d74  fence-agents-emerson-4.0.11-27.el7_2.5.x86_64.rpm
+e3d8d50ab30641c3538d3087a56642777b0e018c6feaf790d3c9599dbdc4d6ae  fence-agents-eps-4.0.11-27.el7_2.5.x86_64.rpm
+22e27ba98ed5e8f6c2b81b00a850ee97215e1a5d8a58808d83b2640e21c97fb3  fence-agents-hpblade-4.0.11-27.el7_2.5.x86_64.rpm
+59358daedfe5db13ced6f2ff6467df1c465c70aec07b2b5522c1d5fe9e8e9e00  fence-agents-ibmblade-4.0.11-27.el7_2.5.x86_64.rpm
+9e0612da75df88363fcc80a8414021f8254f252eec9ddc6cf68b4030770dd120  fence-agents-ifmib-4.0.11-27.el7_2.5.x86_64.rpm
+f21e7b5d14a78b876ecaf1001a9bce6a1104499557c8299a57b5fa9e6a7af632  fence-agents-ilo2-4.0.11-27.el7_2.5.x86_64.rpm
+21c4829ba3b47a3d4da805bf23dfae6b7ed2fb8ba78931cf1e4589a426a9581b  fence-agents-ilo-moonshot-4.0.11-27.el7_2.5.x86_64.rpm
+d47c3e9e5937d8e3899b99ef777fb3247a37165effba50f99cedb9992c010bb4  fence-agents-ilo-mp-4.0.11-27.el7_2.5.x86_64.rpm
+9da8107f4b50b7e363ae5f38761424be3daf4627e9eed6b528f092216f7219a3  fence-agents-ilo-ssh-4.0.11-27.el7_2.5.x86_64.rpm
+0741119db5fbff4cf40a3eacfa1481e74ccc0a74c98246223ddbbfc0dccbcd54  fence-agents-intelmodular-4.0.11-27.el7_2.5.x86_64.rpm
+4fb6de21df6488e78a9dab4e16810c1a2f2f3d92fdb6e23f921b3fac35897755  fence-agents-ipdu-4.0.11-27.el7_2.5.x86_64.rpm
+811b9561e3ad8aa232c86ec19b9be750b2565e1e3a045ce396d4cc7597690b1c  fence-agents-ipmilan-4.0.11-27.el7_2.5.x86_64.rpm
+9c498dea2a281666475e12e41507120f1f3be1042bb21adb386a7a2f02073795  fence-agents-kdump-4.0.11-27.el7_2.5.x86_64.rpm
+0d8936cbf6ad6e7557b33b427987eab07eec22841aa0f235294112c0d24f4f5b  fence-agents-mpath-4.0.11-27.el7_2.5.x86_64.rpm
+0b84e4b2598629f883e4bb9a13e6e8d42b968c9e2c5637e8764fe65e245d094e  fence-agents-rhevm-4.0.11-27.el7_2.5.x86_64.rpm
+3e466805a9a0cbabc8c1ebf819948d3a4fcb74f0f3f2d7016ccd968e2e2767fd  fence-agents-rsa-4.0.11-27.el7_2.5.x86_64.rpm
+ff35e97894dc3e1dd4b2fb808f8fbb4afaba335743eafab46a1115345ebbc859  fence-agents-rsb-4.0.11-27.el7_2.5.x86_64.rpm
+3317162a0347d7d0089e974f7a259d5bdbba19b6dbc3d46a8b86aac015da04e1  fence-agents-scsi-4.0.11-27.el7_2.5.x86_64.rpm
+58fb7cb652335fc837c6601ef9b51b94763746a225f64c8fa9caf34ef4bdfdd0  fence-agents-virsh-4.0.11-27.el7_2.5.x86_64.rpm
+403e0fc4d84c1dede8c0acc910392485be124d54d501f7a36d9e87bb1d9ac05f  fence-agents-vmware-soap-4.0.11-27.el7_2.5.x86_64.rpm
+e8141494d78172dda880fff269369ef96ef4652e9e5ce23b69b2858efaeb6078  fence-agents-wti-4.0.11-27.el7_2.5.x86_64.rpm
+
+Source:
+5435878d3da1c21fdd4572062519b1e64ebb820060403b3a3bc504b8460b5ad4  fence-agents-4.0.11-27.el7_2.5.src.rpm
+
+
+
+-- 
+Johnny Hughes
+CentOS Project { http://www.centos.org/ }
+irc: hughesjr, #centos at irc.freenode.net
+Twitter: @JohnnyCentOS
+
+
+From johnny at centos.org  Wed Feb 17 01:43:25 2016
+From: johnny at centos.org (Johnny Hughes)
+Date: Wed, 17 Feb 2016 01:43:25 +0000
+Subject: [CentOS-announce] CEBA-2016:0215  CentOS 7 freerdp BugFix Update
+Message-ID: <20160217014325.GA12608@n04.lon1.karan.org>
+
+
+CentOS Errata and Bugfix Advisory 2016:0215 
+
+Upstream details at : https://rhn.redhat.com/errata/RHBA-2016-0215.html
+
+The following updated files have been uploaded and are currently 
+syncing to the mirrors: ( sha256sum Filename ) 
+
+x86_64:
+842781180f5c83594d1767aa76dbd1bdcc26e5933b531ec45ebcab525252c624  freerdp-1.0.2-6.el7_2.1.x86_64.rpm
+bcb8eacb8e6714fb7365873d9959d77946a15aa4940d438898d7e72934187653  freerdp-devel-1.0.2-6.el7_2.1.i686.rpm
+a701c7337d7e6fea2825da0ec86c26372c9fbf42c29b5a1d29117eccc6e2c1d6  freerdp-devel-1.0.2-6.el7_2.1.x86_64.rpm
+14909ef6e15bfdba2074c40d23bb79d9099e747a3d7fe78f0caeae0e06f3a704  freerdp-libs-1.0.2-6.el7_2.1.i686.rpm
+df7b599e1ab7545f7c6c29ff7d280d2aff1dd224475664b5d84a5b9e44ba95a4  freerdp-libs-1.0.2-6.el7_2.1.x86_64.rpm
+8183ffd5952a7d1180d5907b4cadd9eeee5d02071efffb15225329733aed88e0  freerdp-plugins-1.0.2-6.el7_2.1.x86_64.rpm
+
+Source:
+12047b8eb491d8fa97de2cda19cad06b72bcd6952899dbb3188292a7ede2a090  freerdp-1.0.2-6.el7_2.1.src.rpm
+
+
+
+-- 
+Johnny Hughes
+CentOS Project { http://www.centos.org/ }
+irc: hughesjr, #centos at irc.freenode.net
+Twitter: @JohnnyCentOS
+
+
+From johnny at centos.org  Wed Feb 17 01:43:56 2016
+From: johnny at centos.org (Johnny Hughes)
+Date: Wed, 17 Feb 2016 01:43:56 +0000
+Subject: [CentOS-announce] CEBA-2016:0209  CentOS 7 kpatch BugFix Update
+Message-ID: <20160217014356.GA12693@n04.lon1.karan.org>
+
+
+CentOS Errata and Bugfix Advisory 2016:0209 
+
+Upstream details at : https://rhn.redhat.com/errata/RHBA-2016-0209.html
+
+The following updated files have been uploaded and are currently 
+syncing to the mirrors: ( sha256sum Filename ) 
+
+x86_64:
+d028cf451a86be106e8696a4d1813ab35fc63aa165db1c897ffd2044cc3cf605  kpatch-0.3.1-1.el7_2.noarch.rpm
+
+Source:
+463365306938c8dd92fde5f4789777853fc280bea9d769c25b3018bcc7e4e01d  kpatch-0.3.1-1.el7_2.src.rpm
+
+
+
+-- 
+Johnny Hughes
+CentOS Project { http://www.centos.org/ }
+irc: hughesjr, #centos at irc.freenode.net
+Twitter: @JohnnyCentOS
+
+
+From johnny at centos.org  Wed Feb 17 01:44:10 2016
+From: johnny at centos.org (Johnny Hughes)
+Date: Wed, 17 Feb 2016 01:44:10 +0000
+Subject: [CentOS-announce] CEBA-2016:0211  CentOS 7 ipa BugFix Update
+Message-ID: <20160217014410.GA12781@n04.lon1.karan.org>
+
+
+CentOS Errata and Bugfix Advisory 2016:0211 
+
+Upstream details at : https://rhn.redhat.com/errata/RHBA-2016-0211.html
+
+The following updated files have been uploaded and are currently 
+syncing to the mirrors: ( sha256sum Filename ) 
+
+x86_64:
+8e45a123f026388b7d4892612740c1b483c4928c401c4d321e8ceb99c04b5f8d  ipa-admintools-4.2.0-15.el7_2.6.x86_64.rpm
+c74edfa45b31a666a4acbd399aa965c104e02b2bc1ff9187febdfa8a1d632119  ipa-client-4.2.0-15.el7_2.6.x86_64.rpm
+9ef7db6a1dd41f84dc9f630cf2f824e45e60f18e525bc7df68320a64fb0e1429  ipa-python-4.2.0-15.el7_2.6.x86_64.rpm
+3c5a1f51b4cb3f7e18ccc51670fa46929c07c3e80275d1960fcd6a6d7eb38891  ipa-server-4.2.0-15.el7_2.6.x86_64.rpm
+a712e3b6e56bef910b9003d2b20220f0e29f340821285481b4f27e0ae4993eeb  ipa-server-dns-4.2.0-15.el7_2.6.x86_64.rpm
+b66ed2777a51f83dabff3dcc54fb1404c4f449b58f3bed8d8867b6c3cfd123e5  ipa-server-trust-ad-4.2.0-15.el7_2.6.x86_64.rpm
+
+Source:
+6b341cd97cd5949fc6534dc81224ee7cdd81b0e29f75dab3bed76dc186b702e2  ipa-4.2.0-15.el7_2.6.src.rpm
+
+
+
+-- 
+Johnny Hughes
+CentOS Project { http://www.centos.org/ }
+irc: hughesjr, #centos at irc.freenode.net
+Twitter: @JohnnyCentOS
+
+
+From johnny at centos.org  Wed Feb 17 01:44:44 2016
+From: johnny at centos.org (Johnny Hughes)
+Date: Wed, 17 Feb 2016 01:44:44 +0000
+Subject: [CentOS-announce] CEBA-2016:0202  CentOS 7 libtool BugFix Update
+Message-ID: <20160217014444.GA12856@n04.lon1.karan.org>
+
+
+CentOS Errata and Bugfix Advisory 2016:0202 
+
+Upstream details at : https://rhn.redhat.com/errata/RHBA-2016-0202.html
+
+The following updated files have been uploaded and are currently 
+syncing to the mirrors: ( sha256sum Filename ) 
+
+x86_64:
+06bf1abdca762654c9637cfe682968f9fa2ba0cf0bffe64759ae51e78ba57afe  libtool-2.4.2-21.el7_2.x86_64.rpm
+434371a99f8c3e7202b171937cfc35578aa34a54b76516becfa3f3018107def4  libtool-ltdl-2.4.2-21.el7_2.i686.rpm
+41f0ef2aedec099b07a992a2cb48f754d9277eb01555359389028e00416c60c4  libtool-ltdl-2.4.2-21.el7_2.x86_64.rpm
+736b1b5aec22016db5356ec077a515c82cfe847d725b6cd54b1cf04ab85c25e6  libtool-ltdl-devel-2.4.2-21.el7_2.i686.rpm
+b24bd1e449347078e831bd0d6d633f32dbb0f2c4447822671308aff203090969  libtool-ltdl-devel-2.4.2-21.el7_2.x86_64.rpm
+
+Source:
+ffaf018a3a0e85000ba8ad55068a280b95c0abde4e359be061f60ba611ddb971  libtool-2.4.2-21.el7_2.src.rpm
+
+
+
+-- 
+Johnny Hughes
+CentOS Project { http://www.centos.org/ }
+irc: hughesjr, #centos at irc.freenode.net
+Twitter: @JohnnyCentOS
+
+
+From johnny at centos.org  Wed Feb 17 01:44:59 2016
+From: johnny at centos.org (Johnny Hughes)
+Date: Wed, 17 Feb 2016 01:44:59 +0000
+Subject: [CentOS-announce] CEBA-2016:0203 CentOS 7 libunwind BugFix Update
+Message-ID: <20160217014459.GA12925@n04.lon1.karan.org>
+
+
+CentOS Errata and Bugfix Advisory 2016:0203 
+
+Upstream details at : https://rhn.redhat.com/errata/RHBA-2016-0203.html
+
+The following updated files have been uploaded and are currently 
+syncing to the mirrors: ( sha256sum Filename ) 
+
+x86_64:
+6e1e40010c7725c9c2fe9e40cb6f560c02cd2d9832a779c817dc46d39375ca8b  libunwind-1.1-5.el7_2.2.i686.rpm
+dd12b042ed15c97cc31b3aa5e9d98dff01a6b93d48f508a453b6f062d92055e6  libunwind-1.1-5.el7_2.2.x86_64.rpm
+27b650c4b8a2b798e6981c184b53004447c7fde0d89c357d95433ec158719b50  libunwind-devel-1.1-5.el7_2.2.i686.rpm
+8f9f9e35e07a53e21684cf483a5b60d6a0235cc1fd7646140c2ad677e242d30c  libunwind-devel-1.1-5.el7_2.2.x86_64.rpm
+
+Source:
+c17a694c589defb296e3418ac08c5eb88c5613ec56162d598a6381876a79dbb5  libunwind-1.1-5.el7_2.2.src.rpm
+
+
+
+-- 
+Johnny Hughes
+CentOS Project { http://www.centos.org/ }
+irc: hughesjr, #centos at irc.freenode.net
+Twitter: @JohnnyCentOS
+
+
+From johnny at centos.org  Wed Feb 17 01:45:12 2016
+From: johnny at centos.org (Johnny Hughes)
+Date: Wed, 17 Feb 2016 01:45:12 +0000
+Subject: [CentOS-announce] CEBA-2016:0179  CentOS 7 lvm2 BugFix Update
+Message-ID: <20160217014512.GA13075@n04.lon1.karan.org>
+
+
+CentOS Errata and Bugfix Advisory 2016:0179 
+
+Upstream details at : https://rhn.redhat.com/errata/RHBA-2016-0179.html
+
+The following updated files have been uploaded and are currently 
+syncing to the mirrors: ( sha256sum Filename ) 
+
+x86_64:
+c87f6ce6537c16456399999c80d907cd7d5699f04fdb93e79cb82ef26fb37d29  cmirror-2.02.130-5.el7_2.1.x86_64.rpm
+d42b9601d7f21e2d41fd1a224282a2fc1a0f248965bcf27bf12b4a56bdd7d751  device-mapper-1.02.107-5.el7_2.1.x86_64.rpm
+79de9560d29b64f6966f896a83c1f23884eb3d5fc5743c84dfd186b20c0cf1ce  device-mapper-devel-1.02.107-5.el7_2.1.i686.rpm
+595e02aec37aebb27b8ce0462c33d915f19680b4e3b4ca97ebab8c06d37a6e58  device-mapper-devel-1.02.107-5.el7_2.1.x86_64.rpm
+90f7d4925610d783be24bba80728d76f7b9ce37e197a06ef89b8ed1b6efece0d  device-mapper-event-1.02.107-5.el7_2.1.x86_64.rpm
+ed8fda595bff6a0a6cc54bc544d44904f765ae95febc13a79987123f65c8ea4c  device-mapper-event-devel-1.02.107-5.el7_2.1.i686.rpm
+32d95180c9a9e4c49d459d9b35cb7591bf65500d836020805919e0058990c93f  device-mapper-event-devel-1.02.107-5.el7_2.1.x86_64.rpm
+0dbde9125fff5d4cdbf0f34ac710114001d9891670d6ddab9f0b348a58b1f7a0  device-mapper-event-libs-1.02.107-5.el7_2.1.i686.rpm
+e78d44847997d254378b32a32bf56ee7a1344033e2600573cd8d406face0551e  device-mapper-event-libs-1.02.107-5.el7_2.1.x86_64.rpm
+b9bbfca826e4571e81fd6244fa429675c3b42ffeebf8d35039f687e0d91ad2b5  device-mapper-libs-1.02.107-5.el7_2.1.i686.rpm
+adbd05542db9e48f99164dcd3e1b00486e8a4eb4c72150ab5540d94400e03b67  device-mapper-libs-1.02.107-5.el7_2.1.x86_64.rpm
+74c65218038673be55a476c07c40b1621782a1ae06e961b6b665048b866f2d80  lvm2-2.02.130-5.el7_2.1.x86_64.rpm
+8ac0f5eeae0d75a8853aee3d3c1cfa5ae47aaa55c960033ba085b50d09f16168  lvm2-cluster-2.02.130-5.el7_2.1.x86_64.rpm
+c5cf54019118180152ca3662d2e23f0d2229f9f21cb5d43fb1ec13377184af19  lvm2-devel-2.02.130-5.el7_2.1.i686.rpm
+7d47eb69297e878877a6c72c1b884ba6f743e617ea30371bd4040c9f2d0f5d67  lvm2-devel-2.02.130-5.el7_2.1.x86_64.rpm
+6175a3b718268f5f53e74b76f8a0feefcea6fa1e1f9a24194b8684bdabadfba1  lvm2-libs-2.02.130-5.el7_2.1.i686.rpm
+55089da22f8f76e97f35d1517321cad404e060605d6b0dd31286f5ed176773dd  lvm2-libs-2.02.130-5.el7_2.1.x86_64.rpm
+9c6b04a1934787227554b81d3b30828f904b04bbbbb095c495252497a59b311a  lvm2-lockd-2.02.130-5.el7_2.1.x86_64.rpm
+fff5adb53a1a0745ddbc8ffec4ac63353e018bcb4af3a3cb6a1196e92d95032c  lvm2-python-libs-2.02.130-5.el7_2.1.x86_64.rpm
+4b5d46dc3e3aa9debeb641d31c80e6bedbc7974c16396e7e3bc3ce3281a215c9  lvm2-sysvinit-2.02.130-5.el7_2.1.x86_64.rpm
+
+Source:
+db79679d5b01c0abe6a227e178281dd2c0a200a907fd2b68ebf8102cb93912df  lvm2-2.02.130-5.el7_2.1.src.rpm
+
+
+
+-- 
+Johnny Hughes
+CentOS Project { http://www.centos.org/ }
+irc: hughesjr, #centos at irc.freenode.net
+Twitter: @JohnnyCentOS
+
+
+From johnny at centos.org  Wed Feb 17 01:45:28 2016
+From: johnny at centos.org (Johnny Hughes)
+Date: Wed, 17 Feb 2016 01:45:28 +0000
+Subject: [CentOS-announce] CEBA-2016:0206 CentOS 7 nfs-utils BugFix Update
+Message-ID: <20160217014528.GA13137@n04.lon1.karan.org>
+
+
+CentOS Errata and Bugfix Advisory 2016:0206 
+
+Upstream details at : https://rhn.redhat.com/errata/RHBA-2016-0206.html
+
+The following updated files have been uploaded and are currently 
+syncing to the mirrors: ( sha256sum Filename ) 
+
+x86_64:
+1b960311f612d424d4b79d7ea2a3a04a2b96c906f04a20c84ad83ec9e0a9c214  nfs-utils-1.3.0-0.21.el7_2.x86_64.rpm
+
+Source:
+c329684421401eb79438d40cb3d4b06e3995be63ce7225a9e05a424257b7087c  nfs-utils-1.3.0-0.21.el7_2.src.rpm
+
+
+
+-- 
+Johnny Hughes
+CentOS Project { http://www.centos.org/ }
+irc: hughesjr, #centos at irc.freenode.net
+Twitter: @JohnnyCentOS
+
+
+From johnny at centos.org  Wed Feb 17 01:46:09 2016
+From: johnny at centos.org (Johnny Hughes)
+Date: Wed, 17 Feb 2016 01:46:09 +0000
+Subject: [CentOS-announce] CEBA-2016:0186  CentOS 7 numactl BugFix Update
+Message-ID: <20160217014609.GA13220@n04.lon1.karan.org>
+
+
+CentOS Errata and Bugfix Advisory 2016:0186 
+
+Upstream details at : https://rhn.redhat.com/errata/RHBA-2016-0186.html
+
+The following updated files have been uploaded and are currently 
+syncing to the mirrors: ( sha256sum Filename ) 
+
+x86_64:
+c930170b1194e984b60207d30b229e21f5468b7c99ad19715744e0d3149e609e  numactl-2.0.9-6.el7_2.x86_64.rpm
+deca424f769b41883afcc8a238212ad2cd61606cd77be7807882a66f64c59025  numactl-devel-2.0.9-6.el7_2.i686.rpm
+efa59706f12ae7028e3f8ea0055d5c70e77d4ac3e6eb990a3aea550ed64cd60b  numactl-devel-2.0.9-6.el7_2.x86_64.rpm
+3e7550a7ff035663c4f88090e867325e19a675194ac0b13bb6c2de5df117282b  numactl-libs-2.0.9-6.el7_2.i686.rpm
+7f61aa4418e8f47ee8f65655dce4592cd4411e7ad5f0eefe5373d36d8628ab4f  numactl-libs-2.0.9-6.el7_2.x86_64.rpm
+
+Source:
+91cf5a64ce3d1da7c1fce4b6babb228e2ff08b139ab7a736559f3d7f7ab27918  numactl-2.0.9-6.el7_2.src.rpm
+
+
+
+-- 
+Johnny Hughes
+CentOS Project { http://www.centos.org/ }
+irc: hughesjr, #centos at irc.freenode.net
+Twitter: @JohnnyCentOS
+
+
+From johnny at centos.org  Wed Feb 17 01:46:28 2016
+From: johnny at centos.org (Johnny Hughes)
+Date: Wed, 17 Feb 2016 01:46:28 +0000
+Subject: [CentOS-announce] CEBA-2016:0216 CentOS 7 pacemaker BugFix Update
+Message-ID: <20160217014628.GA13325@n04.lon1.karan.org>
+
+
+CentOS Errata and Bugfix Advisory 2016:0216 
+
+Upstream details at : https://rhn.redhat.com/errata/RHBA-2016-0216.html
+
+The following updated files have been uploaded and are currently 
+syncing to the mirrors: ( sha256sum Filename ) 
+
+x86_64:
+5834d1560baaac22dc10cbce3c2947e83f4f5b2057faead425242dcf5cf5f48e  pacemaker-1.1.13-10.el7_2.2.x86_64.rpm
+61189427bf78a73c7af286641c1ec918beb130a35db7b6e07e158554f892dc89  pacemaker-cli-1.1.13-10.el7_2.2.x86_64.rpm
+abc24b66cb4cd8af051f0670553d42ff86fa79dc5afcf751d5c012acf7f476f1  pacemaker-cluster-libs-1.1.13-10.el7_2.2.i686.rpm
+2b1e959f1ec098430ff3e3b13a1878a3bbdda597e4d746c59d313e461846c601  pacemaker-cluster-libs-1.1.13-10.el7_2.2.x86_64.rpm
+d5e4fd0c0d7e29720925a511bc6d53e51a5bc3f5552b4ce7c3492be88903a644  pacemaker-cts-1.1.13-10.el7_2.2.x86_64.rpm
+89925aabe4a6db8660351cd99556be4e947fdca88eb81dcdc10e6455fb75913f  pacemaker-doc-1.1.13-10.el7_2.2.x86_64.rpm
+75f67cccd55aea05433ed0e99782edeb1d6cd4150aa9d3aadfafc0f303bad867  pacemaker-libs-1.1.13-10.el7_2.2.i686.rpm
+9055905a7f0b2f163a06d7169403379954bfa4f4d03ba3d875aee178bb51a1e7  pacemaker-libs-1.1.13-10.el7_2.2.x86_64.rpm
+4994fd42a31d125fa08d8ebb236a1aef684c469f539055d8d53e1ffeeb24944e  pacemaker-libs-devel-1.1.13-10.el7_2.2.i686.rpm
+d6c07ea26086e247a67dff8c32619543419958108ee9dddddeb34d4d6d819fb8  pacemaker-libs-devel-1.1.13-10.el7_2.2.x86_64.rpm
+d9a4ba8a5408d93c139639218b5b4a860a6d6eae92919da845d76478f94c9ea1  pacemaker-nagios-plugins-metadata-1.1.13-10.el7_2.2.x86_64.rpm
+a983a8d5c59c8b918a5fc8082cbe3b115dbccfe48d462a9b4570e94cb2b58b9e  pacemaker-remote-1.1.13-10.el7_2.2.x86_64.rpm
+
+Source:
+3854f548c5ec87a673339cd90dcc3f37366d51e29e27e6c48693313dde2eccda  pacemaker-1.1.13-10.el7_2.2.src.rpm
+
+
+
+-- 
+Johnny Hughes
+CentOS Project { http://www.centos.org/ }
+irc: hughesjr, #centos at irc.freenode.net
+Twitter: @JohnnyCentOS
+
+
+From johnny at centos.org  Wed Feb 17 01:46:47 2016
+From: johnny at centos.org (Johnny Hughes)
+Date: Wed, 17 Feb 2016 01:46:47 +0000
+Subject: [CentOS-announce] CEBA-2016:0180 CentOS 7 procps-ng BugFix Update
+Message-ID: <20160217014647.GA13399@n04.lon1.karan.org>
+
+
+CentOS Errata and Bugfix Advisory 2016:0180 
+
+Upstream details at : https://rhn.redhat.com/errata/RHBA-2016-0180.html
+
+The following updated files have been uploaded and are currently 
+syncing to the mirrors: ( sha256sum Filename ) 
+
+x86_64:
+8fb0d1c834bd99f117aef7d1f13e9cba3964a7f836be73f60821ed1e2a4e3e30  procps-ng-3.3.10-5.el7_2.i686.rpm
+4da74ccf16258f2226c2f1526a7cd9c93f120aa01fa8317fde73028d96442a26  procps-ng-3.3.10-5.el7_2.x86_64.rpm
+44d10280920a90cc72030239320b25e030a278122c5dc67cdc68ec3af43ca81e  procps-ng-devel-3.3.10-5.el7_2.i686.rpm
+9c69438b5ea5877b3f4daba6137ee58eefd8d5efd34116b2eee1791e148fdbf2  procps-ng-devel-3.3.10-5.el7_2.x86_64.rpm
+9d3be80217a6460b32a362323d58fd828bc7455178e26cf38997d76897debbff  procps-ng-i18n-3.3.10-5.el7_2.x86_64.rpm
+
+Source:
+b955ce45ae31755aa264e2115c9ae43c3a5423585867634c281c241b1c9c534b  procps-ng-3.3.10-5.el7_2.src.rpm
+
+
+
+-- 
+Johnny Hughes
+CentOS Project { http://www.centos.org/ }
+irc: hughesjr, #centos at irc.freenode.net
+Twitter: @JohnnyCentOS
+
+
+From johnny at centos.org  Wed Feb 17 01:47:06 2016
+From: johnny at centos.org (Johnny Hughes)
+Date: Wed, 17 Feb 2016 01:47:06 +0000
+Subject: [CentOS-announce] CEBA-2016:0208  CentOS 7 tuna BugFix Update
+Message-ID: <20160217014706.GA13477@n04.lon1.karan.org>
+
+
+CentOS Errata and Bugfix Advisory 2016:0208 
+
+Upstream details at : https://rhn.redhat.com/errata/RHBA-2016-0208.html
+
+The following updated files have been uploaded and are currently 
+syncing to the mirrors: ( sha256sum Filename ) 
+
+x86_64:
+3a24bcda6239f7c68f1757d8bfd407219f4e48fc25a22f55a2d5c5ec9005e77a  oscilloscope-0.11.1-12.el7_2.noarch.rpm
+2e9c5c9f731b169284358ad12e93acfef3014bfe7ef727a4679e5da1b0079722  tuna-0.11.1-12.el7_2.noarch.rpm
+
+Source:
+bd17e55627b717d3a8114fbcc77eff4f1b71e9678b7805a3b6a1b85277b6cf4a  tuna-0.11.1-12.el7_2.src.rpm
+
+
+
+-- 
+Johnny Hughes
+CentOS Project { http://www.centos.org/ }
+irc: hughesjr, #centos at irc.freenode.net
+Twitter: @JohnnyCentOS
+
+
+From johnny at centos.org  Wed Feb 17 01:47:25 2016
+From: johnny at centos.org (Johnny Hughes)
+Date: Wed, 17 Feb 2016 01:47:25 +0000
+Subject: [CentOS-announce] CEBA-2016:0213  CentOS 7 tuned BugFix Update
+Message-ID: <20160217014725.GA13592@n04.lon1.karan.org>
+
+
+CentOS Errata and Bugfix Advisory 2016:0213 
+
+Upstream details at : https://rhn.redhat.com/errata/RHBA-2016-0213.html
+
+The following updated files have been uploaded and are currently 
+syncing to the mirrors: ( sha256sum Filename ) 
+
+x86_64:
+cb02a9d9e0c573292050f604bb86bcba92c3472ed9ebbd3f46fb002b83a2d4d3  tuned-2.5.1-4.el7_2.2.noarch.rpm
+494192d99cf1bc4a18f9620789f451956af483ec7fb32dc2cc948ba0028be686  tuned-gtk-2.5.1-4.el7_2.2.noarch.rpm
+5021cf1a06965510d36fa141298a4550267b32d1386a2fcd1c1bd70e0cdd89c4  tuned-profiles-atomic-2.5.1-4.el7_2.2.noarch.rpm
+d2e3eaa83b34efe5af1f896fbdd188f99e029ce4c0fefebb4ddc5a2330864fe7  tuned-profiles-compat-2.5.1-4.el7_2.2.noarch.rpm
+562f7d55d81e9169a50bc39a198363640345612bfe689d341dd1557909cf7bc1  tuned-profiles-oracle-2.5.1-4.el7_2.2.noarch.rpm
+bc801468ea3ade0c7da2e9b4343129215dea6e77ce0560b9e072302497541119  tuned-utils-2.5.1-4.el7_2.2.noarch.rpm
+7c63400f97e09283feb4fb8ce7ead7538be2b9a94c9ae3d5909d7b044f9bd8e4  tuned-utils-systemtap-2.5.1-4.el7_2.2.noarch.rpm
+
+Source:
+ae781e87ef7e4da21042e0930c1b7166c621b8ec1533450726b7f4c5ea3332db  tuned-2.5.1-4.el7_2.2.src.rpm
+
+
+
+-- 
+Johnny Hughes
+CentOS Project { http://www.centos.org/ }
+irc: hughesjr, #centos at irc.freenode.net
+Twitter: @JohnnyCentOS
+
+
+From johnny at centos.org  Wed Feb 17 01:47:42 2016
+From: johnny at centos.org (Johnny Hughes)
+Date: Wed, 17 Feb 2016 01:47:42 +0000
+Subject: [CentOS-announce] CEEA-2016:0182 CentOS 7 ca-certificates
+	Enhancement Update
+Message-ID: <20160217014742.GA13655@n04.lon1.karan.org>
+
+
+CentOS Errata and Enhancement Advisory 2016:0182 
+
+Upstream details at : https://rhn.redhat.com/errata/RHEA-2016-0182.html
+
+The following updated files have been uploaded and are currently 
+syncing to the mirrors: ( sha256sum Filename ) 
+
+x86_64:
+dec97ac1cfd2dee769eaac9639722b5ac5388baa9528ac4abd5e2d045d413996  ca-certificates-2015.2.6-70.1.el7_2.noarch.rpm
+
+Source:
+31f994aba60477fa7aed008645bc202765bbf565ffc4d37c7ee477d0b7bdb257  ca-certificates-2015.2.6-70.1.el7_2.src.rpm
+
+
+
+-- 
+Johnny Hughes
+CentOS Project { http://www.centos.org/ }
+irc: hughesjr, #centos at irc.freenode.net
+Twitter: @JohnnyCentOS
+
+
+From johnny at centos.org  Wed Feb 17 01:47:58 2016
+From: johnny at centos.org (Johnny Hughes)
+Date: Wed, 17 Feb 2016 01:47:58 +0000
+Subject: [CentOS-announce] CEBA-2016:0218  CentOS 7 ipxe BugFix Update
+Message-ID: <20160217014758.GA13721@n04.lon1.karan.org>
+
+
+CentOS Errata and Bugfix Advisory 2016:0218 
+
+Upstream details at : https://rhn.redhat.com/errata/RHBA-2016-0218.html
+
+The following updated files have been uploaded and are currently 
+syncing to the mirrors: ( sha256sum Filename ) 
+
+x86_64:
+f3e7a08e034a1baf06b1db18725e290e762aedfcf484d78c0cbe96731bf886af  ipxe-bootimgs-20130517-8.gitc4bce43.el7_2.1.noarch.rpm
+b5d5d766bd464d082ccdac69ba151f49d10b5f5e497c7770e818966bf21caed2  ipxe-roms-20130517-8.gitc4bce43.el7_2.1.noarch.rpm
+ece7712cd18d9d72cb7822004d4b138f9091afb34f0d90aec55b9964ee05b04f  ipxe-roms-qemu-20130517-8.gitc4bce43.el7_2.1.noarch.rpm
+
+Source:
+5b1ed9a8e8447937f61bf8dd939a7fff3405947f74569472d0693dc5bd309347  ipxe-20130517-8.gitc4bce43.el7_2.1.src.rpm
+
+
+
+-- 
+Johnny Hughes
+CentOS Project { http://www.centos.org/ }
+irc: hughesjr, #centos at irc.freenode.net
+Twitter: @JohnnyCentOS
+
+
+From johnny at centos.org  Wed Feb 17 01:48:14 2016
+From: johnny at centos.org (Johnny Hughes)
+Date: Wed, 17 Feb 2016 01:48:14 +0000
+Subject: [CentOS-announce] CEBA-2016:0214 CentOS 7 kexec-tools BugFix Update
+Message-ID: <20160217014814.GA13816@n04.lon1.karan.org>
+
+
+CentOS Errata and Bugfix Advisory 2016:0214 
+
+Upstream details at : https://rhn.redhat.com/errata/RHBA-2016-0214.html
+
+The following updated files have been uploaded and are currently 
+syncing to the mirrors: ( sha256sum Filename ) 
+
+x86_64:
+d739482a97412ee866352168c89616f99fe9bac885b866bd0ae1eb07139bc40d  kexec-tools-2.0.7-38.el7_2.1.x86_64.rpm
+afe2b6d38c4a5574e85d08bd37f70ac74a758442331c29d50bfaa714db439878  kexec-tools-anaconda-addon-2.0.7-38.el7_2.1.x86_64.rpm
+5d97e4576e4d42bb7250892dcad5fd5f3c66534bb708682151b0483493e37dbe  kexec-tools-eppic-2.0.7-38.el7_2.1.x86_64.rpm
+
+Source:
+6025a202ebe09a1aee0d3fea198f5b35fe8e8a152c1010203d294f7ecd5b40d5  kexec-tools-2.0.7-38.el7_2.1.src.rpm
+
+
+
+-- 
+Johnny Hughes
+CentOS Project { http://www.centos.org/ }
+irc: hughesjr, #centos at irc.freenode.net
+Twitter: @JohnnyCentOS
+
+
+From johnny at centos.org  Wed Feb 17 01:48:32 2016
+From: johnny at centos.org (Johnny Hughes)
+Date: Wed, 17 Feb 2016 01:48:32 +0000
+Subject: [CentOS-announce] CEBA-2016:0210 CentOS 7 libgovirt BugFix Update
+Message-ID: <20160217014832.GA13885@n04.lon1.karan.org>
+
+
+CentOS Errata and Bugfix Advisory 2016:0210 
+
+Upstream details at : https://rhn.redhat.com/errata/RHBA-2016-0210.html
+
+The following updated files have been uploaded and are currently 
+syncing to the mirrors: ( sha256sum Filename ) 
+
+x86_64:
+2e440c688783152c26ac0ff5fef1092a93a5bd5b24d121cca934b609e23523b1  libgovirt-0.3.3-1.el7_2.1.i686.rpm
+a7ffd6e6f66e13bf346b6e6b84d4702c39e2102c23cdb95a23c94ea89834f716  libgovirt-0.3.3-1.el7_2.1.x86_64.rpm
+f084a2c5209d0f8d44027c6709e1c4a3beb1d85412cfba61dab2ec0717e5d41d  libgovirt-devel-0.3.3-1.el7_2.1.i686.rpm
+f5ca6cc7a32b3354ddf3ec410e158a78491a0340b8be2d3c9c64618d1559d7a8  libgovirt-devel-0.3.3-1.el7_2.1.x86_64.rpm
+
+Source:
+423f0353c5a30f5fa4250b5050581f4e499668593642f21d7f9baf841c471dc2  libgovirt-0.3.3-1.el7_2.1.src.rpm
+
+
+
+-- 
+Johnny Hughes
+CentOS Project { http://www.centos.org/ }
+irc: hughesjr, #centos at irc.freenode.net
+Twitter: @JohnnyCentOS
+
+
+From johnny at centos.org  Wed Feb 17 01:48:47 2016
+From: johnny at centos.org (Johnny Hughes)
+Date: Wed, 17 Feb 2016 01:48:47 +0000
+Subject: [CentOS-announce] CEBA-2016:0220  CentOS 7 libvirt BugFix Update
+Message-ID: <20160217014847.GA14033@n04.lon1.karan.org>
+
+
+CentOS Errata and Bugfix Advisory 2016:0220 
+
+Upstream details at : https://rhn.redhat.com/errata/RHBA-2016-0220.html
+
+The following updated files have been uploaded and are currently 
+syncing to the mirrors: ( sha256sum Filename ) 
+
+x86_64:
+5351c19208e33376954b482dd2be7fccb64a1678079b58a7b711fa517cac5468  libvirt-1.2.17-13.el7_2.3.x86_64.rpm
+91dfa4092c5f82d4a659d0720b243cbb0e0e269034712c5334622be358fc30e4  libvirt-client-1.2.17-13.el7_2.3.i686.rpm
+6eaba39b062b2572ee9478a68f12a8de946a08715f7af4a22c8f20937ce68120  libvirt-client-1.2.17-13.el7_2.3.x86_64.rpm
+8267bbd46dd322a8badc9db0353a72da154d4017d9353d79c8a25a3a9627ec5c  libvirt-daemon-1.2.17-13.el7_2.3.x86_64.rpm
+6e28460897b2ce5e63b3a2616755afbe3a8cfccc8e6969f0e9579b3a26cb0458  libvirt-daemon-config-network-1.2.17-13.el7_2.3.x86_64.rpm
+2dda50c635470d516809f3917f5f58a6318b1840bd16e52493640189639dbcec  libvirt-daemon-config-nwfilter-1.2.17-13.el7_2.3.x86_64.rpm
+78fe30aba53d55525dbfc2df8541795865d8405e9613d98357d9834e5de36cff  libvirt-daemon-driver-interface-1.2.17-13.el7_2.3.x86_64.rpm
+39a79ddf238117a27d67ff21973eeb45c16b058f973d05b797d182fbcb56e2b4  libvirt-daemon-driver-lxc-1.2.17-13.el7_2.3.x86_64.rpm
+89c3f796c3e897a91d86cec07cdedfda8ca423de6157c4c00df80d54f2731bec  libvirt-daemon-driver-network-1.2.17-13.el7_2.3.x86_64.rpm
+4cd7f222f89499e5377954191b1f307176bab1caa93cf4b57bc54161d6b3932b  libvirt-daemon-driver-nodedev-1.2.17-13.el7_2.3.x86_64.rpm
+9855cfd7297dfd1cef09ae820c30cd9915401773227fd5cbaba497f093237c45  libvirt-daemon-driver-nwfilter-1.2.17-13.el7_2.3.x86_64.rpm
+b7387bf16b7e07f2308926d1fd702681f77a4239472cba121b795b8d3996b700  libvirt-daemon-driver-qemu-1.2.17-13.el7_2.3.x86_64.rpm
+552694c93901947c59efd90b797c79c69c60d0112f0dfded7d94724fe5d26bd2  libvirt-daemon-driver-secret-1.2.17-13.el7_2.3.x86_64.rpm
+521ceda0d339302e71e8d31e47da0bd49aefbbc40842d495b1682494121fae41  libvirt-daemon-driver-storage-1.2.17-13.el7_2.3.x86_64.rpm
+d461ee44788bf63fc1fa1e8ac48675eac85e776088c0a232bd4ab0ab3982ccae  libvirt-daemon-kvm-1.2.17-13.el7_2.3.x86_64.rpm
+6e4dd58b10e8d06ddf0c66325cc6b21bf46d0a424bebc88e3fa461433d33cf4d  libvirt-daemon-lxc-1.2.17-13.el7_2.3.x86_64.rpm
+bd4b0c9a3d9e61eab2f077e7821813a532125ed857a445031885fc5a6a7dc672  libvirt-devel-1.2.17-13.el7_2.3.i686.rpm
+7b7b082c485f0ebd7344b92438e6421394740c9bba915e6d2ff9970827f63d34  libvirt-devel-1.2.17-13.el7_2.3.x86_64.rpm
+a17304642f6e89461de5c8868818e223b389f7d88d7e84beb33fa9668f101907  libvirt-docs-1.2.17-13.el7_2.3.x86_64.rpm
+4c9ac237df89a2a02bb2cb469f664ec99a8abede0bde70e6af3654dc67bf842a  libvirt-lock-sanlock-1.2.17-13.el7_2.3.x86_64.rpm
+310c3cc85b7d03d3e579a4d16430bd161cf5128b6feea1f3033922ea0c90cfcc  libvirt-login-shell-1.2.17-13.el7_2.3.x86_64.rpm
+
+Source:
+8985ad6ad9026a1d72735c823243092db72e444dc57d8b0ca8f14b2f1ab80079  libvirt-1.2.17-13.el7_2.3.src.rpm
+
+
+
+-- 
+Johnny Hughes
+CentOS Project { http://www.centos.org/ }
+irc: hughesjr, #centos at irc.freenode.net
+Twitter: @JohnnyCentOS
+
+
+From johnny at centos.org  Wed Feb 17 01:49:00 2016
+From: johnny at centos.org (Johnny Hughes)
+Date: Wed, 17 Feb 2016 01:49:00 +0000
+Subject: [CentOS-announce] CEBA-2016:0219 CentOS 7 opencryptoki BugFix Update
+Message-ID: <20160217014900.GA14126@n04.lon1.karan.org>
+
+
+CentOS Errata and Bugfix Advisory 2016:0219 
+
+Upstream details at : https://rhn.redhat.com/errata/RHBA-2016-0219.html
+
+The following updated files have been uploaded and are currently 
+syncing to the mirrors: ( sha256sum Filename ) 
+
+x86_64:
+73d61f9340d74170083f044b4dd7747065a0be6c12727011116478b8361cdd94  opencryptoki-3.2-5.el7_2.i686.rpm
+eb969ada798fd81c518c72f0e2b50d54004ed565f31cc30596fc5983c19ea7eb  opencryptoki-3.2-5.el7_2.x86_64.rpm
+0a135b3cab2127181f71136065f5e30fc88c9a70c1a17e57a0b405de25edd576  opencryptoki-devel-3.2-5.el7_2.i686.rpm
+d16d2c9026a4020cb3c256c6f3b021d00775e660abc89490c9ec9a672b6bad1f  opencryptoki-devel-3.2-5.el7_2.x86_64.rpm
+3d0bd4120ce34375b50f3dc80de723a2f1ff01710d14dfd90f72e99f606eb743  opencryptoki-icsftok-3.2-5.el7_2.i686.rpm
+c2e954da4dfb7c3694168bb76daad180e43e68eda4494090faa76d8cfc26c4a2  opencryptoki-icsftok-3.2-5.el7_2.x86_64.rpm
+4a32c9bc3d580a72ee253aa45e60ed27360add12188f84817e08346dd3c3507b  opencryptoki-libs-3.2-5.el7_2.i686.rpm
+f16b27779951c93bb6298d5c9399178c29b832a22639bc8686f9e7f8885260ff  opencryptoki-libs-3.2-5.el7_2.x86_64.rpm
+cc809966dd2024eb109931fe11cde67a78d4cf4ae0787fd89f8c9263759bbe56  opencryptoki-swtok-3.2-5.el7_2.i686.rpm
+5b28cb5fd9ca43eda31a72901a5e1afb165807fa01f0a9e57af7cdaf346dd584  opencryptoki-swtok-3.2-5.el7_2.x86_64.rpm
+60e35c34444952fc1b3ec48957e3458bad3741a745a9a3adb63f41bc1dbf2e2d  opencryptoki-tpmtok-3.2-5.el7_2.i686.rpm
+ac5d3996dc0f551cb590940ad77dbf10a79202b2e4b6f6398e8899b48c33ac46  opencryptoki-tpmtok-3.2-5.el7_2.x86_64.rpm
+
+Source:
+ebc2dd0e5652822e834563d12c0d9ed72cb500d315fa04e5aebac40f907774df  opencryptoki-3.2-5.el7_2.src.rpm
+
+
+
+-- 
+Johnny Hughes
+CentOS Project { http://www.centos.org/ }
+irc: hughesjr, #centos at irc.freenode.net
+Twitter: @JohnnyCentOS
+
+
+From johnny at centos.org  Wed Feb 17 01:49:15 2016
+From: johnny at centos.org (Johnny Hughes)
+Date: Wed, 17 Feb 2016 01:49:15 +0000
+Subject: [CentOS-announce] CEBA-2016:0205 CentOS 7 python-pyudev BugFix
+	Update
+Message-ID: <20160217014915.GA14198@n04.lon1.karan.org>
+
+
+CentOS Errata and Bugfix Advisory 2016:0205 
+
+Upstream details at : https://rhn.redhat.com/errata/RHBA-2016-0205.html
+
+The following updated files have been uploaded and are currently 
+syncing to the mirrors: ( sha256sum Filename ) 
+
+x86_64:
+b3917535020da3673dbf1d4b204aa8f1aa2d9006c067c3784535e2e4d00e6332  python-pyudev-0.15-7.el7_2.1.noarch.rpm
+
+Source:
+bdf31501051b4745510c80b2dcce0160b662e0c4cff4f6a79f5c07e595336a99  python-pyudev-0.15-7.el7_2.1.src.rpm
+
+
+
+-- 
+Johnny Hughes
+CentOS Project { http://www.centos.org/ }
+irc: hughesjr, #centos at irc.freenode.net
+Twitter: @JohnnyCentOS
+
+
+From johnny at centos.org  Wed Feb 17 01:49:31 2016
+From: johnny at centos.org (Johnny Hughes)
+Date: Wed, 17 Feb 2016 01:49:31 +0000
+Subject: [CentOS-announce] CEBA-2016:0217 CentOS 7 resource-agents BugFix
+	Update
+Message-ID: <20160217014931.GA14266@n04.lon1.karan.org>
+
+
+CentOS Errata and Bugfix Advisory 2016:0217 
+
+Upstream details at : https://rhn.redhat.com/errata/RHBA-2016-0217.html
+
+The following updated files have been uploaded and are currently 
+syncing to the mirrors: ( sha256sum Filename ) 
+
+x86_64:
+227179fce44d4d9c6dbdfca9f35e3fba4906d90625568cf748cbd50bc67b5ac0  resource-agents-3.9.5-54.el7_2.6.x86_64.rpm
+
+Source:
+3389db76649f1ca95ea886b4c6fc5c1b49809677cba6aeb2300cb934ebe7da78  resource-agents-3.9.5-54.el7_2.6.src.rpm
+
+
+
+-- 
+Johnny Hughes
+CentOS Project { http://www.centos.org/ }
+irc: hughesjr, #centos at irc.freenode.net
+Twitter: @JohnnyCentOS
+
+
+From johnny at centos.org  Wed Feb 17 01:49:49 2016
+From: johnny at centos.org (Johnny Hughes)
+Date: Wed, 17 Feb 2016 01:49:49 +0000
+Subject: [CentOS-announce] CEBA-2016:0190  CentOS 7 screen BugFix Update
+Message-ID: <20160217014949.GA14328@n04.lon1.karan.org>
+
+
+CentOS Errata and Bugfix Advisory 2016:0190 
+
+Upstream details at : https://rhn.redhat.com/errata/RHBA-2016-0190.html
+
+The following updated files have been uploaded and are currently 
+syncing to the mirrors: ( sha256sum Filename ) 
+
+x86_64:
+d8041167d6357d59d1405283c86f7a414e228f927d14f26f683b8c9d1cad55f1  screen-4.1.0-0.23.20120314git3c2946.el7_2.x86_64.rpm
+
+Source:
+a0909727ad18ce7e0a047121f335a7d524f3f394ca09789ce24cb5944c596836  screen-4.1.0-0.23.20120314git3c2946.el7_2.src.rpm
+
+
+
+-- 
+Johnny Hughes
+CentOS Project { http://www.centos.org/ }
+irc: hughesjr, #centos at irc.freenode.net
+Twitter: @JohnnyCentOS
+
+
+From johnny at centos.org  Wed Feb 17 01:50:05 2016
+From: johnny at centos.org (Johnny Hughes)
+Date: Wed, 17 Feb 2016 01:50:05 +0000
+Subject: [CentOS-announce] CEBA-2016:0191 CentOS 7 selinux-policy BugFix
+	Update
+Message-ID: <20160217015005.GA14451@n04.lon1.karan.org>
+
+
+CentOS Errata and Bugfix Advisory 2016:0191 
+
+Upstream details at : https://rhn.redhat.com/errata/RHBA-2016-0191.html
+
+The following updated files have been uploaded and are currently 
+syncing to the mirrors: ( sha256sum Filename ) 
+
+x86_64:
+403d80798714012380d2f1ce4980ea8edf2549b3397ebfd24fd88b6224cf57cd  selinux-policy-3.13.1-60.el7_2.3.noarch.rpm
+ee20cfa18e04bbff24892abee03a46691f11a71a54955a023189c5aae55a28b6  selinux-policy-devel-3.13.1-60.el7_2.3.noarch.rpm
+188276c9264ff6055d2438b814813f75512ca1b2534717acff14692c29d13fd6  selinux-policy-doc-3.13.1-60.el7_2.3.noarch.rpm
+11acd9bcc2b1d0549fc011a9071b1263377de51939eafc7e894035baf86e4855  selinux-policy-minimum-3.13.1-60.el7_2.3.noarch.rpm
+afb4266402c67370ad2e6e4f6774a38287091c4d6d256a52dbfec4caabff2284  selinux-policy-mls-3.13.1-60.el7_2.3.noarch.rpm
+f7ace6e76e9fb7ba0a172b2c6f13306e0312cb7211a166b11a7678e091853358  selinux-policy-sandbox-3.13.1-60.el7_2.3.noarch.rpm
+acc0ebf62fd0d33e214aa2cff5161f804fb9945cb7e7d2393a5b721629bb6dd0  selinux-policy-targeted-3.13.1-60.el7_2.3.noarch.rpm
+
+Source:
+57f54107397d79b9131eefe9b38db22314b2ea378297aa810e2a618e298437f7  selinux-policy-3.13.1-60.el7_2.3.src.rpm
+
+
+
+-- 
+Johnny Hughes
+CentOS Project { http://www.centos.org/ }
+irc: hughesjr, #centos at irc.freenode.net
+Twitter: @JohnnyCentOS
+
+
+From johnny at centos.org  Wed Feb 17 01:50:23 2016
+From: johnny at centos.org (Johnny Hughes)
+Date: Wed, 17 Feb 2016 01:50:23 +0000
+Subject: [CentOS-announce] CESA-2016:0188 Moderate CentOS 7 sos Security
+	Update
+Message-ID: <20160217015023.GA14528@n04.lon1.karan.org>
+
+
+CentOS Errata and Security Advisory 2016:0188 Moderate
+
+Upstream details at : https://rhn.redhat.com/errata/RHSA-2016-0188.html
+
+The following updated files have been uploaded and are currently 
+syncing to the mirrors: ( sha256sum Filename ) 
+
+x86_64:
+8276872dee98bb1d6df494ca6f51be793c11c12c8d6da9e272a120da8b065cc1  sos-3.2-35.el7.centos.3.noarch.rpm
+
+Source:
+6f887114484ea9a3d52eeef74c4cd44c30df5cf47ed326f5b63cc48cf8e75364  sos-3.2-35.el7.centos.3.src.rpm
+
+
+
+-- 
+Johnny Hughes
+CentOS Project { http://www.centos.org/ }
+irc: hughesjr, #centos at irc.freenode.net
+Twitter: @JohnnyCentOS
+
+
+From johnny at centos.org  Wed Feb 17 03:38:06 2016
+From: johnny at centos.org (Johnny Hughes)
+Date: Wed, 17 Feb 2016 03:38:06 +0000
+Subject: [CentOS-announce] CESA-2016:0185 Important CentOS 7 kernel Security
+	Update
+Message-ID: <20160217033806.GA16891@n04.lon1.karan.org>
+
+
+CentOS Errata and Security Advisory 2016:0185 Important
+
+Upstream details at : https://rhn.redhat.com/errata/RHSA-2016-0185.html
+
+The following updated files have been uploaded and are currently 
+syncing to the mirrors: ( sha256sum Filename ) 
+
+x86_64:
+53d75d74dd13de9c1faaa5a3a1611770393467811aca486d4514a509d98ea5d2  kernel-3.10.0-327.10.1.el7.x86_64.rpm
+17c6cf26b616493137c888c57786955affe1b85abd9b4fc3a94c076633fe02e1  kernel-abi-whitelists-3.10.0-327.10.1.el7.noarch.rpm
+cebaa3165ada21be962b6ab0405a343048bb5cb70f44e6b6d799ae71d3037034  kernel-debug-3.10.0-327.10.1.el7.x86_64.rpm
+6c7973d176f62a1c15b7c6f0e6a2221177cd202cfcb845dd1e412bde749c31fb  kernel-debug-devel-3.10.0-327.10.1.el7.x86_64.rpm
+bb02b2fb15a5ada922b5df8b34b1d9497f0ea29440eaa21ca5cd9adb1aa55d14  kernel-devel-3.10.0-327.10.1.el7.x86_64.rpm
+174690529653667dc027c8954f7e107f39b8460d4cd6036e4df4d0409466117f  kernel-doc-3.10.0-327.10.1.el7.noarch.rpm
+e1d7c019f643a0a5e9dab5b7b5a67c864417090c66fd0da09ce1b342a978c0f7  kernel-headers-3.10.0-327.10.1.el7.x86_64.rpm
+833e3276861ea4b0f4d85aec468c9d10e01072e28fb3003342c280f5c814d605  kernel-tools-3.10.0-327.10.1.el7.x86_64.rpm
+f255e97e7baab979da5b6f1e3b2c4104e280caa84e41aead00f9cf2b0a183693  kernel-tools-libs-3.10.0-327.10.1.el7.x86_64.rpm
+f2e1faca5d02a33a3bcd300b152404222ba19efca58698e922b6b0391b5aecb0  kernel-tools-libs-devel-3.10.0-327.10.1.el7.x86_64.rpm
+753ee94a80e83f10432d87794478aeead8c781d9d8e0cf18a585f50f2b20ed75  perf-3.10.0-327.10.1.el7.x86_64.rpm
+e54ef9d2b7c1d87468a3164a6bb8dc962e681012613f3eb1ad7e3ae319e1c35c  python-perf-3.10.0-327.10.1.el7.x86_64.rpm
+
+Source:
+a329bd12c8a2c3106d2aebe19908e2ca4b47f12a6364b37a47d9a3d5e5d2aa76  kernel-3.10.0-327.10.1.el7.src.rpm
+
+
+
+-- 
+Johnny Hughes
+CentOS Project { http://www.centos.org/ }
+irc: hughesjr, #centos at irc.freenode.net
+Twitter: @JohnnyCentOS
+
+
+From johnny at centos.org  Thu Feb 18 17:19:24 2016
+From: johnny at centos.org (Johnny Hughes)
+Date: Thu, 18 Feb 2016 17:19:24 +0000
+Subject: [CentOS-announce] CESA-2016:0258 Important CentOS 7 thunderbird
+	Security Update
+Message-ID: <20160218171924.GA56122@n04.lon1.karan.org>
+
+
+CentOS Errata and Security Advisory 2016:0258 Important
+
+Upstream details at : https://rhn.redhat.com/errata/RHSA-2016-0258.html
+
+The following updated files have been uploaded and are currently 
+syncing to the mirrors: ( sha256sum Filename ) 
+
+x86_64:
+d97294b0f502e02f49e4d2ca9a3fb5cc368a3ad6c08162e06e509e607a00a307  thunderbird-38.6.0-1.el7.centos.x86_64.rpm
+
+Source:
+2555990fee9e57f5a64ea43642860f30fe807d073e48d048665adadb1bc489f1  thunderbird-38.6.0-1.el7.centos.src.rpm
+
+
+
+-- 
+Johnny Hughes
+CentOS Project { http://www.centos.org/ }
+irc: hughesjr, #centos at irc.freenode.net
+Twitter: @JohnnyCentOS
+
+
+From johnny at centos.org  Thu Feb 18 18:42:37 2016
+From: johnny at centos.org (Johnny Hughes)
+Date: Thu, 18 Feb 2016 18:42:37 +0000
+Subject: [CentOS-announce] CESA-2016:0258 Important CentOS 6 thunderbird
+	Security Update
+Message-ID: <20160218184237.GA57736@n04.lon1.karan.org>
+
+
+CentOS Errata and Security Advisory 2016:0258 Important
+
+Upstream details at : https://rhn.redhat.com/errata/RHSA-2016-0258.html
+
+The following updated files have been uploaded and are currently 
+syncing to the mirrors: ( sha256sum Filename ) 
+
+i386:
+b6943f1cda53a9c502ee9839f608c29d0e75cf44673490822c93f395e3f40141  thunderbird-38.6.0-1.el6.centos.i686.rpm
+
+x86_64:
+5a1261b9965569d707060f8e7ff869288d7e0361efe4e5637086bf6295afe27a  thunderbird-38.6.0-1.el6.centos.x86_64.rpm
+
+Source:
+4f89116b8b8bda266f2063760ceb136832e8e2d874ffd33d9e424d479d980a63  thunderbird-38.6.0-1.el6.centos.src.rpm
+
+
+
+-- 
+Johnny Hughes
+CentOS Project { http://www.centos.org/ }
+irc: hughesjr, #centos at irc.freenode.net
+Twitter: @JohnnyCentOS
+
+
+From johnny at centos.org  Fri Feb 19 04:09:41 2016
+From: johnny at centos.org (Johnny Hughes)
+Date: Fri, 19 Feb 2016 04:09:41 +0000
+Subject: [CentOS-announce] CESA-2016:0258 Important CentOS 5 thunderbird
+	Security Update
+Message-ID: <20160219040941.GA32077@chakra.karan.org>
+
+
+CentOS Errata and Security Advisory 2016:0258 Important
+
+Upstream details at : https://rhn.redhat.com/errata/RHSA-2016-0258.html
+
+The following updated files have been uploaded and are currently 
+syncing to the mirrors: ( sha256sum Filename ) 
+
+i386:
+fc47e7fd94bd3079266b27f1307d954fd5a9f9442a91c3a2cb6172e86faa9224  thunderbird-38.6.0-1.el5.centos.i386.rpm
+
+x86_64:
+ec8dcb696078c89e8aa535036e750f5e4e06e40dbcd883e255287ea6b69bd61e  thunderbird-38.6.0-1.el5.centos.x86_64.rpm
+
+Source:
+2e6c718b8d5ce3cf2919e8c44995d1048ae923f32159b06cfc6f0dd06caa2088  thunderbird-38.6.0-1.el5.centos.src.rpm
+
+
+
+-- 
+Johnny Hughes
+CentOS Project { http://www.centos.org/ }
+irc: hughesjr, #centos at irc.freenode.net
+Twitter: JohnnyCentOS
+
+
+From johnny at centos.org  Fri Feb 19 04:19:41 2016
+From: johnny at centos.org (Johnny Hughes)
+Date: Fri, 19 Feb 2016 04:19:41 +0000
+Subject: [CentOS-announce] CEBA-2016:0268 CentOS 6 ptlib FASTTRACK BugFix
+	Update
+Message-ID: <20160219041941.GA19991@n04.lon1.karan.org>
+
+
+CentOS Errata and Bugfix Advisory 2016:0268 
+
+Upstream details at : https://rhn.redhat.com/errata/RHBA-2016-0268.html
+
+The following updated files have been uploaded and are currently 
+syncing to the mirrors: ( sha256sum Filename ) 
+
+i386:
+0348146563840e96432128fce8893e5c1e052b8c7a04731580b71ef6ec88d928  ptlib-2.6.5-5.el6.i686.rpm
+f15fb5b00ef80df31948e084c9746c4d38af9b8f6f17f435ee35a2a420a1805b  ptlib-devel-2.6.5-5.el6.i686.rpm
+
+x86_64:
+0348146563840e96432128fce8893e5c1e052b8c7a04731580b71ef6ec88d928  ptlib-2.6.5-5.el6.i686.rpm
+9591b407f7f281255041138bea978c25fa450d4db068cc267396eef5f47e82d4  ptlib-2.6.5-5.el6.x86_64.rpm
+f15fb5b00ef80df31948e084c9746c4d38af9b8f6f17f435ee35a2a420a1805b  ptlib-devel-2.6.5-5.el6.i686.rpm
+16d22c5bd3e7e1f8c2030c3c9cfedbb8d8163bd079d91fa284e299ec4d2f9e77  ptlib-devel-2.6.5-5.el6.x86_64.rpm
+
+Source:
+77f35943cb9f218305dad4478269b10bc9b932a7376710c6a4ad147b6aeeab52  ptlib-2.6.5-5.el6.src.rpm
+
+
+
+-- 
+Johnny Hughes
+CentOS Project { http://www.centos.org/ }
+irc: hughesjr, #centos at irc.freenode.net
+Twitter: @JohnnyCentOS
+
+
+From kbsingh at centos.org  Sat Feb 27 00:37:51 2016
+From: kbsingh at centos.org (Karanbir Singh)
+Date: Sat, 27 Feb 2016 00:37:51 +0000
+Subject: [CentOS-announce] Release for CentOS Linux 7 Rolling media Feb 2016
+Message-ID: <56D0EFDF.5040304@centos.org>
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+I am pleased to announce general availability of the Feb 2016
+snapshot for CentOS Linux. This release includes CentOS Linux 7 iso
+based install media, Generic Cloud images, Atomic Host, Docker
+containers, Vagrant images, vendor hosted cloud images.
+
+This release set is tag'd 1602
+
+CentOS Linux rolling builds are point in time snapshot media rebuild
+from original release time, to include all updates pushed to
+mirror.centos.org's repositories. This includes all security, bugfix,
+enhancement and general updates for CentOS Linux. Machines installed
+from this media will have all these updates pre-included and will look
+no different when compared with machines installed with older media
+that have been yum updated to the same point in time. All rpm/yum
+repos remain on mirror.centos.org with no changes in either layout or
+content.
+
+- --------
+CentOS Linux 7 / x86_64 install media is available at
+http://buildlogs.centos.org/rolling/7/isos/x86_64/
+
+File: CentOS-7-x86_64-Minimal-1602-01.iso
+Sha: 741a28e3d42c40ded2e42b83eda4d8d09137b36ceef584753b94abd298d4dfed
+
+File: CentOS-7-x86_64-Everything-1602-01.iso	
+Sha: 6cc79d3f3183318d0089cb04dbfd97418ff009f6fb01bce4849289ede96df45d
+
+File: CentOS-7-x86_64-DVD-1602-01.iso
+Sha: 34120f3bc02e1edd6d5b19516876c8456a1300de4b98da79fb0a7d444d1df3d8
+
+
+- --------
+CentOS Linux 7 / x86_64 Cloud Images are available at :
+http://cloud.centos.org/centos/7/images/
+
+File: CentOS-7-x86_64-GenericCloud-1602.qcow2
+Sha: 1b777fa1ea2b2cf0be7ed6ecce54ef18ece5c6551fb291549b887e33b78d7c78
+
+File: CentOS-7-x86_64-GenericCloud-1602.qcow2c
+Sha: bc0f51d9376001f8973595b71105b9d53c8c27b3e0969676aab2ab036cc4d835
+
+File: CentOS-7-x86_64-GenericCloud-1602.qcow2.xz
+Sha: dd0f5e610e7c5ffacaca35ed7a78a19142a588f4543da77b61c1fb0d74400471
+
+File: CentOS-7-x86_64-GenericCloud-1602.raw.tar.gz
+Sha: f4e679eef79af695bd8f2cb32d37fa93c7cb4644eb79f689bde6bd86100e4af5
+
+- --------
+CentOS Atomic Host was released earlier, details for the release are
+available at :
+https://lists.centos.org/pipermail/centos-devel/2016-February/014446.htm
+l
+
+- --------
+CentOS Linux 6 and 7 AMIs have been updated as well, as follows:
+
+CentOS Linux 6 : https://aws.amazon.com/marketplace/pp/B00NQAYLWO/
+CentOS Linux 7 : https://aws.amazon.com/marketplace/pp/B00O7WM7QW/
+
+These images are also now enabled across all Amazon EC2 regions, and
+available on all HVM instance types. This includes the Amazon AWS free
+tier.
+
+- --------
+CentOS Linux 7 / x86_64 Vagrant images are updated at
+https://vagrantcloud.com/centos/boxes/7 and the backing files can be
+downloaded for libvirt and virtualbox providers at :
+
+Libvirt:
+http://cloud.centos.org/centos/7/vagrant/x86_64/images/CentOS-7-x86_64-V
+agrant-1602_02.LibVirt.box
+
+Virtualbox:
+http://cloud.centos.org/centos/7/vagrant/x86_64/images/CentOS-7-x86_64-V
+agrant-1602_02.VirtualBox.box
+
+- --------
+CentOS Linux 5 / 6 and 7 docker images are updated at
+http://index.docker.io/_/centos
+
+- --------
+We welcome all feedback around these rolling builds and media updates
+at the centos-devel mailing list ( http://lists.centos.org/ ).
+
+enjoy!
+
+- -- 
+Karanbir Singh, Project Lead, The CentOS Project
++44-207-0999389 | http://www.centos.org/ | twitter.com/CentOS
+GnuPG Key : http://www.karan.org/publickey.asc
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v2.0.22 (GNU/Linux)
+
+iQEcBAEBAgAGBQJW0O/fAAoJEI3Oi2Mx7xbt0KwH/RUBoINSas2fADErpw0HFJI+
+8QmRa5sH6X5vvBodWMT5qiulkof06IgX6psrniCzYejt88OP0XUjuA0lEh9MUq4a
+Ie7X5TnXIndH0eGU3UQIivXRojeSTdDjNmbdTQehxTN5WfA/tml29eppMBRt6xEi
+K56/Ml2FxdU/b1EkCBO68VWcZvAl6gxmtLJv38sFn2WxepDjyrHGF+A10sJqGYt6
+V7E32iZqZDwkSmuWwHdf7T0NH9DE9TxcIH/IsRUnYAcwqLcGZm+WqFoD6KRafVAM
+e2KvLr/L9NwaU6C6rZVWJ1yHwBaYH87xNEGcr69mpR2HJQt3PrlkiTC4wXVKpRg=
+=015B
+-----END PGP SIGNATURE-----
+
