@@ -250,7 +250,7 @@ def process_args(loader):
     for name in processor_names:
         module = loader.get_module(name)
         if hasattr(module, "add_command_arguments"):
-            group = parser.add_argument_group(_("{0} arguments"),format(name))
+            group = parser.add_argument_group(_("{0} arguments".format(name)))
             module.add_command_arguments(group)
 
     args = parser.parse_args()
