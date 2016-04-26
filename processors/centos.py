@@ -18,7 +18,7 @@ class Oval(object):
 
     def __init__(self):
         super(Oval, self).__init__()
-        self.__true = None
+        self.__tree = None
 
     def load(self, url):
         INFO("Loading OVAL file")
