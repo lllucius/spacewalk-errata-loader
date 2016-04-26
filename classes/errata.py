@@ -67,15 +67,29 @@ class Errata(object):
             WARN("Erratum not assigned to any channels")
             return
 
-        id = self.errata_create(erratum)["id"]
-        self.add_erratum_to_cache(erratum, id)
+        if self.config.dry_run:
+            INFO("Dry run - not publishing {0}", erratum.advisory_name)
+            return
 
-        details = {
-                   "issue_date": erratum.issue_date,
-                   "update_date": erratum.update_date,
-                   "cves": erratum.cves,
-                  }
-        self.errata_set_details(erratum, details)
+        result = self.errata_create(erratum)
+        if result is not None:
+            id = result["id"]
+            self.add_erratum_to_cache(erratum, id)
+
+            details = {
+                       "issue_date": erratum.issue_date,
+                       "update_date": erratum.update_date,
+                       "cves": erratum.cves,
+                      }
+            self.errata_set_details(erratum, details)
+        else:
+            WARN("Erratum already exists: {0}", erratum.advisory_name)
+
+            channels = self.errata_applicable_to_channels(erratum)
+            for channel in channels:
+                erratum.add_channel(channel)
+
+            self.errata_publish(erratum)
 
         INFO("Published {0}", erratum.advisory_name)
 

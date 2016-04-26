@@ -1074,3 +1074,693 @@ Size: 819 bytes
 Desc: not available
 URL: <https://lists.ubuntu.com/archives/ubuntu-security-announce/attachments/20160411/22b6ab42/attachment.pgp>
 
+From marc.deslauriers at canonical.com  Mon Apr 18 13:12:58 2016
+From: marc.deslauriers at canonical.com (Marc Deslauriers)
+Date: Mon, 18 Apr 2016 09:12:58 -0400
+Subject: [USN-2950-1] Samba vulnerabilities
+Message-ID: <5714DD5A.40903@canonical.com>
+
+==========================================================================
+Ubuntu Security Notice USN-2950-1
+April 18, 2016
+
+samba vulnerabilities
+==========================================================================
+
+A security issue affects these releases of Ubuntu and its derivatives:
+
+- Ubuntu 15.10
+- Ubuntu 14.04 LTS
+- Ubuntu 12.04 LTS
+
+Summary:
+
+Several security issues were fixed in Samba.
+
+Software Description:
+- samba: SMB/CIFS file, print, and login server for Unix
+
+Details:
+
+Jouni Knuutinen discovered that Samba contained multiple flaws in the
+DCE/RPC implementation. A remote attacker could use this issue to perform
+a denial of service, downgrade secure connections by performing a man in
+the middle attack, or possibly execute arbitrary code. (CVE-2015-5370)
+
+Stefan Metzmacher discovered that Samba contained multiple flaws in the
+NTLMSSP authentication implementation. A remote attacker could use this
+issue to downgrade connections to plain text by performing a man in the
+middle attack. (CVE-2016-2110)
+
+Alberto Solino discovered that a Samba domain controller would establish a
+secure connection to a server with a spoofed computer name. A remote
+attacker could use this issue to obtain sensitive information.
+(CVE-2016-2111)
+
+Stefan Metzmacher discovered that the Samba LDAP implementation did not
+enforce integrity protection. A remote attacker could use this issue to
+hijack LDAP connections by performing a man in the middle attack.
+(CVE-2016-2112)
+
+Stefan Metzmacher discovered that Samba did not validate TLS certificates.
+A remote attacker could use this issue to spoof a Samba server.
+(CVE-2016-2113)
+
+Stefan Metzmacher discovered that Samba did not enforce SMB signing even if
+configured to. A remote attacker could use this issue to perform a man in
+the middle attack. (CVE-2016-2114)
+
+Stefan Metzmacher discovered that Samba did not enable integrity protection
+for IPC traffic. A remote attacker could use this issue to perform a man in
+the middle attack. (CVE-2016-2115)
+
+Stefan Metzmacher discovered that Samba incorrectly handled the MS-SAMR and
+MS-LSAD protocols. A remote attacker could use this flaw with a man in the
+middle attack to impersonate users and obtain sensitive information from
+the Security Account Manager database. This flaw is known as Badlock.
+(CVE-2016-2118)
+
+Samba has been updated to 4.3.8 in Ubuntu 14.04 LTS and Ubuntu 15.10.
+Ubuntu 12.04 LTS has been updated to 3.6.25 with backported security fixes.
+
+In addition to security fixes, the updated packages contain bug fixes,
+new features, and possibly incompatible changes. Configuration changes may
+be required in certain environments.
+
+Update instructions:
+
+The problem can be corrected by updating your system to the following
+package versions:
+
+Ubuntu 15.10:
+  samba                           2:4.3.8+dfsg-0ubuntu0.15.10.2
+
+Ubuntu 14.04 LTS:
+  samba                           2:4.3.8+dfsg-0ubuntu0.14.04.2
+
+Ubuntu 12.04 LTS:
+  samba                           2:3.6.25-0ubuntu0.12.04.2
+
+This update uses a new upstream release, which includes additional bug
+fixes. In general, a standard system update will make all the necessary
+changes.
+
+References:
+  http://www.ubuntu.com/usn/usn-2950-1
+  CVE-2015-5370, CVE-2016-2110, CVE-2016-2111, CVE-2016-2112,
+  CVE-2016-2113, CVE-2016-2114, CVE-2016-2115, CVE-2016-2118
+
+Package Information:
+  https://launchpad.net/ubuntu/+source/samba/2:4.3.8+dfsg-0ubuntu0.15.10.2
+  https://launchpad.net/ubuntu/+source/samba/2:4.3.8+dfsg-0ubuntu0.14.04.2
+  https://launchpad.net/ubuntu/+source/samba/2:3.6.25-0ubuntu0.12.04.2
+
+
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 819 bytes
+Desc: OpenPGP digital signature
+URL: <https://lists.ubuntu.com/archives/ubuntu-security-announce/attachments/20160418/93ec7475/attachment.pgp>
+
+From marc.deslauriers at canonical.com  Mon Apr 18 13:13:20 2016
+From: marc.deslauriers at canonical.com (Marc Deslauriers)
+Date: Mon, 18 Apr 2016 09:13:20 -0400
+Subject: [USN-2951-1] OptiPNG vulnerabilities
+Message-ID: <5714DD70.8080100@canonical.com>
+
+==========================================================================
+Ubuntu Security Notice USN-2951-1
+April 18, 2016
+
+optipng vulnerabilities
+==========================================================================
+
+A security issue affects these releases of Ubuntu and its derivatives:
+
+- Ubuntu 15.10
+- Ubuntu 14.04 LTS
+- Ubuntu 12.04 LTS
+
+Summary:
+
+OptiPNG could be made to crash or run programs as your login if it opened a
+specially crafted file.
+
+Software Description:
+- optipng: advanced PNG (Portable Network Graphics) optimizer
+
+Details:
+
+Gustavo Grieco discovered that OptiPNG incorrectly handled memory. A remote
+attacker could use this issue with a specially crafted image file to cause
+OptiPNG to crash, resulting in a denial of service. (CVE-2015-7801)
+
+Gustavo Grieco discovered that OptiPNG incorrectly handled memory. A remote
+attacker could use this issue with a specially crafted image file to cause
+OptiPNG to crash, resulting in a denial of service. (CVE-2015-7802)
+
+Hans Jerry Illikainen discovered that OptiPNG incorrectly handled memory. A
+remote attacker could use this issue with a specially crafted image file to
+cause OptiPNG to crash, resulting in a denial of service, or possibly
+execute arbitrary code. (CVE-2016-2191)
+
+Henri Salo discovered that OptiPNG incorrectly handled memory. A remote
+attacker could use this issue with a specially crafted image file to cause
+OptiPNG to crash, resulting in a denial of service, or possibly execute
+arbitrary code. (CVE-2016-3981)
+
+Henri Salo discovered that OptiPNG incorrectly handled memory. A remote
+attacker could use this issue with a specially crafted image file to cause
+OptiPNG to crash, resulting in a denial of service, or possibly execute
+arbitrary code. (CVE-2016-3982)
+
+Update instructions:
+
+The problem can be corrected by updating your system to the following
+package versions:
+
+Ubuntu 15.10:
+  optipng                         0.7.5-1ubuntu0.1
+
+Ubuntu 14.04 LTS:
+  optipng                         0.6.4-1ubuntu0.14.04.1
+
+Ubuntu 12.04 LTS:
+  optipng                         0.6.4-1ubuntu0.12.04.1
+
+In general, a standard system update will make all the necessary changes.
+
+References:
+  http://www.ubuntu.com/usn/usn-2951-1
+  CVE-2015-7801, CVE-2015-7802, CVE-2016-2191, CVE-2016-3981,
+  CVE-2016-3982
+
+Package Information:
+  https://launchpad.net/ubuntu/+source/optipng/0.7.5-1ubuntu0.1
+  https://launchpad.net/ubuntu/+source/optipng/0.6.4-1ubuntu0.14.04.1
+  https://launchpad.net/ubuntu/+source/optipng/0.6.4-1ubuntu0.12.04.1
+
+
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 819 bytes
+Desc: OpenPGP digital signature
+URL: <https://lists.ubuntu.com/archives/ubuntu-security-announce/attachments/20160418/e81602d7/attachment.pgp>
+
+From chris.coulson at canonical.com  Tue Apr 19 16:29:04 2016
+From: chris.coulson at canonical.com (Chris Coulson)
+Date: Tue, 19 Apr 2016 17:29:04 +0100
+Subject: [USN-2917-3] Firefox regressions
+Message-ID: <ddfb479b-517b-e545-310d-f41a8e0b992a@canonical.com>
+
+==========================================================================
+Ubuntu Security Notice USN-2917-3
+April 19, 2016
+
+firefox regressions
+==========================================================================
+
+A security issue affects these releases of Ubuntu and its derivatives:
+
+- Ubuntu 15.10
+- Ubuntu 14.04 LTS
+- Ubuntu 12.04 LTS
+
+Summary:
+
+USN-2917-1 introduced several regressions in Firefox.
+
+Software Description:
+- firefox: Mozilla Open Source web browser
+
+Details:
+
+USN-2917-1 fixed vulnerabilities in Firefox. This update caused several
+web compatibility regressions.
+
+This update fixes the problem.
+
+We apologize for the inconvenience.
+
+Original advisory details:
+
+ Francis Gabriel discovered a buffer overflow during ASN.1 decoding in NSS.
+ If a user were tricked in to opening a specially crafted website, an
+ attacker could potentially exploit this to cause a denial of service via
+ application crash, or execute arbitrary code with the privileges of the
+ user invoking Firefox. (CVE-2016-1950)
+ 
+ Bob Clary, Christoph Diehl, Christian Holler, Andrew McCreight, Daniel
+ Holbert, Jesse Ruderman, Randell Jesup, Carsten Book, Gian-Carlo Pascutto,
+ Tyson Smith, Andrea Marchesini, and Jukka Jyl?nki discovered multiple
+ memory safety issues in Firefox. If a user were tricked in to opening a
+ specially crafted website, an attacker could potentially exploit these to
+ cause a denial of service via application crash, or execute arbitrary code
+ with the privileges of the user invoking Firefox. (CVE-2016-1952,
+ CVE-2016-1953)
+ 
+ Nicolas Golubovic discovered that CSP violation reports can be used to
+ overwrite local files. If a user were tricked in to opening a specially
+ crafted website with addon signing disabled and unpacked addons installed,
+ an attacker could potentially exploit this to gain additional privileges.
+ (CVE-2016-1954)
+ 
+ Muneaki Nishimura discovered that CSP violation reports contained full
+ paths for cross-origin iframe navigations. An attacker could potentially
+ exploit this to steal confidential data. (CVE-2016-1955)
+ 
+ Ucha Gobejishvili discovered that performing certain WebGL operations
+ resulted in memory resource exhaustion with some Intel GPUs, requiring
+ a reboot. If a user were tricked in to opening a specially crafted
+ website, an attacker could potentially exploit this to cause a denial
+ of service. (CVE-2016-1956)
+ 
+ Jose Martinez and Romina Santillan discovered a memory leak in
+ libstagefright during MPEG4 video file processing in some circumstances.
+ If a user were tricked in to opening a specially crafted website, an
+ attacker could potentially exploit this to cause a denial of service via
+ memory exhaustion. (CVE-2016-1957)
+ 
+ Abdulrahman Alqabandi discovered that the addressbar could be blank or
+ filled with page defined content in some circumstances. If a user were
+ tricked in to opening a specially crafted website, an attacker could
+ potentially exploit this to conduct URL spoofing attacks. (CVE-2016-1958)
+ 
+ Looben Yang discovered an out-of-bounds read in Service Worker Manager. If
+ a user were tricked in to opening a specially crafted website, an attacker
+ could potentially exploit this to cause a denial of service via
+ application crash, or execute arbitrary code with the privileges of the
+ user invoking Firefox. (CVE-2016-1959)
+ 
+ A use-after-free was discovered in the HTML5 string parser. If a user were
+ tricked in to opening a specially crafted website, an attacker could
+ potentially exploit this to cause a denial of service via application
+ crash, or execute arbitrary code with the privileges of the user invoking
+ Firefox. (CVE-2016-1960)
+ 
+ A use-after-free was discovered in the SetBody function of HTMLDocument.
+ If a user were tricked in to opening a specially crafted website, an
+ attacker could potentially exploit this to cause a denial of service via
+ application crash, or execute arbitrary code with the privileges of the
+ user invoking Firefox. (CVE-2016-1961)
+ 
+ Dominique Haza?l-Massieux discovered a use-after-free when using multiple
+ WebRTC data channels. If a user were tricked in to opening a specially
+ crafted website, an attacker could potentially exploit this to cause a
+ denial of service via application crash, or execute arbitrary code with
+ the privileges of the user invoking Firefox. (CVE-2016-1962)
+ 
+ It was discovered that Firefox crashes when local files are modified
+ whilst being read by the FileReader API. If a user were tricked in to
+ opening a specially crafted website, an attacker could potentially exploit
+ this to execute arbitrary code with the privileges of the user invoking
+ Firefox. (CVE-2016-1963)
+ 
+ Nicolas Gr?goire discovered a use-after-free during XML transformations.
+ If a user were tricked in to opening a specially crafted website, an
+ attacker could potentially exploit this to cause a denial of service via
+ application crash, or execute arbitrary code with the privileges of the
+ user invoking Firefox. (CVE-2016-1964)
+ 
+ Tsubasa Iinuma discovered a mechanism to cause the addressbar to display
+ an incorrect URL, using history navigations and the Location protocol
+ property. If a user were tricked in to opening a specially crafted
+ website, an attacker could potentially exploit this to conduct URL
+ spoofing attacks. (CVE-2016-1965)
+ 
+ A memory corruption issues was discovered in the NPAPI subsystem. If
+ a user were tricked in to opening a specially crafted website with a
+ malicious plugin installed, an attacker could potentially exploit this
+ to cause a denial of service via application crash, or execute arbitrary
+ code with the privileges of the user invoking Firefox. (CVE-2016-1966)
+ 
+ Jordi Chancel discovered a same-origin-policy bypass when using
+ performance.getEntries and history navigation with session restore. If
+ a user were tricked in to opening a specially crafted website, an attacker
+ could potentially exploit this to steal confidential data. (CVE-2016-1967)
+ 
+ Luke Li discovered a buffer overflow during Brotli decompression in some
+ circumstances. If a user were tricked in to opening a specially crafted
+ website, an attacker could potentially exploit this to cause a denial of
+ service via application crash, or execute arbitrary code with the
+ privileges of the user invoking Firefox. (CVE-2016-1968)
+ 
+ Ronald Crane discovered a use-after-free in GetStaticInstance in WebRTC.
+ If a user were tricked in to opening a specially crafted website, an
+ attacker could potentially exploit this to cause a denial of service via
+ application crash, or execute arbitrary code with the privileges of the
+ user invoking Firefox. (CVE-2016-1973)
+ 
+ Ronald Crane discovered an out-of-bounds read following a failed
+ allocation in the HTML parser in some circumstances. If a user were
+ tricked in to opening a specially crafted website, an attacker could
+ potentially exploit this to cause a denial of service via application
+ crash, or execute arbitrary code with the privileges of the user invoking
+ Firefox. (CVE-2016-1974)
+ 
+ Holger Fuhrmannek, Tyson Smith and Holger Fuhrmannek reported multiple
+ memory safety issues in the Graphite 2 library. If a user were tricked in
+ to opening a specially crafted website, an attacker could potentially
+ exploit these to cause a denial of service via application crash, or
+ execute arbitrary code with the privileges of the user invoking Firefox.
+ (CVE-2016-1977, CVE-2016-2790, CVE-2016-2791, CVE-2016-2792,
+ CVE-2016-2793, CVE-2016-2794, CVE-2016-2795, CVE-2016-2796, CVE-2016-2797,
+ CVE-2016-2798, CVE-2016-2799, CVE-2016-2800, CVE-2016-2801, CVE-2016-2802)
+
+Update instructions:
+
+The problem can be corrected by updating your system to the following
+package versions:
+
+Ubuntu 15.10:
+  firefox                         45.0.2+build1-0ubuntu0.15.10.1
+
+Ubuntu 14.04 LTS:
+  firefox                         45.0.2+build1-0ubuntu0.14.04.1
+
+Ubuntu 12.04 LTS:
+  firefox                         45.0.2+build1-0ubuntu0.12.04.1
+
+After a standard system update you need to restart Firefox to make
+all the necessary changes.
+
+References:
+  http://www.ubuntu.com/usn/usn-2917-3
+  http://www.ubuntu.com/usn/usn-2917-1
+  https://launchpad.net/bugs/1572169
+
+Package Information:
+  https://launchpad.net/ubuntu/+source/firefox/45.0.2+build1-0ubuntu0.15.10.1
+  https://launchpad.net/ubuntu/+source/firefox/45.0.2+build1-0ubuntu0.14.04.1
+  https://launchpad.net/ubuntu/+source/firefox/45.0.2+build1-0ubuntu0.12.04.1
+
+
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 473 bytes
+Desc: OpenPGP digital signature
+URL: <https://lists.ubuntu.com/archives/ubuntu-security-announce/attachments/20160419/49863ba0/attachment.pgp>
+
+From marc.deslauriers at canonical.com  Thu Apr 21 17:01:23 2016
+From: marc.deslauriers at canonical.com (Marc Deslauriers)
+Date: Thu, 21 Apr 2016 13:01:23 -0400
+Subject: [USN-2952-1] PHP vulnerabilities
+Message-ID: <57190763.2060107@canonical.com>
+
+==========================================================================
+Ubuntu Security Notice USN-2952-1
+April 21, 2016
+
+php5 vulnerabilities
+==========================================================================
+
+A security issue affects these releases of Ubuntu and its derivatives:
+
+- Ubuntu 15.10
+- Ubuntu 14.04 LTS
+- Ubuntu 12.04 LTS
+
+Summary:
+
+Several security issues were fixed in PHP.
+
+Software Description:
+- php5: HTML-embedded scripting language interpreter
+
+Details:
+
+It was discovered that the PHP Zip extension incorrectly handled
+directories when processing certain zip files. A remote attacker could
+possibly use this issue to create arbitrary directories. (CVE-2014-9767)
+
+It was discovered that the PHP Soap client incorrectly validated data
+types. A remote attacker could use this issue to cause PHP to crash,
+resulting in a denial of service, or possibly execute arbitrary code.
+(CVE-2015-8835, CVE-2016-3185)
+
+It was discovered that the PHP MySQL native driver incorrectly handled TLS
+connections to MySQL databases. A man in the middle attacker could possibly
+use this issue to downgrade and snoop on TLS connections. This
+vulnerability is known as BACKRONYM. (CVE-2015-8838)
+
+It was discovered that PHP incorrectly handled the imagerotate function. A
+remote attacker could use this issue to cause PHP to crash, resulting in a
+denial of service, or possibly obtain sensitive information. This issue
+only applied to Ubuntu 14.04 LTS and Ubuntu 15.10. (CVE-2016-1903)
+
+Hans Jerry Illikainen discovered that the PHP phar extension incorrectly
+handled certain tar archives. A remote attacker could use this issue to
+cause PHP to crash, resulting in a denial of service, or possibly execute
+arbitrary code. (CVE-2016-2554)
+
+It was discovered that the PHP WDDX extension incorrectly handled certain
+malformed XML data. A remote attacker could possibly use this issue to
+cause PHP to crash, resulting in a denial of service, or possibly execute
+arbitrary code. (CVE-2016-3141)
+
+It was discovered that the PHP phar extension incorrectly handled certain
+zip files. A remote attacker could use this issue to cause PHP to crash,
+resulting in a denial of service, or possibly obtain sensitive information.
+(CVE-2016-3142)
+
+It was discovered that the PHP libxml_disable_entity_loader() setting was
+shared between threads. When running under PHP-FPM, this could result in
+XML external entity injection and entity expansion issues. This issue only
+applied to Ubuntu 12.04 LTS and Ubuntu 14.04 LTS. (No CVE number)
+
+It was discovered that the PHP openssl_random_pseudo_bytes() function did
+not return cryptographically strong pseudo-random bytes. (No CVE number)
+
+It was discovered that the PHP Fileinfo component incorrectly handled
+certain magic files. An attacker could use this issue to cause PHP to
+crash, resulting in a denial of service, or possibly execute arbitrary
+code. (CVE number pending)
+
+It was discovered that the PHP php_snmp_error() function incorrectly
+handled string formatting. A remote attacker could use this issue to cause
+PHP to crash, resulting in a denial of service, or possibly execute
+arbitrary code. This issue only applied to Ubuntu 14.04 LTS and Ubuntu
+15.10. (CVE number pending)
+
+It was discovered that the PHP rawurlencode() function incorrectly handled
+large strings. A remote attacker could use this issue to cause PHP to
+crash, resulting in a denial of service. (CVE number pending)
+
+It was discovered that the PHP phar extension incorrectly handled certain
+filenames in archives. A remote attacker could use this issue to cause PHP
+to crash, resulting in a denial of service, or possibly execute arbitrary
+code. (CVE number pending)
+
+It was discovered that the PHP mb_strcut() function incorrectly handled
+string formatting. A remote attacker could use this issue to cause PHP to
+crash, resulting in a denial of service, or possibly execute arbitrary
+code. (CVE number pending)
+
+Update instructions:
+
+The problem can be corrected by updating your system to the following
+package versions:
+
+Ubuntu 15.10:
+  libapache2-mod-php5             5.6.11+dfsg-1ubuntu3.2
+  php5-cgi                        5.6.11+dfsg-1ubuntu3.2
+  php5-cli                        5.6.11+dfsg-1ubuntu3.2
+  php5-fpm                        5.6.11+dfsg-1ubuntu3.2
+  php5-gd                         5.6.11+dfsg-1ubuntu3.2
+  php5-mysqlnd                    5.6.11+dfsg-1ubuntu3.2
+  php5-snmp                       5.6.11+dfsg-1ubuntu3.2
+
+Ubuntu 14.04 LTS:
+  libapache2-mod-php5             5.5.9+dfsg-1ubuntu4.16
+  php5-cgi                        5.5.9+dfsg-1ubuntu4.16
+  php5-cli                        5.5.9+dfsg-1ubuntu4.16
+  php5-fpm                        5.5.9+dfsg-1ubuntu4.16
+  php5-gd                         5.5.9+dfsg-1ubuntu4.16
+  php5-mysqlnd                    5.5.9+dfsg-1ubuntu4.16
+  php5-snmp                       5.5.9+dfsg-1ubuntu4.16
+
+Ubuntu 12.04 LTS:
+  libapache2-mod-php5             5.3.10-1ubuntu3.22
+  php5-cgi                        5.3.10-1ubuntu3.22
+  php5-cli                        5.3.10-1ubuntu3.22
+  php5-fpm                        5.3.10-1ubuntu3.22
+  php5-gd                         5.3.10-1ubuntu3.22
+  php5-mysqlnd                    5.3.10-1ubuntu3.22
+  php5-snmp                       5.3.10-1ubuntu3.22
+
+In general, a standard system update will make all the necessary changes.
+
+References:
+  http://www.ubuntu.com/usn/usn-2952-1
+  CVE-2014-9767, CVE-2015-8835, CVE-2015-8838, CVE-2016-1903,
+  CVE-2016-2554, CVE-2016-3141, CVE-2016-3142, CVE-2016-3185
+
+Package Information:
+  https://launchpad.net/ubuntu/+source/php5/5.6.11+dfsg-1ubuntu3.2
+  https://launchpad.net/ubuntu/+source/php5/5.5.9+dfsg-1ubuntu4.16
+  https://launchpad.net/ubuntu/+source/php5/5.3.10-1ubuntu3.22
+
+
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 819 bytes
+Desc: OpenPGP digital signature
+URL: <https://lists.ubuntu.com/archives/ubuntu-security-announce/attachments/20160421/b45f16d2/attachment.pgp>
+
+From marc.deslauriers at canonical.com  Thu Apr 21 17:01:42 2016
+From: marc.deslauriers at canonical.com (Marc Deslauriers)
+Date: Thu, 21 Apr 2016 13:01:42 -0400
+Subject: [USN-2953-1] MySQL vulnerabilities
+Message-ID: <57190776.3060604@canonical.com>
+
+==========================================================================
+Ubuntu Security Notice USN-2953-1
+April 21, 2016
+
+mysql-5.5, mysql-5.6 vulnerabilities
+==========================================================================
+
+A security issue affects these releases of Ubuntu and its derivatives:
+
+- Ubuntu 15.10
+- Ubuntu 14.04 LTS
+- Ubuntu 12.04 LTS
+
+Summary:
+
+Several security issues were fixed in MySQL.
+
+Software Description:
+- mysql-5.6: MySQL database
+- mysql-5.5: MySQL database
+
+Details:
+
+Multiple security issues were discovered in MySQL and this update includes
+new upstream MySQL versions to fix these issues.
+
+MySQL has been updated to 5.5.49 in Ubuntu 12.04 LTS and Ubuntu 14.04 LTS.
+Ubuntu 15.10 has been updated to MySQL 5.6.30.
+
+In addition to security fixes, the updated packages contain bug fixes,
+new features, and possibly incompatible changes.
+
+Please see the following for more information:
+http://dev.mysql.com/doc/relnotes/mysql/5.5/en/news-5-5-48.html
+http://dev.mysql.com/doc/relnotes/mysql/5.5/en/news-5-5-49.html
+http://dev.mysql.com/doc/relnotes/mysql/5.6/en/news-5-6-29.html
+http://dev.mysql.com/doc/relnotes/mysql/5.6/en/news-5-6-30.html
+http://www.oracle.com/technetwork/security-advisory/cpuapr2016v3-2985753.html
+
+Update instructions:
+
+The problem can be corrected by updating your system to the following
+package versions:
+
+Ubuntu 15.10:
+  mysql-server-5.6                5.6.30-0ubuntu0.15.10.1
+
+Ubuntu 14.04 LTS:
+  mysql-server-5.5                5.5.49-0ubuntu0.14.04.1
+
+Ubuntu 12.04 LTS:
+  mysql-server-5.5                5.5.49-0ubuntu0.12.04.1
+
+In general, a standard system update will make all the necessary changes.
+
+References:
+  http://www.ubuntu.com/usn/usn-2953-1
+  CVE-2016-0639, CVE-2016-0640, CVE-2016-0641, CVE-2016-0642,
+  CVE-2016-0643, CVE-2016-0644, CVE-2016-0646, CVE-2016-0647,
+  CVE-2016-0648, CVE-2016-0649, CVE-2016-0650, CVE-2016-0655,
+  CVE-2016-0661, CVE-2016-0665, CVE-2016-0666, CVE-2016-0668,
+  CVE-2016-2047
+
+Package Information:
+  https://launchpad.net/ubuntu/+source/mysql-5.6/5.6.30-0ubuntu0.15.10.1
+  https://launchpad.net/ubuntu/+source/mysql-5.5/5.5.49-0ubuntu0.14.04.1
+  https://launchpad.net/ubuntu/+source/mysql-5.5/5.5.49-0ubuntu0.12.04.1
+
+
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 819 bytes
+Desc: OpenPGP digital signature
+URL: <https://lists.ubuntu.com/archives/ubuntu-security-announce/attachments/20160421/11767cd3/attachment.pgp>
+
+From marc.deslauriers at canonical.com  Mon Apr 25 13:43:32 2016
+From: marc.deslauriers at canonical.com (Marc Deslauriers)
+Date: Mon, 25 Apr 2016 09:43:32 -0400
+Subject: [USN-2954-1] MySQL vulnerabilities
+Message-ID: <571E1F04.2000105@canonical.com>
+
+==========================================================================
+Ubuntu Security Notice USN-2954-1
+April 25, 2016
+
+mysql-5.7 vulnerabilities
+==========================================================================
+
+A security issue affects these releases of Ubuntu and its derivatives:
+
+- Ubuntu 16.04 LTS
+
+Summary:
+
+Several security issues were fixed in MySQL.
+
+Software Description:
+- mysql-5.7: MySQL database
+
+Details:
+
+Multiple security issues were discovered in MySQL and this update includes
+new upstream MySQL versions to fix these issues.
+
+MySQL has been updated to 5.7.12 in Ubuntu 16.04 LTS.
+
+In addition to security fixes, the updated packages contain bug fixes,
+new features, and possibly incompatible changes.
+
+Please see the following for more information:
+http://dev.mysql.com/doc/relnotes/mysql/5.7/en/news-5-7-12.html
+http://www.oracle.com/technetwork/security-advisory/cpuapr2016v3-2985753.html
+
+Update instructions:
+
+The problem can be corrected by updating your system to the following
+package versions:
+
+Ubuntu 16.04 LTS:
+  mysql-server-5.7                5.7.12-0ubuntu1
+
+In general, a standard system update will make all the necessary changes.
+
+References:
+  http://www.ubuntu.com/usn/usn-2954-1
+  CVE-2016-0639, CVE-2016-0642, CVE-2016-0643, CVE-2016-0647,
+  CVE-2016-0648, CVE-2016-0655, CVE-2016-0657, CVE-2016-0659,
+  CVE-2016-0662, CVE-2016-0666, CVE-2016-0667, CVE-2016-2047
+
+Package Information:
+  https://launchpad.net/ubuntu/+source/mysql-5.7/5.7.12-0ubuntu1
+
+
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 819 bytes
+Desc: OpenPGP digital signature
+URL: <https://lists.ubuntu.com/archives/ubuntu-security-announce/attachments/20160425/a9b6ec9e/attachment.pgp>
+

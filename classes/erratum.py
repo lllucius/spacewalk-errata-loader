@@ -148,10 +148,12 @@ class Erratum(object):
         self._package_groups[group].append(pkg)
 
     def add_channel(self, channel):
-        self.channelLabel.append(channel)
+        if channel not in self.channelLabel:
+            self.channelLabel.append(channel)
 
     def add_package_id(self, pkgid):
-        self.packages.append(pkgid)
+        if pkgid not in self.packages:
+            self.packages.append(pkgid)
 
     def get_groups(self):
         return self._package_groups

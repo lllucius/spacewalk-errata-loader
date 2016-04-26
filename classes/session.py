@@ -92,8 +92,7 @@ class Session(object):
                                              erratum.channelLabel)
         except xmlrpclib.Fault, f:
             if f.faultCode == 2601:
-                ERROR("Erratum already exists: {0}", erratum.advisory_name)
-                return False
+                return None
             if f.faultCode != -20:
                 raise
 
@@ -112,6 +111,29 @@ class Session(object):
 
         self.auth_login(self.login, self.password)
         return self.errata_set_details(erratum, details)
+
+    def errata_applicable_to_channels(self, erratum):
+        try:
+            return self.server.errata.applicable_to_channels(self.key,
+                                                             erratum.advisory_name)
+        except xmlrpclib.Fault, f:
+            if f.faultCode != -20:
+                raise
+
+        self.auth_login(self.login, self.password)
+        return self.errata_applicable_to_channels(erratum)
+
+    def errata_publish(self, erratum):
+        try:
+            return self.server.errata.publish(self.key,
+                                              erratum.advisory_name,
+                                              erratum.channelLabel)
+        except xmlrpclib.Fault, f:
+            if f.faultCode != -20:
+                raise
+
+        self.auth_login(self.login, self.password)
+        return self.errata_publish(erratum)
 
     def channel_list_software_channels(self):
         try:
